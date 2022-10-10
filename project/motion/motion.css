@@ -1,0 +1,17 @@
+.motion {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maximg {
+  width: 100%;
+  text-align: center;
+}
+.maximg img {
+  max-width: 100%;
+}
+.benz {
+  background: #000;
+}

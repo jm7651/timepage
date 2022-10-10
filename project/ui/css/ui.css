@@ -1,0 +1,628 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color_black: #464555;
+  --main_blue: #6c79f9;
+  --pattern_1: #e4e7ff;
+  --pattern_2: #f1f3ff;
+  --pattern_3: #ffffff;
+  --color_black_desc: rgba(70, 69, 85, 0.7);
+}
+html {
+  font-size: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* 공통부분 */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100vw;
+}
+.mo_no {
+  display: block;
+}
+/* 아그리파 */
+.agripa_001 {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+}
+.agripa_001_contents {
+  width: 50%;
+  height: 100%;
+  margin-left: 12%;
+  margin-top: 20rem;
+}
+.agripa_001_contents h1 {
+  background: url(../images/agripa_logo.svg) no-repeat center / 100px auto;
+  width: 10rem;
+  height: 3rem;
+}
+.agripa_001_bg {
+  width: 50%;
+  height: 100%;
+  background: green;
+}
+.agripa_title {
+  font-size: 60px;
+}
+.agripa_section {
+  flex-direction: column;
+}
+.main001 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 5rem;
+}
+.main001 .inner div:nth-child(2) {
+  max-width: 30rem;
+}
+.main001 .inner div:nth-child(2) img {
+  width: 100%;
+}
+.inner {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  word-break: keep-all;
+}
+.main001 .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #180900;
+  margin-right: 5rem;
+  line-height: 1.2;
+}
+.main001 .text span {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.made {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  padding-top: 5rem;
+}
+.quicklink {
+  display: inline-flex;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 15rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 3rem;
+  padding: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+.wh_bg {
+  background: #fff;
+}
+.agripaquick {
+  background: #275e33;
+}
+/* 태양광pc */
+.remsspc_bg {
+  background: #003c6b;
+}
+/* 태양광 */
+.solar01_bg {
+  background: #f75e00;
+}
+
+.solar01_bg .made {
+  color: #381500;
+}
+.sejong_bg {
+  background: #ec232b;
+}
+.green_bg {
+  background: #c0ecea;
+}
+.green001 {
+  background: #c0ecea;
+}
+.xi_bg {
+  background: #006d9e;
+}
+.hems001 {
+  background: #f8f9fb;
+}
+.hems002 img,
+.hems003 img {
+  width: 100vw;
+}
+.hems004 {
+  background: #f4f4f4;
+}
+.solar02_p {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background: url(../images/solar_bg02.jpg);
+  background-size: 100% 100%;
+  z-index: -1;
+  padding: 20rem 0;
+}
+.solar02_p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.7;
+}
+.solar02_p .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.solar02_p .inner > div:nth-child(1) {
+  position: relative;
+  z-index: 6;
+}
+.solar02_p .inner > div:nth-child(2) {
+  position: relative;
+  margin-top: 2rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  z-index: 7;
+}
+.solar02_p .inner > div:nth-child(3) {
+  position: relative;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 500;
+  z-index: 8;
+  opacity: 0.6;
+}
+.fadeinup {
+  opacity: 0;
+  padding-top: 50px;
+  max-width: 100%;
+}
+.solar03_p {
+  display: flex;
+  padding: 10rem 0;
+  width: 100%;
+  background: #1684cf;
+  justify-content: center;
+  align-items: center;
+}
+.solar03_p .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.solar03 {
+  width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.circle_p {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 200px;
+  color: #1684cf;
+  background: #fff;
+  position: relative;
+}
+.solar03_p > .inner > div:nth-child(2) {
+  padding-top: 5rem;
+}
+.solar03_img {
+  width: 60rem;
+}
+.solar03_img img {
+  width: 100%;
+}
+.solar04_p {
+  background: #f0f2f0;
+}
+.solar04_p div {
+  width: 100rem;
+}
+.solar04_p div img {
+  width: 100%;
+}
+.solar05_p {
+  background: #3c1700;
+}
+.solar05_p div {
+  width: 100rem;
+}
+.solar05_p div img {
+  width: 100%;
+}
+
+/* bems */
+.bems001_bg {
+  background: #fff;
+}
+.bems001_bg .made {
+  color: #333;
+}
+.bems002 {
+  background: #dde5f2;
+  padding: 5rem;
+}
+.bems003 {
+  padding: 5rem;
+}
+.bems003 img {
+  width: 30%;
+}
+.bems005 {
+  background: #ee9036;
+}
+.bems006 {
+  background: #eeeff3;
+}
+.bems007 {
+  background: #e7ebee;
+}
+/* 아그리파 */
+.agripa001_bg,
+.agripa003 {
+  background: #4fad63;
+}
+.agripa002 {
+  background: #c7d9e7;
+}
+.agripa004 {
+  width: 100%;
+}
+.agripa004 img {
+  width: 100%;
+  margin: 0 auto;
+}
+.agripa007 {
+  background: #e7ebee;
+}
+.pandac001_bg {
+  background: #008072;
+}
+.pandac001_bg .text,
+.pandac001_bg .made {
+  color: #fff;
+}
+.kevin001_bg {
+  background: #f7ac1d;
+}
+.hemspc_bg {
+  background: #e9ddf7;
+}
+.hems_bg {
+  background: #158fe5;
+}
+.yelloment_bg {
+  background: #ffc600;
+}
+
+.maximg {
+  max-width: 100%;
+}
+.maximg img {
+  max-width: 100%;
+}
+.movie {
+  display: flex;
+  justify-content: center;
+}
+.movie {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main_section {
+  display: flex;
+  flex-direction: column;
+}
+/* link */
+
+@media screen and (max-width: 450px) {
+  .mo_no {
+    display: inline;
+  }
+  .main001 {
+    box-sizing: border-box;
+    padding: 15rem 1rem 1rem 1rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .inner {
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .main001 .inner div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main001 .inner div:nth-child(2) img {
+    width: 80%;
+  }
+  .main001 .text {
+    margin-right: 0;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .main001 .text span {
+    font-size: 3rem;
+  }
+  .made {
+    font-size: 1.4rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+  .solar02_p {
+    padding: 10rem 0;
+  }
+  .solar02_p .inner > div:nth-child(2) {
+    font-size: 1.8rem;
+  }
+  .solar02_p .inner > div:nth-child(3) {
+    font-size: 1.4rem;
+  }
+  .circle {
+    width: 65px;
+    height: 65px;
+    font-size: 1rem;
+  }
+  .solar03_img {
+    width: 100%;
+  }
+  .solar03_img img {
+    width: 100%;
+  }
+  .solar04_p img,
+  .solar05_p img {
+    width: 100%;
+  }
+  .bems002 img {
+    width: 200%;
+  }
+  .bems003 img {
+    width: 100%;
+  }
+  .bems004 img {
+    width: 200%;
+  }
+  .bems005 img,
+  .bems006 img,
+  .bems007 img,
+  .bems008 img {
+    width: 100%;
+  }
+  .agripa002 img,
+  .agripa005 img,
+  .agripa006 img,
+  .agripa007 img,
+  .agripa008 img {
+    width: 100%;
+  }
+  .agripa003 img,
+  .agripa004 img {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .movie {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+  .cueat001 {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .cueat001_visual {
+    width: 100%;
+    height: 100%;
+  }
+  .cueat_circle {
+    width: 85vw;
+    height: 85vw;
+    border-radius: 85vw;
+  }
+  .cueat001_visual img {
+    width: 100%;
+  }
+  .cueat001_div {
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    padding: 8rem 0;
+  }
+  .cueat001_text_container {
+    gap: 1rem;
+  }
+  .cueat001_title {
+    font-size: 3.2rem;
+  }
+  .cueat001_main_visual {
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 20rem;
+  }
+  .cueat001_desc {
+    font-size: 2rem;
+  }
+  .sub_page_main_title {
+    font-size: 4rem;
+  }
+  .sub_page_sub_title {
+    font-size: 1.4rem;
+  }
+  .sub_page_main_visual {
+    width: 50%;
+  }
+  @keyframes circle_ani1 {
+    0% {
+      top: 39vh;
+      left: 12vw;
+    }
+    50% {
+      top: 43vh;
+      left: 15vw;
+    }
+    100% {
+      top: 39vh;
+      left: 12vw;
+    }
+  }
+  @keyframes circle_ani2 {
+    0% {
+      top: 40vh;
+      left: 60%;
+    }
+    50% {
+      top: 44vh;
+      left: 57%;
+    }
+    100% {
+      top: 40vh;
+      left: 60%;
+    }
+  }
+  @keyframes circle_ani3 {
+    0% {
+      top: 70vh;
+      left: 20%;
+    }
+    50% {
+      top: 73vh;
+      left: 17%;
+    }
+    100% {
+      top: 70vh;
+      left: 20%;
+    }
+  }
+  @keyframes circle_ani4 {
+    0% {
+      top: 70vh;
+      left: 84%;
+    }
+    50% {
+      top: 76vh;
+      left: 80%;
+    }
+    100% {
+      top: 70vh;
+      left: 84%;
+    }
+  }
+  @keyframes circle_ani5 {
+    0% {
+      top: 78vh;
+      left: 70%;
+    }
+    50% {
+      top: 82vh;
+      left: 77%;
+    }
+    100% {
+      top: 78vh;
+      left: 70%;
+    }
+  }
+  .cueat007_div {
+    width: 100%;
+  }
+  .cueat008 {
+    padding: 8rem 2rem;
+  }
+  .cueat008_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .cueat008_img img {
+    width: 50%;
+  }
+  .cueat008_text_container {
+    font-size: 4rem;
+    line-height: 1.4;
+  }
+  .cueat008_desc {
+    font-size: 1.8rem;
+  }
+  .cueat008_cueat_review_wrap {
+    flex-direction: column;
+  }
+  .cueat008_review_container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cueat009 {
+    padding: 0;
+  }
+  .cueat009_container {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  .cueat009_left,
+  .cueat009_right {
+    width: 100%;
+    gap: 0;
+  }
+  .cueat009_left img,
+  .cueat009_right img {
+    width: 100%;
+  }
+  .cueat010 {
+    width: 100vw;
+  }
+  .cueat010_container {
+    width: 100%;
+  }
+  .cueat010_container img {
+    width: 100%;
+  }
+}

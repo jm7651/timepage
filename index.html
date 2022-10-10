@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jmpf</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/marquee.css">
+     <script src="js/jquery-3.5.1.min.js"></script>
+    <title>JMWORLD</title>
+</head>
+<body>
+    <div class="body_container">
+    <!-- navbar -->
+    <nav id="navbar">
+            <div class="navbar__logo">
+                <!-- <img src="images/logo2.png" alt=""> -->
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#work">Work</li>
+                <li class="navbar__menu__item" data-link="#career">Career</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            </ul>
+        <a href="javascript:click()" class="navbar__toggle">
+            <span>메뉴</span>
+        </a>
+    </nav>
+    <section id="home">
+        <div class="title_section">
+            <div class="main_title">
+           At the <span>Time</span></div>
+        <div class="main_visual">
+            <div class="clock_p">
+                <div class="noise"><img src="images/Noise.png" alt=""></div>
+                <div class="clock s"></div>
+                <div class="clock m"></div>
+                <div class="clock h"></div>
+            </div>
+        </div>
+    </section>
+    <div class="cover">
+        <p class="first-parallel"></p>
+      </div>
+      <div class="cover">
+        <p class="second-parallel"></p>
+      </div>
+    <section id="about">
+        <!-- <div class="about_top_container">
+            <div class="sandglass">
+                <img src="images/sandglass.svg" alt="">
+            </div>
+            <div class="about_slogun">
+                Creative and passionate<br>
+                Design inside the mind
+                </div>
+            <div class="name_container">
+                <div class="first_name">Jungmin</div>
+                <div class="last_name">Park</div>
+            </div>
+        </div> -->
+        <div class="about_middle_container">
+            <div>내가 사용자라면 어떻게 제품을 사용할까?<Br>
+                좋은 디자인이란 무엇일까</div>
+                <div>
+                    상호작용하는 디자인은 직관적이며 쉬워야합니다.
+                    ux가 중요해지면서 ui를 무턱대고 그려내기 보다는 시스템화하여 
+                    더 빠르게 설계하고 검증을 합니다.또한 디자인시스템을 통해 UI를 통일성 있게 작성합니다.<br>
+                    사용자를 위한 디자인이란? 배려있는 디자인이라고 생각합니다.<br>
+                    사용자는 지금까지 경험을 바탕으로 제품을 이용합니다.<br>
+                    사용자의 행동 패턴을 분석하여 인터렉션 흐름이 끊기지 않도록 유기적으로 연결하는것이 중요합니다<br>
+                    낯선것보다는 익숙하도록 고민합니다.하지만 익숙함 속에서의 지루하지 않도록 고민합니다</div>
+        </div>
+        <div class="sandglass">
+            <img src="images/sandglass.svg" alt="">
+        </div>
+    </section>
+    <!-- work -->
+    <div class="container" id=work>
+        <ul class="tabs">
+            <li class="tab-link active" data-tab="tab-1">UI / UX</li>
+            <li class="tab-link" data-tab="tab-2">WEB PAGE</li>
+            <li class="tab-link" data-tab="tab-3">MOTION</li>
+            <li class="tab-link" data-tab="tab-4">GAME</li>
+        </ul>
+        <div class="work__projects active" id="tab-1">
+            <div class="content">
+                <!-- <a href="" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/yellobox.jpg" alt="">
+                <div class="project__desc">
+                    <h3>YELLOBOX</h3>
+                    <span>농산물 구독서비스</span>
+                </div>
+            </a> -->
+            <a href="project/ui/cueat.html" class="project" target="site" data-type="ui" >
+                <img class="project__img" src="images/projects/thumnail/cueat_thum.png" alt="">
+                <div class="project__desc">
+                    <h3>Cueat</h3>
+                    <span>농산물구독서비스</span>
+                </div>
+            </a>
+         
+            <!-- <a href="project/ui/yelloment.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/yelloment.jpg" alt="">
+                <div class="project__desc">
+                    <h3>YELLOMENT</h3>
+                    <span>옐로먼트홈페이지</span>
+                </div>
+            </a> -->
+            <a href="project/ui/hems.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/4sthome.jpg" alt="">
+                <div class="project__desc">
+                    <h3>4ST HOME</h3>
+                    <span>아파트관리 플랫폼</span>
+                </div>
+            </a>
+            <a href="project/ui/rems.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/solar_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>4ST SOLAR</h3>
+                    <span>태양광 관리 플랫폼</span>
+                </div>
+            </a>
+            <a href="project/ui/bems.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/bems.jpg" alt="">
+                <div class="project__desc">
+                    <h3>4ST BEMS</h3>
+                    <span>제로 빌딩 제어 플랫폼</span>
+                </div>
+            </a>
+            <a href="project/ui/agripa.html" class="project" target="site" data-type="ui" >
+                <img class="project__img" src="images/projects/thumnail/agripa_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>AGRIPA</h3>
+                    <span>농산물빅데이터플랫폼</span>
+                </div>
+            </a>
+            <!-- <a href="project/ui/kevinlab.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/kevinlab.jpg" alt="">
+                <div class="project__desc">
+                    <h3>KEVINLAB HOME</h3>
+                    <span>케빈랩홈페이지</span>
+                </div>
+            </a> -->
+            <!-- <a href="project/ui/rems_pc.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/rems_pc.jpg" alt="">
+                <div class="project__desc">
+                    <h3>REMS_PC</h3>
+                    <span>태양광관리자용 대시보드</span>
+                </div>
+            </a> -->
+            <a href="project/ui/hems_pc.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/hems_pc.jpg" alt="">
+                <div class="project__desc">
+                    <h3>HEMS_PC</h3>
+                    <span>아파트관리자용 대시보드</span>
+                </div>
+            </a>
+            <a href="project/ui/sejong.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/sejong.jpg" alt="">
+                <div class="project__desc">
+                    <h3>SEJONG PAY</h3>
+                    <span>세종페이 홈페이지</span>
+                </div>
+            </a>
+            <a href="project/ui/green.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/green.jpg" alt="">
+                <div class="project__desc">
+                    <h3>FORENA</h3>
+                    <span>꿈에그린 홈페이지</span>
+                </div>
+            </a>
+            <a href="project/ui/xi1.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/xi1.jpg" alt="">
+                <div class="project__desc">
+                    <h3>XI1</h3>
+                    <span>에코자이</span>
+                </div>
+            </a>
+            </div>
+        </div>
+        <div class="work__projects" id="tab-2">
+        <div class="content">
+            <a href="project/webpage/benz.html" class="project" target="site" data-type="ui" >
+            <img class="project__img" src="images/projects/thumnail/webpage01.jpg" alt="">
+            <div class="project__desc">
+                <h3>벤츠프로모션</h3>
+                <span>프로모션2종</span>
+            </div>
+        </a>
+        <a href="project/webpage/letsrun.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/webpage02.jpg" alt="">
+            <div class="project__desc">
+                <h3>한국마사회</h3>
+                <span>블로그스킨및 카드뉴스</span>
+            </div>
+        </a>
+        <!-- <a href="project/webpage/remian.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/webpage03.jpg" alt="">
+            <div class="project__desc">
+                <h3>레미안프로모션</h3>
+                <span>서초아파트 프로모션</span>
+            </div>
+        </a> -->
+        <a href="project/webpage/banner.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/webpage04.jpg" alt="">
+            <div class="project__desc">
+                <h3>배너디자인</h3>
+                <span>구글GDN,네이버롤링보드</span>
+            </div>
+        </a>
+        <!-- <a href="project/webpage/hite.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/hiteblack.jpg" alt="">
+            <div class="project__desc">
+                <h3>하이트진료음료</h3>
+                <span>카드뉴스스킨</span>
+            </div>
+        </a> -->
+        <a href="project/webpage/halla.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/halla_thum.jpg" alt="">
+            <div class="project__desc">
+                <h3>한라건설 블로그</h3>
+                <span>이벤트,카드뉴스운영</span>
+            </div>
+        </a>
+        <!-- <a href="project/webpage/web005.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/webpage05.jpg" alt="">
+            <div class="project__desc">
+                <h3>윈터박스</h3>
+                <span>상세페이지</span>
+            </div>
+        </a> -->
+        <a href="project/webpage/web006.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/webpage06.jpg" alt="">
+            <div class="project__desc">
+                <h3>석류</h3>
+                <span>상세페이지</span>
+            </div>
+        </a>
+        <!-- <a href="project/webpage/web007.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/webpage07.jpg" alt="">
+            <div class="project__desc">
+                <h3>제주감귤</h3>
+                <span>상세페이지</span>
+            </div>
+        </a> -->
+        <a href="project/webpage/web008.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/webpage08.jpg" alt="">
+            <div class="project__desc">
+                <h3>예쁨미</h3>
+                <span>상세페이지</span>
+            </div>
+        </a>
+        <a href="project/webpage/web009.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/webpage09.jpg" alt="">
+            <div class="project__desc">
+                <h3>샤인머스켓</h3>
+                <span>상세페이지</span>
+            </div>
+        </a>
+        <a href="project/webpage/game001.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/game001.jpg" alt="">
+            <div class="project__desc">
+                <h3>발리언트 오픈</h3>
+                <span>#메인#브릿지#이벤트</span>
+            </div>
+        </a>
+        <a href="project/webpage/game002.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/game002.jpg" alt="">
+            <div class="project__desc">
+                <h3>홀릭</h3>
+                <span>#브릿지#이벤트</span>
+            </div>
+        </a>
+        <a href="project/webpage/game003.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/game003.jpg" alt="">
+            <div class="project__desc">
+                <h3>리듬파라다이스</h3>
+                <span>#이벤트#배너</span>
+            </div>
+        </a>
+        <!-- <a href="project/webpage/game004.html" class="project" target="site" data-type="ui">
+            <img class="project__img" src="images/projects/thumnail/game004.jpg" alt="">
+            <div class="project__desc">
+                <h3>게임배너</h3>
+                <span>#플래시#모션#배너</span>
+            </div>
+        </a> -->
+        </div>
+        </div>
+        <div class="work__projects" id="tab-3">
+            <div class="content">
+            <div class="popupVideo">
+                <a data-video="KUdPgPztV6o" class="project1">
+                    <img class="project__img" src="images/projects/thumnail/samsung.jpg" alt="">
+                    <div class="project__desc">
+                        <h3>SAMSUNG</h3>
+                        <span>스마트홈 인터렉티브</span>
+                    </div>
+                </a>
+                <a data-video="BhmG5HAgYrc" class="project1">
+                    <img class="project__img" src="images/projects/thumnail/sansung_thum.jpg" alt="">
+                    <div class="project__desc">
+                        <h3>산성역 포레스티아</h3>
+                        <span>네이버 브랜드영상</span>
+                    </div>
+                </a>
+                <a data-video="F5jqzYk-dco" class="project1">
+                    <img class="project__img" src="images/projects/thumnail/suji_thum.jpg" alt="">
+                    <div class="project__desc">
+                        <h3>수지 IPARK</h3>
+                        <span>네이버 브랜드영상</span>
+                    </div>
+                </a>
+                <a data-video="qLsYOLEW36s" class="project1">
+                    <img class="project__img" src="images/projects/thumnail/uwang_thesharp_thum.jpg" alt="">
+                    <div class="project__desc">
+                        <h3>의왕더샵</h3>
+                        <span>네이버 브랜드영상</span>
+                    </div>
+                </a>
+                <a data-video="LSUAQ0FpqdQ" class="project1">
+                    <img class="project__img" src="images/projects/thumnail/inchun_thum.jpg" alt="">
+                    <div class="project__desc">
+                        <h3>인천스카이타워</h3>
+                        <span>네이버 브랜드영상</span>
+                    </div>
+                </a>
+                <a data-video="LSUAQ0FpqdQ" class="project1">
+                    <img class="project__img" src="images/projects/thumnail/dangsan_thum.jpg" alt="">
+                    <div class="project__desc">
+                        <h3>인천스카이타워</h3>
+                        <span>네이버 브랜드영상</span>
+                    </div>
+                </a>
+                <a data-video="qAgZ5jQEzd8" class="project1">
+                    <img class="project__img" src="images/projects/thumnail/unjung_thum.jpg" alt="">
+                    <div class="project__desc">
+                        <h3>운정 IPARK</h3>
+                        <span>네이버 브랜드영상</span>
+                    </div>
+                </a>
+                <a data-video="kqhE8EwjEsk" class="project1">
+                    <img class="project__img" src="images/projects/thumnail/susin_thum.jpg" alt="">
+                    <div class="project__desc">
+                        <h3>서신 IPARK</h3>
+                        <span>네이버 브랜드영상</span>
+                    </div>
+                </a>
+                <!-- <a data-video="rQq8B61tgNQ" class="project1">
+                    <img class="project__img" src="images/projects/thumnail/halla_motion_thum.jpg" alt="">
+                    <div class="project__desc">
+                        <h3>한라건설</h3>
+                        <span>평창올림픽기념</span>
+                    </div>
+                </a>
+                <a data-video="1qqwhW9dLLI" class="project1">
+                    <img class="project__img" src="images/projects/thumnail/dongsan.jpg" alt="">
+                    <div class="project__desc">
+                        <h3>동산교회</h3>
+                        <span>소개영상</span>
+                    </div>
+                </a>
+                <a data-video="IKr0xdMyiqg" class="project1">
+                <img class="project__img" src="images/projects/thumnail/andywarhol.jpg" alt="">
+                <div class="project__desc">
+                    <h3>앤디워홀</h3>
+                    <span>공식홈페이지인트로</span>
+                </div>
+            </a> -->
+        </div>
+            <div class="video-popup">
+                <div class="video-popup-closer"></div>
+            </div>
+        </div>
+        </div>
+        <div class="work__projects" id="tab-4">
+            <div class="content">
+                <a href="project/drawing/drawing01.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing001.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Deer Goddess</h3>
+                    <span>#심판,#여신,#뿔</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing02.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing002.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Mermaid</h3>
+                    <span>#인어,#햇빛,#물가</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing03.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing003.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Assassin</h3>
+                    <span>#사막,#가면,#독수리</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing04.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing004.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Pumpkin Witch</h3>
+                    <span>#할로윈,#와인,#고양이</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing05.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing005.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Knight</h3>
+                    <span>#캐쥬얼,#아머,#대검</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing06.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing006.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Woman Face</h3>
+                    <span>#단발,#여인</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing07.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing007.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Hunter</h3>
+                    <span>#대검,#문신,#무덤</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing08.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing008.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Samurai Girl</h3>
+                    <span>#뱀,#기모노,#가면</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing09.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing009.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Dragon girl</h3>
+                    <span>#용,#용기사</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing10.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing010.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Vampire</h3>
+                    <span>#2인,#왕좌,#메이드</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing11.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/drawing011.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Witch</h3>
+                    <span>#등불,#마녀,#두려움</span>
+                </div>
+            </a>
+            <!-- <a href="project/drawing/drawing12.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/blacknight_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>BlackKnight</h3>
+                    <span>#마검,#긴머리,#안대</span>
+                </div>
+            </a>
+            <a href="project/drawing/drawing13.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/gunner_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Gunner</h3>
+                    <span>#거너,#힙합,#뉴에라</span>
+                </div>
+            </a> -->
+            <a href="project/drawing/drawing14.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/lee_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>LEE</h3>
+                    <span>#이소룡,#소녀,#헤드폰</span>
+                </div>
+            </a>
+            <a href="project/drawing/3d009.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/3d008_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>D&F</h3>
+                    <span>#던파,#수룡</span>
+                </div>
+            </a>
+            <a href="project/drawing/3d008.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/3d007_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Police</h3>
+                    <span>#여자,#SF,#경찰</span>
+                </div>
+            </a>
+            <a href="project/drawing/3d007.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/3d006_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Hero</h3>
+                    <span>#마비노기영웅전,#곰남</span>
+                </div>
+            </a>
+            <a href="project/drawing/3d006.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/3d005_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>King of Face</h3>
+                    <span>#가면왕,#창작,#공모전수상</span>
+                </div>
+            </a>
+            <!-- <a href="project/drawing/3d005.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/3d004_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Onepeace</h3>
+                    <span>#3대장,#흉상</span>
+                </div>
+            </a> -->
+            <a href="project/drawing/3d004.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/3d003_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Blade&souls</h3>
+                    <span>#블레이드앤소울,#소녀,</span>
+                </div>
+            </a>
+            <a href="project/drawing/3d003.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/3d002_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Aion</h3>
+                    <span>#아이온,#호법성,#여자</span>
+                </div>
+            </a>
+            <a href="project/drawing/3d002.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/3d001_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>Goblin</h3>
+                    <span>#고블린,#정물</span>
+                </div>
+            </a>
+            <a href="project/drawing/3d001.html" class="project" target="site" data-type="ui">
+                <img class="project__img" src="images/projects/thumnail/3d000_thum.jpg" alt="">
+                <div class="project__desc">
+                    <h3>ArcheAge</h3>
+                    <span>#무기3종,#외주,#엑스엘게임즈</span>
+                </div>
+            </a>
+            </div>
+        </div>
+    </div>
+    <section id="career">
+        <div class="career_div">
+            <h4>2021.07 ~ now</h4>
+                <div class="company">마키나락스 product 디자이너</div>     
+        </div>
+        <div class="career_div">
+            <h4>2020.05 ~ 2021.07</h4>
+                <div class="company">판다코퍼레이션Product 디자이너</div>
+        </div>
+        <div class="career_div">
+            <h4>2018.05 ~2020.05</h4>
+            <div class="company">케빈랩 ui / ux 디자이너</div>
+        </div>
+        <div class="career_div">
+            <h4>2017.11 ~ 2018.04</h4>
+            <div class="company">마이다스아이티 디자인팀(프리랜서)</div>
+        </div>
+        <div class="career_div">
+            <h4>2016.02 ~ 2017.10</h4>
+            <div class="company">비엑소엑소(창업,쇼핑몰 제작)</div>
+        </div>
+        <div class="career_div">
+            <h4>2013.09 ~ 2015.08</h4>
+            <div class="company">삼성전자 디자인그룹(계약직)</div>
+        </div>
+        <div class="career_div">
+            <h4>2010.03 ~ 2011.03</h4>
+            <div class="company">엠게임 포털사업부 디자인팀</div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section id="contact">
+        <div class="inner">
+            <div>Thank you for watching</div>
+            <div class="email"><i class="fas fa-envelope"></i>jmp7651@gmail.com</div>
+            <div class="phone"><i class="fas fa-phone-alt"></i><a href='tel:010-7164-7651'>010-7164-7651</a></div>
+            <div class="footer">2021 JMWORLD - All rights reserved</div>
+        </div>
+    </div>   
+    </section>
+    <div class="modal t01" id="modal">
+        <div><button class="modal_close">x</button></div>
+        <iframe src="000.html" name="site" id="iframe"></iframe>
+    </div>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/marquee.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>jmpf</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
+    />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="css/ui.css" />
+    <link rel="stylesheet" href="css/runway.css" />
+    <script src="../../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="../../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css"
+    />
+  </head>
+  <body>
+    <div data-scroll-container style="height: 12000px">
+      <div data-scroll-section>
+        <section class="runway_section001">
+          <div data-scroll data-scroll-speed="0.1" class="runway_logo">
+            <img src="/project/ui/images/runway_logo.svg" alt="" />
+          </div>
+          <div data-scroll data-scroll-speed="2" class="runway_title001">
+            모델 개발 , 배포 , 모니터링을 하나의 플랫폼으로 통합하여 지속적인
+            개발과 안정적 운영이 가능한 MLOps 플랫폼입니다
+          </div>
+        </section>
+      </div>
+      <div data-scroll-section>
+        <h2 data-scroll data-scroll-speed="1">What's up?</h2>
+        <p data-scroll data-scroll-speed="2">😬</p>
+      </div>
+    </div>
+    <!--
+    <section>3</section>
+    <section>4</section>
+    <section>5</section>
+    <section>6</section> -->
+    <script src="../ui/js/scrollcolor.js"></script>
+    <script>
+      (function () {
+        const scroll = new LocomotiveScroll({
+          el: document.querySelector("[data-scroll-container]"),
+          smooth: true,
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.maximg,
+.maxing3d {
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+.maximg img {
+  max-height: 100vh;
+}
+@media screen and (max-width: 450px) {
+  body {
+    background: #000;
+  }
+  .maximg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .maxing3d {
+    width: 100%;
+    height: auto;
+  }
+  .maximg img,
+  .maxing3d img {
+    max-width: 100vw;
+    height: auto;
+  }
+}
