@@ -8,6 +8,7 @@ html {
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
+  color: #232323;
 }
 
 .cueat_001 {
@@ -20,8 +21,8 @@ html {
   margin: 0 auto;
 }
 .cueat_001 .cueat_text {
-  top: 20rem;
-  font-size: 5rem;
+  top: 10vh;
+  font-size: 4vw;
   position: relative;
   text-align: center;
 }
@@ -31,15 +32,15 @@ html {
   background: url(../images/cueat_logo.png) center center / 100% auto no-repeat;
   object-fit: cover;
   position: relative;
-  top: 6rem;
+  top: 4rem;
 }
 .cueat_title_bold {
   font-weight: 700;
   line-height: 1.4;
-  color: #232323;
+  color: #ff7800;
 }
 .cueat_title_regular {
-  font-weight: 300;
+  font-weight: 400;
   color: #232323;
 }
 .cueat_main_img {
@@ -72,6 +73,7 @@ html {
 .cueat_page_subject {
   font-size: 2rem;
   font-weight: 700;
+  color: #ff7800;
 }
 .cueat_page_title {
   font-size: 3.2rem;
@@ -79,7 +81,7 @@ html {
   line-height: 1.5;
 }
 .cueat_002 .cueat_page_title span {
-  color: #ff7800;
+  font-weight: 700;
 }
 .cueat_page_title_flex {
   margin-top: 4rem;
@@ -122,12 +124,14 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: #f8f8f8;
 }
 .cueat_003_container {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 20rem;
+  position: relative;
 }
 .cueat003_page_text {
   font-weight: 400;
@@ -141,22 +145,27 @@ html {
   text-align: left;
 }
 .cueat003_dot_line {
-  width: 1732px;
+  width: 128rem;
   height: 0px;
-  left: 94px;
-  top: 471px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 500px;
+  position: absolute;
 
-  border: 1px dashed #2c2c2e;
+  border-top: 1px dashed #2c2c2e;
+}
+.cueat_003_container .swiper {
+  width: 128rem;
 }
 .swiper {
-  width: 60%;
+  width: 100%;
   height: 100%;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: transparent;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -252,6 +261,7 @@ html {
   height: 130px;
 }
 .cueat_004 {
+  padding: 16rem 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 150%;
@@ -259,14 +269,33 @@ html {
   flex-shrink: 0;
   text-align: center;
   letter-spacing: -0.01em;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #f8f8f8;
 }
-.cueat004_page_text {
+.cueat_004_mockup {
+  transform: scale(0.8);
+  width: 431px;
+  height: 890px;
+  background: url(../images/cueat/cueat_004_14pro_mockup.svg) center center /
+    100% 100% no-repeat;
+  object-fit: cover;
+  box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
+    80px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
+    9px 13px 35px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 80px;
+}
+
+.cueat_004_gif {
+  width: 364px;
+  height: 604px;
+  background: url(../images/cueat/feature02_2.gif) center center / 100% 100%
+    no-repeat;
+  object-fit: cover;
+  transform: translate(31px, 142px);
+}
+.cueat_page_text {
   display: flex;
   width: 70.5rem;
   padding: 0 16px;
@@ -274,7 +303,6 @@ html {
   font-weight: 400;
   text-align: left;
   word-break: keep-all;
-  margin: 0 auto;
   color: rgba(35, 35, 35, 0.7);
   margin-bottom: 4rem;
 }
@@ -311,6 +339,7 @@ html {
   word-break: keep-all;
   color: rgba(35, 35, 35, 0.7);
 }
+
 .cueat_005 {
   height: 100vh;
   display: flex;
@@ -318,6 +347,7 @@ html {
 .cueat_005_wrap {
   width: 100%;
   display: flex;
+  background: #ffe54d;
 }
 .cueat_005_swiper {
   background: #f8f1ea;
@@ -348,7 +378,6 @@ html {
 }
 .my-slider-box-2 {
   width: 100%;
-  height: 94vh;
 }
 .cueat_005 .swiper-wrapper {
   margin: 0 auto;
@@ -360,13 +389,16 @@ html {
 .cueat005_001 {
   margin-top: 20rem;
 }
+
 .cueat005_001_img {
   background: url(../images/cueat005_001.png) center center / auto 100%
     no-repeat;
   width: 292.04px;
   height: 632px;
   border-radius: 30px;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
+    80px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
+    9px 13px 35px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .cueat005_002 {
   margin-top: 10rem;
@@ -377,7 +409,9 @@ html {
   width: 292.04px;
   height: 632px;
   border-radius: 30px;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
+    80px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
+    9px 13px 35px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .cueat005_003_img {
   background: url(../images/cueat005_003.png) center center / auto 100%
@@ -385,13 +419,364 @@ html {
   width: 292.04px;
   height: 632px;
   border-radius: 30px;
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
+    80px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
+    9px 13px 35px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
 .cueat_005_text_img {
   background: url(../images/cueat005_textimg.svg) center center / auto 100%
     no-repeat;
   width: 12.4rem;
   height: 12.4rem;
+}
+.cueat_005 .cueat_page_title_flex {
+  margin-top: -12rem;
+  justify-content: flex-end;
+  padding-right: 4rem;
+}
+.cueat_005 .cueat_page_text {
+  width: 42.5rem;
+  margin-top: 0.8rem;
+}
+.cueat_006 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  flex-shrink: 0;
+  text-align: center;
+  letter-spacing: -0.01em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.cueat_006_concept_grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  width: 150rem;
+  height: 35em;
+  margin-top: 8rem;
+}
+.cueat_006_grid001 {
+  background: url(../images/cueat/cueat006_grid001.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+  grid-row: 1/3;
+}
+.cueat_006_grid002 {
+  background: url(../images/cueat/cueat006_grid002.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+}
+.cueat_006_grid003 {
+  background: url(../images/cueat/cueat006_grid003.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+}
+.cueat_006_grid004 {
+  background: url(../images/cueat/cueat006_grid004.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+}
+.cueat_006_grid005 {
+  background: url(../images/cueat/cueat006_grid005.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+}
+.cueat_007 {
+  height: 100vh;
+  background-color: #ffe54d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.cueat_007 .cueat_text_container {
+  text-align: center;
+}
+.cueat007_page_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  width: 41.5rem;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+  color: rgba(35, 35, 35, 0.7);
+  text-align: left;
+}
+.my-slider-box-3 {
+  width: 150rem;
+  height: 74rem;
+}
+.cueat_review {
+  flex-direction: column;
+}
+.cueat_review_img {
+  width: 357px;
+  height: 267px;
+  border-radius: 10px 10px 0 0;
+}
+.cueat_review_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  width: 357px;
+  height: 215px;
+  padding: 16px;
+  line-height: 1.5;
+  border-radius: 0 0 10px 10px;
+}
+.review_001 {
+  background: url(../images/cueat/cueat_007_img001.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+}
+.review_002 {
+  background: url(../images/cueat/cueat_007_img002.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+}
+.review_003 {
+  background: url(../images/cueat/cueat_007_img003.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+}
+.review_004 {
+  background: url(../images/cueat/cueat_007_img004.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+}
+.review_005 {
+  background: url(../images/cueat/cueat_007_img005.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+}
+.review_006 {
+  background: url(../images/cueat/cueat_007_img006.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+}
+.cueat_tag {
+  display: flex;
+  gap: 4px;
+  font-weight: 700;
+}
+.cueat_tag div {
+  padding: 1px 8px;
+  border: 1px solid #232323;
+  border-radius: 30px;
+  font-size: 14px;
+}
+.cueat_desc_text {
+  font-size: 12px;
+  text-align: left;
+}
+.cueat_008 {
+  height: 100vh;
+  background: #f2f2f2;
+}
+.cueat_008_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2rem;
+  width: 150rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+.cueat_008_img_wrap {
+  width: 100%;
+}
+.cueat_008_img_001 {
+  background: url(../images/cueat/cueat_008_img001.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+  height: 47.4rem;
+}
+.cueat_008_img_002 {
+  background: url(../images/cueat/cueat_008_img002.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+  height: 47.4rem;
+}
+.cueat_008_img_003 {
+  background: url(../images/cueat/cueat_008_img003.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+  height: 47.4rem;
+}
+.cueat_008_img_004 {
+  background: url(../images/cueat/cueat_008_img004.jpg) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+  height: 47.4rem;
+}
+.cueat_009 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cueat_009_flex01 {
+  display: flex;
+  margin-top: 10rem;
+  gap: 14rem;
+}
+.cueat_009_flex02 {
+  display: flex;
+  gap: 14rem;
+}
+.cueat_009_symbol {
+  background: url(../images/cueat/cueat_009_symbol.png) center center / auto
+    100% no-repeat;
+  width: 10.5rem;
+  height: 7.9rem;
+}
+.cueat_009_logo {
+  background: url(../images/cueat/cueat_009_logo.png) center center / auto 100%
+    no-repeat;
+  width: 25.7rem;
+  height: 5.5rem;
+}
+.cueat_009_title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.cueat_typo_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.cueat_009 .typo_flex {
+  display: flex;
+}
+.cueat_009 .typo_flex div:nth-child(1) {
+  width: 82px;
+  text-align: left;
+}
+.cueat_009 .typo_flex.h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+.cueat_009 .typo_flex.h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.cueat_009 .typo_flex.h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.cueat_009 .typo_flex.b1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.cueat_009 .typo_flex.b2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.cueat_009 .typo_flex.desc1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.cueat_009 .typo_flex.desc2 {
+  font-size: 12px;
+  font-weight: 400;
+}
+.cueat_009_color_grid_wrap {
+  width: 100%;
+  max-width: 120rem;
+  margin-top: 8rem;
+}
+.cueat_009_color_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  max-width: 120rem;
+}
+.cueat_009_color_grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.cueat_009_color_grid div:nth-child(1) {
+  grid-row: 1/4;
+  background: #ffe54d;
+  height: 36rem;
+  align-items: center;
+}
+.cueat_009_color_grid div:nth-child(2) {
+  background: #ff7800;
+}
+.cueat_009_color_grid div:nth-child(3) {
+  background: #fd5959;
+}
+.cueat_009_color_grid div:nth-child(4) {
+  background: #1eaa37;
+}
+.cueat_009_color_grid div:nth-child(5) {
+  background: #7bbcff;
+}
+.cueat_009_color_grid div:nth-child(6) {
+  background: #232323;
+  color: #fff;
+}
+.cueat_009_color_grid div:nth-child(7) {
+  background: #616161;
+}
+.cueat_010 {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cueat_010_wrap {
+  width: 77.7rem;
+  position: relative;
+  top: -12rem;
+}
+.cueat_010_wrap div:nth-child(1) {
+  font-size: 6rem;
+  font-weight: 200;
+}
+.cueat_010_logo {
+  background: url(../images/cueat/cueat_010_logo.png) center center / 100% auto
+    no-repeat;
+  width: 77.7rem;
+  height: 16.7rem;
+}
+.cueat_010 .girl {
+  background: url(../images/cueat/cueat_010_girl.svg) center center / 100% auto
+    no-repeat;
+  width: 24em;
+  height: 47rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+.cueat_copylight {
+  width: 100%;
+  padding: 2.7vw 2.7vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 10px;
+  border-top: 1px solid #232323;
 }
 @media screen and (max-width: 450px) {
   .mo_no {
@@ -403,6 +788,9 @@ html {
   }
   .cueat_page_subject {
     font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    color: #ff7800;
   }
   .cueat_001,
   .cueat_002,
@@ -411,7 +799,7 @@ html {
     height: calc(var(--vh, 1vh) * 100);
   }
   .cueat_logo {
-    top: 3rem;
+    top: 1rem;
   }
   .cueat_container {
     width: 100%;
@@ -421,7 +809,7 @@ html {
     overflow-x: hidden;
   }
   .cueat_001 .cueat_text {
-    font-size: 3.2rem;
+    font-size: 10vw;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -453,10 +841,10 @@ html {
   .cueat_002_image {
     top: 20%;
     height: 30rem;
+    transform: scale(1.3);
   }
   .cueat_003 {
-    padding: 0 1.6rem;
-    padding-top: 8rem;
+    padding: 8rem 1.6rem;
     margin-bottom: 8rem;
     height: auto;
   }
@@ -473,6 +861,9 @@ html {
   .cueat_003_container {
     gap: 0;
   }
+  .cueat_003_container .swiper {
+    width: 100%;
+  }
   .cueat_process_detail {
     height: 50rem;
   }
@@ -485,13 +876,32 @@ html {
   .cueat_003 .swiper-pagination {
     bottom: -4px;
   }
+  .cueat003_dot_line {
+    width: 100%;
+    height: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 217px;
+    position: absolute;
+
+    border-top: 1px dashed #2c2c2e;
+  }
+  .cueat_page_text {
+    width: 100%;
+    margin-bottom: 0;
+  }
   .cueat_004 {
     padding: 10rem 1.6rem;
     height: auto;
   }
+  .cueat_004_mockup {
+    transform: scale(0.5);
+    margin-top: -10rem;
+  }
   .cueat_survey_wrap {
     flex-direction: column;
     gap: 4rem;
+    margin-top: -10rem;
   }
   .cueat004_page_text {
     display: flex;
@@ -516,7 +926,7 @@ html {
     justify-content: flex-start;
   }
   .cueat_005_text_wrap {
-    padding: 12rem 4rem 0;
+    padding: 8rem 4rem;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -530,7 +940,7 @@ html {
     background: #fff;
   }
   .cueat_005 .swiper-slide {
-    padding: 4rem 0;
+    padding: 8rem 0;
     width: 100vw !important;
   }
   .cueat_005_text_wrap > div:nth-child(3) {
@@ -545,5 +955,130 @@ html {
   .cueat005_003_img {
     width: 231px;
     height: 500px;
+  }
+  .cueat_006 {
+    height: auto;
+    padding: 8rem 0 0;
+  }
+  .cueat_006_concept_grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    margin-top: 4rem;
+    grid-gap: 1rem;
+  }
+  .cueat_006_grid001 {
+    height: 594px;
+  }
+  .cueat_006_grid002 {
+    height: 272px;
+  }
+  .cueat_006_grid003 {
+    height: 272px;
+  }
+  .cueat_006_grid004 {
+    height: 272px;
+  }
+  .cueat_006_grid005 {
+    height: 272px;
+  }
+  .cueat_007 {
+    height: auto;
+    padding: 10rem 0;
+    gap: 2rem;
+  }
+  .cueat007_page_text {
+    width: 100%;
+    padding: 0 1.6rem;
+  }
+  .my-slider-box-3 {
+    height: 58rem;
+  }
+  .cueat_008 {
+    height: auto;
+  }
+  .cueat_008_wrap {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 6rem;
+  }
+  .cueat_008_img_title {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .cueat_008_img_001,
+  .cueat_008_img_002,
+  .cueat_008_img_003,
+  .cueat_008_img_004 {
+    height: 26.4rem;
+  }
+  .cueat_009 {
+    padding: 4rem 1.6rem;
+    height: auto;
+    align-items: flex-start;
+  }
+  .cueat_009_title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .cueat_009_flex01 {
+    margin-top: 4rem;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+  .cueat_009_flex02 {
+    gap: 4rem;
+  }
+  .cueat_009_symbol {
+    width: 8rem;
+    height: 6rem;
+  }
+  .cueat_009_logo {
+    width: 20rem;
+    height: 4.28rem;
+  }
+  .cueat_typo_ul {
+    border: 1px solid #232323;
+    padding: 2rem;
+  }
+  .cueat_009_color_grid_wrap {
+    margin-top: 4rem;
+  }
+  .cueat_009_color_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    width: 100%;
+  }
+  .cueat_009_color_grid div:nth-child(1) {
+    grid-row: 1/4;
+    height: 16rem;
+  }
+  .cueat_010 {
+    height: 100vh;
+    padding: 0 1.6rem;
+    margin-top: -10rem;
+  }
+  .cueat_010_wrap {
+    width: 100%;
+    top: -16rem;
+  }
+  .cueat_010_wrap div:nth-child(1) {
+    font-size: 3rem;
+  }
+  .cueat_010_logo {
+    width: 100%;
+    height: 10rem;
+  }
+  .cueat_copylight {
+    font-size: 14px;
+    flex-direction: column;
+    padding: 5vw;
+    line-height: 1.5;
   }
 }

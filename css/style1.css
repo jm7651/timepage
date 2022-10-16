@@ -102,17 +102,10 @@ body {
 .navbar__toggle {
   display: none;
 }
-#home {
+#index_home {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: linear-gradient(
-      to bottom,
-      transparent,
-      transparent 5%,
-      #fff 5%
-    ),
-    linear-gradient(to right, #000, #000 5%, #fff 5%);
   background-size: 10px 10px;
 }
 .title_section {
@@ -369,17 +362,6 @@ body {
 .num {
   font-size: 6rem;
 }
-/* #home{width:100vw;height:100vh;  background-image:
-  linear-gradient(90deg, #cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
-  linear-gradient(#cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
-  linear-gradient(#e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px,  transparent 100px),
-  linear-gradient(90deg, #e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px,  transparent 100px),
-  linear-gradient(transparent 0px, transparent 5px, #f6f6f6 5px, #f6f6f6 95px, transparent 95px, transparent 100px),
-  linear-gradient(90deg, #e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px, #e0e0e0 99px, #e0e0e0 100px),
-  linear-gradient(90deg, transparent 0px, transparent 5px, #f6f6f6 5px, #f6f6f6 95px, transparent 95px, transparent 100px),
-  linear-gradient(transparent 0px, transparent 1px, #f6f6f6 1px, #f6f6f6 99px, transparent 99px, transparent 100px),
-  linear-gradient(#cdcccc, #cdcccc);
-background-size:100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 100%, 100px 100%, 100px 100px, 100px 100px;} */
 .slider {
   position: relative;
   counter-reset: number-counter;
@@ -550,16 +532,21 @@ background-size:100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 
 }
 .modal > div > button {
   position: absolute;
-  top: 0;
+  top: 50px;
   right: 50px;
   font-size: 5rem;
   padding: 4rem;
+  border-radius: 50%;
   background: transparent;
   border: none;
   font-weight: 100;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #232323;
+  background: url(../images/close_circle.svg) center center / 50% auto no-repeat
+    #232323;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
 }
 .modal.open {
   position: fixed;
@@ -699,8 +686,13 @@ background-size:100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 
   #navbar {
     width: 100%;
   }
+  #index_home {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
   .main_visual {
     max-width: 70%;
+    margin-top: -7rem;
   }
   .noise,
   .clock {
@@ -850,18 +842,27 @@ background-size:100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 
   }
   .title_section {
     width: 100%;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
   }
   .main_title {
-    width: 100%;
-    font-size: 12vw;
-    padding: 2rem;
+    width: auto;
+    font-size: 4rem;
+    padding: 1.6rem;
     box-sizing: border-box;
+    margin-top: 6rem;
+  }
+  .main_title span {
+    font-size: 12rem;
   }
   .sub_title {
     width: 100%;
     padding: 2rem;
     box-sizing: border-box;
     font-size: 1.4rem;
+  }
+  .cover {
+    overflow-x: hidden;
   }
   .about_middle_container {
     width: 100%;
@@ -927,6 +928,7 @@ background-size:100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 
     color: #fff;
   }
   .modal > div > button {
+    top: 2rem;
     right: 2rem;
     font-size: 6rem;
     padding: 2rem;

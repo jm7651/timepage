@@ -17,7 +17,6 @@
     <title>JMWORLD</title>
 </head>
 <body>
-    <div class="body_container">
     <!-- navbar -->
     <nav id="navbar">
             <div class="navbar__logo">
@@ -33,7 +32,7 @@
             <span>메뉴</span>
         </a>
     </nav>
-    <section id="home">
+    <section id="index_home">
         <div class="title_section">
             <div class="main_title">
            At the <span>Time</span></div>
@@ -106,8 +105,7 @@
                     <span>농산물구독서비스</span>
                 </div>
             </a>
-         
-            <!-- <a href="project/ui/yelloment.html" class="project" target="site" data-type="ui">
+                     <!-- <a href="project/ui/yelloment.html" class="project" target="site" data-type="ui">
                 <img class="project__img" src="images/projects/thumnail/yelloment.jpg" alt="">
                 <div class="project__desc">
                     <h3>YELLOMENT</h3>
@@ -588,11 +586,13 @@
     </div>   
     </section>
     <div class="modal t01" id="modal">
-        <div><button class="modal_close">x</button></div>
-        <iframe src="000.html" name="site" id="iframe"></iframe>
+        <div><button class="modal_close"></button></div>
+        <iframe onload="loading();" src="000.html" name="site" id="iframe"></iframe>
     </div>
-
     <script src="js/main.js" defer></script>
     <script src="js/marquee.js"></script>
+    <script></script>
+
+    <!-- <script src="../../js/windowwh.js"></script> -->
 </body>
 </html>
