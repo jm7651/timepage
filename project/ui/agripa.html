@@ -1,65 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <title>jmpf</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-        <meta http-equiv="Content-Style-Type" content="text/css">
-        <meta http-equiv="Content-Script-Type" content="text/javascript">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="apple-mobile-web-app-title" content="">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-        <link rel="stylesheet" href="css/ui.css" />
-      
-    </head>
-    <body>
-    <section class="agripa_section">
-        <div class="agripa_001">
-            <div class="agripa_001_contents">
-                <h1></h1>
-                <div class="agripa_title">Agripa.kr</div>
-                <p>아그리파는 농산물 생산업자, 유통업자를 위한<br>
-                    빅데이터 시각화 솔루션입니다.</p>
-            </div>
-            <div class="agripa_001_bg"></div>
-            <div class="agripa_mobile"></div>
+  <head>
+    <title>Agripa</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
+    />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link rel="stylesheet" href="css/agripa.css" />
+    <link rel="stylesheet" href="css/loading.css" />
+  </head>
+  <body>
+    <section class="agripa_001">
+      <div class="agripa_001_logo_wrap">
+        <div class="agripa_001_logo"></div>
+      </div>
+
+      <div class="agripa_001_text_wrap">
+        <div>AGRIPA</div>
+        <div>The Agricultural Products<br />Bigdata Platform</div>
+
+        <div class="agripa_001_desc">
+          아그리파는 농산물 생산업자, 유통업자를 위한 빅데이터 시각화
+          솔루션입니다.
         </div>
+      </div>
+      <div class="agripa_001_main"></div>
+      <div class="agripa_001_bg"></div>
     </section>
-    <section class="agripa_section">
-        <section class="main001 agripa001_bg">
-            <div class="inner">
-                <div class="text">
-                    <span>The Agricultural Products</span><br>Bigdata Platform
-                </div>
-                <div>
-                    <img src="images/agripa001.png">
-                </div>
-            </div> 
-            <div class="made">UI DESIGN, PUBLISING</div>   
-            <!-- <a href="http://www.agripa.kr" target="blank" class="quicklink agripaquick">바로가기</a> -->
-        </section>
-        <section class="agripa002">
-          <img src="images/agripa002.jpg" alt="">
-        </section>
-        <section class="agripa003">
-          <img src="images/agripa003.jpg" alt="">
-        </section>
-        <section class="agripa004">
-            <img src="images/agripa004.svg" alt="">
-        </section>
-        <!-- <section class="agripa005">
-            <img src="images/agripa005.jpg" alt="">
-        </section> -->
-        <section class="agripa006">
-            <img src="images/agripla006.png" alt="">
-        </section>
-        <section class="agripa007">
-            <img src="images/agripa007.jpg" alt="">
-        </section>
-        <!-- <section class="agripa008">
-            <img src="images/agripa008.jpg" alt="">
-        </section> -->
+    <section class="agripa_002">
+      <div class="agripa_subject_title">Background</div>
+      <div class="agripa_text_wrap">
+        <div class="agripa_green_title">코로나 19로 힘들어진 농업유통 업계</div>
+        <div>
+          수입산 농산물의 확대로 인해 가격변동의 심화와 소비 트랜드의 변화등으로
+          농업업계 전반은 어려워졌습니다.
+        </div>
+      </div>
+      <div>
+        <div></div>
+        <div>
+          <div>37<span>%</span></div>
+          <div>인구구조와 소비 트랜드의 변화를 따라가지 못함</div>
+        </div>
+        <div>
+          <div>46<span>%</span></div>
+          <div>수입산 농산물 확대로 인해 가격변동의 심화</div>
+        </div>
+        <div>
+          <div>37<span>%</span></div>
+          <div>농업 및 유통과정간의 이해관계</div>
+        </div>
+      </div>
+      <div>
+        <div class="agripa_002_cycle_title">[농산물 유통의 악순환]</div>
+        <div class="agripa_002_cycle">
+          <div>농부</div>
+          <div class="dot_line mo_no"></div>
+          <div>조합</div>
+          <div class="dot_line mo_no"></div>
+          <div>유통업체</div>
+          <div class="dot_line mo_no"></div>
+          <div>도매시장</div>
+          <div class="dot_line mo_no"></div>
+          <div>유통업체</div>
+          <div class="dot_line mo_no"></div>
+          <div>소매시장</div>
+          <div class="dot_line mo_no"></div>
+          <div>소비자</div>
+        </div>
+        <div class="agripa_desc">
+          소비되지 않아 싼값에 넘기거나 아예 음식물 쓰레기로 버려지는농산물이
+          전체 5000톤이 넘습니다. 이는 환경에 심각한 오염 또한 유발하며 한해의
+          농사를 망친 농부들의 생계에도 큰 위협이 되고 있습니다. 아직까지
+          농업분야의 고령화로 인해 데이터가 없고 사람의 감에 의지하여 거래되는
+          농산물때문에 사회적 환경적 비용을 발생시키며 코로나 위기에 맞물려
+          심각한 문제가 되어가고 있습니다.
+        </div>
+      </div>
     </section>
-    </body>
+    <section class="agripa_003"></section>
+    <script>
+      $(window).on("load", function () {
+        $(".blackblock").fadeOut(1000);
+      });
+    </script>
+  </body>
 </html>

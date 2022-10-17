@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 10px;
+  color: #262523;
+  font-family: "Gothic A1", sans-serif;
+}
+.agripa_001 {
+  background: #f0f2ed;
+  width: 100vw;
+  height: 100vh;
+}
+.agripa_002 {
+  width: 100vw;
+  height: 100vh;
+}
+.agripa_001_logo_wrap {
+  padding: 8rem;
+}
+.agripa_001_text_wrap {
+  padding-left: 8rem;
+}
+.agripa_001_logo {
+  width: 10rem;
+  height: 3rem;
+  background: url(../images/agripa/cueat_001_logo.svg) center center / 100% auto
+    no-repeat;
+  object-fit: cover;
+}
+.agripa_001_text_wrap div:nth-child(1) {
+  font-size: 8vw;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+.agripa_001_text_wrap div:nth-child(2) {
+  font-size: 2.3vw;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 0rem;
+  font-family: "Open Sans", sans-serif;
+}
+.agripa_001_desc {
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  color: #6b6b6b;
+}
+.agripa_001_main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 39rem;
+  height: 79.1rem;
+  background: url(../images/agripa/agripa_001_main.png) center center / 100%
+    100% no-repeat;
+  object-fit: cover;
+  z-index: 99;
+  filter: drop-shadow(142px 215px 103px rgba(0, 0, 0, 0.01))
+    drop-shadow(80px 121px 87px rgba(0, 0, 0, 0.05))
+    drop-shadow(36px 54px 64px rgba(0, 0, 0, 0.09))
+    drop-shadow(9px 13px 35px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+}
+.agripa_001_bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background: url(../images/agripa/agripa_001_bg.jpg) center center / 100% 100%
+    no-repeat;
+  object-fit: cover;
+}
+.agripa_002_cycle {
+  display: flex;
+}
