@@ -19,6 +19,9 @@
   transform: translate(-50%, -50%);
   z-index: 1000;
 }
+.agripablock {
+  background: #4eac62;
+}
 @keyframes spin {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
