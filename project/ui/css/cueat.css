@@ -104,7 +104,7 @@ html {
   background: url(../images/cueat_002.jpg) center center / 100% auto no-repeat;
   height: 62rem;
   position: relative;
-  top: 15vh;
+  top: 0;
 }
 .cueat_003 .cueat_text {
   text-align: center;
