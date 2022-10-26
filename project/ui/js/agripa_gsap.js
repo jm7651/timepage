@@ -2,10 +2,10 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".agripa_002_desc",
-    start: "100 80%",
+    start: "0 80%",
     end: "+=300 50%%",
-    scrub: 1,
-    markers: true,
+    scrub: 2,
+    // markers: true,
   },
 });
 tl.to(".box03", { height: "40%", duration: 1 });
@@ -18,7 +18,7 @@ gsap.to(".agripa_003_main", {
     start: "100 80%",
     end: "+=300 50%",
     scrub: 1,
-    markers: true,
+    // markers: true,
     start: "top center",
   },
   x: "30%",

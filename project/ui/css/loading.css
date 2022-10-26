@@ -22,6 +22,9 @@
 .agripablock {
   background: #4eac62;
 }
+.cueatblock {
+  background: #ffe54d;
+}
 @keyframes spin {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);

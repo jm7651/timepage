@@ -119,12 +119,12 @@ html {
   flex-shrink: 0;
   text-align: center;
   letter-spacing: -0.01em;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background: #f8f8f8;
+  padding: 10rem 0;
 }
 .cueat_003_container {
   display: flex;
@@ -155,7 +155,8 @@ html {
   border-top: 1px dashed #2c2c2e;
 }
 .cueat_003_container .swiper {
-  width: 128rem;
+  width: 100%;
+  max-width: 128rem;
 }
 .swiper {
   width: 100%;
@@ -276,8 +277,10 @@ html {
 }
 .cueat_004_mockup {
   transform: scale(0.8);
-  width: 431px;
-  height: 890px;
+  width: 30vw;
+  height: 61.92vw;
+  max-width: 431px;
+  max-height: 890px;
   background: url(../images/cueat/cueat_004_14pro_mockup.svg) center center /
     100% 100% no-repeat;
   object-fit: cover;
@@ -288,12 +291,15 @@ html {
 }
 
 .cueat_004_gif {
-  width: 364px;
-  height: 604px;
+  width: 26vw;
+  height: 50vw;
+  max-width: 364px;
+  max-height: 604px;
   background: url(../images/cueat/feature02_2.gif) center center / 100% 100%
     no-repeat;
   object-fit: cover;
-  transform: translate(31px, 142px);
+  margin-top: 28%;
+  margin-left: 2vw;
 }
 .cueat_page_text {
   display: flex;
@@ -341,8 +347,8 @@ html {
 }
 
 .cueat_005 {
-  height: 100vh;
   display: flex;
+  min-height: 100rem;
 }
 .cueat_005_wrap {
   width: 100%;
@@ -377,6 +383,7 @@ html {
   font-weight: 700;
 }
 .my-slider-box-2 {
+  max-width: 128rem;
   width: 100%;
 }
 .cueat_005 .swiper-wrapper {
@@ -384,30 +391,33 @@ html {
 }
 .cueat_005 .swiper-slide {
   background: transparent;
-  width: 292px !important;
 }
 .cueat005_001 {
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 
 .cueat005_001_img {
-  background: url(../images/cueat005_001.png) center center / auto 100%
+  background: url(../images/cueat005_001.png) center center / 100% 100%
     no-repeat;
-  width: 292.04px;
-  height: 632px;
+  width: 20vw;
+  height: 31.28vw;
+  max-width: 280px;
+  max-height: 605.9px;
   border-radius: 30px;
   box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
     80px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
     9px 13px 35px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
-.cueat005_002 {
-  margin-top: 10rem;
+.cueat005_003 {
+  margin-top: -10rem;
 }
 .cueat005_002_img {
   background: url(../images/cueat005_002.png) center center / auto 100%
     no-repeat;
-  width: 292.04px;
-  height: 632px;
+  width: 20vw;
+  height: 31.28vw;
+  max-width: 280px;
+  max-height: 605.9px;
   border-radius: 30px;
   box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
     80px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
@@ -416,8 +426,10 @@ html {
 .cueat005_003_img {
   background: url(../images/cueat005_003.png) center center / auto 100%
     no-repeat;
-  width: 292.04px;
-  height: 632px;
+  width: 20vw;
+  height: 31.28vw;
+  max-width: 280px;
+  max-height: 605.9px;
   border-radius: 30px;
   box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
     80px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
@@ -449,7 +461,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  padding: 10rem 0;
 }
 .cueat_006_concept_grid {
   box-sizing: border-box;
@@ -488,13 +500,13 @@ html {
   object-fit: cover;
 }
 .cueat_007 {
-  height: 100vh;
   background-color: #ffe54d;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10rem;
+  padding: 10rem 0;
 }
 .cueat_007 .cueat_text_container {
   text-align: center;
@@ -578,7 +590,7 @@ html {
   text-align: left;
 }
 .cueat_008 {
-  height: 100vh;
+  padding: 10rem 0;
   background: #f2f2f2;
 }
 .cueat_008_wrap {
@@ -618,7 +630,7 @@ html {
   height: 47.4rem;
 }
 .cueat_009 {
-  height: 100vh;
+  padding: 10rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -897,6 +909,14 @@ html {
   .cueat_004_mockup {
     transform: scale(0.5);
     margin-top: -10rem;
+    width: 431px;
+    height: 890px;
+  }
+  .cueat_004_gif {
+    width: 364px;
+    height: 604px;
+    margin-top: 33%;
+    margin-left: 7%;
   }
   .cueat_survey_wrap {
     flex-direction: column;

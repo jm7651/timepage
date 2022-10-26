@@ -5,6 +5,7 @@ html {
   font-size: 10px;
   color: #262523;
   font-family: "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
 }
 .agripa_001 {
   width: 100vw;
@@ -60,11 +61,11 @@ html {
     100% no-repeat;
   object-fit: cover;
   z-index: 99;
-  filter: drop-shadow(142px 215px 103px rgba(0, 0, 0, 0.01))
+  /* filter: drop-shadow(142px 215px 103px rgba(0, 0, 0, 0.01))
     drop-shadow(80px 121px 87px rgba(0, 0, 0, 0.05))
     drop-shadow(36px 54px 64px rgba(0, 0, 0, 0.09))
     drop-shadow(9px 13px 35px rgba(0, 0, 0, 0.1))
-    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1)); */
 }
 .agripa_001_bg {
   position: absolute;
@@ -72,7 +73,7 @@ html {
   right: 0;
   width: 50vw;
   height: 100vh;
-  background: url(../images/agripa/agripa_001_bg.jpg) center center / 100% 100%
+  background: url(../images/agripa/agripa_001_bg1.jpg) center center / 100% 100%
     no-repeat;
   object-fit: cover;
 }
@@ -150,11 +151,6 @@ html {
     100% no-repeat;
   object-fit: cover;
   z-index: 99;
-  filter: drop-shadow(142px 215px 103px rgba(0, 0, 0, 0.01))
-    drop-shadow(80px 121px 87px rgba(0, 0, 0, 0.05))
-    drop-shadow(36px 54px 64px rgba(0, 0, 0, 0.09))
-    drop-shadow(9px 13px 35px rgba(0, 0, 0, 0.1))
-    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
 }
 .agripa_002_percent {
   display: flex;
@@ -198,9 +194,6 @@ html {
   height: 100vh;
   position: relative;
   background: #fff;
-}
-.agripa_004 {
-  height: 100vh;
 }
 .box_wrap {
   display: flex;
@@ -266,6 +259,7 @@ html {
   width: 28vw;
   word-break: keep-all;
   line-height: 1.5;
+  letter-spacing: -0.5px;
 }
 .agripa_003_logo {
   width: 38vw;
@@ -277,7 +271,7 @@ html {
 .agripa_003_desc_wrap {
   position: absolute;
   right: 10vw;
-  top: 10vh;
+  top: 20vh;
   display: flex;
   flex-direction: column;
   gap: 10rem;
@@ -297,6 +291,7 @@ html {
   font-weight: 700;
   position: relative;
   z-index: 100;
+  display: inline-block;
 }
 .agripa_003_desc .title::before {
   content: "";
@@ -311,19 +306,19 @@ html {
 }
 .agripa_003_desc.detail01 .title::before {
   background: #81bcdd;
-  right: 64%;
+  right: -10%;
 }
 .agripa_003_desc.detail02 .title::before {
   background: #f249a4;
-  right: 40%;
+  right: -10%;
 }
 .agripa_003_desc.detail03 .title::before {
   background: #ffd84c;
-  right: 42%;
+  right: -10%;
 }
 .agripa_003_desc.detail04 .title::before {
   background: #7ac786;
-  right: 42%;
+  right: -10%;
 }
 .agripa_003_desc ul {
   margin-top: 1rem;
@@ -333,6 +328,175 @@ html {
 }
 .agripa_004 {
   width: 100vw;
-  height: 100vh;
-  background: #cfe9d3;
+  background: #cde2d1;
+  position: relative;
+}
+.agripa_sub_title {
+  font-size: 4rem;
+  padding-top: 10rem;
+  padding-left: 10vw;
+  font-weight: 700;
+  position: relative;
+  z-index: 100;
+}
+.agripa_004_flex_wrap {
+  display: flex;
+  padding-top: 10rem;
+  padding-left: 10vw;
+  gap: 4rem;
+  min-height: 90rem;
+  position: relative;
+}
+.agripa_004_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.agripa_004_flex div {
+  font-size: 1.4rem;
+  width: 15rem;
+  height: 6rem;
+  background: #204628;
+  line-height: 6rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+}
+.agripa_004_flex.f01 div:nth-child(3) {
+  background: #4eac62;
+}
+.agripa_004_flex.f02 div {
+  background: #408c59;
+}
+.agripa_004_flex.f03 div {
+  background: #50af50;
+}
+.agripa_004_flex.f04 div {
+  background: #50af7f;
+}
+
+.agripa_004_flex.f04 {
+  flex-direction: row;
+  margin-top: 32rem;
+}
+.agripa_004_bg {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  width: 73vw;
+  max-width: 114rem;
+  max-height: 114rem;
+  height: 73vw;
+  background: url(../images/agripa/agripa_004_bg.png) center center / 100% 100%
+    no-repeat;
+  object-fit: cover;
+}
+@media screen and (max-width: 450px) {
+  .mo_no {
+    display: none;
+  }
+  .agripa_001 {
+    height: 100vh;
+    height: -webkit-fill-available;
+    height: fill-available;
+  }
+  .agripa_001_main {
+    width: 60vw;
+    height: 121vw;
+  }
+  .agripa_001_bg {
+    width: 100vw;
+    height: 75vh;
+    bottom: 0;
+    top: auto;
+  }
+  .agripa_002 {
+    padding: 8rem 0;
+  }
+  .agripa_002_text_wrap {
+    width: 100%;
+    left: 0;
+    padding: 1.6rem;
+  }
+  .agripa_002_text_wrap div:nth-child(1) {
+    font-size: 4rem;
+  }
+  .box_wrap {
+    height: 50vh;
+    margin-top: -56vh;
+    width: 60%;
+    gap: 2rem;
+    margin-left: -32vw;
+  }
+  .agripa_002_main {
+    width: 60vw;
+    height: 60vw;
+    left: 50%;
+    top: 57%;
+  }
+  .agripa_002_percent {
+    right: 5vw;
+    flex-direction: column;
+    bottom: 10%;
+    gap: 1rem;
+  }
+  .agripa_003 {
+    height: 164vh;
+    overflow-x: hidden;
+  }
+  .agripa_003_logo {
+    width: 70vw;
+    height: 16vw;
+  }
+  .agripa_003_text_wrap div:nth-child(2) {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-top: 2rem;
+  }
+  .agripa_003_main {
+    width: 116vw;
+    height: 116vw;
+    top: 50vh;
+    left: -80%;
+  }
+  .agripa_003_text_wrap {
+    padding: 8rem 1.6rem;
+  }
+  .agripa_003_text_wrap p {
+    width: 100%;
+  }
+  .agripa_003_desc_wrap {
+    top: 100vh;
+    gap: 4rem;
+  }
+  .agripa_003_desc.detail01,
+  .agripa_003_desc.detail03 {
+    margin-left: 0;
+  }
+  .agripa_004_bg {
+    width: 140vh;
+    height: 140vh;
+  }
+  .agripa_sub_title {
+    font-size: 2.4rem;
+    padding: 8rem 1.6rem;
+  }
+  .agripa_004 {
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  .agripa_004_flex_wrap {
+    padding: 0 1.6rem;
+  }
+  .agripa_004_flex.f04 {
+    flex-direction: column;
+    margin-left: -19rem;
+    margin-top: 57rem;
+  }
+  .agripa_004 {
+    display: none;
+  }
+  .agripa_002 {
+    overflow-x: hidden;
+  }
 }
