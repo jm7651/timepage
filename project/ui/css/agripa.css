@@ -328,11 +328,12 @@ html {
 }
 .agripa_004 {
   width: 100vw;
-  background: #cde2d1;
+  background: #dce6de;
   position: relative;
+  overflow: hidden;
 }
 .agripa_sub_title {
-  font-size: 4rem;
+  font-size: 2rem;
   padding-top: 10rem;
   padding-left: 10vw;
   font-weight: 700;
@@ -397,7 +398,6 @@ html {
   }
   .agripa_001 {
     height: 100vh;
-    height: -webkit-fill-available;
     height: fill-available;
   }
   .agripa_001_main {
@@ -429,7 +429,7 @@ html {
     margin-left: -32vw;
   }
   .agripa_002_main {
-    width: 60vw;
+    width: 68vw;
     height: 60vw;
     left: 50%;
     top: 57%;
@@ -478,8 +478,8 @@ html {
     height: 140vh;
   }
   .agripa_sub_title {
-    font-size: 2.4rem;
-    padding: 8rem 1.6rem;
+    font-size: 2rem;
+    padding: 8rem 1.6rem 2rem;
   }
   .agripa_004 {
     overflow-x: hidden;
@@ -493,9 +493,7 @@ html {
     margin-left: -19rem;
     margin-top: 57rem;
   }
-  .agripa_004 {
-    display: none;
-  }
+
   .agripa_002 {
     overflow-x: hidden;
   }

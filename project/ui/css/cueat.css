@@ -630,7 +630,7 @@ html {
   height: 47.4rem;
 }
 .cueat_009 {
-  padding: 10rem 0;
+  padding: 16rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -746,17 +746,17 @@ html {
   background: #616161;
 }
 .cueat_010 {
-  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 16rem 0;
+  background: #ffe54d;
 }
 .cueat_010_wrap {
-  width: 77.7rem;
+  width: 30%;
   position: relative;
-  top: -12rem;
 }
 .cueat_010_wrap div:nth-child(1) {
   font-size: 6rem;
@@ -771,12 +771,10 @@ html {
 .cueat_010 .girl {
   background: url(../images/cueat/cueat_010_girl.svg) center center / 100% auto
     no-repeat;
-  width: 24em;
-  height: 47rem;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 10%);
+  width: 10vw;
+  height: 25vw;
+  margin: 0 auto;
+  transform: translate(0, -14%);
 }
 .cueat_copylight {
   width: 100%;
@@ -952,7 +950,8 @@ html {
     text-align: center;
   }
   .cueat005_001,
-  .cueat005_002 {
+  .cueat005_002,
+  .cueat005_003 {
     margin: 0;
   }
   .cueat_005_swiper {
@@ -1023,6 +1022,7 @@ html {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 6rem;
+    padding: 0;
   }
   .cueat_008_img_title {
     font-size: 14px;
@@ -1037,7 +1037,7 @@ html {
     height: 26.4rem;
   }
   .cueat_009 {
-    padding: 4rem 1.6rem;
+    padding: 8em 1.6rem;
     height: auto;
     align-items: flex-start;
   }
@@ -1080,13 +1080,10 @@ html {
     height: 16rem;
   }
   .cueat_010 {
-    height: 100vh;
-    padding: 0 1.6rem;
-    margin-top: -10rem;
+    padding: 8rem 1.6rem;
   }
   .cueat_010_wrap {
     width: 100%;
-    top: -16rem;
   }
   .cueat_010_wrap div:nth-child(1) {
     font-size: 3rem;
@@ -1095,10 +1092,15 @@ html {
     width: 100%;
     height: 10rem;
   }
+  .cueat_010 .girl {
+    width: 30vw;
+    height: 74vw;
+  }
   .cueat_copylight {
     font-size: 14px;
     flex-direction: column;
-    padding: 5vw;
+    padding: 1.6rem;
     line-height: 1.5;
+    bottom: 0;
   }
 }
