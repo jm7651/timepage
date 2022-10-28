@@ -392,6 +392,10 @@ html {
     no-repeat;
   object-fit: cover;
 }
+.agripa_005 .swiper-slide {
+  background: pink;
+  height: 30rem;
+}
 @media screen and (max-width: 450px) {
   .mo_no {
     display: none;
