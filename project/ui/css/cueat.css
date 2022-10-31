@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: 10px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
@@ -772,9 +773,11 @@ html {
   background: url(../images/cueat/cueat_010_girl.svg) center center / 100% auto
     no-repeat;
   width: 10vw;
-  height: 25vw;
+  height: 32vw;
   margin: 0 auto;
   transform: translate(0, -14%);
+  max-width: 17.5rem;
+  max-height: 62.2rem;
 }
 .cueat_copylight {
   width: 100%;
@@ -840,7 +843,7 @@ html {
   .cueat_page_txt {
     font-size: 1.4rem;
     word-break: keep-all;
-    text-align: left;
+    text-align: center;
     width: 84%;
     margin: 0 auto;
     margin-top: 1.2rem;
@@ -863,10 +866,10 @@ html {
     width: 84%;
     padding: 0 16px;
     font-size: 1.4rem;
-    text-align: left;
     word-break: keep-all;
     margin: 0 auto;
     line-height: 1.5;
+    text-align: center;
   }
   .cueat_003_container {
     gap: 0;
@@ -899,6 +902,8 @@ html {
   .cueat_page_text {
     width: 100%;
     margin-bottom: 0;
+    text-align: center;
+    font-size: 1.4rem;
   }
   .cueat_004 {
     padding: 10rem 1.6rem;
@@ -1010,6 +1015,8 @@ html {
   .cueat007_page_text {
     width: 100%;
     padding: 0 1.6rem;
+    text-align: center;
+    font-size: 1.4rem;
   }
   .my-slider-box-3 {
     height: 58rem;
@@ -1063,8 +1070,11 @@ html {
     height: 4.28rem;
   }
   .cueat_typo_ul {
-    border: 1px solid #232323;
+    background: #fff;
+    border: 1px solid #e0e0e0;
     padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   }
   .cueat_009_color_grid_wrap {
     margin-top: 4rem;
@@ -1074,6 +1084,7 @@ html {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     width: 100%;
+    font-weight: 500;
   }
   .cueat_009_color_grid div:nth-child(1) {
     grid-row: 1/4;
@@ -1094,7 +1105,7 @@ html {
   }
   .cueat_010 .girl {
     width: 30vw;
-    height: 74vw;
+    height: 100vw;
   }
   .cueat_copylight {
     font-size: 14px;
