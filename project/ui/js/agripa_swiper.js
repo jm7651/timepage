@@ -1,7 +1,7 @@
 function MySliderBox1__init() {
   let swiper = new Swiper(".my-slider-box-1", {
     slidesPerView: 1.5, //640~1024 해상도 외 레이아웃 뷰 개수
-    spaceBetween: 20,
+    spaceBetween: 40,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
