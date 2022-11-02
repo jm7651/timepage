@@ -114,7 +114,7 @@ body {
   align-items: center;
   gap: 4rem;
   position: relative;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -139,12 +139,17 @@ body {
   position: relative;
   max-width: 30%;
   padding: 4rem;
+  width: 20vw;
+  height: 20vw;
+  margin: 0 auto;
+  top: 15%;
 }
 
 .clock_p {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 .noise {
   width: 20vw;
@@ -460,54 +465,29 @@ body {
 .project1 {
   position: relative;
   width: 30rem;
-  height: 25.7rem;
   margin: 0.2rem;
   overflow: hidden;
-}
-.project img,
-.project1 img {
-  transform: scale(1);
-  transition: 0.7s ease all;
-}
-.project:hover img,
-.project1:hover img {
-  transform: scale(1.2);
-}
-.project:hover .project__desc,
-.project1:hover .project__desc {
-  opacity: 0.5;
+  text-decoration: none;
 }
 .project__img {
   max-width: 100%;
   max-height: 100%;
 }
-
 .project__desc {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: all linear 0.3s;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
 }
-
 .project__desc h3 {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 900;
-  padding: 1rem;
-  margin: 0;
+  color: #232323;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 .project__desc span {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  color: #fff;
+  color: #232323;
 }
 .content {
   display: flex;
