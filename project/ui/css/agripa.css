@@ -95,7 +95,7 @@ body {
 }
 .scroll-downs {
   position: absolute;
-  bottom: 10vh;
+  bottom: 10rem;
   left: 50%;
   transform: translate(-50%, 0);
   width: 34px;
@@ -680,7 +680,7 @@ body {
     mix-blend-mode: multiply;
   }
   .scroll-downs {
-    bottom: 10vh;
+    bottom: 8rem;
     margin: 0;
     top: auto;
     left: 50%;
