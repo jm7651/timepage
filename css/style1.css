@@ -439,7 +439,7 @@ body {
 .tab-link {
   list-style: none;
   padding: 2rem 4rem;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #000;
   background: #fff;
@@ -517,6 +517,7 @@ body {
 }
 .project_company_logo {
   width: 50%;
+  max-width: 10rem;
 }
 .project_company_logo img {
   width: 100%;
@@ -526,12 +527,17 @@ body {
   opacity: 0.7;
   color: #232323;
   line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
 }
 .content {
-  display: flex;
+  display: grid;
   width: 100%;
   flex-wrap: wrap;
   padding-bottom: 10rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, auto));
+  row-gap: 4rem;
+  column-gap: 0.8rem;
 }
 .modal {
   background: #fff;
@@ -971,5 +977,8 @@ body {
   }
   #contact > .inner > div:nth-child(4) {
     font-size: 1.2rem;
+  }
+  .working_span {
+    display: block;
   }
 }
