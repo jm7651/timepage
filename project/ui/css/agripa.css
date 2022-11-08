@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://use.typekit.net/yvg0sei.css");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
 html,
 body {
@@ -42,7 +42,7 @@ body {
   align-items: center;
   position: relative;
   z-index: 100;
-  top: 25vh;
+  top: 10vh;
 }
 .agripa_001_logo {
   width: 10rem;
@@ -54,10 +54,8 @@ body {
 .agripa_001_text_wrap div:nth-child(1) {
   margin-top: 4rem;
   font-size: 5vw;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-
-  letter-spacing: -0.3vw;
+  font-weight: 500;
+  font-family: solitas-serif-normal, sans-serif;
 }
 .agripa_001_text_wrap div:nth-child(2) {
   font-size: 2rem;
@@ -461,14 +459,14 @@ body {
     no-repeat;
   object-fit: cover;
   z-index: 100;
-  margin-top: 12.2rem;
+  margin-top: 10.2rem;
   margin-left: 69.4rem;
   filter: drop-shadow(40px 40px 40px rgba(47, 53, 66, 0.2));
 }
 .agripa_005_main_circle {
   width: 60rem;
   height: 60rem;
-  background-color: #56ba70;
+  border: 1px solid #56ba70;
   border-radius: 50%;
   position: relative;
 }
@@ -578,13 +576,13 @@ body {
 .agripa_008 {
   display: flex;
   width: 100%;
-  height: 100%;
   margin: 0 auto;
   justify-content: space-between;
   background: #e7ebee;
   text-align: right;
   position: relative;
   overflow: hidden;
+  padding: 10rem 0;
 }
 .agripa_008_wrap {
   width: 192rem;
@@ -645,7 +643,7 @@ body {
   gap: 1rem;
 }
 .agripa_008_main {
-  width: 60%;
+  width: 46%;
   height: 100%;
   background: url(../images/agripa/agripa_008_main.jpg) center center / 100%
     100% no-repeat;
@@ -671,9 +669,10 @@ body {
   height: 6rem;
 }
 .agripa_009_title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  text-align: left;
 }
 .agripa_009_system_wrap {
   display: flex;
@@ -726,6 +725,58 @@ body {
 .agripa_009_color_grid_wrap > div:nth-child(5) {
   background: #ed885d;
 }
+.agripa_typo_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.agripa_typo_wrap > div:nth-child(1) {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.agripa_typo_wrap > div:nth-child(2) {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.agripa_typo_wrap > div:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.agripa_typo_wrap > div:nth-child(4) {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.agripa_010 {
+  padding: 10rem 0 0;
+  position: relative;
+}
+.agripa_010_main {
+  background: url(../images/agripa/agripa_010_main.jpg) center center / auto
+    100%;
+  width: 100%;
+  height: 70vh;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+.agripa_010_text {
+  background: url(../images/agripa/thanks.svg) center center / 100% auto
+    no-repeat;
+  width: 43.5rem;
+  height: 8.8rem;
+  border-radius: 1.2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 30px 114px 47px rgba(0, 0, 0, 0.01),
+    17px 64px 40px rgba(0, 0, 0, 0.05), 7px 28px 29px rgba(0, 0, 0, 0.09),
+    2px 7px 16px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 2400px) {
+  .agripa_005_main_img {
+    margin-top: 12.2rem;
+  }
+}
 @media screen and (max-width: 450px) {
   body {
     min-width: 100%;
@@ -746,8 +797,7 @@ body {
   }
   .agripa_001_text_wrap div:nth-child(1) {
     padding-top: 4rem;
-    font-size: 16vw;
-    letter-spacing: -0.8vw;
+    font-size: 22vw;
     width: 100%;
     border: none;
     text-align: center;
@@ -976,6 +1026,7 @@ body {
     height: auto;
     box-sizing: border-box;
     flex-direction: column;
+    padding: 0;
   }
   .agripa_008_wrap {
     flex-direction: column;
@@ -1021,5 +1072,37 @@ body {
     bottom: 0;
     top: auto;
     position: relative;
+  }
+  .agripa_009_title {
+    text-align: center;
+  }
+  .agripa_009_system_wrap {
+    flex-direction: column;
+    padding: 8rem 1.6rem;
+    align-items: center;
+    gap: 8rem;
+  }
+  .agripa_010 {
+    padding: 4rem 0;
+    position: relative;
+  }
+  .agripa_010_main {
+    background: url(../images/agripa/agripa_010_main.jpg) center center / auto
+      100%;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.3;
+  }
+  .agripa_010_text {
+    background: url(../images/agripa/thanks.svg) center center / 100% auto
+      no-repeat;
+    width: 33.5rem;
+    height: 6.9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 1.2rem;
   }
 }

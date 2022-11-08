@@ -1,12 +1,38 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 10px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
 section {
   height: 100vh;
 }
 .hems_001 {
   background: #8bb9f0;
 }
+.hems_title_wrap {
+  position: absolute;
+  top: 50%;
+  left: 16.87%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
 .hems_001 .logo {
   background: url(../images/hems/hems_logo.svg) center center / 100% auto
     no-repeat;
   width: 274px;
   height: 67px;
+}
+.hems_001_desc {
+  font-size: 1.8rem;
 }
