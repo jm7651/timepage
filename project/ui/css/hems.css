@@ -21,11 +21,12 @@ section {
 .hems_title_wrap {
   position: absolute;
   top: 50%;
-  left: 16.87%;
+  left: 25%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 2rem;
+  color: #464555;
 }
 .hems_001 .logo {
   background: url(../images/hems/hems_logo.svg) center center / 100% auto
@@ -33,6 +34,27 @@ section {
   width: 274px;
   height: 67px;
 }
+.hems_001_main {
+  background: url(../images/hems/hems_001_main.jpg) center center / 100% auto
+    no-repeat;
+  width: 40.31vw;
+  height: 42.7vw;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 .hems_001_desc {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-left: 1rem;
+}
+@media screen and (max-width: 450px) {
+  .hems_title_wrap {
+    top: 30%;
+    left: 50%;
+  }
+  .hems_001_main {
+    width: 80vw;
+    height: 83vw;
+  }
 }
