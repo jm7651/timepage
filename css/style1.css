@@ -468,9 +468,10 @@ body {
 .project1 {
   position: relative;
   width: 30rem;
-  margin: 0.2rem;
   overflow: hidden;
   text-decoration: none;
+  padding: 0.4rem;
+  box-sizing: border-box;
 }
 .project__img {
   max-width: 100%;
@@ -510,7 +511,7 @@ body {
   font-weight: 700;
   border-radius: 4px;
 }
-.project__desc span {
+.project__desc > span {
   font-size: 1.4rem;
   font-weight: 500;
   color: #232323;
@@ -528,7 +529,7 @@ body {
   color: #232323;
   line-height: 1.5;
   display: flex;
-  justify-content: space-between;
+  gap: 0.4rem;
 }
 .content {
   display: grid;
@@ -952,7 +953,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0.4rem;
+    box-sizing: border-box;
   }
   .project__desc h3 {
     font-size: 1.5rem;

@@ -655,6 +655,77 @@ body {
   right: 0%;
   top: 0;
 }
+.agripa_009 {
+  padding: 10rem 0;
+}
+.agripa_009_symbol {
+  background: url(../images/agripa/agripa_009_symbol.svg) center center / auto
+    100% no-repeat;
+  width: 20rem;
+  height: 6rem;
+}
+.agripa_009_logo {
+  background: url(../images/agripa/agripa_009_logo.svg) center center / auto
+    100% no-repeat;
+  width: 20rem;
+  height: 6rem;
+}
+.agripa_009_title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.agripa_009_system_wrap {
+  display: flex;
+  gap: 12rem;
+  margin: 0 auto;
+  max-width: 120rem;
+  padding-top: 10rem;
+}
+.agripa_009_color_grid_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+.agripa_009_color_grid_wrap > div {
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.agripa_009_color_grid_wrap > div > div:nth-child(1) {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.agripa_009_color_grid_wrap > div > div:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: right;
+}
+.agripa_009_color_grid_wrap > div:nth-child(1) {
+  grid-row: 1/4;
+  background: #56ba70;
+  height: 36rem;
+}
+.agripa_009_color_grid_wrap > div:nth-child(2) {
+  background: #555555;
+  color: #fff;
+}
+.agripa_009_color_grid_wrap > div:nth-child(3) {
+  background: #6992c0;
+}
+.agripa_009_color_grid_wrap > div:nth-child(4) {
+  background: #e8e9ea;
+}
+.agripa_009_color_grid_wrap > div:nth-child(5) {
+  background: #ed885d;
+}
 @media screen and (max-width: 450px) {
   body {
     min-width: 100%;
@@ -902,7 +973,9 @@ body {
   }
   .agripa_008 {
     width: 100%;
+    height: auto;
     box-sizing: border-box;
+    flex-direction: column;
   }
   .agripa_008_wrap {
     flex-direction: column;
@@ -914,6 +987,8 @@ body {
     box-sizing: border-box;
     gap: 2rem;
     padding: 4rem 1.6rem;
+    position: static;
+    height: 52.5rem;
   }
   .agripa_008_desc_wrap {
     width: 100%;
@@ -945,5 +1020,6 @@ body {
     height: 74.4vw;
     bottom: 0;
     top: auto;
+    position: relative;
   }
 }
