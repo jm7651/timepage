@@ -1,0 +1,12 @@
+section {
+  height: 100vh;
+}
+.hems_001 {
+  background: #8bb9f0;
+}
+.hems_001 .logo {
+  background: url(../images/hems/hems_logo.svg) center center / 100% auto
+    no-repeat;
+  width: 274px;
+  height: 67px;
+}
