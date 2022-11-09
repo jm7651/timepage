@@ -703,7 +703,10 @@ body {
 .level {
   z-index: 2;
 }
-
+#tab-3 .content {
+  display: flex;
+  width: 128rem;
+}
 @media screen and (max-width: 450px) {
   body {
     overflow-x: hidden;
