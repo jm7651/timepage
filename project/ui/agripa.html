@@ -23,8 +23,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/youtube-background@1.0.14/jquery.youtube-background.min.js"></script>
   </head>
   <body>
     <div class="blackblock agripablock"><div class="loader"></div></div>
@@ -40,10 +40,17 @@
         </div>
       </div>
       <div class="agripa_001_bg">
-        <div
-          data-vbg-autoplay="true"
-          data-vbg="https://youtu.be/tt9laJJ6nM0"
-        ></div>
+        <video
+          width="100%"
+          src="images/agripa/agripa001_bg.mp4"
+          type="video/mp4"
+          autoplay=""
+          muted=""
+          loop=""
+          playsinline=""
+        >
+          <source src="images/agripa/agripa001_bg.mp4" type="video/mp4" />
+        </video>
       </div>
       <div class="scroll-downs">
         <div class="mousey">
@@ -53,7 +60,7 @@
     </section>
     <section class="agripa_002">
       <div class="agripa_002_text_wrap">
-        <div>코로나😷로 힘들어진 농업유통 업계</div>
+        <div>코로나로 힘들어진 농업유통 업계</div>
         <div class="agripa_002_desc mo_no">
           소비되지 않아 싼값에 넘기거나 아예 음식물 쓰레기로 버려지는 농산물이
           전체 5000톤이 넘습니다. 이는 환경에 심각한 오염 또한 유발하며 한해의
@@ -353,11 +360,6 @@
     <script>
       $(window).on("load", function () {
         $(".blackblock").fadeOut(1000);
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        $("[data-vbg]").youtube_background(); // 실행
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>

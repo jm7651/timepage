@@ -1,4 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+:root {
+  --gray500: #454545;
+}
 html {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -11,6 +14,12 @@ body {
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
+}
+.mo_span {
+  display: block;
+}
+.mo_block {
+  display: inline-block;
 }
 section {
   height: 100vh;
@@ -26,7 +35,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  color: #464555;
+  color: var(--gray500);
 }
 .hems_001 .logo {
   background: url(../images/hems/hems_logo.svg) center center / 100% auto
@@ -49,10 +58,34 @@ section {
   padding-left: 1rem;
 }
 .hems_002 {
+  display: flex;
+}
+.hems_left {
+  width: 50%;
+}
+.hems_left_wrap {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.hems_right {
+  background: #8bb9f0;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+.hems_right .hems_002_main {
+  background: url(../images/hems/hems_002_main.jpg) center center / auto 100%
+    no-repeat;
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .hems_002 .text_container {
-  position: relative;
-  top: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 .hems_002 .main_title {
   display: flex;
@@ -67,47 +100,101 @@ section {
   font-weight: 700;
 }
 .hems_002 .text_wrap {
+  line-height: 1.5;
   display: flex;
   flex-direction: column;
 }
 .hems_002 .text_wrap > :nth-child(1) {
   font-size: 2rem;
-  color: #158fe5;
-  font-weight: 500;
+  color: #3e9bfb;
+  font-weight: 600;
 }
 .hems_002 .text_wrap > p {
   font-size: 1.5rem;
-  color: #464555;
+  color: var(--gray500);
 }
 .pain_point_wrap {
-  margin-top: 4rem;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 4rem;
+  max-width: 72rem;
 }
 .pain_point {
   position: relative;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .pain_point_deco {
-  background: red;
-  padding: 1.2rem 0.4rem;
+  background: var(--gray500);
+  padding: 0.8rem 1.2rem;
   color: #fff;
   position: absolute;
   top: -2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+}
+.interview02 .pain_point_deco {
+  background: #f4f4f4;
+  color: var(--gray500);
 }
 .pain_point_text_wrap {
   display: flex;
   flex-direction: column;
+  line-height: 1.5;
 }
 .pain_point_text_wrap > div {
   font-size: 2rem;
+  font-weight: 700;
 }
 .pain_point_text_wrap > p {
   font-size: 1.5rem;
 }
-.mo_span {
-  display: block;
+.interview01 {
+  background: #f4f4f4;
+  box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
+    0px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
+    9px 13px 35px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
+.interview02 {
+  background: var(--gray500);
+  color: #f4f4f4;
+  box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
+    0px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
+    9px 13px 35px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.interview03 {
+  background: #f4f4f4;
+  box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
+    0px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
+    9px 13px 35px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.pain001 {
+  background: url(../images/hems/pain_interview001.svg) center center / 100%
+    auto no-repeat;
+  width: 5vw;
+  height: 5vw;
+  margin: 0 0 0 auto;
+}
+.pain002 {
+  background: url(../images/hems/pain_interview002.svg) center center / 100%
+    auto no-repeat;
+  width: 5vw;
+  height: 5vw;
+  margin: 0 0 0 auto;
+}
+.pain003 {
+  background: url(../images/hems/pain_interview003.svg) center center / 100%
+    auto no-repeat;
+  width: 5vw;
+  height: 5vw;
+  margin: 0 0 0 auto;
+}
+
 .hems_003 {
   display: flex;
   flex-direction: column;
@@ -137,7 +224,22 @@ section {
     width: 80vw;
     height: 83vw;
   }
+  .pain_point_text_wrap {
+    flex-direction: column;
+  }
   .mo_span {
     display: inline-block;
+  }
+  .mo_block {
+    display: block;
+  }
+  .hems_002 {
+    padding: 0 1.6rem;
+  }
+  .pain001,
+  .padin002,
+  .pain003 {
+    width: 40vw;
+    height: 40vw;
   }
 }
