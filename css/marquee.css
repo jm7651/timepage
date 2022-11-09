@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/zoc0ado.css");
 .cover {
   width: 100vw;
   margin-bottom: 12vw;
@@ -18,16 +19,18 @@
 
 .cover:nth-child(3) {
   transform: rotate(-2deg);
-  background-color: #000;
+  background-color: #232323;
   color: #fff;
+  font-family: "ivypresto-display", serif;
 }
 
 .cover:nth-child(4) {
   transform: rotate(2deg);
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1px solid #232323;
   justify-content: flex-end;
   margin-bottom: 30vh;
+  font-family: "ivypresto-display", serif;
 }
 .first-parallel,
 .second-parallel,

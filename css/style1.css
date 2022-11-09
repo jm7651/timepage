@@ -441,12 +441,11 @@ body {
   padding: 2rem 4rem;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #000;
-  background: #fff;
-  border: 1px solid #000;
+  color: #232323;
+  background: #e8e8e8;
 }
 .tab-link.active {
-  background: #000;
+  background: #232323;
   color: #fff;
 }
 .work__projects {
@@ -900,7 +899,7 @@ body {
     width: 100%;
   }
   .about_middle_container div:nth-child(2) {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
   }
 

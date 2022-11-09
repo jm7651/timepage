@@ -48,6 +48,86 @@ section {
   font-weight: 500;
   padding-left: 1rem;
 }
+.hems_002 {
+}
+.hems_002 .text_container {
+  position: relative;
+  top: 3%;
+}
+.hems_002 .main_title {
+  display: flex;
+}
+.hems_002 .bell {
+  background: url(../images/hems/bell.svg) center center / auto 100% no-repeat;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.hems_002 .title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.hems_002 .text_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.hems_002 .text_wrap > :nth-child(1) {
+  font-size: 2rem;
+  color: #158fe5;
+  font-weight: 500;
+}
+.hems_002 .text_wrap > p {
+  font-size: 1.5rem;
+  color: #464555;
+}
+.pain_point_wrap {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.pain_point {
+  position: relative;
+}
+.pain_point_deco {
+  background: red;
+  padding: 1.2rem 0.4rem;
+  color: #fff;
+  position: absolute;
+  top: -2rem;
+}
+.pain_point_text_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.pain_point_text_wrap > div {
+  font-size: 2rem;
+}
+.pain_point_text_wrap > p {
+  font-size: 1.5rem;
+}
+.mo_span {
+  display: block;
+}
+.hems_003 {
+  display: flex;
+  flex-direction: column;
+}
+.hems_003 .title {
+  font-size: 2.8rem;
+}
+.hems_003 .img_container {
+  display: flex;
+}
+.hems_003 .img001 {
+}
+.hems_003 .img_wrap {
+  display: flex;
+}
+.hems_003 .img002 {
+}
+.hems_003 .img003 {
+}
+
 @media screen and (max-width: 450px) {
   .hems_title_wrap {
     top: 30%;
@@ -56,5 +136,8 @@ section {
   .hems_001_main {
     width: 80vw;
     height: 83vw;
+  }
+  .mo_span {
+    display: inline-block;
   }
 }
