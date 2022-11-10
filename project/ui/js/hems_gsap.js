@@ -41,7 +41,7 @@ ScrollTrigger.matchMedia({
         scrollTrigger: {
           trigger: ".contents",
           start: "-100 80%",
-          end: "0 50%",
+          end: "0 70%",
           scrub: 1,
           // markers: true,
           start: "top 80%",

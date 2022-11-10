@@ -24,16 +24,15 @@ body {
 .mo_block {
   display: inline-block;
 }
-section {
-  height: 100vh;
-}
+
 .hems_001 {
-  background: #8bb9f0;
+  background: #fff;
+  height: 100vh;
 }
 .hems_title_wrap {
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 40%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
@@ -58,7 +57,19 @@ section {
 .hems_001_desc {
   font-size: 2rem;
   font-weight: 500;
-  padding-left: 1rem;
+}
+.hems_banner {
+  background: var(--primary);
+  color: #fff;
+  padding: 20rem 0;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+}
+.hems_banner .desc {
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-align: center;
 }
 .hems_002 {
   padding: 20rem 0;
@@ -71,7 +82,6 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 128rem;
   margin: 0 auto;
   margin-bottom: 10rem;
 }
@@ -86,23 +96,16 @@ section {
 }
 .hems_002 .main_title {
   font-size: 5rem;
-  font-weight: 600;
+  font-weight: 700;
 }
-.hems_002 .desc_wrap .title {
-  font-size: 2rem;
-  font-weight: 500;
-  color: var(--primary);
-}
-.hems_002 .desc_wrap .desc {
-  font-size: 1.5rem;
-}
+
 .hems_002 .pain_point_container {
   display: flex;
   justify-content: center;
 }
 .hems_002 .pain_point_container > div {
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
   border: 1px solid var(--primary);
   display: flex;
