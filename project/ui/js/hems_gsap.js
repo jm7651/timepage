@@ -1,13 +1,33 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.to(".pain_point001", {
-  scrollTrigger: {
-    trigger: ".contents",
-    start: "100 80%",
-    end: "+=300 50%",
-    scrub: 1,
-    // markers: true,
-    start: "top center",
-  },
-  x: "30%",
-  duration: 2,
-});
+gsap.fromTo(
+  ".pain_point001",
+  { x: "-50%", rotate: "0" },
+  {
+    x: 0,
+    rotate: "360deg",
+    scrollTrigger: {
+      trigger: ".contents",
+      start: "100 80%",
+      end: "+=300 50%",
+      scrub: 1,
+      markers: true,
+      start: "top center",
+    },
+  }
+);
+gsap.fromTo(
+  ".pain_point002",
+  { x: "50%", rotate: "0" },
+  {
+    x: 0,
+    rotate: "-360deg",
+    scrollTrigger: {
+      trigger: ".contents",
+      start: "100 80%",
+      end: "+=300 50%",
+      scrub: 1,
+      // markers: true,
+      start: "top center",
+    },
+  }
+);
