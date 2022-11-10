@@ -64,6 +64,8 @@ section {
   padding: 20rem 0;
   display: flex;
   flex-direction: column;
+  background: #f4f4f4;
+  height: auto;
 }
 .hems_002 .text_container {
   display: flex;
@@ -84,7 +86,7 @@ section {
 }
 .hems_002 .main_title {
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .hems_002 .desc_wrap .title {
   font-size: 2rem;
@@ -99,8 +101,8 @@ section {
   justify-content: center;
 }
 .hems_002 .pain_point_container > div {
-  width: 30vw;
-  height: 30vw;
+  width: 25vw;
+  height: 25vw;
   border-radius: 50%;
   border: 1px solid var(--primary);
   display: flex;
