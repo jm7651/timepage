@@ -232,7 +232,8 @@ body {
   display: flex;
 }
 .hems_004 .text_wrap01 .border_text {
-  -webkit-text-stroke: 1px var(--gray500);
+  text-shadow: -1px 0 var(--gray500), 0 1px var(--gray500), 1px 0 var(--gray500),
+    0 -1px var(--gray500);
   color: transparent;
 }
 .hems_004 .text_wrap01 {
