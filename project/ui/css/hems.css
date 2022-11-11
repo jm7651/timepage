@@ -78,6 +78,10 @@ body {
   background: #f4f4f4;
   height: auto;
 }
+.hems_002 .contents {
+  max-width: 128rem;
+  margin: 0 auto;
+}
 .hems_002 .text_container {
   display: flex;
   justify-content: space-between;
@@ -106,21 +110,10 @@ body {
 .hems_002 .pain_point_container > div {
   width: 20vw;
   height: 20vw;
+  max-width: 36rem;
+  max-height: 36rem;
   border-radius: 50%;
   border: 1px solid var(--primary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hems_002 .circle3 {
-  display: flex;
-  margin: 0 auto;
-}
-.hems_002 .circle3 > div {
-  width: 30vw;
-  height: 30vw;
-  border-radius: 50%;
-  border: 1px solid var(--gray500);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,43 +142,101 @@ body {
 .hems_002 .pain_point_wrap > div:nth-child(3) {
   font-size: 1.5rem;
   font-weight: 400;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .hems_002 div:nth-child(1) > div > div:nth-child(4) {
   background: url(../images/hems/pain_interview001.svg) center center / 100%
     auto no-repeat;
-  width: 10vw;
-  height: 10vw;
+  width: 7vw;
+  height: 7vw;
   margin: 0 auto;
 }
 .hems_002 div:nth-child(3) > div > div:nth-child(4) {
   background: url(../images/hems/pain_interview003.svg) center center / 100%
     auto no-repeat;
-  width: 10vw;
-  height: 10vw;
+  width: 7vw;
+  height: 7vw;
   margin: 0 auto;
 }
 
 .hems_003 {
   display: flex;
   flex-direction: column;
-}
-.hems_003 .title {
-  font-size: 2.8rem;
-}
-.hems_003 .img_container {
-  display: flex;
-}
-.hems_003 .img001 {
-}
-.hems_003 .img_wrap {
-  display: flex;
-}
-.hems_003 .img002 {
-}
-.hems_003 .img003 {
+  padding: 16rem 0;
+  gap: 16rem;
+  max-width: 128rem;
+  margin: 0 auto;
 }
 
+.hems_003_wrap {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.hems_003 .chart_talk_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.hems_003 .user_flow_wrap,
+.hems_003 .chart_wrap,
+.hems_003 .talk_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hems_003 .title,
+.hems_003 .title,
+.hems_003 .title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.hems_003 .user_flow_img {
+  background: url(../images/hems/userflow.svg) center center / 100% auto
+    no-repeat;
+  width: 36vw;
+  height: 25vw;
+}
+.hems_003 .chart_img {
+  background: url(../images/hems/chart_img.svg) center center / 100% auto
+    no-repeat;
+  width: 18.85vw;
+  height: 14.27vw;
+}
+.hems_003 .talk_img {
+  background: url(../images/hems/talk_img.svg) center center / 100% auto
+    no-repeat;
+  width: 18.85vw;
+  height: 14vw;
+}
+.journey_map_wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hems_003 .journey_map_img {
+  background: url(../images/hems/journeymap_img.svg) center center / 100% auto
+    no-repeat;
+  width: 60vw;
+  height: 30vw;
+  margin: 0 auto;
+}
+.hems_004 .text_wrap01 {
+  font-size: 5vw;
+  font-weight: 700;
+}
+.hems_004 .text_wrap01 .text_flex {
+  display: flex;
+}
+.hems_004 .text_wrap01 .border_text {
+  -webkit-text-stroke: 1px var(--gray500);
+  color: transparent;
+}
+.hems_004 .text_wrap01 {
+}
 @media screen and (max-width: 450px) {
   .hems_title_wrap {
     top: 30%;
