@@ -26,12 +26,12 @@ body {
 }
 
 .hems_001 {
-  background: #fff;
+  background: #619ddb;
   height: 100vh;
 }
 .hems_title_wrap {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 40%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -46,13 +46,21 @@ body {
   height: 67px;
 }
 .hems_001_main {
-  background: url(../images/hems/hems_001_main.jpg) center center / 100% auto
-    no-repeat;
+  /* background: url(../images/hems/hems_002_main.jpg) center center / 100% auto
+    no-repeat; */
   width: 40.31vw;
-  height: 42.7vw;
+  height: 40vw;
   position: absolute;
-  right: 0;
+  right: 10vw;
   bottom: 0;
+  outline: none;
+
+  overflow: hidden;
+}
+.hems_001_main video {
+  height: auto;
+  outline: none;
+  border: none;
 }
 .hems_001_desc {
   font-size: 2rem;
@@ -75,8 +83,14 @@ body {
   padding: 20rem 0;
   display: flex;
   flex-direction: column;
-  background: #f4f4f4;
+  background: #fff;
   height: auto;
+}
+.hems_002 .user_research {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8rem;
 }
 .hems_002 .contents {
   max-width: 128rem;
@@ -87,7 +101,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
 }
 .hems_002 .title_wrap {
   display: flex;
@@ -95,34 +109,31 @@ body {
 }
 .hems_002 .bell {
   background: url(../images/hems/bell.svg) center center / 100% auto no-repeat;
-  width: 6.2rem;
-  height: 6.2rem;
+  width: 4rem;
+  height: 4rem;
 }
 .hems_002 .main_title {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
 }
 
 .hems_002 .pain_point_container {
   display: flex;
   justify-content: center;
+  gap: 2rem;
 }
 .hems_002 .pain_point_container > div {
-  width: 20vw;
-  height: 20vw;
-  max-width: 36rem;
-  max-height: 36rem;
-  border-radius: 50%;
-  border: 1px solid var(--primary);
+  width: 24vw;
+  height: 24vw;
+  max-width: 40rem;
+  max-height: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #f4f4f4;
+  border-radius: 12px;
 }
-.hems_002 .pain_point_container > div:nth-child(2) {
-  background: url(../images/hems/hems_002_main.jpg) center center / 100% auto
-    no-repeat;
-  border: none;
-}
+
 .hems_002 .pain_point_wrap {
 }
 .hems_002 .pain_point_wrap > div:nth-child(1) {
@@ -136,7 +147,7 @@ body {
 }
 .hems_002 .pain_point_wrap > div:nth-child(2) {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 0.4rem;
 }
 .hems_002 .pain_point_wrap > div:nth-child(3) {
@@ -146,6 +157,13 @@ body {
 }
 .hems_002 div:nth-child(1) > div > div:nth-child(4) {
   background: url(../images/hems/pain_interview001.svg) center center / 100%
+    auto no-repeat;
+  width: 7vw;
+  height: 7vw;
+  margin: 0 auto;
+}
+.hems_002 div:nth-child(2) > div > div:nth-child(4) {
+  background: url(../images/hems/pain_interview002.svg) center center / 100%
     auto no-repeat;
   width: 7vw;
   height: 7vw;
@@ -193,10 +211,10 @@ body {
   font-weight: 700;
 }
 .hems_003 .user_flow_img {
-  background: url(../images/hems/userflow.svg) center center / 100% auto
-    no-repeat;
+  background: url(../images/hems/userflow.svg) top center / 100% auto no-repeat;
   width: 36vw;
   height: 25vw;
+  max-width: 62rem;
 }
 .hems_003 .chart_img {
   background: url(../images/hems/chart_img.svg) center center / 100% auto
@@ -223,20 +241,124 @@ body {
   width: 60vw;
   height: 30vw;
   margin: 0 auto;
+  max-width: 128rem;
+}
+.hems_004 {
+  position: relative;
+  padding: 20rem 0;
+}
+.hems_004 .text_container {
+  width: 77vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.hems_004 .text_wrap01,
+.hems_004 .text_wrap02 {
+  font-size: 4vw;
+  font-weight: 700;
+  position: relative;
+  z-index: 3;
 }
 .hems_004 .text_wrap01 {
-  font-size: 5vw;
-  font-weight: 700;
+  margin-left: 2vw;
 }
-.hems_004 .text_wrap01 .text_flex {
+.hems_004 .text_wrap01 .regular,
+.hems_004 .text_wrap02 .regular {
+  font-weight: 400;
+}
+.hems_004 .text_wrap01 > div:nth-child(2) {
+  margin-left: 4vw;
+}
+.hems_004 .text_wrap01 div:nth-child(3) {
+  margin-left: 6vw;
+}
+.hems_004 .text_wrap02 {
+  margin-top: 6vw;
+}
+.hems_004 .text_wrap02 > div:nth-child(2) {
+  margin-left: 4vw;
+}
+.hems_004 .text_wrap01 .text_flex,
+.hems_004 .text_wrap02 .text_flex {
   display: flex;
+  align-items: center;
+  gap: 2rem;
 }
-.hems_004 .text_wrap01 .border_text {
-  text-shadow: -1px 0 var(--gray500), 0 1px var(--gray500), 1px 0 var(--gray500),
-    0 -1px var(--gray500);
+.hems_004 .text_wrap01 .border_text,
+.hems_004 .text_wrap02 .border_text {
+  -webkit-text-stroke: 1px var(--gray500);
   color: transparent;
 }
-.hems_004 .text_wrap01 {
+.hems_004 .text_wrap01 .text_flex > div:nth-child(2) {
+  background: url(../images/hems/hems_004_lora.png) center center / 100% auto
+    no-repeat;
+  width: 10rem;
+  height: 10rem;
+  mix-blend-mode: normal;
+}
+.hems_004 .text_wrap02 .text_flex > div:nth-child(2) {
+  background: url(../images/hems/hems_004_logo.svg) center center / 100% auto
+    no-repeat;
+  width: 8rem;
+  height: 8rem;
+}
+.hems_004_img {
+  background: url(../images/hems/hems_004_img.png) center center / auto 100%
+    no-repeat;
+  width: 24vw;
+  height: 28vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  filter: drop-shadow(142px 215px 103px rgba(0, 0, 0, 0.01))
+    drop-shadow(80px 121px 87px rgba(0, 0, 0, 0.05))
+    drop-shadow(36px 54px 64px rgba(0, 0, 0, 0.09))
+    drop-shadow(9px 13px 35px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+}
+.hems_004 .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid red;
+}
+.hems_004 .circle > div:nth-child(1) {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(62, 155, 251, 0.3);
+}
+.hems_004 .circle > div:nth-child(2) {
+  position: absolute;
+  width: 27vw;
+  height: 27vw;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(62, 155, 251, 0.6);
+}
+.hems_004 .circle > div:nth-child(3) {
+  position: absolute;
+  width: 24vw;
+  height: 24vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #3e9bfb;
 }
 @media screen and (max-width: 450px) {
   .hems_title_wrap {

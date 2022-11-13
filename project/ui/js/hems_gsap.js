@@ -4,10 +4,9 @@ ScrollTrigger.matchMedia({
   "(min-width: 800px)": function () {
     gsap.fromTo(
       ".pain_point001",
-      { x: "-50%", rotate: "0" },
+      { x: "-50%" },
       {
         x: 0,
-        rotate: "360deg",
         scrollTrigger: {
           trigger: ".contents",
           start: "-100 50%",
@@ -34,10 +33,9 @@ ScrollTrigger.matchMedia({
     );
     gsap.fromTo(
       ".pain_point003",
-      { x: "50%", rotate: "0" },
+      { x: "50%" },
       {
         x: 0,
-        rotate: "-360deg",
         scrollTrigger: {
           trigger: ".contents",
           start: "-100 80%",
