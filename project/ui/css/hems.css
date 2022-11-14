@@ -3,20 +3,24 @@
   --gray500: #454545;
   --primary: #3e9bfb;
 }
-html {
-  box-sizing: border-box;
-  overflow-x: hidden;
-  font-size: 10px;
-}
+html,
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  color: var(--gray500);
-  line-height: 1.3;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
 }
 .mo_span {
   display: block;
@@ -26,8 +30,8 @@ body {
 }
 
 .hems_001 {
-  background: #6ca7e0;
-  height: 100vh;
+  background: #619ddb;
+  height: 100%;
 }
 .hems_title_wrap {
   position: absolute;
@@ -38,6 +42,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   color: var(--gray500);
+  z-index: 2;
 }
 .hems_001 .logo {
   background: url(../images/hems/hems_logo.svg) center center / 100% auto
@@ -67,8 +72,9 @@ body {
   font-weight: 500;
 }
 .hems_banner {
-  background: var(--primary);
-  color: #fff;
+  background: #f4f4f4;
+  color: #383744;
+  font-weight: 600;
   padding: 20rem 0;
   line-height: 1.5;
   display: flex;
@@ -133,27 +139,32 @@ body {
   background: #f4f4f4;
   border-radius: 12px;
 }
-
+.hems_002 .pain_point_container > div:nth-child(2) {
+  background: #6b6a77;
+  color: #fff;
+}
 .hems_002 .pain_point_wrap {
 }
 .hems_002 .pain_point_wrap > div:nth-child(1) {
   display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: #fff;
   background: var(--gray500);
-  padding: 0.4rem 1.2rem;
+  padding: 0.8rem 1.2rem;
   border-radius: 3rem;
   margin-bottom: 1.2rem;
 }
 .hems_002 .pain_point_wrap > div:nth-child(2) {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 .hems_002 .pain_point_wrap > div:nth-child(3) {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 2rem;
+  line-height: 1.5;
 }
 .hems_002 div:nth-child(1) > div > div:nth-child(4) {
   background: url(../images/hems/pain_interview001.svg) center center / 100%
@@ -367,9 +378,9 @@ body {
   }
   .hems_001_main {
     width: 100vw;
-    height: 83vw;
+    height: 100vw;
     right: 0;
-    bottom: 10vh;
+    bottom: 5vh;
   }
 
   .mo_span {
@@ -378,14 +389,21 @@ body {
   .mo_block {
     display: block;
   }
+  .hems_banner {
+    padding: 8rem 0;
+  }
   .hems_banner .desc {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .hems_002 {
     padding: 8rem 0;
   }
   .hems_002 .user_research {
     margin-bottom: 2rem;
+    font-size: 1.4rem;
+  }
+  .hems_002 .main_title {
+    font-size: 2rem;
   }
   .hems_002 .pain_point_container {
     flex-direction: column;
@@ -404,6 +422,7 @@ body {
   }
   .hems_003 {
     gap: 4rem;
+    padding: 8rem 0;
   }
   .hems_003_wrap {
     flex-direction: column;
@@ -421,9 +440,62 @@ body {
     width: 100%;
     height: 80vw;
   }
+  .hems_003 .journey_map_img {
+    width: 100%;
+    height: 40vw;
+    background: url(../images/hems/journeymap_img_m.svg) center center / 100%
+      auto no-repeat;
+  }
+  .hems_004 {
+    padding: 8rem 0;
+  }
   .hems_004 .text_container {
+    flex-direction: column;
     width: 100%;
     padding: 1.6rem;
     box-sizing: border-box;
+  }
+  .hems_004 .text_wrap01 {
+    height: 13rem;
+    font-size: 10vw;
+  }
+  .hems_004 .text_wrap01 .text_flex > div:nth-child(2) {
+    width: 13vw;
+    height: 13vw;
+  }
+  .hems_004_img_div {
+    position: relative;
+    height: 43rem;
+  }
+  .hems_004_img {
+    width: 100vw;
+    height: 100vw;
+    z-index: 100;
+    filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.3))
+      drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2))
+      drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+  }
+  .hems_004 .circle > div:nth-child(1) {
+    width: 80vw;
+    height: 80vw;
+  }
+  .hems_004 .circle > div:nth-child(2) {
+    width: 70vw;
+    height: 70vw;
+  }
+  .hems_004 .circle > div:nth-child(3) {
+    width: 60vw;
+    height: 60vw;
+  }
+  .hems_004 .text_wrap02 {
+    font-size: 10vw;
+    margin-left: 10vw;
+  }
+  .hems_004 .text_wrap02 .text_flex > div:nth-child(2) {
+    width: 13vw;
+    height: 13vw;
+  }
+  .hems_004 .text_wrap02 > div:nth-child(2) {
+    margin-top: 1rem;
   }
 }
