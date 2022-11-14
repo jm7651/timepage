@@ -366,8 +366,10 @@ body {
     left: 50%;
   }
   .hems_001_main {
-    width: 80vw;
+    width: 100vw;
     height: 83vw;
+    right: 0;
+    bottom: 10vh;
   }
 
   .mo_span {
@@ -375,5 +377,53 @@ body {
   }
   .mo_block {
     display: block;
+  }
+  .hems_banner .desc {
+    font-size: 2rem;
+  }
+  .hems_002 {
+    padding: 8rem 0;
+  }
+  .hems_002 .user_research {
+    margin-bottom: 2rem;
+  }
+  .hems_002 .pain_point_container {
+    flex-direction: column;
+  }
+  .hems_002 .pain_point_container > div {
+    width: 80vw;
+    height: 80vw;
+    padding: 2rem;
+  }
+  .hems_002 div:nth-child(1) > div > div:nth-child(4),
+  .hems_002 div:nth-child(2) > div > div:nth-child(4),
+  .hems_002 div:nth-child(3) > div > div:nth-child(4) {
+    width: 30vw;
+    height: 30vw;
+    margin: 0 0 0 auto;
+  }
+  .hems_003 {
+    gap: 4rem;
+  }
+  .hems_003_wrap {
+    flex-direction: column;
+  }
+  .hems_003 .user_flow_wrap,
+  .hems_003 .chart_wrap,
+  .hems_003 .talk_wrap,
+  .journey_map_wrap {
+    padding: 1.6rem;
+    box-sizing: border-box;
+  }
+  .hems_003 .user_flow_img,
+  .hems_003 .chart_img,
+  .hems_003 .talk_img {
+    width: 100%;
+    height: 80vw;
+  }
+  .hems_004 .text_container {
+    width: 100%;
+    padding: 1.6rem;
+    box-sizing: border-box;
   }
 }
