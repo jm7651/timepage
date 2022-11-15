@@ -50,9 +50,9 @@ html {
   width: 274px;
   height: 67px;
 }
-.hems_001_main {
-  /* background: url(../images/hems/hems_002_main.jpg) center center / 100% auto
-    no-repeat; */
+/* .hems_001_main {
+  background: url(../images/hems/hems_002_main.jpg) center center / 100% auto
+    no-repeat
   width: 40.31vw;
   height: 40vw;
   position: absolute;
@@ -61,11 +61,25 @@ html {
   outline: none;
 
   overflow: hidden;
+} */
+.hems_001_main {
+  width: 100vw;
+  height: 100vh;
+
+  right: 0;
+  bottom: 0;
+  outline: none;
+
+  overflow: hidden;
 }
 .hems_001_main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
   height: auto;
-  outline: none;
-  border: none;
 }
 .hems_001_desc {
   font-size: 2rem;
@@ -375,6 +389,7 @@ html {
   .hems_title_wrap {
     top: 30%;
     left: 50%;
+    transform: scale(0.7) translate(-61%, -50%);
   }
   .hems_001_main {
     width: 100vw;
