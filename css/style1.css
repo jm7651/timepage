@@ -319,7 +319,7 @@ body {
   color: #fff !important;
 }
 #about {
-  background: #000;
+  background: #111;
   display: flex;
   flex-direction: column;
   padding: 10vw;
