@@ -513,4 +513,10 @@ html {
   .hems_004 .text_wrap02 > div:nth-child(2) {
     margin-top: 1rem;
   }
+  .hems_001_main video {
+    width: 200vw;
+    left: 7%;
+    top: 50%;
+    transform: translate(-50%, -25%);
+  }
 }
