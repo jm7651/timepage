@@ -74,6 +74,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  clip-path: inset(1px 1px);
 }
 .hems_001_desc {
   font-size: 2rem;

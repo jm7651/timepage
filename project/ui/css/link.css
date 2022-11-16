@@ -57,13 +57,15 @@ body {
   font-size: 1.8rem;
   padding: 0.2rem 1.2rem;
   border: none;
-  width: 120px;
-  height: 40px;
+  width: 160px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   cursor: pointer;
+  gap: 0.8rem;
+  font-weight: 700;
 }
 .link_main_section .summary_button:hover {
   background: hsl(234, 92%, 80%);
@@ -91,6 +93,7 @@ body {
 .link_overview_section video {
   width: 50%;
   outline: none;
+  clip-path: inset(1px 1px);
 }
 video:focus {
   outline: none;
@@ -278,9 +281,7 @@ video:focus {
     font-size: 3.6rem;
   }
   .link001_desc {
-    font-size: 1.4rem;
-    width: 100%;
-    word-break: keep-all;
+    display: none;
   }
   .visual_section {
     box-sizing: border-box;
@@ -292,6 +293,7 @@ video:focus {
   }
   .link_overview_section video {
     width: 100%;
+    clip-path: inset(1px 1px);
   }
   .link_overview_desc {
     font-size: 1.5rem;
@@ -300,5 +302,24 @@ video:focus {
   }
   .mo_nobr {
     display: inline;
+  }
+  .link_overview_section {
+    height: auto;
+  }
+  .link_003 {
+    padding: 8rem 1.6rem;
+    width: 100%;
+  }
+  .painpoint_container {
+    width: 100%;
+  }
+  .painpoint_div {
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .painpoint_title_container {
+    justify-content: center;
   }
 }

@@ -6,11 +6,10 @@ btnModal.addEventListener("click", (e) => {
   modal.style.display = "flex";
   document.body.classList.add("stop-scroll");
   modalClose.style.display = "none";
-  console.log(summaryClose);
 });
 summaryClose.addEventListener("click", (e) => {
   modal.style.display = "none";
-  document.body.classList.renove("stop-scroll");
+  document.body.classList.remove("stop-scroll");
 });
 modal.addEventListener("click", (e) => {
   const evTarget = e.target;
