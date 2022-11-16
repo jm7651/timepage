@@ -23,6 +23,8 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/ui.css" />
     <link rel="stylesheet" href="css/link.css" />
+    \
+    <link rel="stylesheet" href="css/modal.css" />
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script> -->
   </head>
@@ -42,6 +44,7 @@
           프로그램으로, 가독성 있는 파이프라인을 만들어 쉽게 공유할 수 있는
           AI/ML 모델 개발 도구입니다.
         </p>
+        <button class="summary_button">요약</button>
         <div class="visual_section"></div>
       </div>
     </section>
@@ -176,6 +179,47 @@
         </div>
       </div>
     </section>
+    <section class="summary_modal modal-overlay">
+      <div class="modal_window">
+        <div>
+          <div>해결해야할 문제</div>
+          <p>
+            데이터사이언티스트들이 실험해본 코드들(파편적)을 논리구조적으로
+            나열할 수 있어야 한다 이 코드들은 서로 유기적으로 반응해야 한다
+            데이터사이언티스트들이 주로 사용하는 주피터에서 해결해야한다
+          </p>
+        </div>
+        <div>
+          <div>역할</div>
+          <p>
+            제품의 사용성 향상과 프로덕트 디자인 전반적인 방향과 UX관련 개선을
+            했습니다. 디자인 시스템을 만들고 디자인동료에게 공유했습니다.
+            초기에는 XD를 사용하였으나 디자인싱크가 많이 맞지않아 직접
+            코드수정을 했습니다만 코드 Ownership 문제로 비효율적이지만 옆자리
+            앉아서 하나하나 검수했습니다. 6개월이 지나고 피그마로 바꾸며
+            디자인싱크가 90% 가까이 맞았습니다만 Jira를 통해 코드레벨로 디테일한
+            디자인 검수를 하고 있습니다.
+          </p>
+        </div>
+        <div>
+          <div>문제해결</div>
+          <p>
+            데이터사이언티스트들의 모델링 속도개선이 30%이상 나아졌다는
+            내부피드백 및 외부 데이터사이언티스트들의 피드백을 받았습니다.
+          </p>
+        </div>
+        <div>
+          <div>직면한 과제</div>
+          <p>
+            시나리오상에서는 코드를 만들고 그것으로 파이프라인을 만드는
+            디자인설계를 했었으니 링크를 사용하는 사용자들 대다수가
+            파이프라인(러프하게)을 만들고 그 셀에 코드를 작성하여 시나리오
+            대응하는 UX개선을 해야합니다.VS code로 확장하게 되면서 VS code에
+            맞는 디자인을 해야합니다.
+          </p>
+        </div>
+      </div>
+    </section>
     <script>
       // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
       let vh = window.innerHeight * 0.01;
@@ -189,5 +233,6 @@
         document.documentElement.style.setProperty("--vh", `${vh}px`);
       });
     </script>
+    <script src="js/summary_modal.js"></script>
   </body>
 </html>

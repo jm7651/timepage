@@ -32,6 +32,7 @@ html {
 .hems_001 {
   background: #619ddb;
   height: 100%;
+  overflow: hidden;
 }
 .hems_title_wrap {
   position: absolute;
@@ -65,21 +66,14 @@ html {
 .hems_001_main {
   width: 100vw;
   height: 100vh;
-
   right: 0;
   bottom: 0;
   outline: none;
-
-  overflow: hidden;
 }
 .hems_001_main video {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
 }
 .hems_001_desc {
   font-size: 2rem;
@@ -385,6 +379,39 @@ html {
   border-radius: 50%;
   background: #3e9bfb;
 }
+.hems_005 {
+  background: #f4f4f4;
+}
+.hems_005_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 128rem;
+}
+.hems_005_flex_up {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hems_005_flex_up .text_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hems_005_flex_up .text_wrap > div:nth-child(1) {
+}
+.hems_005_flex_up .text_wrap > div:nth-child(2) {
+}
+.energy5_flex {
+}
+.hems_005_flex_left {
+  display: flex;
+  flex-direction: column;
+}
+.hems_005_flex_left .progressive_tax {
+}
+.hems_005_flex_left .progressive_tax .text_wrap {
+}
+
 @media screen and (max-width: 450px) {
   .hems_title_wrap {
     top: 30%;
