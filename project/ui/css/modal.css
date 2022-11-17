@@ -42,24 +42,6 @@
   height: 100%;
   overflow: hidden;
 }
-.modal_window > button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 5rem;
-  padding: 2rem;
-  border-radius: 50%;
-  background: transparent;
-  border: none;
-  font-weight: 100;
-  color: #fff;
-  border: 2px solid #232323;
-  background: url(../../../images/close_circle.svg) center center / 50% auto
-    no-repeat #232323;
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-}
 .modal_window > div:nth-child(2) {
   margin-top: 4rem;
 }

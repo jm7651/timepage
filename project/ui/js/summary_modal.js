@@ -10,11 +10,13 @@ btnModal.addEventListener("click", (e) => {
 summaryClose.addEventListener("click", (e) => {
   modal.style.display = "none";
   document.body.classList.remove("stop-scroll");
+  modalClose.style.display = "block";
 });
 modal.addEventListener("click", (e) => {
   const evTarget = e.target;
   if (evTarget.classList.contains("modal-overlay")) {
     modal.style.display = "none";
     document.body.classList.remove("stop-scroll");
+    modalClose.style.display = "block";
   }
 });

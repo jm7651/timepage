@@ -261,6 +261,12 @@ video:focus {
   font-size: 1.6rem;
   line-height: 1.5;
 }
+.link_summary_close {
+  background: #6c79f9;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
 @media screen and (max-width: 450px) {
   .link_main_section {
     width: 100%;
