@@ -39,22 +39,26 @@ function scrollIntoView(selector) {
 function iframeLoading() {
   const body = document.querySelector("body");
   const modalWrap = document.querySelector(".modal");
-  const work = document.querySelector(".work__projects");
   const project = document.querySelectorAll(".project");
   const modalClose = document.querySelector(".modal_close");
-  const bodyContainer = document.querySelector("body");
+
   document.querySelectorAll(".project").forEach((element) =>
     element.addEventListener("click", () => {
-      body.classList.add("modal_open");
-      body.classList.add("not-scroll");
-      project.forEach((item) => item.classList.remove("active"));
+      if (screen.width > 1200) {
+        body.style.paddingRight = "15px";
+      } else {
+        body.style.paddingRight = 0;
+      }
+
+      body.style.overflow = "hidden";
+      // project.forEach((item) => item.classList.remove("active"));
       modalWrap.classList.add("open");
     })
   );
   modalClose.addEventListener("click", () => {
     modalWrap.classList.remove("open");
-    body.classList.remove("not-scroll");
-    bodyContainer.classList.remove("modal_open");
+    body.style.paddingRight = "0px";
+    body.style.overflow = "auto";
   });
 }
 iframeLoading();
