@@ -1,0 +1,28 @@
+.progrss_header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #cccccc;
+}
+
+.progress-container .progress-bar {
+  width: 0;
+  height: 8px;
+  background: #4caf50;
+}
+.progress-container .hems_progressbar {
+  background: #3e9bfb;
+}
+.progress-container .cueat_progressbar {
+  background: #ffe54d;
+}
+.progress-container .agripa_progressbar {
+  background: #56ba70;
+}

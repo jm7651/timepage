@@ -26,9 +26,15 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="css/cueat.css" />
     <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="css/progressbar.css" />
   </head>
   <body>
     <div class="blackblock cueatblock"><div class="loader"></div></div>
+    <div class="progrss_header">
+      <div class="progress-container">
+        <div class="progress-bar cueat_progressbar"></div>
+      </div>
+    </div>
     <section class="cueat_001">
       <div class="cueat_container">
         <div class="cueat_logo"></div>
@@ -450,6 +456,7 @@
     </section>
     <script src="js/swiper.js" defer></script>
     <script src="js/cueat_swiper.js" defer></script>
+    <script src="js/progressBar.js"></script>
     <script>
       $(window).on("load", function () {
         $(".blackblock").fadeOut(1000);

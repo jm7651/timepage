@@ -16,18 +16,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
-    <link rel="stylesheet" href="css/agripa.css" />
-    <link rel="stylesheet" href="css/loading.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/agripa.css" />
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="css/progressbar.css" />
   </head>
   <body>
     <div class="blackblock agripablock"><div class="loader"></div></div>
+    <div class="progrss_header">
+      <div class="progress-container">
+        <div class="progress-bar agripa_progressbar"></div>
+      </div>
+    </div>
     <section class="agripa_001">
       <div class="agripa_001_logo_wrap">
         <div class="agripa_001_logo"></div>
@@ -366,6 +371,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="js/agripa_gsap.js"></script>
     <script src="js/agripa_swiper.js" defer></script>
+    <script src="js/progressBar.js"></script>
     <script>
       function setScreenSize() {
         let vh = window.innerHeight * 0.01;

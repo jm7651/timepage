@@ -36,7 +36,7 @@ html {
 }
 .hems_title_wrap {
   position: absolute;
-  top: 40%;
+  top: 32%;
   left: 40%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -69,11 +69,12 @@ html {
   right: 0;
   bottom: 0;
   outline: none;
+  overflow: hidden;
 }
 .hems_001_main video {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 10vw;
   clip-path: inset(1px 1px);
 }
 .hems_001_desc {
@@ -415,15 +416,17 @@ html {
 
 @media screen and (max-width: 450px) {
   .hems_title_wrap {
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: scale(0.7) translate(-61%, -50%);
   }
   .hems_001_main {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     right: 0;
     bottom: 5vh;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .mo_span {
@@ -541,10 +544,17 @@ html {
   .hems_004 .text_wrap02 > div:nth-child(2) {
     margin-top: 1rem;
   }
+  .hems_001_main {
+    position: absolute;
+    top: 0;
+    left: 0%;
+
+    overflow: hidden;
+  }
   .hems_001_main video {
     width: 200vw;
-    left: 7%;
-    top: 50%;
-    transform: translate(-50%, -25%);
+    position: absolute;
+    left: -85%;
+    top: 45vh;
   }
 }

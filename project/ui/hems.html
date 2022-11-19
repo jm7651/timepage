@@ -16,9 +16,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="css/progressbar.css" />
     <link rel="stylesheet" href="css/hems.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
   <body>
+    <div class="blackblock"><div class="loader"></div></div>
+    <div class="progrss_header">
+      <div class="progress-container">
+        <div class="progress-bar hems_progressbar"></div>
+      </div>
+    </div>
     <section class="hems_001">
       <div class="hems_title_wrap">
         <div class="logo"></div>
@@ -26,7 +35,6 @@
       </div>
       <div class="hems_001_main">
         <video
-          width="100%"
           src="images/hems/house1.mp4"
           type="video/mp4"
           autoplay=""
@@ -143,7 +151,7 @@
         </div>
       </div>
     </section>
-    <section class="hems_005">
+    <!-- <section class="hems_005">
       <div class="hems_005_wrap">
         <div class="hems_005_flex_up">
           <div class="text_wrap">
@@ -188,7 +196,7 @@
           <div class="hems_005_flex_right"></div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="hems_006"></section>
     <section class="hems_007"></section>
     <section class="hems_008"></section>
@@ -205,7 +213,13 @@
       ></iframe>
     </section> -->
   </body>
+  <script>
+    $(window).on("load", function () {
+      $(".blackblock").fadeOut(1000);
+    });
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
   <script src="js/hems_gsap.js"></script>
+  <script src="js/progressBar.js"></script>
 </html>
