@@ -23,7 +23,6 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/ui.css" />
     <link rel="stylesheet" href="css/link.css" />
-
     <link rel="stylesheet" href="css/modal.css" />
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script> -->
@@ -197,7 +196,6 @@
     </section>
     <section class="summary_modal modal-overlay">
       <div class="modal_window">
-        <button class="summary_close"></button>
         <div>
           <div class="modal_title">해결해야할 문제</div>
           <p>
@@ -236,22 +234,10 @@
             맞는 디자인을 해야합니다.
           </p>
         </div>
-        <button class="link_summary_close">닫기</button>
+        <button class="link_summary_close summary_close">닫기</button>
       </div>
     </section>
-    <script>
-      // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-      let vh = window.innerHeight * 0.01;
-      // Then we set the value in the --vh custom property to the root of the document
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-      // We listen to the resize event
-      window.addEventListener("resize", () => {
-        // We execute the same script as before
-        let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty("--vh", `${vh}px`);
-      });
-    </script>
+    <script src="../../js/vh.js"></script>
     <script src="js/summary_modal.js"></script>
   </body>
 </html>
