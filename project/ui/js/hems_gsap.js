@@ -9,10 +9,9 @@ ScrollTrigger.matchMedia({
         x: 0,
         scrollTrigger: {
           trigger: ".contents",
-          start: "-100 50%",
+          start: "-100 80%",
           end: "0 70%",
           scrub: 1,
-          start: "top 80%",
         },
       }
     );
@@ -24,10 +23,9 @@ ScrollTrigger.matchMedia({
         scrollTrigger: {
           trigger: ".contents",
           start: "-100 80%",
-          end: "0 50%",
+          end: "0 70%",
           scrub: 1,
           // markers: true,
-          start: "top 80%",
         },
       }
     );
@@ -42,9 +40,105 @@ ScrollTrigger.matchMedia({
           end: "0 70%",
           scrub: 1,
           // markers: true,
-          start: "top 80%",
         },
       }
     );
+
+    gsap.fromTo(
+      ".hems_004_st001",
+      { x: "-500px", opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".hems_004",
+          start: "-150 50%",
+          end: "0 70%",
+          scrub: 1,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".hems_004_st002",
+      { x: "-400px", opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".hems_004_st001",
+          start: "-100 50%",
+          end: "0 70%",
+          scrub: 1,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".hems_004_st003",
+      { x: "-400px", opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".hems_004_st002",
+          start: "-50 50%",
+          end: "0 70%",
+          scrub: 1,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".hems_004_st004",
+      { x: "600px", opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".hems_004_st003",
+          start: "-0 50%",
+          end: "0 70%",
+          scrub: 1,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".hems_004_st005",
+      { x: "400px", opacity: 0 },
+      {
+        x: 0,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: ".hems_004_st004",
+          start: "50 50%",
+          end: "0 70%",
+          scrub: 1,
+        },
+      }
+    );
+    gsap.fromTo(
+      ".hems_004_img",
+      { scale: 0.7, y: "-20%" },
+      {
+        scale: 1,
+        y: "-50%",
+        scrollTrigger: {
+          trigger: ".hems_004_st003",
+          start: "-300 50%",
+          end: "0 70%",
+          scrub: 1,
+        },
+      }
+    );
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".hems_004_st003",
+        start: "0 80%",
+        end: "+=300 50%%",
+        scrub: 1,
+        // markers: true,
+      },
+    });
+    tl.fromTo(".circle01", { opacity: 0 }, { opacity: 1, duration: 1 });
+    tl.fromTo(".circle02", { opacity: 0 }, { opacity: 1, duration: 1 });
+    tl.fromTo(".circle03", { opacity: 0 }, { opacity: 1, duration: 1 });
   },
 });
