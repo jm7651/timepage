@@ -116,10 +116,9 @@ ScrollTrigger.matchMedia({
     );
     gsap.fromTo(
       ".hems_004_img",
-      { scale: 0.7, y: "-20%" },
+      { scale: 0.7 },
       {
         scale: 1,
-        y: "-50%",
         scrollTrigger: {
           trigger: ".hems_004_st003",
           start: "-300 50%",
@@ -140,5 +139,21 @@ ScrollTrigger.matchMedia({
     tl.fromTo(".circle01", { opacity: 0 }, { opacity: 1, duration: 1 });
     tl.fromTo(".circle02", { opacity: 0 }, { opacity: 1, duration: 1 });
     tl.fromTo(".circle03", { opacity: 0 }, { opacity: 1, duration: 1 });
+  },
+
+  "(max-width: 799px)": function () {
+    let sections = gsap.utils.toArray(".panel");
+
+    gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".container",
+        pin: true,
+        scrub: 1,
+        snap: 1 / (sections.length - 1),
+        end: () => "+=" + document.querySelector(".container").offsetWidth,
+      },
+    });
   },
 });
