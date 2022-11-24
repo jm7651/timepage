@@ -85,17 +85,22 @@ html {
   font-weight: 500;
 }
 .hems_banner {
-  background: #f4f4f4;
+  background: #e9e8ed;
   color: #383744;
   font-weight: 600;
-  padding: 20rem 0;
+  padding: 16rem 0 0;
   line-height: 1.5;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hems_banner video {
+  width: 24%;
 }
 .hems_banner .desc {
-  font-size: 3.2rem;
-  font-weight: 500;
+  font-size: 2.8rem;
+  font-weight: 700;
   text-align: center;
 }
 .hems_002 {
@@ -104,12 +109,6 @@ html {
   flex-direction: column;
   background: #fff;
   height: auto;
-}
-.hems_002 .user_research {
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 8rem;
 }
 .hems_002 .contents {
   max-width: 128rem;
@@ -178,6 +177,7 @@ html {
   font-weight: 400;
   margin-bottom: 2rem;
   line-height: 1.5;
+  word-break: keep-all;
 }
 .hems_002 div:nth-child(1) > div > div:nth-child(4) {
   background: url(../images/hems/pain_interview001.svg) center center / 100%
@@ -208,6 +208,7 @@ html {
   gap: 2rem;
   max-width: 128rem;
   margin: 0 auto;
+  line-height: 1.3;
 }
 
 .hems_003_wrap {
@@ -215,6 +216,7 @@ html {
   width: 100%;
   margin: 0 auto;
   justify-content: space-between;
+  margin-top: 8rem;
 }
 .hems_003 .chart_talk_wrap {
   display: flex;
@@ -273,8 +275,7 @@ html {
 }
 .hems_004 {
   position: relative;
-  padding: 20rem 0;
-  height: 50vh;
+  height: 100vh;
   overflow: hidden;
 }
 .hems_004 .text_container {
@@ -292,6 +293,7 @@ html {
 }
 .hems_004 .text_wrap01 {
   margin-left: 2vw;
+  margin-top: 28vh;
 }
 .hems_004 .text_wrap01 .regular,
 .hems_004 .text_wrap02 .regular {
@@ -304,7 +306,7 @@ html {
   margin-left: 6vw;
 }
 .hems_004 .text_wrap02 {
-  margin-top: 6vw;
+  margin-top: 50vh;
 }
 .hems_004 .text_wrap02 > div:nth-child(2) {
   margin-left: 4vw;
@@ -358,11 +360,12 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  filter: blur(100px);
 }
 .hems_004 .circle > div:nth-child(1) {
   position: absolute;
-  width: 30vw;
-  height: 30vw;
+  width: 40vw;
+  height: 40vw;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -371,8 +374,8 @@ html {
 }
 .hems_004 .circle > div:nth-child(2) {
   position: absolute;
-  width: 27vw;
-  height: 27vw;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -381,8 +384,8 @@ html {
 }
 .hems_004 .circle > div:nth-child(3) {
   position: absolute;
-  width: 24vw;
-  height: 24vw;
+  width: 20vw;
+  height: 20vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -391,7 +394,7 @@ html {
 }
 .hems_005 {
   width: 100%;
-  background: #f4f4f4;
+  background: #f1f3fa;
   overflow: hidden;
   padding: 16rem 0;
 }
@@ -409,7 +412,7 @@ html {
 .hems_005_flex_up .text_wrap {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 .hems_005_flex_up .text_wrap > div:nth-child(1) {
   color: var(--primary);
@@ -434,13 +437,14 @@ html {
   background: url(../images/hems/energy5s.svg) center center / 100% auto
     no-repeat;
   width: 20vw;
-  height: 7vh;
+  height: 10vh;
+  max-width: 36rem;
 }
 .hems_005_flex_left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 24rem;
+  margin-top: 10rem;
 }
 .hems_005_flex_left .progressive_tax {
   margin-top: 2rem;
@@ -455,30 +459,23 @@ html {
   font-size: 2rem;
   font-weight: 600;
   color: var(--gray500);
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
 }
 .hems_005_flex_left .progressive_tax .text_wrap > p {
   font-size: 1.5rem;
   font-weight: 400;
   color: var(--gray500);
   opacity: 0.7;
+  word-break: keep-all;
 }
 .progressive_tax_wrap {
   margin-top: 2rem;
 }
 .progressive_tax_wrap img {
   border-radius: 20px;
-  box-shadow: 142px 215px 103px rgba(0, 0, 0, 0.01),
-    80px 121px 87px rgba(0, 0, 0, 0.05), 36px 54px 64px rgba(0, 0, 0, 0.09),
-    9px 13px 35px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.progressive_tax_img {
-  /* background: url(../images/hems/progressive_tax.svg) center center / 100% auto
-    no-repeat;
-  width: 18vw;
-  height: 29vh; */
-}
 .hems_005_flex_down {
   display: flex;
   justify-content: space-between;
@@ -491,30 +488,111 @@ html {
 .add_info_flex3 {
   margin-top: 8rem;
   display: flex;
+  flex-direction: column;
   gap: 4rem;
 }
 .add_info_flex3 > div > div {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
 }
 .add_info_flex3 > div > p {
   font-size: 1.5rem;
   font-weight: 400;
   opacity: 0.7;
-  width: 10vw;
+  width: 12vw;
   word-break: keep-all;
 }
 .hems_005_flex_right > div {
   width: 24vw;
+  max-width: 38rem;
 }
 .hems_005_flex_right > div > img {
   width: 100%;
-  filter: drop-shadow(142px 215px 103px rgba(0, 0, 0, 0.01))
-    drop-shadow(36px 54px 64px rgba(0, 0, 0, 0.09))
-    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+}
+.hems_text_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.hems_text_wrap > div:nth-child(1) {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.hems_text_wrap > div:nth-child(2) {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.hems_text_wrap > p {
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+}
+.hems_006 {
+  padding: 16rem 0;
+  max-width: 128rem;
+  margin: 0 auto;
+}
+.hems_006 img {
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.hems_007 {
+  padding: 16rem 0;
+  background: var(--primary);
+}
+.hems_007 .hems_text_wrap > div:nth-child(1),
+.hems_007 .hems_text_wrap > div:nth-child(2),
+.hems_007 .hems_text_wrap > p {
+  color: #fff;
+  line-height: 1.3;
+}
+.hems_007_wrap {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+.hems_007_img_wrap {
+  display: flex;
+  margin-top: 12rem;
+  gap: 6rem;
+  align-items: center;
+}
+.hems_007_img_wrap div:nth-child(1) {
+  width: 36%;
+}
+.hems_007_img_wrap div img {
+  width: 100%;
+}
+.hems_008 {
+  padding: 16rem 0;
+}
+.hems_008_wrap {
+  width: 128rem;
+  margin: 0 auto;
 }
 @media screen and (max-width: 450px) {
+  .panel {
+    width: auto;
+  }
+  .hems_text_wrap > div:nth-child(1) {
+    color: var(--primary);
+  }
+  .hems_text_wrap > div:nth-child(2) {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .hems_text_wrap > p:nth-child(3) {
+    font-size: 1.5rem;
+  }
   .hems_title_wrap {
     top: 25%;
     left: 50%;
@@ -528,25 +606,39 @@ html {
     overflow: hidden;
     box-sizing: border-box;
   }
+  .hems_001_main {
+    position: absolute;
+    top: 0;
+    left: 0%;
 
+    overflow: hidden;
+  }
+  .hems_001_main video {
+    width: 200vw;
+    position: absolute;
+    left: -85%;
+    top: 12vh;
+  }
   .mo_span {
-    display: inline-block;
+    display: inline;
   }
   .mo_block {
     display: block;
   }
   .hems_banner {
-    padding: 8rem 0;
+    word-break: keep-all;
+    width: 100%;
+    padding: 8rem 1.6rem;
+    box-sizing: border-box;
   }
   .hems_banner .desc {
     font-size: 1.6rem;
   }
   .hems_002 {
-    padding: 8rem 0;
+    padding: 6rem 0;
   }
-  .hems_002 .user_research {
+  .hems_002 .text_container {
     margin-bottom: 2rem;
-    font-size: 1.4rem;
   }
   .hems_002 .main_title {
     font-size: 2rem;
@@ -556,7 +648,7 @@ html {
   }
   .hems_002 .pain_point_container > div {
     width: 80vw;
-    height: 80vw;
+    height: auto;
     padding: 2rem;
   }
   .hems_002 div:nth-child(1) > div > div:nth-child(4),
@@ -568,10 +660,10 @@ html {
   }
   .hems_003 {
     gap: 4rem;
-    padding: 8rem 0;
+    padding: 4rem 1.6rem;
   }
   .hems_003_wrap {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .hems_003 .user_flow_wrap,
   .hems_003 .chart_wrap,
@@ -579,6 +671,7 @@ html {
   .journey_map_wrap {
     padding: 1.6rem;
     box-sizing: border-box;
+    align-items: flex-start;
   }
   .hems_003 .user_flow_img,
   .hems_003 .chart_img,
@@ -594,6 +687,7 @@ html {
   }
   .hems_004 {
     padding: 8rem 0;
+    height: auto;
   }
   .hems_004 .text_container {
     flex-direction: column;
@@ -604,6 +698,7 @@ html {
   .hems_004 .text_wrap01 {
     height: 13rem;
     font-size: 10vw;
+    margin-top: 0;
   }
   .hems_004 .text_wrap01 .text_flex > div:nth-child(2) {
     width: 13vw;
@@ -636,6 +731,7 @@ html {
   .hems_004 .text_wrap02 {
     font-size: 10vw;
     margin-left: 10vw;
+    margin-top: 4vh;
   }
   .hems_004 .text_wrap02 .text_flex > div:nth-child(2) {
     width: 13vw;
@@ -644,17 +740,67 @@ html {
   .hems_004 .text_wrap02 > div:nth-child(2) {
     margin-top: 1rem;
   }
-  .hems_001_main {
-    position: absolute;
-    top: 0;
-    left: 0%;
-
-    overflow: hidden;
+  .hems_004 .circle {
+    filter: blur(0);
   }
-  .hems_001_main video {
-    width: 200vw;
-    position: absolute;
-    left: -85%;
-    top: 12vh;
+  .hems_005 {
+    padding: 8rem 1.6rem;
+    box-sizing: border-box;
+  }
+  .hems_005_wrap {
+    width: 100%;
+  }
+  .energy5_flex_title {
+    font-size: 1.5rem;
+  }
+  .energy5_flex_img {
+    width: 80%;
+  }
+  .hems_005_flex_up .text_wrap > div:nth-child(2) {
+    font-size: 2.4rem;
+    word-break: keep-all;
+  }
+  .hems_005_flex_down {
+    flex-direction: column-reverse;
+  }
+  .hems_005_flex_down .hems_005_flex_left .text_wrap > .title {
+    font-size: 2rem;
+  }
+  .hems_005_flex_left {
+    margin-top: 0;
+  }
+  .hems_005_flex_right > div {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    transform: translate(4%, 0);
+  }
+  .progressive_tax_wrap {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .progressive_tax_wrap img {
+    width: 100%;
+  }
+  .hems_005_flex_left > .text_wrap {
+    margin-top: 8rem;
+    word-break: keep-all;
+  }
+  .add_info_flex3 {
+    margin-top: 4rem;
+  }
+  .add_info_flex3 > div > p {
+    width: 100%;
+  }
+  .hems_006 {
+    padding: 4rem 1.6rem;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 1.3;
+  }
+  .hems_007 {
+    padding: 4rem 1.6rem;
+    box-sizing: border-box;
   }
 }

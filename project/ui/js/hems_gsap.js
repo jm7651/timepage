@@ -93,7 +93,7 @@ ScrollTrigger.matchMedia({
         x: 0,
         opacity: 1,
         scrollTrigger: {
-          trigger: ".hems_004_st003",
+          trigger: ".hems_004_st002",
           start: "-0 50%",
           end: "0 70%",
           scrub: 1,
