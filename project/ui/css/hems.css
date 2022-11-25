@@ -650,6 +650,9 @@ html {
     padding: 8rem 1.6rem;
     box-sizing: border-box;
   }
+  .hems_banner_video_wrap::before {
+    display: none;
+  }
   .hems_banner .desc {
     font-size: 1.6rem;
   }
