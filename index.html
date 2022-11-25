@@ -25,6 +25,17 @@
     <script src="js/jquery-3.5.1.min.js"></script>
   </head>
   <body>
+    <div class="modal t01" id="modal">
+      <div>
+        <button class="modal_close"></button>
+      </div>
+      <iframe
+        onload="loading();"
+        src="000.html"
+        name="site"
+        id="iframe"
+      ></iframe>
+    </div>
     <nav id="navbar">
       <div class="navbar__logo"></div>
       <ul class="navbar__menu">
@@ -926,17 +937,6 @@
         <div class="footer">2021 JMWORLD - All rights reserved</div>
       </div>
     </section>
-    <div class="modal t01" id="modal">
-      <div>
-        <button class="modal_close"></button>
-      </div>
-      <iframe
-        onload="loading();"
-        src="000.html"
-        name="site"
-        id="iframe"
-      ></iframe>
-    </div>
     <script src="js/main.js" defer></script>
     <script src="js/marquee.js"></script>
     <script src="js/windowwh.js"></script>
