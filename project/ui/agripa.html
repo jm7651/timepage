@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/loading.css" />
     <link rel="stylesheet" href="css/progressbar.css" />
   </head>
-  <body>
+  <body class="no-scroll">
     <div class="blackblock agripablock"><div class="loader"></div></div>
     <div class="progrss_header">
       <div class="progress-container">
@@ -366,6 +366,7 @@
     </section>
     <script>
       $(window).on("load", function () {
+        document.body.classList.remove("no-scroll");
         $(".blackblock").fadeOut(1000);
       });
     </script>

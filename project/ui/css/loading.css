@@ -1,3 +1,7 @@
+body.no-scroll {
+  overflow: hidden !important;
+  height: 100%;
+}
 .blackblock {
   position: fixed;
   width: 100vw;
@@ -24,6 +28,9 @@
 }
 .cueatblock {
   background: #ffe54d;
+}
+.hemsblock {
+  background: #619ddb;
 }
 @keyframes spin {
   0% {
