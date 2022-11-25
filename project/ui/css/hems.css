@@ -636,6 +636,7 @@ html {
     position: absolute;
     left: -85%;
     top: 12vh;
+    box-shadow: none;
   }
   .mo_span {
     display: inline;
