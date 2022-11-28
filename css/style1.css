@@ -757,23 +757,31 @@ body {
     padding: 0;
     background: #fff;
     position: fixed;
+    transition: all 1s;
   }
   .navbar__logo {
     justify-content: flex-start;
     position: absolute;
-    top: 20%;
-    left: 5%;
     z-index: 100;
     width: 100%;
+    height: 100%;
   }
   .navbar__logo img {
     width: 30%;
   }
   #navbar img:nth-child(1) {
+    position: absolute;
     width: 30%;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
   }
   #navbar .navbar__logo img:nth-child(2) {
+    position: absolute;
     width: 30%;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
   }
 
   .navbar__menu::before {
@@ -900,7 +908,7 @@ body {
   }
   .title_section {
     width: 100%;
-    top: 25%;
+    top: 30%;
   }
   .main_title {
     width: auto;
