@@ -35,13 +35,10 @@ function scrollIntoView(selector) {
 }
 
 //모달
-
 function iframeLoading() {
   const body = document.querySelector("body");
   const modalWrap = document.querySelector(".modal");
-  const project = document.querySelectorAll(".project");
   const modalClose = document.querySelector(".modal_close");
-
   document.querySelectorAll(".project").forEach((element) =>
     element.addEventListener("click", () => {
       if (screen.width > 1200) {
