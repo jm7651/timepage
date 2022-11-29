@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+html,
+body {
+  font-size: 10px;
+
+  background-color: #fff;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
+
+.link_header {
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
+  top: 0;
+  width: 100%;
+  height: 4vh;
+  border-bottom: 1px solid #191919;
+  display: flex;
+  align-items: center;
+  padding-left: 5vh;
+  font-size: 2vh;
+}
+.link_header img {
+  width: 4%;
+}
+.link_section {
+  padding-top: 4vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vh;
+}
+.link_flex_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.link001_desc {
+  font-size: 1.6rem;
+
+  width: 74.8rem;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+.link_title_wrap {
+  width: 42vw;
+}
+.link_title_wrap > div {
+  padding-left: 162px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.link_title_wrap .main_title {
+  font-family: "Space Mono", sans-serif;
+}
+.link_main_wrap {
+  width: 58vw;
+}
+.main-content-1 {
+  background-color: #ebefd6;
+  border-top: 1px solid #191919;
+  border-bottom: 1px solid #191919;
+  width: 100%;
+  height: 500vh;
+  margin-bottom: 100vh;
+}
+
+.sticky-title {
+  width: 100%;
+  height: 76vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fafafa;
+}
+
+.title {
+  border-top: 1px solid #191919;
+  background-color: #fff;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  font-size: 2vh;
+  padding-left: 3vh;
+}
