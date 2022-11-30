@@ -39,6 +39,7 @@ function iframeLoading() {
   const body = document.querySelector("body");
   const modalWrap = document.querySelector(".modal");
   const modalClose = document.querySelector(".modal_close");
+  const iframe = document.querySelector("#iframe");
   document.querySelectorAll(".project").forEach((element) =>
     element.addEventListener("click", () => {
       if (screen.width > 1200) {
@@ -56,6 +57,9 @@ function iframeLoading() {
     modalWrap.classList.remove("open");
     body.style.paddingRight = "0px";
     body.style.overflow = "auto";
+    setTimeout(function () {
+      iframe.src = "../000,html";
+    }, 300);
   });
 }
 iframeLoading();
