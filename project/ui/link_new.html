@@ -9,23 +9,67 @@
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
     <link rel="stylesheet" href="css/link_new.css" />
+    <link rel="stylesheet" href="css/modal.css" />
     <title>Document</title>
   </head>
   <body>
+    <section class="summary_modal modal-overlay">
+      <div class="modal_window">
+        <div>
+          <div class="modal_title">해결해야할 문제</div>
+          <p>
+            1.데이터사이언티스트들이 실험해본 코드들(파편적)을 논리구조적으로
+            나열할 수 있어야 한다<br />2.이 코드들은 서로 유기적으로 반응해야
+            한다<br />3.데이터사이언티스트들이 주로 사용하는 주피터에서
+            해결해야한다
+          </p>
+        </div>
+        <div>
+          <div class="modal_title">디자인 역할</div>
+          <p>
+            제품의 사용성 향상과 프로덕트 디자인 전반적인 방향과 UX관련 개선을
+            했습니다. 디자인 시스템을 만들고 디자인동료에게 공유했습니다.
+            초기에는 XD를 사용하였으나 디자인싱크가 많이 맞지않아 직접
+            코드수정을 했습니다만 코드 Ownership 문제로 비효율적이지만 옆자리
+            앉아서 하나하나 검수했습니다. 6개월이 지나고 피그마로 바꾸며
+            디자인싱크가 90% 가까이 맞았습니다만 Jira를 통해 코드레벨로 디테일한
+            디자인 검수를 하고 있습니다.
+          </p>
+        </div>
+        <div>
+          <div class="modal_title">문제해결</div>
+          <p>
+            데이터사이언티스트들의 모델링 속도개선이 30%이상 나아졌다는
+            내부피드백 및 외부 데이터사이언티스트들의 피드백을 받았습니다.
+          </p>
+        </div>
+        <div>
+          <div class="modal_title">직면한 과제</div>
+          <p>
+            시나리오상에서는 코드를 만들고 그것으로 파이프라인을 만드는
+            디자인설계를 했었으니 링크를 사용하는 사용자들 대다수가
+            파이프라인(러프하게)을 만들고 그 셀에 코드를 작성하여 시나리오
+            대응하는 UX개선을 해야합니다.VS code로 확장하게 되면서 VS code에
+            맞는 디자인을 해야합니다.
+          </p>
+        </div>
+        <button class="link_summary_close summary_close">닫기</button>
+      </div>
+    </section>
     <div class="link_header">
       <img src="images/link/link_logo.svg" alt="" />
     </div>
-    <div class="link_section">
+    <section class="link_001">
       <div class="link_flex_wrap">
-        <div class="link_title_wrap">
+        <div class="link_main_title_wrap">
           <div>
             <div class="main_title">
               A better experience for<br /><span>Data Scientists</span>
             </div>
             <p class="link001_desc">
               데이터 사이언티스트가 친숙하게 사용하는 주피터랩(JupyterLab)의
-              확장 프로그램으로, 가독성 있는 파이프라인을 만들어 쉽게 공유할 수
-              있는 AI/ML 모델 개발 도구입니다.
+              확장 프로그램으로, <br />가독성 있는 파이프라인을 만들어 쉽게
+              공유할 수 있는 AI/ML 모델 개발 도구입니다.
             </p>
             <button class="summary_button">
               <span>링크 요약</span><span class="link_arrow_button"></span>
@@ -53,13 +97,134 @@
           <li><img src="images/link/marquee_hongik_logo.jpg" alt="" /></li>
         </ul>
       </div>
-    </div>
-    <div class="start-screen">Scroll To Bottom</div>
+    </section>
+    <section class="link_002">
+      <div class="link_flex_wrap">
+        <div class="link_002_main">
+          <img src="images/link/link_002_main.jpg" alt="" />
+        </div>
+        <div class="link_flex_column_wrap">
+          <div class="link_002_title_wrap">
+            <div class="subject">Overview</div>
+            <div class="link_title">
+              왜 마키나락스(MakinaRocks)는<br />
+              <span>Link</span>를 개발했을까?
+            </div>
+            <div class="link_002_desc">
+              마키나락스(MakinaRocks)는 산업용 AI기술을 활용하여 산업계의 다양한
+              문제를 해결해 왔습니다. 다수의 데이터 사이언티스트(Data
+              Scientist)들이 산업의 다양한 문제를 해결하기 위해 연구 개발에
+              몰두하고 있으며, 데이터 사이언티스트들의 성과(Performance) 향상을
+              위해 업무 방식 개선과 업무 효율 극대화에 많은 고민과 관심을 가지게
+              되었습니다.
+            </div>
+          </div>
+          <div class="link_002_video">
+            <video autoplay="" loop="" muted="" playsinline="">
+              <source src="images/link/link_overview.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="link_002_bottom_text_wrap">
+        링크(Link)는 데이터 사이언티스트(Data Scientist)가 친숙하게 사용하는
+        개발 환경인 주피터 랩(JupyterLab)의 확장프로그램(Extension)형태로
+        개발되었으며,<br />기존 주피터의 사용성을 그대로 유지하고
+        학습시간(Learning curve)을 최소화하는 방향으로 개발되었습니다. 코드 작성
+        화면과 동일한 화면에서 파이프라인(Pipeline)을 생성할 수 있으며
+        만들어진파이프라인 즉시 실행하여 결과를 확인 할 수 있습니다.
+      </div>
+    </section>
+    <section class="link_003">
+      <div class="title_wrap">
+        <div class="subject">User research</div>
+        <div class="link_title">
+          설문조사와 인터뷰를 통해<br />
+          Jupyter의 Painpoint를 정리했습니다.
+        </div>
+        <div>
+          SKT, Socar, MakinaRocks 데이터사이언티스트등을 대상으로 설문조사
+          했습니다.
+        </div>
+      </div>
+      <div class="pain_point_wrap">
+        <div>Pain point1</div>
+        <div class="pain_point_div">
+          <div class="pain_profile">
+            <img src="images/link/painpoint001.svg" alt="" />
+          </div>
+          <div>
+            <div>
+              <div></div>
+              <div>‘Cell 간의 연결성을 확인하기 어렵다.’</div>
+            </div>
+            <div>
+              Jupyter는 탐색적 데이터 분석에 적합한 툴 즉, 빠르고 직관적인 Cell
+              단위 코드 작성/실행, 결과값 확인
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pain_point_wrap">
+        <div>Pain point1</div>
+        <div class="pain_point_div">
+          <div class="pain_profile">
+            <img src="images/link/painpoint002.svg" alt="" />
+          </div>
+          <div>
+            <div>
+              <div></div>
+              <div>‘반복적 재 실행을 통한 작업 시간 지연된다.’</div>
+            </div>
+            <div>
+              Jupyter는 Cell 단위로 코드 작성하고 결과값을 얻기 위해 반복적
+              Cell을 실행
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pain_point_wrap">
+        <div>Pain point1</div>
+        <div class="pain_point_div">
+          <div class="pain_profile">
+            <img src="images/link/painpoint003.svg" alt="" />
+          </div>
+          <div>
+            <div>
+              <div></div>
+              <div>‘공유가 어렵고 코드 이해도가 떨어진다.’</div>
+            </div>
+            <div>
+              Jupyter는 사용자의 경험과 노하우에 따라 사용방법과 개발환경이 상이
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pain_point_wrap">
+        <div>Pain point1</div>
+        <div class="pain_point_div">
+          <div class="pain_profile">
+            <img src="images/link/painpoint004.svg" alt="" />
+          </div>
+          <div>
+            <div>
+              <div></div>
+              <div>‘입/출력이 다양하고 호환성이 떨어진다.’</div>
+            </div>
+            <div>
+              Jupyter는 자유도가 높은 툴이기 때문에 사용자가 원하는 스타일대로
+              자유롭게 개발.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="main-content-1">
       <div class="sticky">
-        <div class="sticky-title">
+        <!-- <div class="sticky-title">
           Inspired By <br />https://www.appart.agency/
-        </div>
+        </div> -->
         <div class="section section-1">
           <div class="title">TITLE #1</div>
           <div class="content"></div>
@@ -80,5 +245,7 @@
     </div>
     <script src="js/link_new.js"></script>
     <script src="js/link_marquee.js"></script>
+    <script src="../../js/vh.js"></script>
+    <script src="js/summary_modal.js"></script>
   </body>
 </html>
