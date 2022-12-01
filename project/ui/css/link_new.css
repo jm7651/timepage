@@ -275,6 +275,7 @@ body {
   }
   .link_001 {
     width: 100%;
+    height: auto;
   }
   .link_flex_wrap {
     flex-direction: column;
