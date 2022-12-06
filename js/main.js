@@ -58,7 +58,7 @@ function iframeLoading() {
     body.style.paddingRight = "0px";
     body.style.overflow = "auto";
     setTimeout(function () {
-      iframe.src = "https://jm7651.github.io/timepage/000.html";
+      iframe.src = "about:blank";
     }, 200);
   });
 }
