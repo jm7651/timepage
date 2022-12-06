@@ -58,7 +58,7 @@ function iframeLoading() {
     body.style.paddingRight = "0px";
     body.style.overflow = "auto";
     setTimeout(function () {
-      iframe.src = "/000.html";
+      iframe.src = "../000.html";
     }, 200);
   });
 }
