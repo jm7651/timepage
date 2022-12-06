@@ -139,7 +139,6 @@ body {
 }
 .link_002 {
   width: 100%;
-  height: 100vh;
 }
 .link_002 .link_flex_wrap {
   display: flex;
@@ -147,7 +146,6 @@ body {
 }
 .link_002_main {
   width: 51vw;
-  height: 90vh;
   border-right: 1px solid var(--borderColor);
 }
 .link_002_main img {
