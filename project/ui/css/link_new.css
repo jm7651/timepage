@@ -428,12 +428,30 @@ body {
   .subject {
     padding: 0 1.6rem;
   }
+  .link_002_title_wrap {
+    flex-direction: column;
+    border: none;
+  }
+  .link_002_title_wrap > div:nth-child(1) {
+    font-size: 10rem;
+    border: none;
+    border-bottom: 1px solid var(--borderColor);
+    padding: 2rem 1.6rem;
+  }
+  .link_002_title_wrap > div:nth-child(2) {
+    padding: 2rem 0;
+  }
   .link_title {
-    font-size: 2.6rem;
+    font-size: 2rem;
     padding: 0 1.6rem;
     word-break: keep-all;
     width: 100%;
     box-sizing: border-box;
+  }
+  .link_title span {
+    padding: 0 0.8rem;
+    height: 3.2rem;
+    margin-right: 0.4rem;
   }
   .link_002_desc {
     padding: 2rem 1.6rem 4rem;
@@ -454,10 +472,24 @@ body {
   }
   .link_003 .title_wrap {
     margin: 0;
+    padding: 2rem 0;
   }
   .interview_desc {
     font-size: 1.6rem;
     padding: 1.2rem 1.6rem;
     line-height: 1.3;
+  }
+  .link_003 .title_container {
+    flex-direction: column;
+  }
+  .link_003 .title_container .number {
+    font-size: 10rem;
+    border: none;
+    border-bottom: 1px solid var(--borderColor);
+    padding: 2rem 1.6rem;
+  }
+  .pain_point_container {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
