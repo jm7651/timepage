@@ -619,13 +619,13 @@ html {
   height: 48.45rem;
 }
 .cueat_008_img_003 {
-  background: url(../images/cueat/cueat_008_img003.jpg) center center / 100%
+  background: url(../images/cueat/cueat_008_img003.png) center center / 100%
     100% no-repeat;
   object-fit: cover;
   height: 48.45rem;
 }
 .cueat_008_img_004 {
-  background: url(../images/cueat/cueat_008_img004.jpg) center center / 100%
+  background: url(../images/cueat/cueat_008_img004.png) center center / 100%
     100% no-repeat;
   object-fit: cover;
   height: 48.45rem;
@@ -753,7 +753,7 @@ html {
   align-items: center;
   position: relative;
   padding: 16rem 0;
-  background: #ffe54d;
+  background: #fff;
 }
 .cueat_010_wrap {
   width: 30%;
@@ -1023,6 +1023,7 @@ html {
   }
   .cueat_008 {
     height: auto;
+    padding: 8rem 1.6rem;
   }
   .cueat_008_wrap {
     width: 100%;
@@ -1041,7 +1042,7 @@ html {
   .cueat_008_img_002,
   .cueat_008_img_003,
   .cueat_008_img_004 {
-    height: 26.4rem;
+    height: 24.4rem;
   }
   .cueat_009 {
     padding: 8em 1.6rem;
