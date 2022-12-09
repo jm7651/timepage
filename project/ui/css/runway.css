@@ -1,21 +1,64 @@
-.runway_section001 {
+body {
+  background: #000;
+}
+.runway_001 {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: #0e0d1f url(../images/runway001.jpg) center / 100% auto no-repeat;
+  background: #0e0d1f url(../images/runway/runway_001.jpg) center / 100% 100%
+    no-repeat;
   object-fit: cover;
   overflow: hidden;
 }
-.runway_logo {
+.runway_001_main {
+  width: 40vw;
+  height: 40vw;
+  background: url(../images/runway/runway_001_main.png) center / 100% auto
+    no-repeat;
+  object-fit: cover;
+  overflow: hidden;
   position: absolute;
-  top: 5vh;
-  left: 24%;
+  top: 10%;
+  left: 30%;
+  transform-origin: center;
   transform: translate(-50%, -50%);
 }
-
+.runway_loop {
+  background: #000;
+}
+.runway_loop video {
+  width: 70vw;
+  max-width: 1000px;
+}
+.runway_002 {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #09081c 0%, rgba(0, 0, 0, 0) 100%),
+    radial-gradient(
+      94.64% 94.64% at 50% 5.36%,
+      #160881 0%,
+      #3f54c5 54.17%,
+      #a32db6 100%
+    );
+}
+.runway_logo {
+  position: absolute;
+  top: 3vh;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  width: 10vw;
+}
+.runway_logo img {
+  width: 100%;
+}
+.runway_logo2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .runway_title001 {
   position: absolute;
-  bottom: 10vh;
+  bottom: 20vh;
   left: 38%;
   transform: translate(-50%, -50%);
   width: 24%;
@@ -30,7 +73,7 @@ section {
   height: 100vh;
 }
 @media screen and (max-width: 450px) {
-  .runway_section001 {
+  .runway_001 {
     width: 100vw;
 
     background: url(../images/runway001.jpg) center 20% / auto 100vh no-repeat;
