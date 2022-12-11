@@ -231,7 +231,7 @@ body {
   opacity: 0.5;
 }
 .career_div:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   z-index: 100;
   opacity: 1;
 }
@@ -617,7 +617,7 @@ body {
 }
 .phone > a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 .video-popup.reveal {
@@ -709,6 +709,11 @@ body {
   display: flex;
   width: 128rem;
 }
+#contact {
+  background: #000;
+  color: #fff;
+  padding: 4rem;
+}
 @media screen and (max-width: 450px) {
   body {
     overflow-x: hidden;
@@ -751,6 +756,13 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     height: 8vh;
+  }
+  #contact {
+    padding: 4rem 1.6rem;
+    height: 40vh;
+  }
+  #contact .inner {
+    height: auto;
   }
   #navbar {
     flex-direction: column;
@@ -942,9 +954,11 @@ body {
   /* 이력서영역 */
   #career {
     width: 100%;
+    padding: 4rem 1.6rem;
+    box-sizing: border-box;
   }
   .career_div {
-    padding: 2rem;
+    padding: 3rem 0;
   }
   .career_div h4 {
     font-size: 1.2rem;
@@ -1019,15 +1033,23 @@ body {
     display: grid;
     width: 100%;
     flex-wrap: wrap;
-    padding-bottom: 10rem;
     grid-template-columns: repeat(auto-fill, minmax(48%, auto));
     row-gap: 4rem;
     column-gap: 2%;
+  }
+  #work {
+    padding: 4rem 0;
   }
   .working_date {
     display: block;
   }
   .working_desc {
     display: block;
+  }
+  .email,
+  .phone,
+  .footer {
+    padding: 0.4rem;
+    color: #fff;
   }
 }

@@ -101,9 +101,9 @@ html {
 .hems_banner_video_wrap {
   position: relative;
   width: 100%;
-  max-width: 32rem;
+  max-width: 20rem;
   top: 0;
-  min-height: 28rem;
+  min-height: 16rem;
 }
 .hems_banner video {
   position: absolute;
@@ -1096,6 +1096,7 @@ html {
     width: 100%;
     flex-direction: column-reverse;
     margin: 0;
+    margin-top: -2px;
   }
   .hems_009_wrap > img {
     width: 100%;
@@ -1123,6 +1124,9 @@ html {
     height: 20vw;
     font-size: 1rem;
   }
+  .hems_009_wrap .title {
+    font-size: 3.2rem;
+  }
   .hems_010 {
     width: 100%;
     box-sizing: border-box;
@@ -1131,6 +1135,7 @@ html {
   .hems_010_title {
     width: 100%;
     margin-bottom: 4rem;
+    font-size: 3.2rem;
   }
   .hems_010_wrap {
     width: 100%;
@@ -1149,5 +1154,9 @@ html {
   }
   .hems_011_title {
     font-size: 5rem;
+    padding: 0 1.6rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 3.2rem;
   }
 }
