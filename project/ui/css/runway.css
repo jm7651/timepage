@@ -11,8 +11,8 @@ body {
   overflow: hidden;
 }
 .runway_001_main {
-  width: 40vw;
-  height: 40vw;
+  width: 50vw;
+  height: 50vw;
   background: url(../images/runway/runway_001_main.png) center / 100% auto
     no-repeat;
   object-fit: cover;
@@ -70,6 +70,37 @@ body {
 }
 section {
   height: 100vh;
+}
+.runway_003 {
+  display: flex;
+  color: #fff;
+  overflow: hidden;
+}
+.runway_003 > div {
+  display: flex;
+  width: 100rem;
+  margin: 0 auto;
+  gap: 8rem;
+}
+.runway_003_main_img {
+  max-width: 30rem;
+}
+.runway_003_main_img {
+  width: 100%;
+}
+.runway_background_text_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.runway_background_text_wrap .bg_title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.runway_background_text_wrap p {
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+  line-height: 1.3;
 }
 @media screen and (max-width: 450px) {
   .runway_001 {
