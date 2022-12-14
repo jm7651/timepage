@@ -85,13 +85,13 @@ section {
 .runway_003_main_img {
   max-width: 30rem;
 }
-.runway_003_main_img {
+.runway_003_main_img img {
   width: 100%;
 }
 .runway_background_text_wrap {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 6rem;
 }
 .runway_background_text_wrap .bg_title {
   font-size: 2.8rem;

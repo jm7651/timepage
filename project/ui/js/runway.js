@@ -44,6 +44,32 @@ ScrollTrigger.matchMedia({
         },
       }
     );
+    const tl002 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".runway_003",
+        pin: true,
+        scrub: 1,
+        start: "top top",
+        end: "+=2000",
+        toggleActions: "play pause play reset",
+      },
+    });
+    tl002.from(".runway_bg_text01", {
+      opacity: 0,
+      duration: 1,
+    });
+    tl002.from(".runway_bg_text02", {
+      opacity: 0,
+      duration: 1,
+    });
+    tl002.from(".runway_bg_text03", {
+      opacity: 0,
+      duration: 1,
+    });
+    tl002.from(".runway_bg_text04", {
+      opacity: 0,
+      duration: 1,
+    });
   },
 
   "(max-width: 799px)": function () {},
