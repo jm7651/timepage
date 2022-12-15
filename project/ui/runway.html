@@ -16,7 +16,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
-    <link rel="stylesheet" href="css/ui.css" />
     <link rel="stylesheet" href="css/runway.css" />
     <script src="../../node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
     <link
@@ -27,15 +26,16 @@
   <body>
     <div>
       <div>
-        <section data-scroll-section class="runway_001">
+        <section class="runway_001">
           <div data-scroll data-scroll-speed="0.1" class="runway_logo">
             <img src="/project/ui/images/runway_logo.svg" alt="" />
           </div>
           <div data-scroll data-scroll-speed="3" class="runway_001_main"></div>
-          <div data-scroll data-scroll-speed="2" class="runway_title001">
+          <div data-scroll data-scroll-speed="2" class="runway_p001 runway_p">
             모델 개발 , 배포 , 모니터링을 하나의 플랫폼으로 통합하여 지속적인
             개발과 안정적 운영이 가능한 MLOps 플랫폼입니다
           </div>
+          <div class="black_gra"></div>
         </section>
       </div>
       <div data-scroll-section>
@@ -44,54 +44,183 @@
             <img src="/project/ui/images/runway_logo.svg" alt="" />
           </div>
         </section>
-        <h2 data-scroll data-scroll-speed="1">What's up?</h2>
-        <p data-scroll data-scroll-speed="2">😬</p>
       </div>
       <section class="runway_003">
         <div>
-          <div class="runway_background_text_wrap">
-            <div class="runway_bg_text01">
-              <div class="bg_title">모델의 서비스 적용의 어려움</div>
-              <p>
-                데이터팀은 서비스 개발이 주 업무가 아니기 때문에, 서비스 개발에
-                능숙한 인력이 부족합니다. 그렇기 때문에 아무리 성능 좋은 모델을
-                만든다 한들, 서비스가 가능한 수준의 제품으로 만들어내는 일은
-                어렵습니다.
-              </p>
+          <div class="runway_subject_title">Background</div>
+          <div class="runway_wrap">
+            <div class="runway_background_text_wrap">
+              <div class="runway_bg_text01">
+                <div class="bg_title">모델의 서비스 적용의 어려움</div>
+                <p>
+                  데이터팀은 서비스 개발이 주 업무가 아니기 때문에, 서비스
+                  개발에 능숙한 인력이 부족합니다. 그렇기 때문에 아무리 성능
+                  좋은 모델을 만든다 한들, 서비스가 가능한 수준의 제품으로
+                  만들어내는 일은 어렵습니다.
+                </p>
+              </div>
+              <div class="runway_bg_text02">
+                <div class="bg_title">모델 성능 추적의 어려움</div>
+                <p>
+                  모델의 성능이 떨어짐을 인지하지 못하면, 수요예측에 실패하고
+                  상품이 품절되거나 재고가 쌓이는 상황이 발생합니다.
+                </p>
+              </div>
+              <div class="runway_bg_text03">
+                <div class="bg_title">모델과 데이터 관리의 어려움</div>
+                <p>
+                  반복된 데이터 정제 코드의 수정과 모델 학습 코드의 변경으로
+                  과거의 모델을 재현하고 분석하는 건 어렵습니다.
+                </p>
+              </div>
+              <div class="runway_bg_text04">
+                <div class="bg_title">협업의 어려움</div>
+                <p>
+                  하지만 머신러닝을 운영한다는 것은 위와 같이 실험만큼이나 혹은
+                  그 이상으로 큰 노력이 필요합니다. 운영을 위한 시스템이
+                  마련되지 않으면, 머신러닝은 더 좋은 서비스를 만드는 도구가
+                  아니라 병목이 됩니다
+                </p>
+              </div>
             </div>
-            <div class="runway_bg_text02">
-              <div class="bg_title">모델 성능 추적의 어려움</div>
-              <p>
-                모델의 성능이 떨어짐을 인지하지 못하면, 수요예측에 실패하고
-                상품이 품절되거나 재고가 쌓이는 상황이 발생합니다.
-              </p>
+            <div class="runway_003_main_img">
+              <img src="images/runway/runway_003_circle.svg" alt="" />
             </div>
-            <div class="runway_bg_text03">
-              <div class="bg_title">모델과 데이터 관리의 어려움</div>
-              <p>
-                반복된 데이터 정제 코드의 수정과 모델 학습 코드의 변경으로
-                과거의 모델을 재현하고 분석하는 건 어렵습니다.
-              </p>
-            </div>
-            <div class="runway_bg_text04">
-              <div class="bg_title">협업의 어려움</div>
-              <p>
-                하지만 머신러닝을 운영한다는 것은 위와 같이 실험만큼이나 혹은 그
-                이상으로 큰 노력이 필요합니다. 운영을 위한 시스템이 마련되지
-                않으면, 머신러닝은 더 좋은 서비스를 만드는 도구가 아니라 병목이
-                됩니다
-              </p>
-            </div>
-          </div>
-          <div class="runway_003_main_img">
-            <img src="images/runway/runway_003_circle.svg" alt="" />
           </div>
         </div>
       </section>
       <section data-scroll-section class="runway_loop">
+        <div class="runway_subject_title">ML cycle</div>
+        <div class="runway_title">
+          <span>MakinaRocks</span> leads and innovates ML lifecycle
+        </div>
         <video autoplay="" loop="" muted="" playsinline="">
           <source src="images/runway/makina_workflow.mp4" type="video/mp4" />
         </video>
+        <p class="runway_p">
+          Runway 사용자는 ML 개발 및 운영 업무를 하나의 플랫폼 환경에서 수행할
+          수 있으며, 다양한 협업 기능을 통해 사용자 간의 효율적인 협업이
+          가능합니다
+        </p>
+      </section>
+      <section class="runway_004">
+        <div class="runway_subject_title">Persona</div>
+        <div class="persona_container">
+          <div class="persona_wrap persona_001">
+            <div class="persona_left">
+              <div class="persona_img">
+                <img src="images/runway/jonadan.jpg" alt="" />
+              </div>
+              <div class="persona_profile">
+                <div class="persona_sub_title">이름</div>
+                <div class="persona_name">조나단</div>
+                <div class="persona_sub_title">역할 또는 직책</div>
+                <div class="persona_job">Data Scientist</div>
+              </div>
+            </div>
+            <div class="persona_right">
+              <div class="persona_sub_title">목표</div>
+              <div class="persona_target_title">
+                데이터를 분석하고 모델을 만듭니다. 또한 만들어진 모델을
+                인프라<span class="mo_span">
+                  지식없이 배포, 서빙하고 싶습니다.</span
+                >
+              </div>
+              <div class="persona_sub_title">동기 및 문제점에 대한 설명</div>
+              <p>
+                성능 비교 하는게 너무 어렵다. 모델을 배포하는게 너무 어렵다.<br />
+                인프라적인 지식까지 내가 알아야하다니… 힘들다.<br />이것들을
+                해결해주는 솔루션이 없을까?
+              </p>
+            </div>
+          </div>
+          <div class="persona_wrap persona_001">
+            <div class="persona_left">
+              <div class="persona_img">
+                <img src="images/runway/jonadan.jpg" alt="" />
+              </div>
+              <div class="persona_profile">
+                <div class="persona_sub_title">이름</div>
+                <div class="persona_name">조나단</div>
+                <div class="persona_sub_title">역할 또는 직책</div>
+                <div class="persona_job">Data Scientist</div>
+              </div>
+            </div>
+            <div class="persona_right">
+              <div class="persona_sub_title">목표</div>
+              <div class="persona_target_title">
+                데이터를 분석하고 모델을 만듭니다. 또한 만들어진 모델을
+                인프라<span class="mo_span">
+                  지식없이 배포, 서빙하고 싶습니다.</span
+                >
+              </div>
+              <div class="persona_sub_title">동기 및 문제점에 대한 설명</div>
+              <p>
+                성능 비교 하는게 너무 어렵다. 모델을 배포하는게 너무 어렵다.<br />
+                인프라적인 지식까지 내가 알아야하다니… 힘들다.<br />이것들을
+                해결해주는 솔루션이 없을까?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="persona_container">
+          <div class="persona_wrap persona_001">
+            <div class="persona_left">
+              <div class="persona_img">
+                <img src="images/runway/jonadan.jpg" alt="" />
+              </div>
+              <div class="persona_profile">
+                <div class="persona_sub_title">이름</div>
+                <div class="persona_name">조나단</div>
+                <div class="persona_sub_title">역할 또는 직책</div>
+                <div class="persona_job">Data Scientist</div>
+              </div>
+            </div>
+            <div class="persona_right">
+              <div class="persona_sub_title">목표</div>
+              <div class="persona_target_title">
+                데이터를 분석하고 모델을 만듭니다. 또한 만들어진 모델을
+                인프라<span class="mo_span">
+                  지식없이 배포, 서빙하고 싶습니다.</span
+                >
+              </div>
+              <div class="persona_sub_title">동기 및 문제점에 대한 설명</div>
+              <p>
+                성능 비교 하는게 너무 어렵다. 모델을 배포하는게 너무 어렵다.<br />
+                인프라적인 지식까지 내가 알아야하다니… 힘들다.<br />이것들을
+                해결해주는 솔루션이 없을까?
+              </p>
+            </div>
+          </div>
+          <div class="persona_wrap persona_001">
+            <div class="persona_left">
+              <div class="persona_img">
+                <img src="images/runway/jonadan.jpg" alt="" />
+              </div>
+              <div class="persona_profile">
+                <div class="persona_sub_title">이름</div>
+                <div class="persona_name">조나단</div>
+                <div class="persona_sub_title">역할 또는 직책</div>
+                <div class="persona_job">Data Scientist</div>
+              </div>
+            </div>
+            <div class="persona_right">
+              <div class="persona_sub_title">목표</div>
+              <div class="persona_target_title">
+                데이터를 분석하고 모델을 만듭니다. 또한 만들어진 모델을
+                인프라<span class="mo_span">
+                  지식없이 배포, 서빙하고 싶습니다.</span
+                >
+              </div>
+              <div class="persona_sub_title">동기 및 문제점에 대한 설명</div>
+              <p>
+                성능 비교 하는게 너무 어렵다. 모델을 배포하는게 너무 어렵다.<br />
+                인프라적인 지식까지 내가 알아야하다니… 힘들다.<br />이것들을
+                해결해주는 솔루션이 없을까?
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <!--

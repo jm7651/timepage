@@ -1,5 +1,17 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+
+html {
+  font-size: 10px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+}
 body {
   background: #000;
+}
+.mo_span {
+  display: block;
 }
 .runway_001 {
   position: relative;
@@ -23,16 +35,62 @@ body {
   transform-origin: center;
   transform: translate(-50%, -50%);
 }
+.runway_subject_title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+.runway_title {
+  margin-top: 3.2rem;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+.runway_title span {
+  color: #8686fd;
+}
+.runway_p {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  word-break: keep-all;
+  max-width: 60rem;
+  text-align: center;
+  opacity: 0.7;
+}
+.runway_wrap {
+  display: flex;
+  justify-content: space-between;
+}
 .runway_loop {
+  display: flex;
+  flex-direction: column;
   background: #000;
+  align-items: center;
 }
 .runway_loop video {
   width: 70vw;
   max-width: 1000px;
+  margin: 0 auto;
+}
+.black_gra {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 .runway_002 {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
   background: linear-gradient(180deg, #09081c 0%, rgba(0, 0, 0, 0) 100%),
     radial-gradient(
       94.64% 94.64% at 50% 5.36%,
@@ -43,10 +101,11 @@ body {
 }
 .runway_logo {
   position: absolute;
-  top: 3vh;
-  left: 5%;
+  top: 5vh;
+  left: 10%;
   transform: translate(-50%, -50%);
   width: 10vw;
+  z-index: 100;
 }
 .runway_logo img {
   width: 100%;
@@ -55,18 +114,13 @@ body {
   top: 50%;
   left: 50%;
 }
-.runway_title001 {
+.runway_p001 {
   position: absolute;
   bottom: 20vh;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 24%;
   min-width: 400px;
   word-break: keep-all;
-  font-size: 16px;
-  color: #fff;
-  opacity: 0.7;
-  line-height: 1.5;
 }
 section {
   height: 100vh;
@@ -75,9 +129,11 @@ section {
   display: flex;
   color: #fff;
   overflow: hidden;
+  padding: 8rem 0;
 }
 .runway_003 > div {
   display: flex;
+  flex-direction: column;
   width: 100rem;
   margin: 0 auto;
   gap: 8rem;
@@ -98,9 +154,91 @@ section {
   font-weight: 700;
 }
 .runway_background_text_wrap p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-top: 0.8rem;
-  line-height: 1.3;
+  line-height: 1.5;
+  max-width: 60rem;
+  word-break: keep-all;
+}
+.runway_bg_text01 {
+  background: -webkit-linear-gradient(#8686fd, #a884d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.runway_bg_text02 {
+  background: -webkit-linear-gradient(#a884d4, #cd81a9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.runway_bg_text03 {
+  background: -webkit-linear-gradient(#cd81a9, #ffa59c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.runway_bg_text04 {
+  background: -webkit-linear-gradient(#ffa59c, #ffcec9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.runway_004 {
+  background: rgb(14, 11, 14);
+  padding: 8rem 0;
+}
+.persona_container {
+  display: flex;
+  color: #fff;
+  width: 140rem;
+  gap: 4rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.persona_wrap {
+  display: flex;
+  gap: 2rem;
+}
+.persona_left {
+  display: flex;
+  flex-direction: column;
+}
+.persona_img {
+  width: 14rem;
+  margin-bottom: 2rem;
+}
+.persona_img img {
+  width: 100%;
+}
+.persona_name {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.persona_job {
+  background: #944af2;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 30px;
+  width: 12rem;
+}
+.persona_target_title {
+  margin-top: 0.4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.persona_sub_title {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  opacity: 0.5;
+  font-weight: 500;
+}
+.persona_right p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.runway_004 > div:nth-child(3) {
+  margin-top: 8rem;
 }
 @media screen and (max-width: 450px) {
   .runway_001 {
@@ -116,7 +254,7 @@ section {
   .runway_logo img {
     width: 100%;
   }
-  .runway_title001 {
+  .runway_p001 {
     padding: 0 20px;
     bottom: 16vh;
     left: -4%;

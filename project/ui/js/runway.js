@@ -26,10 +26,7 @@ ScrollTrigger.matchMedia({
         toggleActions: "play pause play reset",
       },
     });
-    tl001.from(".runway_logo", {
-      opacity: 0,
-      duration: 1,
-    });
+
     gsap.fromTo(
       ".runway_003_main_img",
       { y: "40rem" },
