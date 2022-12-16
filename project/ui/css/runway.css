@@ -13,6 +13,9 @@ body {
 .mo_span {
   display: block;
 }
+.mt_8 {
+  margin-top: 0.8rem;
+}
 .runway_001 {
   position: relative;
   width: 100%;
@@ -38,21 +41,22 @@ body {
 .runway_subject_title {
   font-size: 2rem;
   font-weight: 500;
-  color: #fff;
+  color: #ced1d5;
   text-align: center;
 }
 .runway_title {
   margin-top: 3.2rem;
-  font-size: 2vw;
+  font-size: 5vw;
+  line-height: 1.3;
   text-align: center;
   font-weight: 500;
-  color: #fff;
+  color: #ced1d5;
 }
 .runway_title span {
   color: #8686fd;
 }
 .runway_p {
-  color: #fff;
+  color: #ced1d5;
   font-size: 1.5rem;
   line-height: 1.5;
   word-break: keep-all;
@@ -69,6 +73,7 @@ body {
   flex-direction: column;
   background: #000;
   align-items: center;
+  padding: 8rem 0;
 }
 .runway_loop video {
   width: 70vw;
@@ -122,12 +127,9 @@ body {
   min-width: 400px;
   word-break: keep-all;
 }
-section {
-  height: 100vh;
-}
 .runway_003 {
   display: flex;
-  color: #fff;
+  color: #ced1d5;
   overflow: hidden;
   padding: 8rem 0;
 }
@@ -186,7 +188,7 @@ section {
 }
 .persona_container {
   display: flex;
-  color: #fff;
+  color: #ced1d5;
   width: 140rem;
   gap: 4rem;
   margin: 0 auto;
@@ -195,13 +197,15 @@ section {
 .persona_wrap {
   display: flex;
   gap: 2rem;
+  width: 50%;
 }
 .persona_left {
   display: flex;
   flex-direction: column;
+  width: 18rem;
 }
 .persona_img {
-  width: 14rem;
+  width: 10rem;
   margin-bottom: 2rem;
 }
 .persona_img img {
@@ -210,19 +214,22 @@ section {
 .persona_name {
   font-size: 2rem;
   margin-bottom: 2rem;
+  font-weight: 700;
+}
+.persona_job_wrap {
 }
 .persona_job {
   background: #944af2;
   color: #000;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
   padding: 4px 12px;
   border-radius: 30px;
-  width: 12rem;
+  display: inline-block;
 }
 .persona_target_title {
   margin-top: 0.4rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.5;
   margin-bottom: 2rem;
