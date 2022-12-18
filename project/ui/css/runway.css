@@ -57,12 +57,12 @@ body {
 }
 .runway_p {
   color: #ced1d5;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.5;
   word-break: keep-all;
   max-width: 60rem;
   text-align: center;
-  opacity: 0.7;
+  opacity: 1;
 }
 .runway_wrap {
   display: flex;

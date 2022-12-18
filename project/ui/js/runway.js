@@ -67,6 +67,21 @@ ScrollTrigger.matchMedia({
       opacity: 0,
       duration: 1,
     });
+    gsap.fromTo(
+      ".runway_loop video",
+      { transform: "rotate3d(30, 1, 0, 50deg) scale(0.5)", opacity: "0" },
+      {
+        transform: "rotate3d(1, 1, 1, 0deg)",
+        opacity: "1",
+        scrollTrigger: {
+          trigger: ".runway_loop video",
+          start: "0 100%",
+          end: "+=500",
+          scrub: 3,
+          // markers: true,
+        },
+      }
+    );
   },
 
   "(max-width: 799px)": function () {},
