@@ -10,6 +10,36 @@ html {
 body {
   background: #000;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .mo_span {
   display: block;
 }
@@ -185,6 +215,17 @@ body {
 .runway_004 {
   background: linear-gradient(119.52deg, #202044 -2.67%, #010101 69.73%);
   padding: 8rem 0;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.runway_004 .swiper {
+  margin-top: 10rem;
+  max-width: 140rem;
+  min-height: 40vh;
+  color: #ced1d5;
+  text-align: left;
 }
 .persona_container {
   display: flex;
@@ -197,12 +238,14 @@ body {
 .persona_wrap {
   display: flex;
   gap: 2rem;
-  width: 50%;
+  justify-content: flex-start;
+  text-align: left;
 }
 .persona_left {
   display: flex;
   flex-direction: column;
   width: 18rem;
+  align-items: flex-start;
 }
 .persona_img {
   width: 10rem;
@@ -241,12 +284,61 @@ body {
   font-weight: 500;
 }
 .persona_right p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.5;
 }
 .runway_004 > div:nth-child(3) {
   margin-top: 8rem;
 }
+.runway_005 {
+  display: flex;
+  color: #fff;
+}
+.runway_005 .head {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 60px;
+  background-color: #0a1045;
+}
+.content-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 400px;
+  width: 50%;
+  font-size: 40px;
+  padding-left: 5em;
+}
+
+.numbers-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.heading {
+  opacity: 0;
+  position: absolute;
+  top: 2em;
+}
+
+.scroll-num {
+  width: 30vw;
+  opacity: 0;
+  position: absolute;
+  top: 1em;
+  font-size: 66px;
+  text-align: center;
+}
+
 @media screen and (max-width: 450px) {
   .runway_001 {
     width: 100vw;

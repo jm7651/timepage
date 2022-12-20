@@ -82,6 +82,47 @@ ScrollTrigger.matchMedia({
         },
       }
     );
+    const headings = document.querySelectorAll(".heading");
+
+    const nums = document.querySelectorAll(".scroll-num");
+    const head = document.querySelector(".head");
+
+    const numOfTransitions = headings.length;
+
+    const singleDuration = 1000;
+    const totalDuration = singleDuration * numOfTransitions;
+
+    headings.forEach((heading, i) => {
+      gsap.to(heading, {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: heading,
+          toggleActions: "play reverse play reverse",
+          start: "+=" + `${singleDuration * i}s`,
+          end: "+=" + `${singleDuration}s`,
+        },
+      });
+    });
+
+    nums.forEach((num, i) => {
+      gsap.to(num, {
+        opacity: 1,
+        scrollTrigger: {
+          trigger: num,
+          toggleActions: "play reverse play reverse",
+          start: "+=" + `${singleDuration * i}s`,
+          end: "+=" + `${singleDuration}s`,
+        },
+      });
+    });
+
+    gsap.to(".head", {
+      scrollTrigger: {
+        pin: ".head",
+        end: "+=5000s",
+        pinSpacing: true,
+      },
+    });
   },
 
   "(max-width: 799px)": function () {},

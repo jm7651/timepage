@@ -22,6 +22,10 @@
       rel="stylesheet"
       href="../../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div>
@@ -101,140 +105,179 @@
       </section>
       <section class="runway_004">
         <div class="runway_subject_title">Persona</div>
-        <div class="persona_container">
-          <div class="persona_wrap persona_001">
-            <div class="persona_left">
-              <div class="persona_img">
-                <img src="images/runway/persona_001.svg" alt="" />
-              </div>
-              <div class="persona_profile">
-                <div class="persona_sub_title">이름</div>
-                <div class="persona_name">조나단</div>
-                <div class="persona_sub_title">역할 또는 직책</div>
-                <div class="persona_job">Data Scientist</div>
-              </div>
-            </div>
-            <div class="persona_right">
-              <div class="persona_sub_title">목표</div>
-              <div class="persona_target_title">
-                데이터를 분석하고 모델을 만듭니다. 또한 만들어진 모델을
-                <span class="mo_span">
-                  인프라 지식없이 배포, 서빙하고 싶습니다.</span
-                >
-              </div>
-              <div class="persona_sub_title">동기 및 문제점에 대한 설명</div>
-              <p>
-                성능 비교 하는게 너무 어렵다. 모델을 배포하는게 너무
-                어렵다.<span class="mo_span">
-                  인프라적인 지식까지 내가 알아야하다니… 힘들다.</span
-                ><span class="mo_span"
-                  >이것들을 해결해주는 솔루션이 없을까?</span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="persona_wrap persona_002">
-            <div class="persona_left">
-              <div class="persona_img">
-                <img src="images/runway/persona_002.svg" alt="" />
-              </div>
-              <div class="persona_profile">
-                <div class="persona_sub_title">이름</div>
-                <div class="persona_name">리아</div>
-                <div class="persona_sub_title">역할 또는 직책</div>
-                <div class="persona_job">제품 운영자</div>
-              </div>
-            </div>
-            <div class="persona_right">
-              <div class="persona_sub_title">목표</div>
-              <div class="persona_target_title">
-                모델을 실질적으로 운영하고
-                <span class="mo_span"> 관리하고 싶습니다.</span>
-              </div>
-              <div class="persona_sub_title">동기 및 문제점에 대한 설명</div>
-              <p>
-                현재 운영되고 있는 모델의 성능이 얼마나 나오는지 확인하기가
-                어렵다.
-                <span class="mo_span"
-                  >모델에 대한 성능 비교 화면이 있고 손쉽게 재학습을 하고 재배포
-                  할 수 있는</span
-                ><span class="mo_span"
-                  >환경만 주어진다면 일하기 얼마나 편할까 매번 생각한다.</span
-                >
-                그러한 제품이 있을까? 일하기 힘들다…
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="persona_container">
-          <div class="persona_wrap persona_003">
-            <div class="persona_left">
-              <div class="persona_img">
-                <img src="images/runway/persona_003.svg" alt="" />
-              </div>
-              <div class="persona_profile">
-                <div class="persona_sub_title">이름</div>
-                <div class="persona_name">나보수</div>
-                <div class="persona_sub_title">역할 또는 직책</div>
-                <div class="persona_job_wrap">
-                  <div class="persona_job">Infra Engineer</div>
-                  <div class="persona_job mt_8">System Engineer</div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="persona_wrap persona_001">
+                <div class="persona_left">
+                  <div class="persona_img">
+                    <img src="images/runway/persona_001.svg" alt="" />
+                  </div>
+                  <div class="persona_profile">
+                    <div class="persona_sub_title">이름</div>
+                    <div class="persona_name">조나단</div>
+                    <div class="persona_sub_title">역할 또는 직책</div>
+                    <div class="persona_job">Data Scientist</div>
+                  </div>
+                </div>
+                <div class="persona_right">
+                  <div class="persona_sub_title">목표</div>
+                  <div class="persona_target_title">
+                    데이터를 분석하고 모델을 만듭니다. 또한 만들어진 모델을
+                    <span class="mo_span">
+                      인프라 지식없이 배포, 서빙하고 싶습니다.</span
+                    >
+                  </div>
+                  <div class="persona_sub_title">
+                    동기 및 문제점에 대한 설명
+                  </div>
+                  <p>
+                    성능 비교 하는게 너무 어렵다. 모델을 배포하는게 너무
+                    어렵다.<span class="mo_span">
+                      인프라적인 지식까지 내가 알아야하다니… 힘들다.</span
+                    ><span class="mo_span"
+                      >이것들을 해결해주는 솔루션이 없을까?</span
+                    >
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="persona_right">
-              <div class="persona_sub_title">목표</div>
-              <div class="persona_target_title">
-                MLOps를 운영하면서 인프라적인 이슈가<span class="mo_span">
-                  지식없이 배포, 서빙하고 싶습니다.</span
-                >
-              </div>
-              <div class="persona_sub_title">동기 및 문제점에 대한 설명</div>
-              <p>
-                Runway를 사용하고 있는데, 클러스터에 문제가 생겼다…
-                <span class="mo_span"
-                  >모니터링 화면을 보니 disk가 꽉찬거 같은데 이걸 어떻게 늘리나?
-                  후…</span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="persona_wrap persona_004">
-            <div class="persona_left">
-              <div class="persona_img">
-                <img src="images/runway/persona_004.svg" alt="" />
-              </div>
-              <div class="persona_profile">
-                <div class="persona_sub_title">이름</div>
-                <div class="persona_name">오개발</div>
-                <div class="persona_sub_title">역할 또는 직책</div>
-                <div class="persona_job_wrap">
-                  <div class="persona_job">Software Engineer</div>
-                  <div class="persona_job mt_8">Developer</div>
+            <div class="swiper-slide">
+              <div class="persona_wrap persona_002">
+                <div class="persona_left">
+                  <div class="persona_img">
+                    <img src="images/runway/persona_002.svg" alt="" />
+                  </div>
+                  <div class="persona_profile">
+                    <div class="persona_sub_title">이름</div>
+                    <div class="persona_name">리아</div>
+                    <div class="persona_sub_title">역할 또는 직책</div>
+                    <div class="persona_job">제품 운영자</div>
+                  </div>
+                </div>
+                <div class="persona_right">
+                  <div class="persona_sub_title">목표</div>
+                  <div class="persona_target_title">
+                    모델을 실질적으로 운영하고
+                    <span class="mo_span"> 관리하고 싶습니다.</span>
+                  </div>
+                  <div class="persona_sub_title">
+                    동기 및 문제점에 대한 설명
+                  </div>
+                  <p>
+                    현재 운영되고 있는 모델의 성능이 얼마나 나오는지 확인하기가
+                    어렵다.
+                    <span class="mo_span"
+                      >모델에 대한 성능 비교 화면이 있고 손쉽게 재학습을 하고
+                      재배포 할 수 있는</span
+                    ><span class="mo_span"
+                      >환경만 주어진다면 일하기 얼마나 편할까 매번
+                      생각한다.</span
+                    >
+                    그러한 제품이 있을까? 일하기 힘들다…
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="persona_right">
-              <div class="persona_sub_title">목표</div>
-              <div class="persona_target_title">
-                데이터를 분석하고 모델을 만듭니다. 또한 만들어진 모델을
-                인프라<span class="mo_span">
-                  지식없이 배포, 서빙하고 싶습니다.</span
-                >
+            <div class="swiper-slide">
+              <div class="persona_wrap persona_003">
+                <div class="persona_left">
+                  <div class="persona_img">
+                    <img src="images/runway/persona_003.svg" alt="" />
+                  </div>
+                  <div class="persona_profile">
+                    <div class="persona_sub_title">이름</div>
+                    <div class="persona_name">나보수</div>
+                    <div class="persona_sub_title">역할 또는 직책</div>
+                    <div class="persona_job_wrap">
+                      <div class="persona_job">Infra Engineer</div>
+                      <div class="persona_job mt_8">System Engineer</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="persona_right">
+                  <div class="persona_sub_title">목표</div>
+                  <div class="persona_target_title">
+                    MLOps를 운영하면서 인프라적인 이슈가<span class="mo_span">
+                      지식없이 배포, 서빙하고 싶습니다.</span
+                    >
+                  </div>
+                  <div class="persona_sub_title">
+                    동기 및 문제점에 대한 설명
+                  </div>
+                  <p>
+                    Runway를 사용하고 있는데, 클러스터에 문제가 생겼다…
+                    <span class="mo_span"
+                      >모니터링 화면을 보니 disk가 꽉찬거 같은데 이걸 어떻게
+                      늘리나? 후…</span
+                    >
+                  </p>
+                </div>
               </div>
-              <div class="persona_sub_title">동기 및 문제점에 대한 설명</div>
-              <p>
-                모델 인퍼런스 해주는 API를 실질적으로 사용해서
-                <span class="mo_span">Application에 적용을 하고 싶습니다.</span>
-                <span class="mo_span"
-                  >이미지, text에 대한 서빙 API를 호출해서 사용 하고 싶다.</span
-                >
-              </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="persona_wrap persona_004">
+                <div class="persona_left">
+                  <div class="persona_img">
+                    <img src="images/runway/persona_004.svg" alt="" />
+                  </div>
+                  <div class="persona_profile">
+                    <div class="persona_sub_title">이름</div>
+                    <div class="persona_name">오개발</div>
+                    <div class="persona_sub_title">역할 또는 직책</div>
+                    <div class="persona_job_wrap">
+                      <div class="persona_job">Software Engineer</div>
+                      <div class="persona_job mt_8">Developer</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="persona_right">
+                  <div class="persona_sub_title">목표</div>
+                  <div class="persona_target_title">
+                    데이터를 분석하고 모델을 만듭니다. 또한 만들어진 모델을
+                    인프라<span class="mo_span">
+                      지식없이 배포, 서빙하고 싶습니다.</span
+                    >
+                  </div>
+                  <div class="persona_sub_title">
+                    동기 및 문제점에 대한 설명
+                  </div>
+                  <p>
+                    모델 인퍼런스 해주는 API를 실질적으로 사용해서
+                    <span class="mo_span"
+                      >Application에 적용을 하고 싶습니다.</span
+                    >
+                    <span class="mo_span"
+                      >이미지, text에 대한 서빙 API를 호출해서 사용 하고
+                      싶다.</span
+                    >
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
     </div>
+    <section class="runway_005">
+      <div class="head">
+        <div class="content-box">
+          <h2 class="heading" id="heading1">Heading 1</h2>
+          <h2 class="heading" id="heading2">Heading 2</h2>
+          <h2 class="heading" id="heading3">Heading 3</h2>
+          <h2 class="heading" id="heading4">Heading 4</h2>
+          <h2 class="heading" id="heading5">Heading 5</h2>
+        </div>
+        <div class="numbers-box" id="imageContainer">
+          <div id="img1" class="scroll-num"><h2>1</h2></div>
+          <div id="img2" class="scroll-num"><h2>2</h2></div>
+          <div id="img3" class="scroll-num"><h2>3</h2></div>
+          <div id="img4" class="scroll-num"><h2>4</h2></div>
+          <div id="img5" class="scroll-num"><h2>5</h2></div>
+        </div>
+      </div>
+    </section>
     <!--
     <section>3</section>
     <section>4</section>
@@ -249,5 +292,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
     <script src="js/runway.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
