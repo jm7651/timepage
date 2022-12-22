@@ -1,6 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
 html,
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   min-width: 100%;
@@ -27,6 +28,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 40rem;
+  mix-blend-mode: lighten;
 }
 .rems_sun img {
   width: 100%;
@@ -36,20 +38,32 @@ html {
   align-items: center;
   height: 100vh;
   background: linear-gradient(180deg, #eaf4ff 13.55%, #88c2ff 68.48%);
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .rems_001_flex {
+  position: relative;
   display: flex;
   width: 100rem;
   margin: 0 auto;
   height: 80vh;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 .rems_logo {
   position: absolute;
   top: 4vh;
   left: 5%;
   width: 12rem;
+}
+.rems_001 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  mix-blend-mode: screen;
+  box-sizing: border-box;
 }
 .rems_logo img {
   width: 100%;
@@ -88,15 +102,20 @@ html {
   animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
-.rems001_text_wrap {
+.rems_001_text_wrap {
   font-size: 2rem;
   line-height: 1.5;
   margin-top: 1.2rem;
   color: #3c4045;
 }
-.rems001_text_wrap .rems_title {
+.rems_001_text_wrap .rems_title {
   font-size: 5rem;
   font-weight: 700;
+}
+.rems_002 {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 @keyframes scroll {
   0% {
