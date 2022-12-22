@@ -1,0 +1,131 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.mo_span {
+  display: block;
+}
+.rems_sun {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+}
+.rems_sun img {
+  width: 100%;
+}
+.rems_001 {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(180deg, #eaf4ff 13.55%, #88c2ff 68.48%);
+}
+.rems_001_flex {
+  display: flex;
+  width: 100rem;
+  margin: 0 auto;
+  height: 80vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.rems_logo {
+  position: absolute;
+  top: 4vh;
+  left: 5%;
+  width: 12rem;
+}
+.rems_logo img {
+  width: 100%;
+}
+.rems_001_img {
+  width: 35.9rem;
+}
+.rems_001_img img {
+  width: 100%;
+}
+.scroll-downs {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 34px;
+  height: 55px;
+  z-index: 2;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #232323;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #232323;
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+.rems001_text_wrap {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 1.2rem;
+  color: #3c4045;
+}
+.rems001_text_wrap .rems_title {
+  font-size: 5rem;
+  font-weight: 700;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
+.rems_002_img {
+  width: 100%;
+}
+.rems_002_img img {
+  width: 100%;
+}
+.rems_002_text_wrap {
+  padding: 24rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3f3;
+  color: #232323;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
