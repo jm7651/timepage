@@ -2,11 +2,13 @@ const pTag1 = document.querySelector(".first-parallel");
 const pTag2 = document.querySelector(".second-parallel");
 
 const textArr1 =
-  "Yummy Tasty Delicious Useful Coding Yummy Yummmmy Yummmmmmmmmy yum".split(
+  "Time is the coin of your life.It is the only coin you have, and only you can determine how it will be spent. Be careful lest you let other people spend it for you".split(
     " "
   );
 const textArr2 =
-  "Chicken Hamburger Pizza Salad Sushi Ramen Gimbab JJajangmyeon".split(" ");
+  "Passion kept one fully in the present, so that time became a series of mutually exclusive 'nows.'".split(
+    " "
+  );
 
 let count1 = 0;
 let count2 = 0;

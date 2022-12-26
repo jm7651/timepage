@@ -9,9 +9,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/rems.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="css/progressbar.css" />
   </head>
-  <body>
+  <body class="no-scroll">
+    <div class="blackblock remsblock"><div class="loader"></div></div>
+    <div class="progrss_header">
+      <div class="progress-container">
+        <div class="progress-bar rems_progressbar"></div>
+      </div>
+    </div>
     <div class="rems_logo">
       <img src="images/rems/rems_logo.svg" alt="" />
     </div>
@@ -19,15 +32,13 @@
       <video type="video/mp4" autoplay="" muted="" loop="" playsinline="">
         <source src="images/rems/sun_ani.mp4" type="video/mp4" />
       </video>
-      <div class="rems_sun">
+      <!-- <div class="rems_sun">
         <img src="images/rems/Sun.svg" alt="" />
-      </div>
+      </div> -->
       <div class="rems_001_flex">
         <div class="rems_001_text_wrap">
           <span class="rems_title">태양광 설치부터,운영까지</span
-          ><span class="mo_span">
-            4ST SOLAR를 통해 당신의 에너지자산을 관리할께요</span
-          >
+          ><span class="mo_span"> 당신의 에너지자산을 관리할께요</span>
         </div>
         <div class="rems_001_img">
           <img src="images/rems/rems_001_main.png" alt="" />
@@ -44,16 +55,371 @@
         <img src="images/rems/rems_002_main.jpg" alt="" />
       </div>
       <div class="rems_002_text_wrap">
-        신재생 에너지 통합 모니터링 시스템 4ST Solar를 통해<span class="mo_span"
-          >태양광 발전량을실시간으로 쉽고 빠르게 관리 할 수 있어요</span
+        신재생 에너지 통합 모니터링 시스템 4ST Solar를 통해<span
+          class="mo_span"
+        >
+          태양광 발전량을 실시간으로 쉽고 빠르게 관리 할 수 있어요</span
         >
       </div>
       <div class="rems_002_background">
-        <div></div>
-        <div class="painpoint_wrap">
-          <div></div>
+        <div div data-aos="fade-up" data-aos-duration="1000" class="subject">
+          Background
+        </div>
+        <div
+          div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="swiper painpoint_slider"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide painpoint_slide">
+              <div class="painpoint_wrap">
+                <div class="painpoint_img">
+                  <img src="images/rems/painpoint_001.png" alt="" />
+                </div>
+                <div class="painpoint_title">쉽게 사용하고 싶어요</div>
+                <p class="painpoint_text">
+                  다른 정보보다는 내가 지금 발전량이 얼마인지
+                  <span class="mo_span">
+                    그래서 얼마나 벌고 있는지 한 눈에 확인하면 좋겠어요</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide painpoint_slide">
+              <div class="painpoint_wrap">
+                <div class="painpoint_img">
+                  <img src="images/rems/painpoint_002.png" alt="" />
+                </div>
+                <div class="painpoint_title">
+                  운영중에 장애가 생겼는데 인지하지 못해요
+                </div>
+                <p class="painpoint_text">
+                  태양광 사업에서는 장애관리가 가장 중요한 것 같은데
+                  <span class="mo_span">
+                    생각보다 장애관리를 잘 알려주는 플랫폼은 없는것 같아요</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide painpoint_slide">
+              <div class="painpoint_wrap">
+                <div class="painpoint_img">
+                  <img src="images/rems/painpoint_003.png" alt="" />
+                </div>
+                <div class="painpoint_title">자동으로 관리되면 좋겠어요</div>
+                <p class="painpoint_text">
+                  발전소 사업주들은 문제가 발생할 시 무엇을 해야할 지
+                  <span class="mo_span">
+                    모르는 경우가 많아 자동으로 관리되면 좋겠어요</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="userflow_container">
+          <div class="userflow_wrap">
+            <div data-aos="fade-up" data-aos-duration="1000" class="subject">
+              User flow
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="userflow_img"
+            >
+              <img src="images/rems/user_flow.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <section class="rems_003">
+      <div class="rems_container">
+        <div data-aos="fade-up" data-aos-duration="1000" class="feature_title">
+          홈
+        </div>
+        <div class="feature_wrap">
+          <div data-aos="fade-up" data-aos-duration="1000" class="feature_img">
+            <img src="images/rems/feature_001.svg" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="feature_text_wrap"
+          >
+            <div class="feature_text_title">발전량 모니터링</div>
+            <p class="feature_text">
+              실시간으로 발전량을 모니터링 할 수 있습니다.
+              <br />발전현황 및 기기상태를 확인할 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <div class="feature_wrap absolute_feature">
+          <div data-aos="fade-up" data-aos-duration="1000" class="feature_img">
+            <img src="images/rems/feature_002.svg" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="feature_text_wrap"
+          >
+            <div class="feature_text_title">실시간 발전현황</div>
+            <p class="feature_text">
+              기기상태의 실시간 조회 및
+              <span class="mo_span">발전량 조회가 가능합니다.</span>
+            </p>
+          </div>
+        </div>
+        <div class="feature_wrap feature_003">
+          <div data-aos="fade-up" data-aos-duration="1000" class="feature_img">
+            <img src="images/rems/feature_003.svg" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="feature_text_wrap"
+          >
+            <div class="feature_text_title">위치기반 날씨 서비스</div>
+            <p class="feature_text">
+              발전소의 위치를 기반으로 날씨정보를 제공합니다.
+              <br />날씨에 따라 특정 알림을 제공합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rems_004">
+      <div class="rems_container">
+        <div data-aos="fade-up" data-aos-duration="1000" class="feature_title">
+          조회
+        </div>
+        <div class="feature_wrap">
+          <div data-aos="fade-up" data-aos-duration="1000" class="feature_img">
+            <img src="images/rems/feature_004.svg" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="feature_text_wrap"
+          >
+            <div class="feature_text_title">발전집계를 확인해요</div>
+            <p class="feature_text">
+              기간별,온도별 및 발젼량 추이를
+              <span class="mo_span">확인할 수 있습니다.</span>
+            </p>
+          </div>
+        </div>
+        <div class="feature_wrap absolute_feature feature_002">
+          <div data-aos="fade-up" data-aos-duration="1000" class="feature_img">
+            <img src="images/rems/feature_005.svg" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="feature_text_wrap"
+          >
+            <div class="feature_text_title">
+              월간 발전량을 추이를
+              <span class="mo_span">확인할 수 있어요.</span>
+            </div>
+            <p class="feature_text">
+              일간 발전량 추이를 통해서
+              <span class="mo_span">발전량을 예측할 수 있어요</span>
+            </p>
+          </div>
+        </div>
+        <div class="feature_wrap feature_004">
+          <div data-aos="fade-up" data-aos-duration="1000" class="feature_img">
+            <img src="images/rems/feature_006.svg" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="feature_text_wrap"
+          >
+            <div class="feature_text_title">
+              설비진단을 <span class="mo_span">받아 볼 수 있어요.</span>
+            </div>
+            <p class="feature_text">
+              발전효율을 확인하고 세부진단을<br />통계/그래프로 확인할 수
+              있어요.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rems_005">
+      <div class="rems_container">
+        <div data-aos="fade-up" data-aos-duration="1000" class="feature_title">
+          접속함
+        </div>
+        <div class="feature_wrap">
+          <div data-aos="fade-up" data-aos-duration="1000" class="feature_img">
+            <img src="images/rems/feature_007.svg" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="feature_text_wrap"
+          >
+            <div class="feature_text_title">발전현황을 분석해요.</div>
+            <p class="feature_text">
+              주간별,인버터별로비교하여
+              <span class="mo_span">에너지 발전량을 확인해요.</span>
+            </p>
+          </div>
+        </div>
+        <div class="feature_wrap absolute_feature">
+          <div data-aos="fade-up" data-aos-duration="1000" class="feature_img">
+            <img src="images/rems/feature_008.svg" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="feature_text_wrap"
+          >
+            <div class="feature_text_title">세부진단을 확인해요.</div>
+            <p class="feature_text">
+              전압, 전류, 전력등 인버터별로
+              <span class="mo_span">확인할 수 있어요</span>
+            </p>
+          </div>
+        </div>
+        <div class="feature_wrap feature_003">
+          <div data-aos="fade-up" data-aos-duration="1000" class="feature_img">
+            <img src="images/rems/feature_009.svg" alt="" />
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="feature_text_wrap"
+          >
+            <div class="feature_text_title">
+              발전소 상태를 확인할 수 있어요.
+            </div>
+            <p class="feature_text">
+              전국 15,000개 발전소 기준으로<br />발전 시간이 잘 나오는 지 확인
+              할 수 있어요.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rems_006">
+      <div class="rems_006_container">
+        <div data-aos="fade-up" data-aos-duration="1000" class="feature_title">
+          보고서
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="rems_006_img">
+          <img src="images/rems/feature_010.svg" alt="" />
+        </div>
+        <div class="rems_006_alram_img">
+          <img src="" alt="" />
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="feature_text_wrap"
+        >
+          <div class="feature_text_title">장애관리</div>
+          <p class="feature_text">
+            언제 어디서든 확인가능하며 이상이 있을때 알람을 드려요
+          </p>
+        </div>
+        <div
+          div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="swiper rems_slider"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide painpoint_slide">
+              <div class="painpoint_wrap">
+                <div class="painpoint_img">
+                  <img src="images/rems/error_001.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide painpoint_slide">
+              <div class="painpoint_wrap">
+                <div class="painpoint_img">
+                  <img src="images/rems/error_002.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide painpoint_slide">
+              <div class="painpoint_wrap">
+                <div class="painpoint_img">
+                  <img src="images/rems/error_003.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide painpoint_slide">
+              <div class="painpoint_wrap">
+                <div class="painpoint_img">
+                  <img src="images/rems/error_004.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide painpoint_slide">
+              <div class="painpoint_wrap">
+                <div class="painpoint_img">
+                  <img src="images/rems/error_005.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide painpoint_slide">
+              <div class="painpoint_wrap">
+                <div class="painpoint_img">
+                  <img src="images/rems/error_006.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <div class="rems_006_flow">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="rems_006_flow_img"
+      >
+        <img src="images/rems/rems_006_flow.png" alt="" />
+      </div>
+    </div>
+    <section class="rems_007">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="rems_007_container"
+      >
+        <div class="rems_007_title">4ST SOLAR 관리자페이지</div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="rems_007_img">
+          <img src="images/rems/rems_pc001.jpg" alt="" />
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="rems_pc_002">
+        <img src="images/rems/rems_pc002.jpg" alt="" />
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/rems_swiper.js" defer></script>
+    <script src="js/progressBar.js"></script>
+    <script>
+      $(window).on("load", function () {
+        document.body.classList.remove("no-scroll");
+        $(".blackblock").fadeOut(1000);
+      });
+    </script>
   </body>
 </html>

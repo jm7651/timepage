@@ -32,6 +32,9 @@ body.no-scroll {
 .hemsblock {
   background: #619ddb;
 }
+.remsblock {
+  background: #eb7805;
+}
 @keyframes spin {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);

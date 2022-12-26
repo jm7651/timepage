@@ -204,9 +204,13 @@ body {
   );
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+.cover_container {
+  width: 100%;
+  overflow: hidden;
+  padding: 8rem 0;
+}
 .cover_wrap {
   width: 100%;
-  overflow-x: hidden;
 }
 #work {
   padding: 8rem 0;
@@ -214,7 +218,7 @@ body {
 #career {
   width: 128rem;
   margin: 0 auto;
-  padding-top: 8rem;
+  padding: 8rem 0;
 }
 .career_div {
   display: flex;
@@ -227,21 +231,21 @@ body {
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
   transition: all ease-out 0.5s;
-  padding: 4rem;
+  padding: 4rem 0;
   opacity: 0.5;
 }
 .career_div:hover {
   transform: scale(1.1);
   z-index: 100;
   opacity: 1;
+  color: #007bff;
+  font-weight: 700;
 }
 .career_div h4 {
   font-size: 2rem;
-  font-weight: 400;
 }
 .company {
-  font-size: 1.6rem;
-  font-family: "Noto Sans KR", sans-serif;
+  font-size: 2rem;
 }
 #resume {
   background: #000;
@@ -451,7 +455,7 @@ body {
   color: #fff;
 }
 .work__projects {
-  max-width: 160rem;
+  max-width: 128rem;
   margin: 0 auto;
   display: none;
 }
