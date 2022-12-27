@@ -24,10 +24,12 @@ body {
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
 }
-
+.mo_span {
+  display: block;
+}
 .link_header {
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   background-color: #fff;
   top: 0;
   width: 100%;
@@ -125,8 +127,8 @@ body {
   justify-content: center;
 }
 .link_main_wrap img {
-  width: 50%;
-  max-width: 55rem;
+  width: 70%;
+  max-width: 74em;
   margin-left: 10vw;
   margin-bottom: 5vh;
 }
@@ -193,7 +195,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   word-break: keep-all;
-  padding: 2rem;
+  padding: 4rem;
 }
 .link_flex_column_wrap {
   display: flex;
@@ -211,29 +213,32 @@ body {
   clip-path: inset(1px 1px);
 }
 .link_002_bottom_text_wrap {
-  height: 10vh;
-
-  font-size: 1.6rem;
+  height: 20vh;
+  justify-content: center;
+  font-size: 2.2rem;
   line-height: 1.5;
   display: flex;
   align-items: center;
-  padding-left: 6vw;
   border-bottom: 1px solid var(--borderColor);
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
 }
 .link_003 {
   position: relative;
+  padding-bottom: 40rem;
 }
-.link_003 .title_container {
+.title_container {
   display: flex;
   border-bottom: 1px solid var(--borderColor);
 }
-.link_003 .title_container .number {
+.title_container .number {
   font-size: 20rem;
   border-right: 1px solid var(--borderColor);
   padding: 7rem;
   font-weight: 100;
 }
-.link_003 .title_wrap {
+.title_wrap {
   padding: 7rem;
 }
 .interview_desc {
@@ -246,9 +251,9 @@ body {
   margin: 0 auto;
   width: 82rem;
   gap: 24rem;
-  margin-top: 10rem;
+  margin-top: 16rem;
   position: relative;
-  margin-bottom: 30rem;
+  z-index: 100;
 }
 .pain_point_wrap {
   display: inline-block;
@@ -259,6 +264,11 @@ body {
   border-radius: 1.2rem;
   width: 45rem;
   position: relative;
+  filter: drop-shadow(30px 114px 47px rgba(0, 0, 0, 0.01))
+    drop-shadow(17px 64px 40px rgba(0, 0, 0, 0.05))
+    drop-shadow(7px 28px 29px rgba(0, 0, 0, 0.09))
+    drop-shadow(2px 7px 16px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
 }
 .pain_point_text_wrap {
   display: flex;
@@ -327,6 +337,25 @@ body {
   position: absolute;
   top: 14.4rem;
   left: 25.4rem;
+}
+.arrow_002 {
+  position: absolute;
+  top: 33.8rem;
+  left: 49.4rem;
+}
+.arrow_003 {
+  position: absolute;
+  top: 52.8rem;
+  left: 25.4rem;
+}
+.link_004 {
+  display: flex;
+  border-top: 1px solid var(--borderColor);
+}
+.link_004_right {
+  width: 50%;
+  height: 100vh;
+  border-left: 1px solid var(--borderColor);
 }
 @keyframes scrolling {
   0% {
@@ -397,6 +426,16 @@ body {
   align-items: center;
   font-size: 2vh;
   padding-left: 3vh;
+}
+.error_001 {
+  position: absolute;
+  right: 20rem;
+  top: 50rem;
+}
+.error_002 {
+  position: absolute;
+  left: 20rem;
+  top: 100rem;
 }
 @media (max-width: 600px) {
   html {
@@ -534,5 +573,17 @@ body {
     box-sizing: border-box;
   }
   .pain_point_wrap.red_wrap {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+  .pain_point_wrap.red_wrap.red_wrap002 {
+    top: auto;
+    left: auto;
+  }
+  .arrow_001,
+  .arrow_002,
+  .arrow_003 {
+    display: none;
   }
 }
