@@ -1008,10 +1008,12 @@ body {
     width: 100%;
     flex-direction: column;
     transition: all 0.3s ease-out;
-    padding-top: 5vh;
+    padding: 10vh 0;
   }
   .navbar__menu.active {
     display: flex;
+    background: #000000;
+    color: #fff;
   }
   .navbar__menu__item {
     width: 100%;
@@ -1041,7 +1043,7 @@ body {
     width: 70%;
     margin: 0 auto;
     height: 5px;
-    background: #464555;
+    background: #111;
     color: transparent;
     border-radius: 20rem;
     transition: 0.3s all;
@@ -1056,7 +1058,7 @@ body {
     width: 100%;
     margin: 0 auto;
     height: 5px;
-    background: #464555;
+    background: #111;
     transition: 0.3s all;
     border-radius: 20rem;
   }
