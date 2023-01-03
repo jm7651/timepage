@@ -5,8 +5,8 @@ class FolderScroll {
     this.children = this.sticky.querySelectorAll(".section");
     console.log(this.children);
     this.length = this.children.length;
-    this.headerVh = 5;
-    this.contentVh = 95 - this.headerVh * this.length;
+    this.headerVh = 7;
+    this.contentVh = 93 - this.headerVh * this.length;
     this.start = 0;
     this.end = 0;
   }

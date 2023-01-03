@@ -12,7 +12,9 @@ body {
 body {
   overflow-x: hidden;
 }
-
+.mo_span {
+  display: block;
+}
 .not-scroll {
   overflow: hidden;
   height: 100%;
@@ -23,12 +25,12 @@ body {
   align-items: center;
   position: fixed;
   background: transparent;
-  height: 7rem;
+  height: 7vh;
   width: 100%;
   top: 0;
   padding: 2rem;
   font-weight: 900;
-  color: #464555;
+  color: #292745;
   padding: 1vh 10vw;
   box-sizing: border-box;
   z-index: 1;
@@ -238,10 +240,12 @@ body {
   box-sizing: border-box;
   align-items: center;
   background: #fff;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #111;
   transition: all ease-out 0.5s;
   padding: 4rem 0;
+}
+#career > div:nth-child(1) {
+  border-top: 1px solid #111;
 }
 /* .career_div:hover {
   transform: scale(1.1);
@@ -378,10 +382,11 @@ body {
   font-size: 4rem;
 }
 .about_middle_container div:nth-child(2) {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  opacity: 0.6;
-  line-height: 1.6;
+  opacity: 0.7;
+  line-height: 1.5;
+  word-break: keep-all;
 }
 .num {
   font-size: 6rem;
@@ -607,34 +612,10 @@ body {
 .modal_close {
   top: 0;
 }
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 5rem;
-  font-size: 3rem;
-  color: #333;
-  line-height: 1.5;
-  background: #fafbfc;
-}
-.contact > div:nth-child(1) {
-  font-size: 6rem;
-  font-weight: 900;
-}
-.contact > .inner > div:nth-child(4) {
-  text-align: center;
-  font-size: 2rem;
-}
-.email > i,
-.phone > i {
-  margin-right: 2rem;
-  left: 0;
-}
+
 .phone > a {
+  color: #333;
   text-decoration: none;
-  color: #fff;
 }
 
 .video-popup.reveal {
@@ -727,9 +708,38 @@ body {
   width: 128rem;
 }
 #contact {
-  background: #000;
-  color: #fff;
+  background: #c8cbd2;
   padding: 4rem;
+}
+.contact_wrap {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.infinity_video {
+  max-width: 80rem;
+}
+.infinity_video video {
+  width: 100%;
+}
+.contact_right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact_title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.thanks {
+  font-size: 8.8vw;
+  text-align: center;
+  font-weight: 900;
+  font-family: "ivypresto-display", serif;
+}
+.email,
+.phone {
+  font-size: 2rem;
 }
 .main-content-1 {
   background-color: #000;
@@ -737,7 +747,7 @@ body {
   border-bottom: 1px solid #191919;
   width: 100%;
   height: 500vh;
-  margin-bottom: 100vh;
+  /* margin-bottom: 100vh; */
 }
 
 .sticky-title {
@@ -810,7 +820,7 @@ body {
   animation: marquee2 32s linear infinite;
 }
 .marquee_content_stroke {
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 1px #fff;
   color: transparent;
 }
 .marquee_content_wh {
@@ -834,17 +844,83 @@ body {
   }
 }
 
+.title_001 {
+  border-bottom: 1px solid #000;
+}
+.title_002 {
+  background: #000;
+  color: #fff;
+}
+.info_wrapper {
+  padding: 4rem;
+  display: flex;
+  background: linear-gradient(113.07deg, #111 0.27%, #0d0d0d 63%);
+  justify-content: space-around;
+}
+.info_left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info_right {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  justify-content: center;
+}
+.info_title {
+  font-size: 3vw;
+  font-weight: 600;
+  color: #fff;
+}
+.info_title > div:nth-child(2) {
+  background: #fff;
+  color: #000;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+}
+.info_text_wrapper {
+  display: flex;
+  flex-direction: column;
+  color: #999;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  gap: 6rem;
+}
+.info_text_title {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+.info_up,
+.info_down {
+  display: flex;
+  gap: 6rem;
+}
+.abstract_img {
+  width: 60%;
+}
+.abstract_img video {
+  width: 100%;
+}
 @media screen and (max-width: 450px) {
   body {
     overflow-x: hidden;
     min-height: 100%;
   }
+  .mo_span {
+    display: inline;
+  }
+  .mo_no {
+    display: none;
+  }
   #navbar {
     width: 100%;
   }
   #index_home {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    margin-top: 7rem;
+    height: auto;
   }
   .main_visual {
     max-width: 70%;
@@ -881,8 +957,9 @@ body {
     padding: 4rem 1.6rem;
     height: 40vh;
   }
-  #contact .inner {
+  .contact_wrap {
     height: auto;
+    flex-direction: column;
   }
   #navbar {
     flex-direction: column;
@@ -943,8 +1020,9 @@ body {
   .navbar__toggle {
     display: block;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 50%;
+    right: 1.6rem;
+    transform: translate(0, -50%);
     display: flex;
     width: 50px;
     height: 50px;
@@ -1041,6 +1119,8 @@ body {
   .title_section {
     width: 100%;
     top: 30%;
+    left: auto;
+    transform: translate(0, 0);
   }
   .main_title {
     width: auto;
@@ -1057,19 +1137,59 @@ body {
     box-sizing: border-box;
     font-size: 1.4rem;
   }
+  .portfolio_2022 {
+    position: relative;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+  .cover_container {
+    height: 32vh;
+    padding: 2rem 0;
+  }
   .cover {
     overflow-x: hidden;
   }
   .about_middle_container {
     width: 100%;
+    gap: 0;
   }
   .about_middle_container div:nth-child(2) {
     font-size: 1.6rem;
     font-weight: 700;
+    padding: 2rem;
+    word-break: keep-all;
+    text-align: center;
   }
 
-  .sandglass {
-    width: 40vw;
+  .my_info {
+    font-size: 4rem;
+  }
+  .marquee {
+    height: 5.4rem;
+  }
+  .info_wrapper {
+    flex-direction: column;
+    padding: 2rem;
+    background: #111;
+  }
+  .info_up,
+  .info_down {
+    gap: 2rem;
+  }
+  .info_text_wrapper {
+    gap: 2rem;
+  }
+  .info_text_title {
+    font-size: 1.6rem;
+    word-break: keep-all;
+  }
+  .info_title {
+    font-size: 8vw;
+    word-break: keep-all;
+  }
+  .info_p {
+    display: none;
   }
   /* 이력서영역 */
   #career {
@@ -1078,13 +1198,15 @@ body {
     box-sizing: border-box;
   }
   .career_div {
-    padding: 3rem 0;
+    padding: 4rem 0;
   }
   .career_div h4 {
     font-size: 1.2rem;
+    font-weight: 400;
   }
   .company {
     font-size: 1.4rem;
+    font-weight: 400;
   }
   h2 {
     font-size: 5rem;
@@ -1135,15 +1257,19 @@ body {
     font-size: 6rem;
     padding: 2rem;
   }
+  #about {
+    padding: 0;
+  }
   #contact {
     font-size: 1.6rem;
+    height: auto;
   }
-  #contact > .inner > div:nth-child(1) {
+  .contact_wrap > div:nth-child(1) {
     padding-bottom: 2rem;
     font-size: 3rem;
     font-weight: 900;
   }
-  #contact > .inner > div:nth-child(4) {
+  .contact_wrap > div:nth-child(4) {
     font-size: 1.2rem;
   }
   .working_span {
@@ -1166,10 +1292,21 @@ body {
   .working_desc {
     display: block;
   }
+  .thanks {
+    font-size: 15vw;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+  .contact_right {
+    gap: 0.8rem;
+  }
   .email,
   .phone,
-  .footer {
+  .footer_right {
     padding: 0.4rem;
-    color: #fff;
+  }
+  .footer_right {
+    padding-top: 4rem;
+    text-align: center;
   }
 }
