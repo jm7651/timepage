@@ -6,7 +6,7 @@ const navbarHeight = navbar.getBoundingClientRect().height;
 const home = document.querySelector("#index_home");
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
-  home.style.opacity = 1 - window.scrollY / homeHeight;
+  // home.style.opacity = 1 - window.scrollY / homeHeight;
   if (window.scrollY > navbarHeight) {
     navbar.classList.add("navbar--dark");
   } else {

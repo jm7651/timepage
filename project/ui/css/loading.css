@@ -35,6 +35,9 @@ body.no-scroll {
 .remsblock {
   background: #eb7805;
 }
+.linkblock {
+  background: #1e2136;
+}
 @keyframes spin {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);

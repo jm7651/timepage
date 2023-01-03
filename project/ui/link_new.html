@@ -8,11 +8,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/link_new.css" />
     <link rel="stylesheet" href="css/modal.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="css/progressbar.css" />
+    <title>Link</title>
   </head>
-  <body data-scroll-container>
+  <body class="no-scroll">
+    <div class="blackblock linkblock"><div class="loader"></div></div>
+    <div class="progrss_header">
+      <div class="progress-container">
+        <div class="progress-bar link_progressbar"></div>
+      </div>
+    </div>
     <section class="summary_modal modal-overlay">
       <div class="modal_window">
         <div>
@@ -59,297 +71,838 @@
     <div class="link_header">
       <img src="images/link/link_logo.svg" alt="" />
     </div>
-    <section data-scroll-section class="link_001">
-      <div data-scroll class="link_flex_wrap">
-        <div class="link_main_title_wrap">
-          <div>
-            <div class="main_title">
-              A better experience for<br /><span>Data Scientists</span>
+    <section class="link_section_container">
+      <div class="blank_div left_blank"></div>
+      <section class="link_section_wrapper">
+        <section class="link_001">
+          <div class="link_flex_wrap">
+            <div class="link_main_title_wrap">
+              <div>
+                <div class="main_title">
+                  A better Experience<br />
+                  For <span>Data Scientists</span>
+                </div>
+              </div>
+              <div class="link_001_right_text">
+                <p class="link001_desc">
+                  데이터 사이언티스트가 친숙하게 사용하는 주피터랩(JupyterLab)의
+                  확장 프로그램으로, <br />가독성 있는 파이프라인을 만들어 쉽게
+                  공유할 수 있는 AI/ML 모델 개발 도구입니다.
+                </p>
+                <button class="summary_button">
+                  <span>링크 요약</span><span class="link_arrow_button"></span>
+                </button>
+              </div>
             </div>
-            <p class="link001_desc">
-              데이터 사이언티스트가 친숙하게 사용하는 주피터랩(JupyterLab)의
-              확장 프로그램으로, <br />가독성 있는 파이프라인을 만들어 쉽게
-              공유할 수 있는 AI/ML 모델 개발 도구입니다.
-            </p>
-            <button class="summary_button">
-              <span>링크 요약</span><span class="link_arrow_button"></span>
-            </button>
-          </div>
-        </div>
-        <div class="link_main_wrap">
-          <img src="images/link/link_main.svg" alt="" />
-        </div>
-      </div>
-
-      <div class="link_marquee">
-        <ul class="marquee-content">
-          <li><img src="images/link/marquee_aimmo.png" alt="" /></li>
-          <li><img src="images/link/marquee_cnai_logo.png" alt="" /></li>
-          <li><img src="images/link/marquee_encored_logo.jpg" alt="" /></li>
-          <li><img src="images/link/marquee_enerzai_logo.jpg" alt="" /></li>
-          <li><img src="images/link/marquee_gausslabs_logo.jpg" alt="" /></li>
-          <li><img src="images/link/marquee_greenlabs_logo.jpg" alt="" /></li>
-          <li><img src="images/link/marquee_skt_logo.jpg" alt="" /></li>
-          <li><img src="images/link/marquee_socar_logo.jpg" alt="" /></li>
-          <li><img src="images/link/marquee_pal_logo.jpg" alt="" /></li>
-          <li><img src="images/link/marquee_sejong_logo.jpg" alt="" /></li>
-          <li><img src="images/link/marquee_hanyang_logo.jpg" alt="" /></li>
-          <li><img src="images/link/marquee_hongik_logo.jpg" alt="" /></li>
-        </ul>
-      </div>
-    </section>
-    <section data-scroll-section class="link_002">
-      <div class="link_flex_wrap">
-        <div class="link_002_main">
-          <img src="images/link/link_002_main.jpg" alt="" />
-        </div>
-        <div class="link_flex_column_wrap">
-          <div class="link_002_title_wrap">
-            <div>01</div>
-            <div>
-              <div class="subject">Overview</div>
-              <div class="link_title">
-                왜 마키나락스(MakinaRocks)는<br />
-                <span>Link</span>를 개발했을까?
+            <div class="link_001_right">
+              <div class="link_main_wrap">
+                <img src="images/link/link_main.svg" loading="lazy" alt="" />
               </div>
             </div>
           </div>
-          <div class="link_002_desc">
-            다수의 데이터 사이언티스트(Data Scientist)들이 산업의 다양한 문제를
-            해결하기 위해 연구 개발에 몰두하고 있으며,<span class="mo_span">
-              데이터 사이언티스트들의 성과(Performance) 향상을 위해 업무 방식
-              개선과 업무 효율 극대화에 많은 고민과 관심을 가지게
-              되었습니다.</span
-            >
+          <div class="link_marquee">
+            <ul class="marquee-content">
+              <li>
+                <img src="images/link/marquee_aimmo.jpg" class="lozad" alt="" />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_cnai_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_encored_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_enerzai_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_gausslabs_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_greenlabs_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_skt_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_socar_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_pal_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_sejong_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_hanyang_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  src="images/link/marquee_hongik_logo.jpg"
+                  class="lozad"
+                  alt=""
+                />
+              </li>
+            </ul>
           </div>
-          <div class="link_002_video">
+        </section>
+        <section class="link_002">
+          <div class="link_flex_wrap">
+            <div class="link_002_main">
+              <img src="images/link/link_002_main.jpg" class="lozad" alt="" />
+            </div>
+            <div class="link_flex_column_wrap">
+              <div class="link_002_title_wrap">
+                <div>01</div>
+                <div>
+                  <div class="subject">Overview</div>
+                  <div class="link_title">
+                    <span>Link</span>를 어떻게 디자인 했는지?
+                  </div>
+                </div>
+              </div>
+              <div class="link_002_desc">
+                <span class="mo_no"
+                  >다수의 Data Scientist들이 산업의 다양한 문제를 해결하기 위해
+                  연구 개발에 몰두하는데 도움이 될 수 있도록,</span
+                ><span class="mo_span"
+                  >코드를 조금이라도 편하게 보고 관리하기 위한 디자인을 하려고
+                  했습니다.</span
+                >
+              </div>
+              <div class="link_002_video_wrap">
+                <div class="link_002_video">
+                  <video autoplay="" loop="" muted="" playsinline="">
+                    <source
+                      src="images/link/link_overview.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="link_002_bottom_text_wrap">
+            Link는 데이터 사이언티스트가 친숙하게 사용하는 개발 환경인 주피터
+            랩의 확장프로그램 형태로 개발되었습니다,<span class="mo_no">
+              왼쪽 패널영역에 파이프라인을, 노트북영역에 파이프라인을 잇는 Code
+              cell을 Sync하도록 디자인을 했습니다.
+            </span>
+          </div>
+        </section>
+        <section class="link_003">
+          <div class="link_003_wrap">
+            <div class="title_container">
+              <div class="number">02</div>
+              <div class="title_wrap">
+                <div class="subject">User research</div>
+                <div class="link_title">
+                  설문조사와 인터뷰를 통해 Jupyter의 Painpoint를 정리했습니다.
+                </div>
+                <div class="interview_desc">
+                  (SKT, Socar, MakinaRocks 데이터사이언티스트등을 대상으로
+                  설문조사 했습니다.)
+                </div>
+              </div>
+            </div>
+            <div class="pain_point_container">
+              <div class="pain_point_wrap">
+                <div class="pain_point_subject">Pain point1</div>
+                <div class="pain_point_div">
+                  <div class="pain_profile">
+                    <img
+                      src="images/link/painpoint001.svg"
+                      class="lozad"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pain_point_text_wrap">
+                    <div>
+                      <div></div>
+                      <div>‘Cell 간의 연결성을 확인하기 어렵다.’</div>
+                    </div>
+                    <div class="mo_no">
+                      Jupyter는 탐색적 데이터 분석에 적합한 툴 즉, 빠르고
+                      직관적인 Cell 단위 코드 작성/실행, 결과값 확인
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrow_001">
+                <img src="images/link/arrow_001.svg" class="lozad" alt="" />
+              </div>
+              <div class="pain_point_wrap red_wrap">
+                <div class="pain_point_subject">Pain point2</div>
+                <div class="pain_point_div">
+                  <div class="pain_profile">
+                    <img
+                      src="images/link/painpoint002.svg"
+                      class="lozad"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pain_point_text_wrap">
+                    <div>
+                      <div></div>
+                      <div>‘반복적 재 실행을 통한 작업 시간 지연된다.’</div>
+                    </div>
+                    <div class="mo_no">
+                      Jupyter는 Cell 단위로 코드 작성하고 결과값을 얻기 위해
+                      반복적 Cell을 실행
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrow_002">
+                <img src="images/link/arrow_002.svg" class="lozad" alt="" />
+              </div>
+              <div class="pain_point_wrap">
+                <div class="pain_point_subject">Pain point3</div>
+                <div class="pain_point_div">
+                  <div class="pain_profile">
+                    <img
+                      src="images/link/painpoint003.svg"
+                      class="lozad"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pain_point_text_wrap">
+                    <div>
+                      <div></div>
+                      <div>‘공유가 어렵고 코드 이해도가 떨어진다.’</div>
+                    </div>
+                    <div class="mo_no">
+                      Jupyter는 사용자의 경험과 노하우에 따라 사용방법과
+                      개발환경이 상이
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrow_003">
+                <img src="images/link/arrow_001.svg" class="lozad" alt="" />
+              </div>
+              <div class="pain_point_wrap red_wrap red_wrap002">
+                <div class="pain_point_subject">Pain point4</div>
+                <div class="pain_point_div">
+                  <div class="pain_profile">
+                    <img
+                      src="images/link/painpoint004.svg"
+                      class="lozad"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pain_point_text_wrap">
+                    <div>
+                      <div></div>
+                      <div>‘입/출력이 다양하고 호환성이 떨어진다.’</div>
+                    </div>
+                    <div class="mo_no">
+                      Jupyter는 자유도가 높은 툴이기 때문에 사용자가 원하는
+                      스타일대로 자유롭게 개발.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="link_solution">
+              <div class="link_solution_img">
+                <img src="images/link/solution.svg" class="lozad" alt="" />
+              </div>
+              <div>
+                코드를 쉽고 빠르게 사용할 수 있게 만드는 것이 문제 해결의
+                핵심입니다.
+              </div>
+            </div>
+            <div class="error_001">
+              <img src="images/link/error_001.svg" class="lozad" alt="" />
+            </div>
+            <div class="error_002">
+              <img src="images/link/error_002.svg" class="lozad" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="link_004">
+          <div class="link_004_left">
+            <div class="title_container">
+              <div class="number">03</div>
+              <div class="title_wrap">
+                <div class="subject">Concept</div>
+                <div class="link_title">비정형 데이터를 연결하다</div>
+              </div>
+            </div>
+            <div class="persona_container">
+              <div class="persona_wrapper">
+                <div class="persona_left">
+                  <img
+                    src="images/link/persona_card.svg"
+                    class="lozad"
+                    alt=""
+                  />
+                </div>
+                <div class="persona_right">
+                  <div class="persona_subject">Persona를 소개합니다.</div>
+                  <div class="persona_text_wrap">
+                    <div class="persona_title">동기 및 문제점에 대한 설명</div>
+                    <p>
+                      Kubeflow 파이프라인 만들기가 어렵다. 번거롭다.<br />
+                      파이프라인을 만들기 위한 문법을 배우는게 어렵다.<br />
+                      실험관리를 하고 싶다.
+                    </p>
+                  </div>
+                  <div class="persona_text_wrap">
+                    <div class="persona_title">동기 및 문제점에 대한 설명</div>
+                    <p>
+                      Ops 숙련도가 높지 않다.<br />
+                      Kubeflow export 기능을 사용한다.<br />
+                      HPO 기능을 사용한다.<br />
+                      여러 대의 컴퓨터를 사용하여 연산량이 많은 작업을 한다.<br />
+                      파이프라인을 Runway로 export 한다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="persona_img">
+              <img src="images/link/persona_img.svg" class="lozad" alt="" />
+            </div>
+          </div>
+          <div class="link_004_right">
+            <div class="link_004_up">
+              <div class="concept_flow_img">
+                <img src="images/link/concept_flow.svg" class="lozad" alt="" />
+              </div>
+              <p>
+                코드 작성 화면과 동일한 화면에서 파이프라인을 생성할 수 있으며
+                만들어진 파이프라인 즉시 실행하여 결과를 확인할 수 있도록
+                설계했습니다.
+              </p>
+            </div>
+            <div class="link_004_down">
+              <div class="concept_system_img">
+                <img
+                  src="images/link/concept_system.svg"
+                  class="lozad"
+                  alt=""
+                />
+              </div>
+              <p>
+                Link™는 주피터랩의 사용성을 그대로 유지하여 기존 사용자의
+                학습시간을 최소화할 수 있게 설계했습니다.
+                <span class="mo_span">
+                  코드의 흐름을 쉽게 확인하고, 최적의 모델을 개발할 수
+                  있습니다.</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="link_005">
+          <div class="proto_head">컨셉에서 실제 프로덕트 화면으로</div>
+          <div class="proto_container">
+            <div class="swiper link_proto_slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide proto_pc">
+                  <img src="images/link/proto_pc.png" class="lozad" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/link/proto_present.png"
+                    loading="lazy"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="link_006">
+          <div class="link_006_left">
+            <div class="title_container">
+              <div class="number">04</div>
+              <div class="title_wrap">
+                <div class="subject">Pipeline Creation</div>
+                <div class="link_title">
+                  인터랙티브한 파이프라인 구성이 가능해요
+                </div>
+              </div>
+            </div>
+            <div class="link_006_video">
+              <video autoplay="" loop="" muted="" playsinline="">
+                <source
+                  src="images/link/pipeline_creation.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+          <div class="link_006_right">
+            <div class="link_006_up">
+              <div class="link_ui_info_img">
+                <img
+                  src="images/link/add_pipeline_001.png"
+                  class="lozad"
+                  alt=""
+                />
+              </div>
+              <ul class="link_ui_ul">
+                <li>
+                  <div>1</div>
+                  <div>Link 탭 : Link Extension을 확인할 수 있는 탭</div>
+                </li>
+                <li>
+                  <div>2</div>
+                  <div>
+                    파이프라인 패널 영역 : 파이프라인을 작성하고 실행할 수 있는
+                    패널
+                  </div>
+                </li>
+                <li>
+                  <div>3</div>
+                  <div>
+                    노트북 패널 영역 : 기존 JupyterLab과 동일하나, Link
+                    편의기능이 추가됨
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="link_006_down">
+              <div class="link_component_img">
+                <img
+                  src="images/link/add_pipeline_002.png"
+                  class="lozad"
+                  alt=""
+                />
+              </div>
+              <div class="link_component_text">
+                Link에서는 Jupyter 노트북 셀을 컴포넌트(Component)로 등록하여
+                사용할 수 있습니다.<br />컴포넌트: 컴포넌트(파이프라인
+                컴포넌트)는 파이프라인을 구성하는 최소 단위입니다. 파이프라인:
+                파이프라인은 하나 이상의 컴포넌트를 포함합니다.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="link_007">
+          <div class="remote_left">
+            <div class="title_container">
+              <div class="number">05</div>
+              <div class="title_wrap">
+                <div class="subject">Link remote</div>
+                <div class="link_title">파이프라인 원격 실행이 가능해요</div>
+              </div>
+            </div>
+            <div class="link_remote">
+              <div class="link_remote_img">
+                <img src="images/link/remote.png" class="lozad" alt="" />
+              </div>
+              <div class="link_remote_text">
+                자체적인 원격 실행 기능(Execute Pipeline with Remote Servers)을
+                제공합니다.<span class="mo_span"
+                  >이 기능을 통하여, 파이프라인 컴포넌트마다 각각의 원격 서버
+                  자원을 할당하여 </span
+                ><span class="mo_span"
+                  >효율적으로 서버 자원을 이용할 수 있습니다.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="remote_right">
+            <div class="title_container">
+              <div class="number">06</div>
+              <div class="title_wrap">
+                <div class="subject">Link caching</div>
+                <div class="link_title">캐싱(Caching) 관리가 가능해요</div>
+              </div>
+            </div>
+            <div class="link_cache_wrapper">
+              <div class="link_cache_video">
+                <video autoplay="" loop="" muted="" playsinline="">
+                  <source src="images/link/caching.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="link_remote_text">
+                한 번 실행한 셀의 결과 값을 별도로 관리하고 캐싱(Caching)하여
+                <span class="mo_span">
+                  업무 효율 저하 및 반복 작업을 회피하고 효율을 극대화할 수
+                  있습니다.</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="link_008">
+          <div class="remote_left">
+            <div class="title_container">
+              <div class="number">07</div>
+              <div class="title_wrap">
+                <div class="subject">Pipeline parameter</div>
+                <div class="link_title">
+                  파이프라인 파라미터 설정이 가능해요
+                </div>
+              </div>
+            </div>
+            <div class="link_remote">
+              <div class="link_remote_img">
+                <img
+                  src="images/link/PipelineParameter.gif"
+                  class="lozad"
+                  alt=""
+                />
+              </div>
+              <div class="link_remote_text">
+                파라미터 이름(Name)은 알파벳과 숫자로만 이루어진 문자열만
+                지원하며, 파라미터 값(Value)은 string, boolean, int, float
+                타입만 지원합니다<span class="mo_span"
+                  >파라미터 값(Value)은 string, boolean, int, float 타입만
+                  지원합니다
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="remote_right">
+            <div class="title_container">
+              <div class="number">08</div>
+              <div class="title_wrap">
+                <div class="subject">Link HPO</div>
+                <div class="link_title">하이퍼 파라미터 최적화가 가능해요</div>
+              </div>
+            </div>
+            <div class="link_cache_wrapper">
+              <div class="link_cache_video">
+                <video autoplay="" loop="" muted="" playsinline="">
+                  <source src="images/link/hpo-multiple.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="link_remote_text">
+                Link에서는 머신러닝 모델의 성능(Model Performance)을 향상시키기
+                위해
+                <span class="mo_span">
+                  하이퍼 파라미터(Hyper-Parameter)를 최적화 시킬 수
+                  있습니다</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="link_009">
+          <div class="title_container">
+            <div class="number">09</div>
+            <div class="title_wrap">
+              <div class="subject">Version Control</div>
+              <div class="link_title">버전 관리가 가능해요</div>
+            </div>
+          </div>
+          <div class="link_git_wrap">
+            <div class="link_git_left">
+              <div class="link_git_video">
+                <video autoplay="" loop="" muted="" playsinline="">
+                  <source src="images/link/git_diff.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div class="link_git_text">
+                Link에서는 머신러닝 모델의 성능을 향상시키기 위해
+                <span class="mo_span">
+                  하이퍼 파라미터(Hyper-Parameter)를 최적화 시킬 수
+                  있습니다</span
+                >
+              </div>
+            </div>
+            <div class="link_git_right">
+              <div class="link_git_title">Link Git UI를 소개할께요</div>
+              <div class="link_git_img">
+                <img src="images/link/link_git_002.png" class="lozad" alt="" />
+              </div>
+              <ul class="link_ui_ul">
+                <li>
+                  <div>1</div>
+                  <div>
+                    Link Git 탭 : Link Git 패널 영역에 진입할 수 있는 탭
+                  </div>
+                </li>
+                <li>
+                  <div>2</div>
+                  <div>
+                    Link Git 패널 영역 : Link Git 기능을 실행할 수 있는 패널
+                  </div>
+                </li>
+                <li>
+                  <div>3</div>
+                  <div>
+                    Changes 탭 : 파일 변경 내역을 확인하고, Commit을 할 수 있는
+                    탭
+                  </div>
+                </li>
+                <li>
+                  <div>4</div>
+                  <div>
+                    History 탭 : Commit 내역을 확인하고, Commit에 따른 변경
+                    사항을 확인할 수 있는 탭
+                  </div>
+                </li>
+                <li>
+                  <div>5</div>
+                  <div>
+                    Git Diff 탭 : Commit에 따른 변경 사항의 상세 정보를 확인할
+                    수 있는 탭
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="link_010">
+          <div class="title_container">
+            <div class="number">10</div>
+            <div class="title_wrap">
+              <div class="subject">Interaction</div>
+              <div class="link_title">
+                파이프라인 컴퍼넌트를 활용하는 다양한 방법이 있어요
+              </div>
+            </div>
+          </div>
+          <div class="link_010_wrap">
+            <div class="link_git_video">
+              <video autoplay="" loop="" muted="" playsinline="">
+                <source src="images/link/pipeline_color.mp4" type="video/mp4" />
+              </video>
+              <div class="link_010_text">
+                <div class="">
+                  <div class="link_ux_title">Select Header Color</div>
+                  헤더 컬러 설정을 통해 하나 이상의 컴포넌트를 그룹핑 할 수
+                  있습니다. 유사한 기능을 수행하는 컴포넌트를 동일한 컬러로
+                  설정하여 복잡하게 구성된 파이프라인의 구조를 쉽게 파악할 수
+                  있습니다. (파이프라인의 가독성 향상)
+                </div>
+              </div>
+            </div>
+            <div class="link_git_video">
+              <video autoplay="" loop="" muted="" playsinline="">
+                <source
+                  src="images/link/pipeline_comment.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="link_010_text">
+                <div class="">
+                  <div class="link_ux_title">Add Comments</div>
+                  파이프라인 컴포넌트에 코멘트를 (컴포넌트에 대한 설명이나 질문)
+                  추가 할 수 있습니다. 저장되거나 공유될 때도 해당 코멘트가
+                  포함됩니다. 코멘트 기능을 활용하면 협업 시 원활한 소통 도구로
+                  활용할 수 있습니다.
+                </div>
+              </div>
+            </div>
+            <div class="link_git_video">
+              <video autoplay="" loop="" muted="" playsinline="">
+                <source src="images/link/git_diff.mp4" type="video/mp4" />
+              </video>
+              <div class="link_010_text">
+                <div class="">
+                  <div class="link_ux_title">Component Summary</div>
+                  실행 완료 된 컴포넌트에 포함 된 요약 정보(Object, Function,
+                  Class, Module)를 제공합니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="link_011">
+          <div class="title_container">
+            <div class="number">11</div>
+            <div class="title_wrap">
+              <div class="subject">Dark mode</div>
+              <div class="link_title">다크모드를 제공해요.</div>
+            </div>
+          </div>
+          <div class="link_011_wrap">
+            <div class="darkmode_img">
+              <img src="images/link/dark_mode.gif" class="lozad" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="link_012">
+          <div class="title_container">
+            <div class="number">12</div>
+            <div class="title_wrap">
+              <div class="subject">UX improvements</div>
+              <div class="link_title">UX 개선사례입니다.</div>
+            </div>
+          </div>
+          <div class="link_011_wrap">
+            <div class="link_011_left">
+              <div class="link_011_up">
+                <div class="link_ux_img">
+                  <img
+                    src="images/link/ux_improvements.png"
+                    class="lozad"
+                    alt=""
+                  />
+                </div>
+                <div class="link_ux_imp001_text_wrap">
+                  <div class="link_ux_title">실행버튼 리뉴얼</div>
+                  실행버튼이 hover를 했을때 뜨는방식에서 클릭하면 따른 섹션에
+                  나오는 방식으로 바뀌었습니다 이유는 hover시에 씹히는 경우가
+                  많아 두번 클릭을 해야하는 경우도 있고 hover 방식이 자주 쓰는
+                  인터렉션에서는 좋지 않은것 같았습니다.
+                </div>
+              </div>
+              <div class="link_011_down">
+                <div class="link_ux_img">
+                  <img
+                    src="images/link/link_toolbar.png"
+                    class="lozad"
+                    alt=""
+                  />
+                </div>
+                <div class="link_ux_imp001_text_wrap">
+                  <div class="link_ux_title">아이콘 왼쪽정렬</div>
+                  처음 기획은 파이프라인 컴퍼넌트 아이콘을 오른쪽 끝쪽에 넣어
+                  인터렉션을 하는것이 었는데 실제 사용자들이 왼쪽부분부터 코드를
+                  쓰고 왼쪽 부분쪽 사이드의 사용이크기때문에 왼쪽으로
+                  실행아이콘들을 옮김으로서 사용성 개선을 했습니다. 위치를
+                  옮기면서 아이콘을 더 심플하게 단순화 하였습니다.
+                </div>
+              </div>
+            </div>
+            <div class="link_011_right">
+              <div class="link_ux_img">
+                <img
+                  src="images/link/ux_header_color.png"
+                  class="lozad"
+                  alt=""
+                />
+              </div>
+              <div class="link_ux_imp001_text_wrap">
+                <div class="link_ux_title">Header color panel</div>
+                처음에 라벨링 할 정도로 기획이 되었음 디자인을 하면서 컬러피커가
+                있었으면 좋겠다싶어서 다른 디자인 툴들의 레퍼런스들을 참조하여
+                디자인은 했습니다.<span class="mo_span">
+                  또한 계속 다른ui window를 쓸 수 없어 UI window를
+                  통합하였습니다.
+                </span>
+                <span class="mo_span"
+                  >덧붙여 header color 아이콘을 누르면 UI window만큼 패널창을
+                  키워서 파이프라인을 가리지 않게 ux를 개선하였습니다.</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="link_013">
+          <div class="title_container">
+            <div class="number">13</div>
+            <div class="title_wrap">
+              <div class="subject">
+                <div>Design system</div>
+                <div class="figma_logo_img">
+                  <img src="images/link/figma_logo.svg" class="lozad" alt="" />
+                </div>
+              </div>
+              <div class="link_title">Link의 디자인 시스템을 소개해요.</div>
+            </div>
+          </div>
+          <div class="link_013_wrap">
+            <div class="link_013_left">
+              <div class="link_013_img_001">
+                <img src="images/link/system_001.svg" class="lozad" alt="" />
+              </div>
+            </div>
+            <div class="link_013_right">
+              <div class="link_013_up">
+                <div class="link_013_text">
+                  서비의 아이덴티티를 살리고자 로고에서 사용된 점을 우측 상단에
+                  활용했다.
+                </div>
+                <div class="link_013_img_002">
+                  <img src="images/link/system_002.svg" class="lozad" alt="" />
+                </div>
+              </div>
+              <div class="link_013_down">
+                <div class="link_013_img_003">
+                  <img src="images/link/system_003.svg" class="lozad" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="link_014">
+          <div class="link_014_video">
             <video autoplay="" loop="" muted="" playsinline="">
-              <source src="images/link/link_overview.mp4" type="video/mp4" />
+              <source src="images/link/logo_ani.mp4" type="video/mp4" />
             </video>
           </div>
-        </div>
-      </div>
-      <div class="link_002_bottom_text_wrap">
-        링크(Link)는 데이터 사이언티스트(Data Scientist)가 친숙하게 사용하는
-        개발 환경인 주피터 랩(JupyterLab)의 확장프로그램(Extension)형태로
-        개발되었으며,<br />
-        코드 작성 화면과 동일한 화면에서 파이프라인(Pipeline)을 생성할 수 있으며
-        만들어진파이프라인 즉시 실행하여 결과를 확인 할 수 있습니다.
-      </div>
-    </section>
-    <section data-scroll-section class="link_003">
-      <div class="title_container">
-        <div class="number">02</div>
-        <div class="title_wrap">
-          <div class="subject">User research</div>
-          <div class="link_title">
-            설문조사와 인터뷰를 통해<br />
-            Jupyter의 Painpoint를 정리했습니다.
-          </div>
-          <div class="interview_desc">
-            SKT, Socar, MakinaRocks 데이터사이언티스트등을 대상으로 설문조사
-            했습니다.
-          </div>
-        </div>
-      </div>
-      <div class="pain_point_container">
-        <div class="pain_point_wrap">
-          <div class="pain_point_subject">Pain point1</div>
-          <div class="pain_point_div">
-            <div class="pain_profile">
-              <img src="images/link/painpoint001.svg" alt="" />
-            </div>
-            <div class="pain_point_text_wrap">
-              <div>
-                <div></div>
-                <div>‘Cell 간의 연결성을 확인하기 어렵다.’</div>
-              </div>
-              <div>
-                Jupyter는 탐색적 데이터 분석에 적합한 툴 즉, 빠르고 직관적인
-                Cell 단위 코드 작성/실행, 결과값 확인
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="arrow_001">
-          <img src="images/link/arrow_001.svg" alt="" />
-        </div>
-        <div class="pain_point_wrap red_wrap">
-          <div class="pain_point_subject">Pain point2</div>
-          <div class="pain_point_div">
-            <div class="pain_profile">
-              <img src="images/link/painpoint002.svg" alt="" />
-            </div>
-            <div class="pain_point_text_wrap">
-              <div>
-                <div></div>
-                <div>‘반복적 재 실행을 통한 작업 시간 지연된다.’</div>
-              </div>
-              <div>
-                Jupyter는 Cell 단위로 코드 작성하고 결과값을 얻기 위해 반복적
-                Cell을 실행
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="arrow_002">
-          <img src="images/link/arrow_002.svg" alt="" />
-        </div>
-        <div class="pain_point_wrap">
-          <div class="pain_point_subject">Pain point3</div>
-          <div class="pain_point_div">
-            <div class="pain_profile">
-              <img src="images/link/painpoint003.svg" alt="" />
-            </div>
-            <div class="pain_point_text_wrap">
-              <div>
-                <div></div>
-                <div>‘공유가 어렵고 코드 이해도가 떨어진다.’</div>
-              </div>
-              <div>
-                Jupyter는 사용자의 경험과 노하우에 따라 사용방법과 개발환경이
-                상이
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="arrow_003">
-          <img src="images/link/arrow_001.svg" alt="" />
-        </div>
-        <div class="pain_point_wrap red_wrap red_wrap002">
-          <div class="pain_point_subject">Pain point4</div>
-          <div class="pain_point_div">
-            <div class="pain_profile">
-              <img src="images/link/painpoint004.svg" alt="" />
-            </div>
-            <div class="pain_point_text_wrap">
-              <div>
-                <div></div>
-                <div>‘입/출력이 다양하고 호환성이 떨어진다.’</div>
-              </div>
-              <div>
-                Jupyter는 자유도가 높은 툴이기 때문에 사용자가 원하는 스타일대로
-                자유롭게 개발.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="error_001">
-        <img src="images/link/error_001.svg" alt="" />
-      </div>
-      <div class="error_002">
-        <img src="images/link/error_002.svg" alt="" />
-      </div>
-    </section>
-    <section data-scroll-section class="link_004">
-      <div class="link_004_left">
-        <div class="title_container">
-          <div class="number">03</div>
-          <div class="title_wrap">
-            <div class="subject">Concept</div>
-            <div class="link_title">비정형 데이터를 연결하다</div>
-          </div>
-        </div>
-        <div class="persona_container">
-          <div class="persona_subject">persona</div>
-          <div class="persona_wrapper">
-            <div class="persona_left">
-              <img src="images/link/persona_card.svg" alt="" />
-            </div>
-            <div class="persona_right">
-              <div class="persona_text_wrap">
-                <div class="persona_title">동기 및 문제점에 대한 설명</div>
-                <p>
-                  Kubeflow 파이프라인 만들기가 어렵다. 번거롭다.<br />
-                  파이프라인을 만들기 위한 문법을 배우는게 어렵다.<br />
-                  실험관리를 하고 싶다.
-                </p>
-              </div>
-              <div class="persona_text_wrap">
-                <div class="persona_title">동기 및 문제점에 대한 설명</div>
-                <p>
-                  Ops 숙련도가 높지 않다.<br />
-                  Kubeflow export 기능을 사용한다.<br />
-                  HPO 기능을 사용한다.<br />
-                  여러 대의 컴퓨터를 사용하여 연산량이 많은 작업을 한다.<br />
-                  파이프라인을 Runway로 export 한다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="persona_img">
-          <img src="images/link/persona_img.svg" alt="" />
-        </div>
-      </div>
-      <div class="link_004_right">
-        <div class="link_004_up">
-          <div class="concept_flow_img">
-            <img src="images/link/concept_flow.svg" alt="" />
-          </div>
-          <p>
-            코드 작성 화면과 동일한 화면에서 파이프라인(Pipeline)을 생성할 수
-            있으며 만들어진 파이프라인 즉시 실행하여 결과를 확인할 수 있습니다
-          </p>
-        </div>
-        <div class="link_004_down">
-          <div class="concept_system_img">
-            <img src="images/link/concept_system.svg" alt="" />
-          </div>
-          <p>
-            Link™는 주피터랩의 사용성을 그대로 유지하여 기존 사용자의 학습시간을
-            최소화합니다.
-            <span class="mo_span">
-              코드의 흐름을 쉽게 확인하고, 최적의 모델을 개발할 수
-              있습니다.</span
+          <div class="link_014_text_wrap">
+            Improve the working paradigm of<span class="mo_span"
+              >data modeling with Link</span
             >
-          </p>
-        </div>
-      </div>
+          </div>
+          <div class="thanks">thank you for watching</div>
+        </section>
+      </section>
+      <div class="blank_div right_blank"></div>
     </section>
-    <div class="main-content-1">
-      <div class="sticky">
-        <!-- <div class="sticky-title">
-          Inspired By <br />https://www.appart.agency/
-        </div> -->
-        <div class="section section-1">
-          <div class="title">TITLE #1</div>
-          <div class="content"></div>
-        </div>
-        <div class="section section-2">
-          <div class="title">TITLE #2</div>
-          <div class="content"></div>
-        </div>
-        <div class="section section-3">
-          <div class="title">TITLE #3</div>
-          <div class="content"></div>
-        </div>
-        <div class="section section-4">
-          <div class="title">TITLE #4</div>
-          <div class="content"></div>
-        </div>
-      </div>
-    </div>
-    <script src="js/link_new.js"></script>
-    <script src="js/link_marquee.js"></script>
+
+    <script src="js/link/link_marquee.js"></script>
     <script src="../../js/vh.js"></script>
     <script src="js/summary_modal.js"></script>
-    <script
-      nomodule
-      src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      nomodule
-      src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/locomotive.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/link/link_swiper.js"></script>
+    <script src="js/progressBar.js"></script>
     <script>
-      (function () {
-        var scroll = new LocomotiveScroll();
-      })();
+      $(window).on("load", function () {
+        document.body.classList.remove("no-scroll");
+        $(".blackblock").fadeOut(1000);
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+    <script>
+      const observer = lozad();
+      observer.observe();
     </script>
   </body>
 </html>
