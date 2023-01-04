@@ -370,7 +370,6 @@ body {
 }
 .about_middle_container {
   display: flex;
-  width: 128em;
   margin: 0 auto;
   align-items: center;
   font-weight: 700;
@@ -379,10 +378,10 @@ body {
 }
 .about_middle_container div:nth-child(1) {
   display: flex;
-  width: 50rem;
+  width: 50%;
 }
 .about_middle_container div:nth-child(2) {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 400;
   opacity: 0.7;
   line-height: 1.5;
@@ -709,7 +708,7 @@ body {
   width: 128rem;
 }
 #contact {
-  background: #d1d2d8;
+  background: #cacad2;
   padding: 4rem;
   position: relative;
 }
@@ -717,10 +716,12 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin-top: 6vh;
+  margin-top: 10vh;
 }
 .infinity_video {
-  max-width: 80rem;
+  max-width: 100rem;
+  width: 100%;
+  clip-path: inset(1px 1px);
 }
 .infinity_video video {
   width: 100%;
@@ -728,7 +729,7 @@ body {
 .contact_right {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 6rem;
 }
 .contact_title {
   font-size: 2.4rem;
@@ -740,6 +741,7 @@ body {
   font-weight: 900;
   font-family: "ivypresto-display", serif;
   position: absolute;
+  z-index: 100;
 }
 .email,
 .phone {
@@ -832,7 +834,7 @@ body {
   color: #000;
 }
 .footer_right {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 @keyframes marquee1 {
@@ -862,7 +864,7 @@ body {
 .info_wrapper {
   padding: 4rem;
   display: flex;
-  background: linear-gradient(113.07deg, #111 0.27%, #0d0d0d 63%);
+  background: #000;
   justify-content: space-around;
 }
 .info_left {
@@ -937,7 +939,6 @@ body {
   .main_visual {
     max-width: 70%;
     margin: 0 auto;
-    margin-top: 4rem;
     width: 70vw;
     height: 70vw;
     top: 0;
@@ -1170,6 +1171,8 @@ body {
     width: 100%;
     gap: 0;
     padding: 0 1.6rem;
+    height: 100%;
+    justify-content: center;
   }
   .about_middle_container div:nth-child(1) {
     width: 80%;
@@ -1193,7 +1196,7 @@ body {
   .info_wrapper {
     flex-direction: column;
     padding: 2rem;
-    background: #111;
+    background: #000;
   }
   .info_up,
   .info_down {
@@ -1321,6 +1324,7 @@ body {
     font-size: 12vw;
     line-height: 1.5;
     word-break: keep-all;
+    z-index: 100;
   }
   .contact_right {
     gap: 0.8rem;
