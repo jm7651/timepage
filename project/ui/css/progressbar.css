@@ -33,3 +33,6 @@
 .progress-container .link_progressbar {
   background: #6c79f9;
 }
+.progress-container .index_progressbar {
+  background: #ff4400;
+}

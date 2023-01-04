@@ -36,7 +36,10 @@ body.no-scroll {
   background: #eb7805;
 }
 .linkblock {
-  background: #1e2136;
+  background: #434552;
+}
+.indexblock {
+  background: #000;
 }
 @keyframes spin {
   0% {
