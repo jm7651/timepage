@@ -142,7 +142,7 @@ body {
   width: 20vw;
   height: 20vw;
   margin: 0 auto;
-  top: 20%;
+  top: 14%;
 }
 
 .clock_p {
@@ -242,7 +242,7 @@ body {
   background: #fff;
   border-bottom: 1px solid #111;
   transition: all ease-out 0.5s;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 #career > div:nth-child(1) {
   border-top: 1px solid #111;
@@ -255,11 +255,11 @@ body {
   font-weight: 700;
 } */
 .career_div h4 {
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: 100;
 }
 .company {
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: 100;
 }
 #resume {
