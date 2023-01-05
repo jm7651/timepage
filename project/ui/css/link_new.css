@@ -845,9 +845,12 @@ body {
   border-color: #fff;
 }
 .darkmode_img {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
-  padding: 4rem;
+  padding: 12rem 4rem;
+}
+.darkmode_img video {
+  width: 100%;
 }
 .link_011_wrap {
   display: flex;

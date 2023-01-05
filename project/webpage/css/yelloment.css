@@ -26,19 +26,23 @@ body {
 }
 .yelloment_bg .inner p {
   margin-top: 1.2rem;
-  font-size: 1.5rem;
+  font-size: 3vw;
+  font-family: "Amatic SC", cursive;
+
+  color: #463c30;
 }
 .yelloment_bg .inner .text {
-  margin-top: 8vh;
+  text-align: center;
 }
 .yelloment_logo {
   width: 12rem;
 }
 .yelloment_title {
-  font-size: 20vw;
+  font-size: 14vw;
   font-weight: 700;
   font-family: "Amatic SC", cursive;
   color: #463c30;
+  color: #ffc600;
 }
 .yelloment_logo img {
   width: 100%;
@@ -53,12 +57,22 @@ body {
   top: 40vh;
   left: 50%;
   transform: translate(-50%, 0);
-  width: 90%;
+  width: 30%;
   box-sizing: border-box;
 }
 .yelloment_bg .made {
   position: absolute;
   bottom: 10vh;
   left: 1.6rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.yelloment001 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.yelloment_001 img {
+  margin: 0 auto;
 }
