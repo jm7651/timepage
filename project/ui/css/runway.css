@@ -76,7 +76,7 @@ body {
 }
 .runway_title {
   margin-top: 3.2rem;
-  font-size: 5vw;
+  font-size: 8vw;
   line-height: 1.3;
   text-align: center;
   font-weight: 500;
@@ -126,7 +126,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  background: linear-gradient(180deg, #09081c 0%, rgba(0, 0, 0, 0) 100%),
+  background: linear-gradient(180deg, #020202 0%, rgba(0, 0, 0, 0) 100%),
     radial-gradient(
       94.64% 94.64% at 50% 5.36%,
       #160881 0%,
@@ -162,6 +162,7 @@ body {
   color: #ced1d5;
   overflow: hidden;
   padding: 8rem 0;
+  background: linear-gradient(180deg, #a12cb4 0%, #000 40.73%);
 }
 .runway_003 > div {
   display: flex;
@@ -213,7 +214,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .runway_004 {
-  background: linear-gradient(119.52deg, #202044 -2.67%, #010101 69.73%);
+  background: linear-gradient(181deg, #000000 0%, #0d0d32 69.73%);
   padding: 8rem 0;
   min-height: 50vh;
   display: flex;
@@ -302,7 +303,10 @@ body {
   justify-content: space-around;
   align-items: center;
   padding-top: 60px;
-  background-color: #0a1045;
+  background-color: #0e0d32;
+}
+.swiper-pagination-bullet {
+  background: #fff !important;
 }
 .content-box {
   position: relative;
