@@ -51,19 +51,19 @@ ScrollTrigger.matchMedia({
         toggleActions: "play pause play reset",
       },
     });
-    tl002.from(".runway_bg_text01", {
+    tl002.from(".runway_bg_title_01", {
       opacity: 0,
       duration: 1,
     });
-    tl002.from(".runway_bg_text02", {
+    tl002.from(".runway_bg_title_02", {
       opacity: 0,
       duration: 1,
     });
-    tl002.from(".runway_bg_text03", {
+    tl002.from(".runway_bg_title_03", {
       opacity: 0,
       duration: 1,
     });
-    tl002.from(".runway_bg_text04", {
+    tl002.from(".runway_bg_title_04", {
       opacity: 0,
       duration: 1,
     });
