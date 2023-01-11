@@ -9,6 +9,7 @@ html {
 }
 body {
   background: #000;
+  overflow-x: hidden;
 }
 .swiper {
   width: 100%;
@@ -87,11 +88,10 @@ body {
 }
 .runway_p {
   color: #ced1d5;
-  font-size: 3.2rem;
+  font-size: 1.4vw;
   font-weight: 500;
   line-height: 1.5;
   word-break: keep-all;
-  max-width: 80rem;
   text-align: center;
   opacity: 1;
 }
@@ -107,8 +107,8 @@ body {
   padding: 8rem 0;
 }
 .runway_loop video {
-  width: 70vw;
-  max-width: 1000px;
+  width: 80vw;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .black_gra {
@@ -184,10 +184,10 @@ body {
 .runway_background_text_wrap {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
+  gap: 7vh;
 }
 .runway_background_text_wrap .bg_title {
-  font-size: 5.6rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 .runway_background_text_wrap p {
@@ -349,24 +349,76 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .mo_span {
+    display: inline;
+  }
   .runway_001 {
     width: 100vw;
 
-    background: url(../images/runway001.jpg) center 20% / auto 100vh no-repeat;
+    background: url(../images/runway001.jpg) center 0 / auto 80vh no-repeat;
+  }
+  .runway_001_main {
+    display: none;
   }
   .runway_logo {
-    left: -4%;
+    left: 20%;
     top: 8vh;
-    width: 100%;
+    width: 40%;
   }
   .runway_logo img {
     width: 100%;
   }
+  .black_gra {
+    height: 40vh;
+    bottom: 20vh;
+  }
   .runway_p001 {
     padding: 0 20px;
-    bottom: 16vh;
-    left: -4%;
+    bottom: 8vh;
     width: 100%;
+    min-width: 100%;
+    font-size: 1.4rem;
     text-align: center;
+    box-sizing: border-box;
+  }
+  .runway_logo2 {
+    width: 70%;
+  }
+  .runway_logo2 img {
+    width: 100%;
+  }
+  .runway_003 {
+    width: 100%;
+    padding: 0 1.6rem;
+    box-sizing: border-box;
+  }
+  .runway_003_main_img {
+    display: none;
+  }
+  .runway_background_text_wrap .bg_title {
+    font-size: 3.2rem;
+  }
+  .runway_background_text_wrap p {
+    font-size: 1.5rem;
+    word-break: keep-all;
+  }
+  .runway_003 > div {
+    gap: 6vh;
+  }
+  .runway_004 {
+    width: 100%;
+    padding: 0 1.6rem;
+    box-sizing: border-box;
+  }
+  .runway_004 .swiper {
+    margin-top: 4rem;
+    height: 80vh;
+  }
+  .persona_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .persona_left {
+    align-items: center;
   }
 }

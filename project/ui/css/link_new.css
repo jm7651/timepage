@@ -131,7 +131,7 @@ body {
 .link_main_title_wrap .main_title {
   font-family: "Space Mono", sans-serif;
   font-weight: 400;
-  font-size: 6vw;
+  font-size: 4vw;
   line-height: 1.2;
 }
 .link_main_title_wrap .main_title span {
@@ -189,7 +189,7 @@ body {
   border-bottom: 1px solid var(--borderColor);
 }
 .link_002_title_wrap > div:nth-child(1) {
-  font-size: 20rem;
+  font-size: 12rem;
   padding: 0 4rem;
   font-weight: 100;
   border-right: 1px solid var(--borderColor);
@@ -437,13 +437,13 @@ body {
 
 .error_001 {
   position: absolute;
-  right: 20rem;
-  top: 50rem;
+  right: 2vw;
+  top: 31vh;
 }
 .error_002 {
   position: absolute;
-  left: 30rem;
-  bottom: 25rem;
+  left: 5vw;
+  bottom: 23vh;
 }
 .persona_container {
   display: flex;
