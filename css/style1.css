@@ -29,8 +29,8 @@ body {
   width: 100%;
   top: 0;
   padding: 2rem;
-  font-weight: 900;
-  color: #292745;
+  font-weight: 600;
+  color: #575661;
   padding: 1vh 10vw;
   box-sizing: border-box;
   z-index: 1;
@@ -85,7 +85,13 @@ body {
 
 .navbar__menu__item:hover,
 .navbar__menu__item.active {
-  color: #823699;
+  color: #000;
+}
+.navbar--dark .navbar__menu__item:hover {
+  color: #fff;
+}
+.navbar--dark .navbar__menu__item.active {
+  color: #fff;
 }
 .navbar__menu__item.active::after,
 .navbar__menu__item:hover:after {

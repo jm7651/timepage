@@ -130,7 +130,7 @@ html {
   width: 100%;
 }
 .rems_002_text_wrap {
-  padding: 24rem 0;
+  padding: 18rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -297,12 +297,12 @@ html {
 }
 .painpoint_slider {
   width: 100%;
-  max-width: 128rem;
+  max-width: 120rem;
   height: 35vh;
 }
 .rems_slider {
   width: 100%;
-  max-width: 128rem;
+  max-width: 120rem;
   height: 35vh;
   margin-top: 6rem;
 }
@@ -340,7 +340,7 @@ html {
 .rems_007_container {
   display: flex;
   align-items: center;
-  width: 128rem;
+  width: 120rem;
   gap: 8rem;
   justify-content: center;
   margin: 0 auto;
@@ -357,7 +357,7 @@ html {
   width: 100%;
 }
 .rems_pc_002 {
-  width: 128rem;
+  width: 120rem;
   margin: 0 auto;
   margin-top: 6rem;
 }
