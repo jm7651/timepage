@@ -126,7 +126,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-  width: 40vw;
+  width: 100%;
+  padding-left: 4vw;
+  box-sizing: border-box;
 }
 .link_main_title_wrap .main_title {
   font-family: "Space Mono", sans-serif;
