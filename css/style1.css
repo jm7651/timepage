@@ -466,7 +466,7 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   color: #232323;
-  background: #e8e8e8;
+  background: #f1f1f1;
 }
 .tab-link.active {
   background: #232323;
@@ -493,12 +493,13 @@ body {
   width: 30rem;
   overflow: hidden;
   text-decoration: none;
-  padding: 0.4rem;
+  padding: 0;
   box-sizing: border-box;
 }
 .project__img {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 8px;
 }
 .project__desc {
   display: flex;
@@ -933,7 +934,7 @@ body {
     width: 100%;
   }
   #index_home {
-    margin-top: 0;
+    margin-top: 7vh;
     height: auto;
   }
   .main_visual {
@@ -1306,7 +1307,7 @@ body {
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fill, minmax(48%, auto));
     row-gap: 4rem;
-    column-gap: 2%;
+    column-gap: 3vw;
   }
   #work {
     padding: 4rem 0;
