@@ -189,7 +189,7 @@ body {
   border-bottom: 1px solid var(--borderColor);
 }
 .link_002_title_wrap > div:nth-child(1) {
-  font-size: 12rem;
+  font-size: 3vw;
   padding: 0 4rem;
   font-weight: 100;
   border-right: 1px solid var(--borderColor);
@@ -273,7 +273,7 @@ body {
   width: 100%;
 }
 .title_container .number {
-  font-size: 7vw;
+  font-size: 3vw;
   border-right: 1px solid var(--borderColor);
   padding: 0 4rem;
   font-weight: 100;
@@ -517,8 +517,8 @@ body {
   width: 100%;
 }
 .persona_left {
-  min-width: 31.128rem;
-  background: #e6e9fe;
+  min-width: 20rem;
+  padding: 2rem;
   border-right: 1px solid var(--borderColor);
 }
 .persona_title {
