@@ -219,7 +219,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .runway_004 {
-  background: linear-gradient(181deg, #000000 0%, #0d0d32 69.73%);
+  background: linear-gradient(181deg, #000000 0%, #222222 69.73%);
   padding: 8rem 0;
   min-height: 50vh;
   display: flex;
@@ -228,73 +228,18 @@ body {
 }
 .runway_004 .swiper {
   margin-top: 10rem;
-  max-width: 140rem;
-  min-height: 40vh;
+  max-width: 120rem;
+  min-height: 80vh;
   color: #ced1d5;
   text-align: left;
-}
-.persona_container {
   display: flex;
-  color: #ced1d5;
-  width: 140rem;
-  gap: 4rem;
-  margin: 0 auto;
-  margin-top: 4rem;
+  align-items: center;
 }
-.persona_wrap {
-  display: flex;
-  gap: 2rem;
-  justify-content: flex-start;
-  text-align: left;
-}
-.persona_left {
-  display: flex;
-  flex-direction: column;
-  width: 18rem;
-  align-items: flex-start;
-}
-.persona_img {
-  width: 10rem;
-  margin-bottom: 2rem;
-}
-.persona_img img {
-  width: 100%;
-}
-.persona_name {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
-}
-.persona_job_wrap {
-}
-.persona_job {
-  background: #944af2;
-  color: #000;
-  font-size: 1.6rem;
-  font-weight: 700;
-  padding: 4px 12px;
-  border-radius: 30px;
-  display: inline-block;
-}
-.persona_target_title {
-  margin-top: 0.4rem;
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-}
-.persona_sub_title {
-  margin-bottom: 0.8rem;
-  font-size: 1.3rem;
-  opacity: 0.5;
-  font-weight: 500;
-}
-.persona_right p {
-  font-size: 1.3rem;
-  line-height: 1.5;
-}
-.runway_004 > div:nth-child(3) {
+.persona_002 {
   margin-top: 8rem;
+}
+.persona_004 {
+  margin-top: 4rem;
 }
 .runway_005 {
   display: flex;
