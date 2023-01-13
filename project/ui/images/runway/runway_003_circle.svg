@@ -1,5 +1,9 @@
 <svg width="306" height="909" viewBox="0 0 306 909" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 920V161H286V920H0Z" fill="url(#paint0_linear_958_3750)"/>
+<circle cx="143.045" cy="215.318" r="142.69" fill="white" fill-opacity="0.4" stroke="white" stroke-width="0.709901"/>
+<circle cx="143.045" cy="286.309" r="142.69" fill="white" fill-opacity="0.3" stroke="white" stroke-width="0.709901"/>
+<circle cx="143.045" cy="336.001" r="142.69" fill="white" fill-opacity="0.2" stroke="white" stroke-width="0.709901"/>
+<circle cx="143.045" cy="358.008" r="142.69" fill="white" fill-opacity="0.1" stroke="white" stroke-width="0.709901"/>
 <circle cx="143.045" cy="167.045" r="143.045" fill="url(#paint1_radial_958_3750)"/>
 <mask id="mask0_958_3750" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="24" width="287" height="287">
 <circle cx="143.045" cy="167.045" r="143.045" fill="#FE0050"/>
@@ -24,10 +28,6 @@
 <g style="mix-blend-mode:hard-light" filter="url(#filter5_f_958_3750)">
 <path d="M206.199 199.48C163.002 222.888 143.803 177.873 95.8054 199.48C72.9647 209.762 55.0225 269.196 87.2782 281.296C251.429 329.552 272.195 193.778 269.796 126.556C262.596 130.757 249.877 141.321 256.596 149.963C264.996 160.767 249.397 176.072 206.199 199.48Z" fill="#41BBFF"/>
 </g>
-<circle cx="143.045" cy="215.318" r="142.69" stroke="white" stroke-width="0.709901"/>
-<circle cx="143.045" cy="286.309" r="142.69" stroke="white" stroke-width="0.709901"/>
-<circle cx="143.045" cy="336.001" r="142.69" stroke="white" stroke-width="0.709901"/>
-<circle cx="143.045" cy="358.008" r="142.69" stroke="white" stroke-width="0.709901"/>
 <defs>
 <filter id="filter0_f_958_3750" x="10.7978" y="119.365" width="136.748" height="181.73" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -44,7 +44,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="17.9931" result="effect1_foregroundBlur_958_3750"/>
 </filter>
-<filter id="filter3_f_958_3750" x="14.9868" y="31.2697" width="128.141" height="137.722" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter3_f_958_3750" x="14.9867" y="31.2697" width="128.141" height="137.722" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="17.9931" result="effect1_foregroundBlur_958_3750"/>

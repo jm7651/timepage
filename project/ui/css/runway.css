@@ -77,13 +77,13 @@ body {
 }
 .runway_title {
   margin-top: 3.2rem;
-  font-size: 4vw;
-  line-height: 1.3;
+  font-size: 6vw;
+  line-height: 1.1;
   text-align: center;
   font-weight: 500;
   color: #ced1d5;
 }
-.runway_title span {
+.runway_title div {
   color: #8686fd;
 }
 .runway_p {
@@ -108,7 +108,7 @@ body {
 }
 .runway_loop video {
   width: 80vw;
-  max-width: 120rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 .black_gra {
