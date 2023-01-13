@@ -385,17 +385,17 @@ body {
 }
 .arrow_001 {
   position: absolute;
-  top: 12.7rem;
+  top: 14.3rem;
   left: 25.4rem;
 }
 .arrow_002 {
   position: absolute;
-  top: 33.8rem;
+  top: 34.3rem;
   left: 49.4rem;
 }
 .arrow_003 {
   position: absolute;
-  top: 50.4rem;
+  top: 52.5rem;
   left: 25.4rem;
 }
 .link_solution {
@@ -1123,7 +1123,7 @@ body {
     gap: 4rem;
     margin-top: 0;
     box-sizing: border-box;
-    height: 92vh;
+    height: 100vh;
     min-height: 72rem;
   }
   .pain_point_wrap {
