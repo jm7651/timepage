@@ -71,10 +71,20 @@ body {
 }
 .runway_subject_title {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #ced1d5;
   text-align: center;
 }
+.runway_subject_text {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #ced1d5;
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
 .runway_title {
   margin-top: 3.2rem;
   font-size: 6vw;
@@ -164,7 +174,7 @@ body {
   color: #ced1d5;
   overflow: hidden;
   padding: 8rem 0;
-  background: linear-gradient(180deg, #a22db5 0%, #000 30.73%);
+  background: #000;
   height: 100vh;
 }
 .runway_003 > div {
@@ -219,7 +229,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .runway_004 {
-  background: linear-gradient(181deg, #000000 0%, #222222 69.73%);
+  background: linear-gradient(181deg, #000000 0%, #111 69.73%);
   padding: 8rem 0;
   min-height: 50vh;
   display: flex;
@@ -291,6 +301,75 @@ body {
   top: 1em;
   font-size: 66px;
   text-align: center;
+}
+.runway_concept {
+  padding: 12rem;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #111, #000);
+}
+.runway_concept_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 8rem;
+}
+.runway_concept_up,
+.runway_concept_down {
+  display: flex;
+  gap: 4rem;
+}
+.runway_concept_left,
+.runway_concept_right {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  gap: 2rem;
+  align-items: center;
+  background: #121212;
+  border-radius: 1.2rem;
+  padding: 2rem;
+  width: 78rem;
+  height: 32rem;
+}
+.runway_concept_text_wrap {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 1.2rem;
+}
+.runway_concept_text_wrap > p {
+  opacity: 0.7;
+}
+.runway_concept_title {
+  font-size: 2rem;
+}
+.runway_concept_right {
+  color: #fff;
+}
+.runway_feature_001 {
+  padding: 16rem 0;
+}
+.runway_subject_big_text {
+  font-size: 6vw;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+}
+.runway_feature_wrap {
+  display: flex;
+  width: 140rem;
+  margin: 0 auto;
+}
+.runway_feature_left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.runway_feature_title {
+  display: flex;
 }
 
 @media screen and (max-width: 450px) {
