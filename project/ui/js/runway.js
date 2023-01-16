@@ -63,64 +63,58 @@ const tl001 = gsap.timeline({
     toggleActions: "play pause play reset",
   },
 });
+gsap.fromTo(
+  ".runway_loop video",
+  { transform: "rotate3d(30, 1, 0, 50deg) scale(0.5)", opacity: "0" },
+  {
+    transform: "rotate3d(1, 1, 1, 0deg)",
+    opacity: "1",
+    scrollTrigger: {
+      trigger: ".runway_loop video",
+      start: "0 100%",
+      end: "+=500",
+      scrub: 3,
+      // markers: true,
+    },
+  }
+);
 ScrollTrigger.matchMedia({
   "(min-width: 800px)": function () {
-    gsap.fromTo(
-      ".runway_loop video",
-      { transform: "rotate3d(30, 1, 0, 50deg) scale(0.5)", opacity: "0" },
-      {
-        transform: "rotate3d(1, 1, 1, 0deg)",
-        opacity: "1",
-        scrollTrigger: {
-          trigger: ".runway_loop video",
-          start: "0 100%",
-          end: "+=500",
-          scrub: 3,
-          // markers: true,
-        },
-      }
-    );
-    const headings = document.querySelectorAll(".heading");
-
-    const nums = document.querySelectorAll(".scroll-num");
-    const head = document.querySelector(".head");
-
-    const numOfTransitions = headings.length;
-
-    const singleDuration = 1000;
-    const totalDuration = singleDuration * numOfTransitions;
-
-    headings.forEach((heading, i) => {
-      gsap.to(heading, {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: heading,
-          toggleActions: "play reverse play reverse",
-          start: "+=" + `${singleDuration * i}s`,
-          end: "+=" + `${singleDuration}s`,
-        },
-      });
-    });
-
-    nums.forEach((num, i) => {
-      gsap.to(num, {
-        opacity: 1,
-        scrollTrigger: {
-          trigger: num,
-          toggleActions: "play reverse play reverse",
-          start: "+=" + `${singleDuration * i}s`,
-          end: "+=" + `${singleDuration}s`,
-        },
-      });
-    });
-
-    gsap.to(".head", {
-      scrollTrigger: {
-        pin: ".head",
-        end: "+=5000s",
-        pinSpacing: true,
-      },
-    });
+    // const headings = document.querySelectorAll(".heading");
+    // const nums = document.querySelectorAll(".scroll-num");
+    // const head = document.querySelector(".head");
+    // const numOfTransitions = headings.length;
+    // const singleDuration = 1000;
+    // const totalDuration = singleDuration * numOfTransitions;
+    // headings.forEach((heading, i) => {
+    //   gsap.to(heading, {
+    //     opacity: 1,
+    //     scrollTrigger: {
+    //       trigger: heading,
+    //       toggleActions: "play reverse play reverse",
+    //       start: "+=" + `${singleDuration * i}s`,
+    //       end: "+=" + `${singleDuration}s`,
+    //     },
+    //   });
+    // });
+    // nums.forEach((num, i) => {
+    //   gsap.to(num, {
+    //     opacity: 1,
+    //     scrollTrigger: {
+    //       trigger: num,
+    //       toggleActions: "play reverse play reverse",
+    //       start: "+=" + `${singleDuration * i}s`,
+    //       end: "+=" + `${singleDuration}s`,
+    //     },
+    //   });
+    // });
+    // gsap.to(".head", {
+    //   scrollTrigger: {
+    //     pin: ".head",
+    //     end: "+=5000s",
+    //     pinSpacing: true,
+    //   },
+    // });
   },
 
   "(max-width: 799px)": function () {},

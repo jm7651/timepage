@@ -72,7 +72,7 @@ body {
 .runway_subject_title {
   font-size: 2rem;
   font-weight: 600;
-  color: #ced1d5;
+  color: #797c81;
   text-align: center;
 }
 .runway_subject_text {
@@ -80,7 +80,6 @@ body {
   font-weight: 400;
   color: #ced1d5;
   text-align: center;
-  opacity: 0.7;
   margin-top: 2rem;
   line-height: 1.5;
 }
@@ -91,13 +90,13 @@ body {
   line-height: 1.1;
   text-align: center;
   font-weight: 500;
-  color: #ced1d5;
+  color: #e3e4e8;
 }
 .runway_title div {
   color: #8686fd;
 }
 .runway_p {
-  color: #ced1d5;
+  color: #e3e4e8;
   font-size: 1.4vw;
   font-weight: 500;
   line-height: 1.5;
@@ -205,7 +204,8 @@ body {
   margin-top: 0.8rem;
   line-height: 1.5;
   max-width: 57rem;
-  color: #a1a1a6;
+  color: #e3e4e8;
+  opacity: 0.7;
   word-break: keep-all;
 }
 .runway_bg_text01 {
@@ -341,7 +341,7 @@ body {
   gap: 1.2rem;
 }
 .runway_concept_text_wrap > p {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 .runway_concept_title {
   font-size: 2rem;
@@ -503,7 +503,7 @@ body {
   .runway_001 {
     width: 100vw;
 
-    background: url(../images/runway/runway_main_mobile.svg) center 0 / 105vw
+    background: url(../images/runway/runway_main_mobile.png) center 0 / 105vw
       auto no-repeat;
   }
   .runway_001_main {
@@ -534,6 +534,10 @@ body {
   }
   .runway_background_text_wrap p {
     font-size: 1.5rem;
+  }
+  .runway_title {
+    font-size: 14vw;
+    margin-bottom: 2rem;
   }
   .runway_logo2 {
     width: 70%;
@@ -576,7 +580,7 @@ body {
     align-items: center;
   }
   .swiper-slide img {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .persona_002,
