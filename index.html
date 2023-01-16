@@ -23,6 +23,11 @@
     <link rel="stylesheet" href="css/style1.css" />
     <link rel="stylesheet" href="css/marquee.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="project/ui/css/loading.css" />
     <link rel="stylesheet" href="project/ui/css/progressbar.css" />
   </head>
@@ -1188,7 +1193,34 @@
         </div>
       </div>
     </div>
-
+    <section>
+      <div></div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide persona_001">
+            <div class="cueat005_001_img">
+              <img src="images/runway/persona01.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide persona_002">
+            <div class="cueat005_002_img">
+              <img src="images/runway/persona02.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide persona_003">
+            <div class="cueat005_003_img">
+              <img src="images/runway/persona03.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-slide persona_004">
+            <div class="cueat005_003_img">
+              <img src="images/runway/persona04.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
     <!-- contact -->
     <section id="contact">
       <div class="thanks">Thank you for watching</div>
@@ -1214,6 +1246,8 @@
     <script src="js/marquee.js"></script>
     <script src="js/windowwh.js"></script>
     <script src="js/link_new.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index_swiper.js"></script>
     <script>
       $(window).on("load", function () {
         document.body.classList.remove("no-scroll");
