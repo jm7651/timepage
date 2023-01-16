@@ -26,6 +26,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <section class="runway_001">
@@ -34,9 +36,14 @@
       </div>
       <div class="runway_001_main"></div>
       <div class="runway_p001 runway_p">
-        모델 개발 , 배포 , 모니터링을 하나의 플랫폼으로 통합하여<br />
-        지속적인 개발과 안정적 운영이 가능한 MLOps 플랫폼입니다
+        모델 개발 , 배포 , 모니터링을 하나의 플랫폼으로 통합하여<span
+          class="mo_span"
+          >지속적인 개발과 안정적 운영이 가능한 MLOps 플랫폼입니다</span
+        >
       </div>
+      <button class="summary_button">
+        <span>Runway 요약</span><span class="link_arrow_button"></span>
+      </button>
       <div class="black_gra"></div>
     </section>
 
@@ -248,7 +255,11 @@
       <div class="runway_subject_title">feature</div>
       <div class="runway_subject_big_text">Runway의 실제화면</div>
       <div class="runway_feature_wrap">
-        <div class="runway_feature_left login_wrap">
+        <div
+          class="runway_feature_left login_wrap"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_title">
             <div class="runway_feature_number">01</div>
             <div class="runway_feature_subject">Login</div>
@@ -265,7 +276,11 @@
             >
           </p>
         </div>
-        <div class="runway_feature_right project_wrap">
+        <div
+          class="runway_feature_right project_wrap"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_title">
             <div class="runway_feature_number">02</div>
             <div class="runway_feature_subject">project</div>
@@ -289,7 +304,11 @@
     </section>
     <section class="runway_feature_container feature_002">
       <div class="runway_feature_wrap">
-        <div class="runway_feature_left monitoring_wrap">
+        <div
+          class="runway_feature_left monitoring_wrap"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_title">
             <div class="runway_feature_number">03</div>
             <div class="runway_feature_subject">Monitoring</div>
@@ -307,7 +326,11 @@
             배치하였습니다.
           </p>
         </div>
-        <div class="runway_feature_right user_wrap">
+        <div
+          class="runway_feature_right user_wrap"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_title">
             <div class="runway_feature_number">04</div>
             <div class="runway_feature_subject">User</div>
@@ -328,7 +351,11 @@
     </section>
     <section class="runway_feature_container feature_003">
       <div class="runway_feature_wrap">
-        <div class="runway_feature_left">
+        <div
+          class="runway_feature_left"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_title">
             <div class="runway_feature_number">05</div>
             <div class="runway_feature_subject">Data source</div>
@@ -344,7 +371,11 @@
             연결할 수 있습니다
           </p>
         </div>
-        <div class="runway_feature_right source_type">
+        <div
+          class="runway_feature_right source_type"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_subtitle">Database side-modal</div>
           <div class="runway_feature_video">
             <video autoplay="" loop="" muted="" playsinline="">
@@ -364,7 +395,11 @@
         <div class="runway_feature_subject">Dataset</div>
       </div>
       <div class="runway_feature_wrap">
-        <div class="runway_feature_left">
+        <div
+          class="runway_feature_left"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_subtitle">Dataset list</div>
           <p>
             Dataset 생성 단계에서는 3가지 유형
@@ -379,7 +414,11 @@
             </video>
           </div>
         </div>
-        <div class="runway_feature_right dataset_right">
+        <div
+          class="runway_feature_right dataset_right"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_img">
             <img src="images/runway/feature_006_002.png" alt="" />
           </div>
@@ -401,7 +440,11 @@
         <div class="runway_feature_subject">Pipeline</div>
       </div>
       <div class="runway_feature_wrap">
-        <div class="runway_feature_left">
+        <div
+          class="runway_feature_left"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_subtitle">Pipeline list</div>
           <p>
             Pipeline은 사용자가 작성한 각 코드블럭의 선후 관계를 정의하여 순차적
@@ -411,7 +454,11 @@
             <img src="images/runway/featuer_007_001.png" alt="" />
           </div>
         </div>
-        <div class="runway_feature_right pipeline_right">
+        <div
+          class="runway_feature_right pipeline_right"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_img">
             <img src="images/runway/featuer_007_002.png" alt="" />
           </div>
@@ -432,7 +479,11 @@
         <div class="runway_feature_subject">Stream</div>
       </div>
       <div class="runway_feature_wrap">
-        <div class="runway_feature_left">
+        <div
+          class="runway_feature_left"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_video stream_video">
             <video autoplay="" loop="" muted="" playsinline="">
               <source src="images/runway/stream.mp4" type="video/mp4" />
@@ -448,7 +499,11 @@
             아이콘화하여 모달로 내용을 확인하도록 설계했습니다.
           </p>
         </div>
-        <div class="runway_feature_right stream_wrap">
+        <div
+          class="runway_feature_right stream_wrap"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_img">
             <img src="images/runway/feature_008_001.png" alt="" />
           </div>
@@ -459,7 +514,11 @@
       </div>
     </section>
     <section class="runway_feature_container feature_007">
-      <div class="runway_feature_title single_title_wrap">
+      <div
+        class="runway_feature_title single_title_wrap"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div class="runway_feature_subject">Design system</div>
         <div class="runway_figma">
           <img src="images/runway/figma.svg" alt="" />
@@ -470,22 +529,46 @@
         디자인 가이드를 확립했습니다
       </div>
       <div class="runway_feature_wrap">
-        <div class="runway_feature_left">
+        <div
+          class="runway_feature_left"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_img">
             <img src="images/runway/system_001.svg" alt="" />
           </div>
         </div>
-        <div class="runway_feature_right">
+        <div
+          class="runway_feature_right"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div class="runway_feature_img">
             <img src="images/runway/system_002.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <section class="thanks_wrap">
+    <section class="thanks_wrap" data-aos="fade-up" data-aos-duration="1000">
       <div class="thanks_title">Thanks for watching</div>
       <div class="runway_thanks">
         <img src="images/runway/runway_thanks.jpg" alt="" />
+      </div>
+    </section>
+    <section class="summary_modal modal-overlay">
+      <div class="modal_window runway_modal">
+        <div>
+          <div class="modal_title">프로젝트 설명</div>
+          <p>
+            이 프로젝트는 MLOPS UX에 대한 프로젝트입니다 B2B 프로덕트로 MVP
+            달성후 고객들이 운영하기 편하게 만드는것이 목표였습니다 문제는 제품
+            사용자가 없기때문에 사용자의 니즈가 없었던 것과 디자인시 레퍼런스
+            부족의 문제가 있었습니다 최대한 데이터 사이언티스들과 상의를 하며
+            계속해서스터디를 하면서 사용성 확보를 하기위해 애를 썼고 그 결과
+            사용하는 업체들이 생겼습니다
+          </p>
+        </div>
+        <button class="runway_summary_close summary_close">닫기</button>
       </div>
     </section>
     <script>
@@ -502,5 +585,10 @@
     <script src="js/runway_swiper.js"></script>
 
     <!-- Initialize Swiper -->
+    <script src="js/summary_modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

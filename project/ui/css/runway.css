@@ -328,7 +328,7 @@ body {
   line-height: 1.3;
   gap: 2rem;
   align-items: center;
-  background: #121212;
+  background: #1c1b20;
   border-radius: 1.2rem;
   padding: 2rem;
   width: 60rem;
@@ -448,6 +448,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 .thanks_title {
   position: absolute;
@@ -463,6 +464,38 @@ body {
 .runway_thanks img {
   width: 100%;
 }
+.runway_summary_close {
+  background: #944af2;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  padding: 2rem;
+  border-radius: 4px;
+}
+.summary_button {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: #944af2;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.link_arrow_button {
+  width: 2rem;
+  height: 2rem;
+  background: url(../images/hems/arrow_button.svg) center center / 100% 100%
+    no-repeat;
+}
 @media screen and (max-width: 450px) {
   .mo_span {
     display: inline;
@@ -470,7 +503,8 @@ body {
   .runway_001 {
     width: 100vw;
 
-    background: url(../images/runway001.jpg) center 0 / auto 80vh no-repeat;
+    background: url(../images/runway/runway_main_mobile.png) center 0 / 105vw
+      auto no-repeat;
   }
   .runway_001_main {
     display: none;
@@ -483,18 +517,23 @@ body {
   .runway_logo img {
     width: 100%;
   }
+  .summary_button {
+    bottom: 6vh;
+  }
   .black_gra {
     height: 40vh;
-    bottom: 20vh;
   }
   .runway_p001 {
     padding: 0 20px;
-    bottom: 8vh;
+    bottom: 10vh;
     width: 100%;
     min-width: 100%;
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-align: center;
     box-sizing: border-box;
+  }
+  .runway_background_text_wrap p {
+    font-size: 1.5rem;
   }
   .runway_logo2 {
     width: 70%;
@@ -511,7 +550,7 @@ body {
     display: none;
   }
   .runway_background_text_wrap .bg_title {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
   .runway_background_text_wrap p {
     font-size: 1.5rem;
@@ -537,7 +576,7 @@ body {
     align-items: center;
   }
   .swiper-slide img {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
   .persona_002,
@@ -620,6 +659,7 @@ body {
   .stream_wrap {
     margin-top: 8rem;
   }
+
   .thanks_wrap {
     overflow: hidden;
   }
