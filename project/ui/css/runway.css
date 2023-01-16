@@ -503,7 +503,7 @@ body {
   .runway_001 {
     width: 100vw;
 
-    background: url(../images/runway/runway_main_mobile.png) center 0 / 105vw
+    background: url(../images/runway/runway_main_mobile.svg) center 0 / 105vw
       auto no-repeat;
   }
   .runway_001_main {
