@@ -20,9 +20,12 @@ body {
   background: #fff;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
 }
 .yelloment_bg .inner {
   padding: 0 1.6rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 .yelloment_bg .inner p {
   margin-top: 1.2rem;
@@ -38,7 +41,7 @@ body {
   width: 12rem;
 }
 .yelloment_title {
-  font-size: 14vw;
+  font-size: 12vw;
   font-weight: 700;
   font-family: "Amatic SC", cursive;
   color: #463c30;
@@ -48,25 +51,22 @@ body {
   width: 100%;
 }
 .yelloment_001 {
-  width: 100%;
   box-sizing: border-box;
   padding: 0 1.6rem;
+  width: 30%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .yelloment_001 img {
-  position: absolute;
-  top: 40vh;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 30%;
-  box-sizing: border-box;
+  width: 100%;
 }
 .yelloment_bg .made {
   position: absolute;
-  bottom: 10vh;
-  left: 1.6rem;
   font-size: 2rem;
   text-align: center;
   width: 100%;
+  box-sizing: border-box;
+  bottom: 10vh;
 }
 .yelloment001 {
   text-align: center;
@@ -75,4 +75,39 @@ body {
 }
 .yelloment_001 img {
   margin: 0 auto;
+}
+.yelloment002 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100rem;
+  margin: 0 auto;
+}
+.yelloment002 img {
+  width: 100%;
+}
+@media screen and (max-width: 450px) {
+  .main001 {
+    width: 100%;
+  }
+  .yelloment_001 {
+    box-sizing: border-box;
+    width: 90%;
+  }
+  .yelloment_title {
+    font-size: 20vw;
+  }
+  .yelloment_bg .inner p {
+    font-size: 6vw;
+  }
+  .yelloment_001 img {
+    width: 100%;
+  }
+  .yelloment002 {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .yelloment002 img {
+    width: 100%;
+  }
 }
