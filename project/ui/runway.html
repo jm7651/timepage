@@ -28,8 +28,17 @@
     />
     <link rel="stylesheet" href="css/modal.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/loading.css" />
+    <link rel="stylesheet" href="css/progressbar.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
-  <body>
+  <body class="no-scroll">
+    <div class="blackblock"><div class="loader"></div></div>
+    <div class="progrss_header">
+      <div class="progress-container">
+        <div class="progress-bar runway_progressbar"></div>
+      </div>
+    </div>
     <section class="runway_001">
       <div class="runway_logo">
         <img src="/project/ui/images/runway_logo.svg" alt="" />
@@ -248,7 +257,7 @@
     </section> -->
     <section class="runway_002">
       <div class="runway_logo2">
-        <img src="/project/ui/images/runway_logo.svg" alt="" />
+        <img src="images/runway_logo.svg" alt="" />
       </div>
     </section>
     <section class="runway_feature_container feature_001">
@@ -589,6 +598,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="js/progressBar.js"></script>
+    <script>
+      $(window).on("load", function () {
+        document.body.classList.remove("no-scroll");
+        $(".blackblock").fadeOut(1000);
+      });
     </script>
   </body>
 </html>
