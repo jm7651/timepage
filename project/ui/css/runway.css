@@ -142,7 +142,7 @@ body {
       94.64% 94.64% at 50% 5.36%,
       #160881 0%,
       #3f54c5 54.17%,
-      #a32db6 100%
+      #944af2 100%
     );
 }
 .runway_logo {
@@ -354,10 +354,10 @@ body {
   padding: 16rem 0;
 }
 .feature_001 {
-  background: linear-gradient(180deg, #a32db6 0%, #000 50%);
+  background: linear-gradient(180deg, #944af2 0%, #000 50%);
 }
 .runway_subject_big_text {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: 600;
   color: #fff;
   text-align: center;
@@ -437,7 +437,7 @@ body {
 .stream_video {
   width: 90rem;
 }
-.runway_feature_img {
+.stream_wrap .runway_feature_img {
   width: 45rem;
 }
 .design_system_text {
@@ -616,7 +616,8 @@ body {
     flex-direction: column;
     width: 100%;
   }
-  .runway_feature_img {
+  .runway_feature_img,
+  .stream_wrap .runway_feature_img {
     width: 100%;
     margin: 0 auto;
   }
