@@ -325,7 +325,15 @@ section {
 .yelloment_bg {
   background: #ffc600;
 }
-
+.green_bg {
+  background: #c0ecea;
+}
+.green_logo {
+  width: 12rem;
+}
+.green_logo img {
+  width: 100%;
+}
 .maximg {
   max-width: 100%;
 }
@@ -363,6 +371,12 @@ iframe {
   .main001 {
     box-sizing: border-box;
     padding: 15rem 1rem 1rem 1rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .green_wrap {
+    box-sizing: border-box;
+    padding: 0 1rem 1rem 1rem;
     width: 100%;
     overflow-x: hidden;
   }

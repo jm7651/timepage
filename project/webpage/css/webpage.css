@@ -50,9 +50,7 @@ iframe {
   width: 100%;
   height: 100%;
 }
-.green_bg {
-  background: #c0ecea;
-}
+
 @media screen and (max-width: 450px) {
   .mo_no {
     display: inline;
