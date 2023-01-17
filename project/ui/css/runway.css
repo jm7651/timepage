@@ -342,6 +342,7 @@ body {
 }
 .runway_concept_text_wrap > p {
   opacity: 0.5;
+  word-break: keep-all;
 }
 .runway_concept_title {
   font-size: 2rem;
