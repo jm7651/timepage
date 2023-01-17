@@ -76,6 +76,11 @@ html {
 }
 .rems_001_img {
   width: 30rem;
+  filter: drop-shadow(142px 215px 103px rgba(0, 0, 0, 0.01))
+    drop-shadow(80px 121px 87px rgba(0, 0, 0, 0.05))
+    drop-shadow(36px 54px 64px rgba(0, 0, 0, 0.09))
+    drop-shadow(9px 13px 35px rgba(0, 0, 0, 0.1))
+    drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
 }
 .rems_001_img img {
   width: 100%;
