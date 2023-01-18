@@ -19,7 +19,7 @@
 
 .cover:nth-child(1) {
   transform: rotate(-2deg);
-  background-color: #232323;
+  background-color: #111;
   color: #fff;
   font-family: "ivypresto-display", serif;
 }
@@ -27,7 +27,7 @@
 .cover:nth-child(2) {
   transform: rotate(2deg);
   background-color: #fff;
-  border: 1px solid #232323;
+  border: 1px solid #111;
   justify-content: flex-end;
   margin-bottom: 30vh;
   font-family: "ivypresto-display", serif;

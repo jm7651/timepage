@@ -42,7 +42,7 @@ body {
   width: 10rem;
 }
 #navbar.navbar--dark {
-  background: #000;
+  background: #111;
 }
 #navbar.navbar--dark img:nth-child(1) {
   position: absolute;
@@ -120,6 +120,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #111;
 }
 .title_section {
   display: flex;
@@ -189,6 +190,7 @@ body {
       rgba(255, 255, 255, 0) 539.96deg
     ),
     url(../images/noise.svg);
+  filter: contrast(110%) brightness(150%);
 }
 .clock.m {
   width: 15vw;
@@ -202,7 +204,7 @@ body {
     ),
     url(../images/noise.svg);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  filter: contrast(130%) brightness(500%);
+  filter: contrast(110%) brightness(150%);
 }
 .clock.h {
   width: 10vw;
@@ -216,7 +218,7 @@ body {
     ),
     url(../images/noise.svg);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  filter: contrast(120%) brightness(500%);
+  filter: contrast(110%) brightness(150%);
 }
 .portfolio_2023 {
   position: absolute;
@@ -224,7 +226,7 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   font-size: 1vw;
-  font-weight: 300;
+  font-weight: 500;
 }
 .cover_container {
   width: 100%;
@@ -477,11 +479,11 @@ body {
   padding: 2rem 4rem;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #232323;
+  color: #111;
   background: #f1f1f1;
 }
 .tab-link.active {
-  background: #232323;
+  background: #111;
   color: #fff;
 }
 .work__projects {
@@ -526,7 +528,7 @@ body {
   gap: 0.4rem;
 }
 .project__desc h3 {
-  color: #232323;
+  color: #111;
   font-size: 1.8rem;
   font-weight: 600;
 }
@@ -725,6 +727,7 @@ body {
   background: #cacad2;
   padding: 4rem;
   position: relative;
+  color: #111;
 }
 .contact_wrap {
   display: flex;
@@ -763,8 +766,8 @@ body {
 }
 .main-content-1 {
   background-color: #000;
-  border-top: 1px solid #191919;
-  border-bottom: 1px solid #191919;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
   width: 100%;
   height: 500vh;
   /* margin-bottom: 100vh; */
@@ -798,7 +801,7 @@ body {
 }
 
 .title {
-  border-top: 1px solid #191919;
+  border-top: 1px solid #111;
   background-color: #fff;
   height: 6vh;
   display: flex;
@@ -845,7 +848,7 @@ body {
 }
 .marquee_content_wh {
   background: #fff;
-  color: #000;
+  color: #111;
 }
 .footer_right {
   font-size: 1.6rem;
@@ -869,16 +872,16 @@ body {
 }
 
 .title_001 {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #111;
 }
 .title_002 {
-  background: #000;
+  background: #111;
   color: #fff;
 }
 .info_wrapper {
   padding: 4rem;
   display: flex;
-  background: #000;
+  background: #111;
   justify-content: space-around;
 }
 .info_left {
