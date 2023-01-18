@@ -61,7 +61,7 @@ iframe {
   width: 100%;
 }
 .benz_001 {
-  margin-top: 10rem;
+  margin-top: 6rem;
 }
 @media screen and (max-width: 450px) {
   .mo_no {
@@ -102,5 +102,8 @@ iframe {
   }
   .benz_wrap {
     width: 100%;
+  }
+  .benz_001 {
+    margin-top: 2rem;
   }
 }
