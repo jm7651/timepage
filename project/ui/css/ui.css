@@ -88,16 +88,45 @@ section {
   margin-right: 5rem;
   line-height: 1.2;
 }
+
 .main001 .text span {
   font-size: 4rem;
   font-weight: 700;
 }
+.green_text {
+  font-size: 11rem;
+  font-weight: 700;
+  color: #1b89c8;
+}
 .made {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 500;
   letter-spacing: 5px;
   padding-top: 5rem;
+}
+.green_container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.green_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem;
+  box-sizing: border-box;
+}
+.green_main_img {
+  width: 36rem;
+}
+.green_main_img img {
+  width: 100%;
 }
 .quicklink {
   display: inline-flex;
@@ -330,6 +359,7 @@ section {
 }
 .green_logo {
   width: 12rem;
+  height: 12rem;
 }
 .green_logo img {
   width: 100%;
@@ -362,7 +392,14 @@ iframe {
   display: flex;
   flex-direction: column;
 }
-/* link */
+.green_made {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
 
 @media screen and (max-width: 450px) {
   .mo_no {
@@ -378,7 +415,6 @@ iframe {
     box-sizing: border-box;
     padding: 0 1rem 1rem 1rem;
     width: 100%;
-    overflow-x: hidden;
   }
   .inner {
     width: 100%;
@@ -406,6 +442,7 @@ iframe {
     padding-top: 2rem;
     padding-bottom: 5rem;
   }
+
   .solar02_p {
     padding: 10rem 0;
   }
@@ -632,5 +669,17 @@ iframe {
   }
   .cueat010_container img {
     width: 100%;
+  }
+  .green_container {
+    justify-content: space-around;
+  }
+  .green_wrap {
+    padding: 0 1.6rem;
+  }
+  .green_text {
+    font-size: 9vw;
+  }
+  .green_main_img {
+    width: 20rem;
   }
 }

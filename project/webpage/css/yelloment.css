@@ -67,6 +67,8 @@ body {
   width: 100%;
   box-sizing: border-box;
   bottom: 10vh;
+  font-weight: 500;
+  letter-spacing: 5px;
 }
 .yelloment001 {
   text-align: center;

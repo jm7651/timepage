@@ -42,7 +42,7 @@ body {
   width: 10rem;
 }
 #navbar.navbar--dark {
-  background: #111;
+  background: #000;
 }
 #navbar.navbar--dark img:nth-child(1) {
   position: absolute;
@@ -176,7 +176,7 @@ body {
   height: 20vw;
   border-radius: 50%;
 
-  border: 1px solid black;
+  border: 1px solid #000;
   box-sizing: border-box;
   transform: rotate(0deg);
   transform-origin: 50% 50%;
@@ -254,12 +254,12 @@ body {
   box-sizing: border-box;
   align-items: center;
   background: #fff;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #000;
   transition: all ease-out 0.5s;
   padding: 3rem 0;
 }
 #career > div:nth-child(1) {
-  border-top: 1px solid #111;
+  border-top: 1px solid #000;
 }
 /* .career_div:hover {
   transform: scale(1.1);
@@ -301,7 +301,7 @@ body {
   left: 9px;
   width: 2px;
   height: 100%;
-  background: #222;
+  background: #000;
 }
 .resume_div h4::before {
   content: "";
@@ -473,17 +473,18 @@ body {
   display: flex;
   justify-content: center;
   margin: 10rem 0 8rem;
+  cursor: pointer;
 }
 .tab-link {
   list-style: none;
   padding: 2rem 4rem;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #111;
+  color: #000;
   background: #f1f1f1;
 }
 .tab-link.active {
-  background: #111;
+  background: #000;
   color: #fff;
 }
 .work__projects {
@@ -528,7 +529,7 @@ body {
   gap: 0.4rem;
 }
 .project__desc h3 {
-  color: #111;
+  color: #000;
   font-size: 1.8rem;
   font-weight: 600;
 }
@@ -553,7 +554,7 @@ body {
 .project__desc > span {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #232323;
+  color: #121212;
 }
 .project_company_logo {
   width: 50%;
@@ -563,9 +564,9 @@ body {
   width: 100%;
 }
 .working_date {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   opacity: 0.7;
-  color: #232323;
+  color: #121212;
   line-height: 1.5;
   display: flex;
   gap: 0.4rem;
@@ -727,7 +728,7 @@ body {
   background: #cacad2;
   padding: 4rem;
   position: relative;
-  color: #111;
+  color: #000;
 }
 .contact_wrap {
   display: flex;
@@ -766,8 +767,8 @@ body {
 }
 .main-content-1 {
   background-color: #000;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #111;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   width: 100%;
   height: 500vh;
   /* margin-bottom: 100vh; */
@@ -799,9 +800,20 @@ body {
   background-color: #fff;
   z-index: 100;
 }
-
+.section-3 {
+  background: #000;
+  color: #fff;
+}
+.section-3 .title {
+  color: #111;
+}
+.about_middle_section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .title {
-  border-top: 1px solid #111;
+  border-top: 1px solid #000;
   background-color: #fff;
   height: 6vh;
   display: flex;
@@ -872,16 +884,16 @@ body {
 }
 
 .title_001 {
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #000;
 }
 .title_002 {
-  background: #111;
+  background: #000;
   color: #fff;
 }
 .info_wrapper {
   padding: 4rem;
   display: flex;
-  background: #111;
+  background: #000;
   justify-content: space-around;
 }
 .info_left {

@@ -38,6 +38,8 @@ html {
 }
 .made {
   font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 5px;
 }
 .maximg {
   margin: 0 auto;
