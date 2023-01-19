@@ -183,42 +183,34 @@ body {
 }
 .clock.s {
   background: conic-gradient(
-      from 180deg at 50% 50%,
-      #444 -180deg,
-      rgba(255, 255, 255, 0) 179.96deg,
-      #444 180deg,
-      rgba(255, 255, 255, 0) 539.96deg
-    ),
-    url(../images/noise.svg);
-  filter: contrast(110%) brightness(150%);
+    from 180deg at 50% 50%,
+    #444 -180deg,
+    rgba(255, 255, 255, 0) 179.96deg,
+    #444 180deg,
+    rgba(255, 255, 255, 0) 539.96deg
+  );
 }
 .clock.m {
   width: 15vw;
   height: 15vw;
   background: conic-gradient(
-      from 180deg at 50% 50%,
-      #222 -180deg,
-      rgba(255, 255, 255, 0) 179.96deg,
-      #222 180deg,
-      rgba(255, 255, 255, 0) 539.96deg
-    ),
-    url(../images/noise.svg);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  filter: contrast(110%) brightness(150%);
+    from 180deg at 50% 50%,
+    #222 -180deg,
+    rgba(255, 255, 255, 0) 179.96deg,
+    #222 180deg,
+    rgba(255, 255, 255, 0) 539.96deg
+  );
 }
 .clock.h {
   width: 10vw;
   height: 10vw;
   background: conic-gradient(
-      from 180deg at 50% 50%,
-      #111 -180deg,
-      rgba(255, 255, 255, 0) 179.96deg,
-      #111 180deg,
-      rgba(255, 255, 255, 0) 539.96deg
-    ),
-    url(../images/noise.svg);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  filter: contrast(110%) brightness(150%);
+    from 180deg at 50% 50%,
+    #111 -180deg,
+    rgba(255, 255, 255, 0) 179.96deg,
+    #111 180deg,
+    rgba(255, 255, 255, 0) 539.96deg
+  );
 }
 .portfolio_2023 {
   position: absolute;
