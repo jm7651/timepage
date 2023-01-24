@@ -368,7 +368,11 @@ body {
   display: flex;
   width: 140rem;
   margin: 0 auto;
+  margin-top: 12rem;
   justify-content: space-between;
+}
+.feature_001 .runway_subject_title {
+  color: #fff;
 }
 .runway_feature_left,
 .runway_feature_right {
