@@ -39,47 +39,122 @@
         <div class="progress-bar runway_progressbar"></div>
       </div>
     </div>
-    <section class="runwaypage_001">
+    <nav class="GNB">
+      <div id="navbar">
+        <div class="navbar__logo">
+          <a href="/">
+            <img src="images/runway/runway_logo.svg" alt="logo img"
+          /></a>
+          <!-- <img src="images/runway/runway_logo.svg" alt="logo img" /> -->
+        </div>
+        <div class="nav_right_icon_wrapper">
+          <div class="global">
+            <div class="global_img">
+              <img src="images/runway/global.svg" alt="" />
+            </div>
+          </div>
+          <a
+            href="https://docs.mrxrunway.ai/docs"
+            target="_blank"
+            class="document"
+          >
+            <img src="images/runway/document.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <section class="runwaypage_001" id="section_001">
       <div class="runwaypage_wrapper">
         <div class="runwaypage_text_wrapper">
           <div class="runwaypage_main_title_wrapper">
-            <div class="runwaypage_subtext">The easiest way to MLOps</div>
+            <div class="runwaypage_subtext">The MLOps platform to</div>
             <div class="runwaypage_maintext">
               <div>Let your</div>
-              <div>A.I Run</div>
+              <div>AI run</div>
             </div>
           </div>
-          <p class="runwaypage_m_desc">
-            Jupyter 기반의 대화형 ML 개발 환경과 직관적인 모델 배포 및 운영을
-            제공하여 사용자가 가장 잘하는 일에 집중할 수 있도록 지원하는 올인원
-            MLOps 플랫폼입니다.
-          </p>
+          <!-- <p
+            class="runwaypage_m_desc"
+            id="runwaypage001_desc"
+            data-lang="runwaypage001_desc"
+          >
+            An all-in-one ML platform that provides an interactive ML
+            development environment based on Jupyter, intuitive model deployment
+            and operation, and lets users focus on what they do best
+          </p> -->
           <div class="runwaypage_button_group">
-            <button class="summary_button">Runway 요약</button>
+            <button class="get started_button summary_button" id="demoButton">
+              <p>디자인 요약</p>
+            </button>
           </div>
         </div>
         <div class="runwaypage_mainimg">
-          <img src="images/runway/runwaypage_001.png" alt="" />
+          <video
+            class="link_video"
+            muted=""
+            playsinline=""
+            poster="images/runway/link_video_img.jpg"
+          >
+            <source src="images/runway/main-video-link.mp4" type="video/mp4" />
+          </video>
+          <video
+            class="runway_video"
+            muted=""
+            playsinline=""
+            poster="images/runway/runway_video_img.jpg"
+          >
+            <source
+              src="images/runway/main-video-runway.mp4"
+              type="video/mp4"
+            />
+          </video>
         </div>
+        <div class="scroll-downs">
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
+        <!-- <div class="runwaypage_mainimg">
+          <img src="images/runway/runwaypage_001.png" alt="" />
+        </div> -->
       </div>
-      <div>
+      <!-- <div class="circle_wrapper">
         <div class="runway_circle circle001"></div>
         <div class="runway_circle circle002"></div>
         <div class="runway_circle circle003"></div>
+      </div> -->
+      <div class="gradient_bg">
+        <img src="images/runway/Gradient_pc_bg.jpg" alt="" />
+        <img src="images/runway/gradient_mobile_bg.jpg" alt="" />
       </div>
     </section>
-    <!-- <section class="runway_001">
-      <div class="runway_logo">
-        <img src="/project/ui/images/runway_logo.svg" alt="" />
+    <section class="runwaypage_002" id="section_002">
+      <div class="runwaypage_002_img">
+        <video
+          class="runway_002_video"
+          autoplay=""
+          loop=""
+          muted=""
+          playsinline=""
+        >
+          <source src="images/runway/runwaypage002.mp4" type="video/mp4" />
+        </video>
       </div>
-      <div class="runway_001_main"></div>
-      <button class="summary_button">
-        <span>Runway 요약</span><span class="link_arrow_button"></span>
-      </button>
-      <div class="black_gra"></div>
-    </section> -->
-
-    <section class="runway_003">
+      <div class="runway_pin_text_wrapper">
+        <p class="pin_001">AI 모델 개발부터 배포까지 가장 합리적인 방식으로</p>
+        <p class="pin_002">
+          가장 합리적인 방식으로 머신러닝 운영환경을 구축합니다
+        </p>
+        <p class="pin_003">Runway와 함께 AI의 가치를 쉽고 빠르게 실현하세요</p>
+        <button id="runway_youtube_open" class="pin_006">
+          <img src="images/runway/youtube_icon.svg" alt="" />
+          <p id="youtubeView" data-lang="youtubeView">
+            Watch introduction video
+          </p>
+        </button>
+      </div>
+    </section>
+    <!-- <section class="runway_003">
       <div>
         <div class="runway_subject_title">Background</div>
         <div class="runway_wrap">
@@ -128,8 +203,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="runway_loop">
+    </section> -->
+    <!-- <section class="runway_loop">
       <div class="runway_subject_title">ML cycle</div>
       <div class="runway_title">
         MakinaRocks
@@ -138,7 +213,7 @@
       <video autoplay="" loop="" muted="" playsinline="">
         <source src="images/runway/makina_workflow.mp4" type="video/mp4" />
       </video>
-    </section>
+    </section> -->
     <section class="runway_004">
       <div class="runway_subject_title">Persona</div>
       <div class="runway_subject_text">
@@ -189,17 +264,6 @@
               <div class="runway_concept_title">
                 자유도 높은 모델 개발 환경을 제공합니다
               </div>
-              <p class="runway_concept_text">
-                탑재된 모델 개발 도구인 링크 (Link) 를 통해 개발 및 운영<span
-                  class="mo_span"
-                >
-                  모두에서 활용할 수 있는 학습 파이프라안을 구성할 수
-                  있으며,</span
-                ><span class="mo_span">
-                  파이프라인의 수정과 변형이 용이해 최적의 성능을 제공할 수
-                  있습니다</span
-                >
-              </p>
             </div>
           </div>
           <div class="runway_concept_right">
@@ -212,14 +276,6 @@
                   사용자 인터페이스을 제공합니다</span
                 >
               </div>
-              <p class="runway_concept_text">
-                복잡한 인프라 구성을 사용자 친화적 화면과 직관적인 사용자<span
-                  class="mo_span"
-                  >인터페이스로 설정할 수 있으며 , 개발자가 아니더라도 간단한
-                  학습을</span
-                >
-                통해 머신러닝 모델을 등록하고 배포할 수 있습니다.
-              </p>
             </div>
           </div>
         </div>
@@ -230,13 +286,6 @@
             </div>
             <div class="runway_concept_text_wrap">
               <div class="runway_concept_title">자동 재학습을 지원합니다</div>
-              <p class="runway_concept_text">
-                실시간으로 데이터 흐름과 변화를 감지하여 운영 모델을
-                <span class="mo_span"
-                  >자동으로 재학습하여 머신 러닝 어플리케이션의 성능을
-                  유지합니다</span
-                >
-              </p>
             </div>
           </div>
           <div class="runway_concept_right">
@@ -247,19 +296,226 @@
               <div class="runway_concept_title">
                 유연한 운영 환경을 제공합니다
               </div>
-              <p class="runway_concept_text">
-                실험단계에서 개발된 모델을 실제 환경에 동시 배포하여,<span
-                  class="mo_span"
-                >
-                  운영에 영향을 주지 않고도 새로운 모델을 평가할 수
-                  있습니다</span
-                >
-              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="quick_preview" id="quick_wrapper">
+      <div class="quick_perview_wrapper">
+        <div class="section_heading">
+          Experience <span class="primary_font">Runway</span>
+        </div>
+        <div class="runway_feature">
+          <div class="feature_concept_img">
+            <img src="images/runway/concept_feature_img.svg" alt="" />
+          </div>
+          <div
+            class="swiper feature_concept swiper-initialized swiper-horizontal swiper-backface-hidden"
+          >
+            <div
+              class="swiper-wrapper"
+              id="swiper-wrapper-b101fb96c81863df7"
+              aria-live="polite"
+              style="
+                transition-duration: 0ms;
+                transform: translate3d(0px, 0px, 0px);
+              "
+            >
+              <div
+                class="swiper-slide swiper-slide-active"
+                role="group"
+                aria-label="1 / 6"
+                style="width: 78.8571px; margin-right: 20px"
+              >
+                <img src="images/runway/concept_item001.svg" alt="" />
+                <div class="feature_ico_text">Data source</div>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-next"
+                role="group"
+                aria-label="2 / 6"
+                style="width: 78.8571px; margin-right: 20px"
+              >
+                <img src="images/runway/concept_item002.svg" alt="" />
+                <div class="feature_ico_text">Dataset</div>
+              </div>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-label="3 / 6"
+                style="width: 78.8571px; margin-right: 20px"
+              >
+                <img src="images/runway/concept_item003.svg" alt="" />
+                <div class="feature_ico_text">Pipeline</div>
+              </div>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-label="4 / 6"
+                style="width: 78.8571px; margin-right: 20px"
+              >
+                <img src="images/runway/concept_item004.svg" alt="" />
+                <div class="feature_ico_text">Model</div>
+              </div>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-label="5 / 6"
+                style="width: 78.8571px; margin-right: 20px"
+              >
+                <img src="images/runway/concept_item005.svg" alt="" />
+                <div class="feature_ico_text">Serving</div>
+              </div>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-label="6 / 6"
+                style="width: 78.8571px; margin-right: 20px"
+              >
+                <img src="images/runway/concept_item006.svg" alt="" />
+                <div class="feature_ico_text">Monitoring</div>
+              </div>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="quick_wrapper">
+      <div class="quick_text_wrapper">
+        <div id="preparation" class="tab_text" style="display: block">
+          <h2 id="tabTextWrapTitle001" data-lang="tabTextWrapTitle001">
+            Data source &amp; Dataset
+          </h2>
+          <p id="tabTextWrapText001" data-lang="tabTextWrapText001">
+            몇 번의 클릭만으로 다양한 데이터 소스로부터 원본 데이터 파일을
+            획득하여, 데이터셋을 구성할 수 있습니다.
+          </p>
+          <div class="tab_flow_img">
+            <img src="images/runway/tab_flow01.svg" alt="" />
+          </div>
+        </div>
+
+        <div id="development" class="tab_text" style="display: none">
+          <h2 id="tabTextWrapTitle002" data-lang="tabTextWrapTitle002">
+            Pipeline &amp; Model
+          </h2>
+          <p id="tabTextWrapText002" data-lang="tabTextWrapText002">
+            대화형 통합 ML 개발환경인 Link를 활용하여 빠르게 Runway의 데이터셋에
+            접근하고, 데이터 분석 및 모델링 작업을 시작할 수 있습니다.
+          </p>
+          <div class="tab_flow_img">
+            <img src="images/runway/tab_flow02.svg" alt="" />
+          </div>
+        </div>
+
+        <div id="Serving" class="tab_text" style="display: none">
+          <h2 id="tabTextWrapTitle003" data-lang="tabTextWrapTitle003">
+            Serving &amp; Monitoring
+          </h2>
+          <p id="tabTextWrapText003" data-lang="tabTextWrapText003">
+            사용자의 환경에 맞는 방법을 선택하여 모델 서비스를 구성하고, 모델
+            서비스의 운영 상태를 직관적인 UI를 활용하여 모니터링할 수 있습니다.
+          </p>
+          <div class="tab_flow_img">
+            <img src="images/runway/tab_flow03.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="tab_wrapper">
+        <div
+          class="swiper tabSwiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+        >
+          <div
+            class="swiper-wrapper"
+            id="swiper-wrapper-2dcb8ff12d9d1921"
+            aria-live="polite"
+            style="
+              transition-duration: 0ms;
+              transform: translate3d(0px, 0px, 0px);
+            "
+          >
+            <div
+              class="swiper-slide swiper-slide-active"
+              role="group"
+              aria-label="1 / 3"
+              style="width: 143.2px"
+            >
+              <button
+                class="tab_slide_button active"
+                onclick="tabUi(event, 'preparation'),iframe01()"
+              >
+                Data preparation
+              </button>
+            </div>
+            <div
+              class="swiper-slide swiper-slide-next"
+              role="group"
+              aria-label="2 / 3"
+              style="width: 143.2px"
+            >
+              <button
+                onclick="tabUi(event, 'development'),iframe02() "
+                class="tab_slide_button"
+              >
+                Model development
+              </button>
+            </div>
+            <div
+              class="swiper-slide"
+              role="group"
+              aria-label="3 / 3"
+              style="width: 143.2px"
+            >
+              <button
+                onclick="tabUi(event, 'Serving'),iframe03()"
+                class="tab_slide_button"
+              >
+                Model Serving
+              </button>
+            </div>
+          </div>
+          <span
+            class="swiper-notification"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></span>
+        </div>
+        <div class="tab">
+          <button
+            class="tablinks active"
+            onclick="tabUi(event, 'preparation'),iframe01()"
+            id="defaultOpen"
+          >
+            <p id="tabBtnTitle001" data-lang="tabBtnTitle001">
+              데이터 준비하기
+            </p>
+          </button>
+          <button
+            class="tablinks"
+            onclick="tabUi(event, 'development'),iframe02() "
+          >
+            <p id="tabBtnTitle002" data-lang="tabBtnTitle002">모델 개발하기</p>
+          </button>
+          <button class="tablinks" onclick="tabUi(event, 'Serving'),iframe03()">
+            <p id="tabBtnTitle003" data-lang="tabBtnTitle003">모델 배포하기</p>
+          </button>
+        </div>
+        <div class="quick_preview_screen">
+          <iframe
+            id="getFrame"
+            src="https://app.storylane.io/demo/qapzdlq8fxvx"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
     <!-- <section class="runway_005">
       <div class="head">
         <div class="content-box">
@@ -284,8 +540,9 @@
       </div>
     </section>
     <section class="runway_feature_container feature_001">
-      <div class="runway_subject_title">feature</div>
-      <div class="runway_subject_big_text">Runway의 실제화면</div>
+      <div class="section_heading">
+        Features of <span class="primary_font">Runway</span>
+      </div>
       <div class="runway_feature_wrap">
         <div
           class="runway_feature_left login_wrap"
@@ -561,7 +818,11 @@
           <img src="images/runway/figma.svg" alt="" />
         </div>
       </div>
-      <div class="design_system_text">
+      <div
+        class="design_system_text"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         Runway를 가장 잘 표현할 수 있는 컬러와 가독성이 높은 서체를 중심으로
         디자인 가이드를 확립했습니다
       </div>
@@ -586,10 +847,47 @@
         </div>
       </div>
     </section>
-    <section class="thanks_wrap" data-aos="fade-up" data-aos-duration="1000">
-      <div class="thanks_title">Thanks for watching</div>
-      <div class="runway_thanks">
-        <img src="images/runway/runway_thanks.jpg" alt="" />
+    <section class="quick_banner">
+      <div class="quick_banner_wrapper">
+        <div class="runwaypage_003_flex">
+          <div
+            class="easier_side"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate3d(-12.2464rem, 0px, 0px);
+            "
+          >
+            Thanks for
+          </div>
+          <!-- <img
+            id="makinarocks_logo"
+            src="images/runway/makinarocks_logo.svg"
+            alt=""
+          /> -->
+          <div
+            id="ml_lifecycle"
+            style="
+              translate: none;
+              rotate: none;
+              scale: none;
+              transform: translate3d(10.5353vw, 0px, 0px);
+            "
+          >
+            <span class="primary_font">Whaching</span>
+          </div>
+        </div>
+        <div class="quick_banner_card_wrapper">
+          <img src="images/runway/quick_banner.jpg" alt="" />
+          <div class="banner_main_title_wrapper">
+            <div class="banner_subtext">The MLOps platform to</div>
+            <div class="banner_maintext">
+              <div>Let your</div>
+              <div>AI run</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="summary_modal modal-overlay">
@@ -628,6 +926,7 @@
       AOS.init();
     </script>
     <script src="js/progressBar.js"></script>
+    <script src="js/runway_main.js"></script>
     <script>
       $(window).on("load", function () {
         document.body.classList.remove("no-scroll");

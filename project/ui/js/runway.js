@@ -117,5 +117,34 @@ ScrollTrigger.matchMedia({
     // });
   },
 
-  "(max-width: 799px)": function () {},
+  "(max-width: 799px)": function () {
+    gsap.fromTo(
+      ".easier_side",
+      { x: "-2rem" },
+      {
+        x: "0rem",
+        scrollTrigger: {
+          trigger: ".runwaypage_003_flex",
+          start: "-50 80%",
+          end: "+50 30%",
+          scrub: 1,
+          // markers: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      "#ml_lifecycle",
+      { x: "2rem" },
+      {
+        x: "0rem",
+        scrollTrigger: {
+          trigger: ".runwaypage_003_flex",
+          start: "-50 80%",
+          end: "+50 30%",
+          scrub: 1,
+          // markers: true,
+        },
+      }
+    );
+  },
 });

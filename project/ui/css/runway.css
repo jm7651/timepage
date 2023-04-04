@@ -8,6 +8,24 @@
   --gray-700: #454954;
   --vh: 100%;
 }
+.primary_font {
+  background: linear-gradient(270deg, #f754d6, #607ae1, #944af2);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: graani 5s infinite;
+}
+@keyframes graani {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 html {
   font-size: 10px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
@@ -55,27 +73,26 @@ body {
 .mt_8 {
   margin-top: 0.8rem;
 }
-.runway_001 {
-  position: relative;
+.GNB {
+  position: fixed;
+  display: flex;
   width: 100%;
-  height: 100vh;
-  background: #0e0d1f url(../images/runway/runway_001.jpg) center / 100% 100%
-    no-repeat;
-  object-fit: cover;
-  overflow: hidden;
+  z-index: 100;
+  margin-top: 4px;
+  padding: 0.8rem 0;
 }
-.runway_001_main {
-  width: 50vw;
-  height: 50vw;
-  background: url(../images/runway/runway_001_main.png) center / 100% auto
-    no-repeat;
-  object-fit: cover;
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: center;
-  transform: translate(-50%, -50%);
+#navbar {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__logo {
+  width: 7vw;
+  min-width: 12rem;
+}
+.navbar__logo img {
+  width: 100%;
 }
 .runway_subject_title {
   font-size: 2rem;
@@ -138,21 +155,26 @@ body {
 .runwaypage_001 {
   width: 100vw;
   height: 100vh;
+  box-sizing: border-box;
+  background: #000;
 }
 .runwaypage_wrapper {
   width: 80%;
   margin: 0 auto;
   height: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 50;
+  gap: 3.2rem;
 }
 .runwaypage_text_wrapper {
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 2vh;
+  min-width: 60rem;
 }
 .runwaypage_main_title_wrapper {
   display: flex;
@@ -161,7 +183,8 @@ body {
 .runwaypage_subtext {
   font-size: 2vw;
   font-weight: 200;
-  color: var(--gray-300);
+  color: #fff;
+  opacity: 0.7;
   line-height: 130%;
 }
 .runwaypage_maintext {
@@ -207,41 +230,69 @@ body {
   background: var(--gray-500);
 }
 .runwaypage_mainimg {
-  width: 70vw;
+  position: relative;
+  filter: brightness(1.2);
 }
 .runwaypage_mainimg img {
   width: 100%;
 }
-.runway_circle {
-  width: 25vw;
-  height: 25vw;
-  border-radius: 20vw;
-  filter: blur(200px);
-
+.link_video {
+  width: 23vw;
+  min-width: 22rem;
+  right: 0;
+  top: -4vw;
   position: absolute;
+  border-radius: 0.4vw;
+  box-shadow: -5px 5px 100px rgba(0, 0, 0, 0.8);
+  z-index: 2;
 }
-.circle001 {
-  bottom: 20%;
-  right: 40%;
-  background: var(--primary);
-  mix-blend-mode: screen;
-  animation: circleani001 5s linear infinite alternate;
+.runway_video {
+  position: relative;
+  left: -8vw;
+  top: 2vh;
+  width: 35vw;
+  margin-top: 4rem;
+  border-radius: 8px;
 }
-.circle002 {
-  bottom: 20%;
-  right: 25%;
-  background: #5d9eff;
-  mix-blend-mode: screen;
-  animation: circleani002 5s linear infinite alternate;
+.scroll-downs {
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
 }
-.circle003 {
-  bottom: 30%;
-  right: 5%;
-  background: #7f6bfa;
-  mix-blend-mode: screen;
-  animation: circleani003 5s linear infinite alternate;
+.mousey {
+  width: 3px;
+  padding: 4px 12px;
+  height: 28px;
+  border: 1px solid var(--gray-100);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
 }
-
+.scroller {
+  width: 1px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: var(--gray-100);
+  animation-name: scroll;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}
 /*  */
 .runway_002 {
   width: 100%;
@@ -259,6 +310,78 @@ body {
       #944af2 100%
     );
 }
+.gradient_bg {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+.gradient_bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gradient_bg img:nth-child(2) {
+  opacity: 0;
+}
+.gradient_bg.mobile img:nth-child(1) {
+  opacity: 0;
+}
+.gradient_bg.mobile img:nth-child(2) {
+  opacity: 1;
+}
+.runwaypage_002 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 70%;
+  height: 70vh;
+  box-sizing: border-box;
+  gap: 5vw;
+}
+.runwaypage_002_img {
+  display: flex;
+  width: 50vmin;
+  justify-content: center;
+}
+.runway_002_video {
+  width: 100%;
+}
+.runway_pin_text_wrapper {
+  margin-top: 4rem;
+  width: fit-content;
+  text-align: center;
+}
+.runway_pin_text_wrapper > p {
+  font-size: 1.6vw;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  box-sizing: border-box;
+  text-align: left;
+  opacity: 0.5;
+  color: var(--gray-100);
+}
+.pin_006 {
+  color: var(--primary);
+  font-size: 1.6vw;
+  font-weight: 700;
+  margin-top: 2vw;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.4vw 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  width: 100%;
+}
 .runway_logo {
   position: absolute;
   top: 5vh;
@@ -270,6 +393,7 @@ body {
 .runway_logo img {
   width: 100%;
 }
+
 .runway_logo2 {
   top: 50%;
   left: 50%;
@@ -351,7 +475,6 @@ body {
   justify-content: center;
 }
 .runway_004 .swiper {
-  margin-top: 10rem;
   max-width: 120rem;
   min-height: 80vh;
   color: #ced1d5;
@@ -454,22 +577,16 @@ body {
   color: #fff;
   gap: 1.2rem;
 }
-.runway_concept_text_wrap > p {
-  opacity: 0.5;
-  word-break: keep-all;
-}
 .runway_concept_title {
   font-size: 2rem;
   font-weight: 600;
+  text-align: center;
 }
 .runway_concept_right {
   color: #fff;
 }
 .runway_feature_container {
   padding: 16rem 0;
-}
-.feature_001 {
-  background: linear-gradient(180deg, #944af2 0%, #000 50%);
 }
 .runway_subject_big_text {
   font-size: 5vw;
@@ -518,7 +635,7 @@ body {
 }
 .runway_feature_wrap p {
   color: #fff;
-  opacity: 0.7;
+  opacity: 0.6;
   font-size: 1.6rem;
   line-height: 1.3;
 }
@@ -562,26 +679,10 @@ body {
 .design_system_text {
   font-size: 2rem;
   font-weight: 500;
-}
-.thanks_wrap {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-.thanks_title {
-  position: absolute;
-  top: 8vh;
-  left: 8vw;
-  font-size: 4vw;
-  font-weight: 600;
   color: #fff;
-}
-.runway_thanks {
-  width: 100vw;
-}
-.runway_thanks img {
-  width: 100%;
+  width: 140rem;
+  opacity: 0.6 !important;
+  margin: 0 auto;
 }
 .runway_summary_close {
   background: #944af2;
@@ -611,7 +712,206 @@ body {
   background: url(../images/hems/arrow_button.svg) center center / 100% 100%
     no-repeat;
 }
+/*quick preview  */
+.quick_preview {
+  background: #000;
+  padding: 16rem 0 4rem;
+  color: #fff;
+}
+.quick_perview_wrapper {
+  width: 62vw;
+  margin: 0 auto;
+  min-width: 100rem;
+  max-width: 120rem;
+}
+.section_heading {
+  font-size: 8rem;
+  font-weight: 500;
+  color: var(--gray-100);
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.feature_concept_img {
+  text-align: center;
+  width: 100rem;
+  margin: 0rem auto 8rem;
+}
+.feature_concept_img img {
+  width: 100%;
+}
+.feature_concept {
+  display: none !important;
+}
+.quick_wrapper {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 4rem;
+}
+.quick_text_wrapper {
+  color: #fff;
+  width: 30%;
+}
+.tab_text {
+  margin-top: 6rem;
+  font-size: 1.6rem;
+  color: var(--gray-300);
+}
+.tab_text p {
+  word-break: keep-all;
+  font-weight: 300;
+  line-height: 130%;
+  width: 85%;
+}
+.tab_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 70%;
+}
+.tab_wrapper .tabSwiper {
+  color: #fff;
+  display: none;
+}
+.tab {
+  display: flex;
+  overflow: hidden;
+  gap: 2rem;
+}
+.tab button.active {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 30px;
+}
+.tab button {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 2rem;
+  color: var(--gray-300);
+  background-color: transparent;
+  padding: 0.4rem 2rem;
+}
+.quick_preview_screen {
+  position: relative;
+  padding-top: 64.6%;
+  width: 100%;
+  height: 0;
+}
+.quick_preview_screen > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.tab_text h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 130%;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+/* banner */
+.quick_banner {
+  padding: 0 12rem 12rem;
+  position: relative;
+}
+.quick_banner_wrapper {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+.runwaypage_003_flex {
+  color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 12rem 0;
+}
+.runwaypage_003_flex > div {
+  font-size: 7vw;
+  font-weight: 600;
+}
+.quick_banner_card_wrapper {
+  position: relative;
+  max-width: 120rem;
+  margin: 0 auto;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+.quick_banner_card_wrapper img {
+  width: 100%;
+}
+.banner_main_title_wrapper {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.banner_subtext {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.7;
+}
+.banner_maintext {
+  display: flex;
+  color: #fff;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 6rem;
+  margin-top: 0.4rem;
+}
+.banner_maintext > div:nth-child(1) {
+  font-weight: 300;
+}
+@media screen and (max-width: 1000px) {
+  .runwaypage_wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 3.2rem;
+  }
+  .runwaypage_mainimg {
+    width: 100%;
+  }
+  .runwaypage_text_wrapper {
+    margin-top: 2rem;
+    width: 100%;
+    min-width: auto;
+    align-items: center;
+  }
+  .runwaypage_subtext {
+    font-size: 3rem;
+  }
+  .runwaypage_maintext {
+    font-size: 6rem;
+  }
+  .runway_video {
+    width: 60vw;
+    left: 0;
+  }
+  .link_video {
+    width: 40vw;
+  }
+}
 @media screen and (max-width: 450px) {
+  #navbar {
+    width: 100%;
+    padding: 0 1.6rem;
+    box-sizing: border-box;
+  }
   .mo_span {
     display: inline;
   }
@@ -620,9 +920,6 @@ body {
 
     background: url(../images/runway/runway_main_mobile.png) center 0 / 105vw
       auto no-repeat;
-  }
-  .runway_001_main {
-    display: none;
   }
   .runway_logo {
     left: 20%;
@@ -637,6 +934,9 @@ body {
   }
   .black_gra {
     height: 40vh;
+  }
+  .scroll-downs {
+    bottom: 6vh;
   }
   .runway_p001 {
     padding: 0 20px;
@@ -662,14 +962,34 @@ body {
   }
   /*  */
   .runwaypage_001 {
-    margin-top: 16rem;
-  }
-  .runwaypage_001,
-  .runwaypage_002 {
-    height: auto;
+    height: 100vh;
   }
   .runwaypage_002 {
-    padding: 8rem 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .runwaypage_002_img {
+    width: 100%;
+  }
+  .runway_pin_text_wrapper {
+    padding: 0 1.6rem;
+    margin: 0;
+  }
+  .runway_pin_text_wrapper > p {
+    font-size: 2.4rem;
+    word-break: keep-all;
+    text-align: center;
+  }
+  .pin_006 {
+    font-size: 2rem;
+    justify-content: center;
+  }
+  .pin_006 img {
+    width: 3.2rem;
   }
   .runwaypage_wrapper {
     margin: 0;
@@ -685,11 +1005,20 @@ body {
     box-sizing: border-box;
     padding: 0 1.6rem;
   }
+  .link_video {
+    width: 50vw;
+    min-width: auto;
+    right: 1.6rem;
+  }
+  .runway_video {
+    width: 70vw;
+  }
   .runwaypage_subtext {
-    font-size: 8vw;
+    font-size: 6vw;
   }
   .runwaypage_maintext {
     font-size: 12vw;
+    justify-content: center;
   }
   .runwaypage_m_desc {
     width: 100%;
@@ -702,6 +1031,8 @@ body {
   }
   .runwaypage_button_group > button {
     width: 100%;
+    text-align: center;
+    justify-content: center;
   }
   .runway_003 {
     width: 100%;
@@ -723,12 +1054,12 @@ body {
   }
   .runway_004 {
     width: 100%;
-    padding: 0 1.6rem;
+    padding: 8rem 1.6rem 0;
     box-sizing: border-box;
   }
   .runway_004 .swiper {
     margin-top: 4rem;
-    height: 100vh;
+    height: 90vh;
   }
   .persona_wrap {
     flex-direction: column;
@@ -737,8 +1068,9 @@ body {
   .persona_left {
     align-items: center;
   }
+
   .swiper-slide img {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
   }
   .persona_002,
@@ -771,12 +1103,85 @@ body {
   .runway_subject_big_text {
     font-size: 10vw;
   }
+  /* quick */
+  .quick_preview {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12rem 1.6rem 8rem;
+    margin-top: 12rem;
+  }
+  .quick_perview_wrapper {
+    width: 100%;
+    min-width: 100%;
+  }
+  .section_heading {
+    font-size: 8vw;
+    margin-bottom: 2rem;
+  }
+  .feature_concept_img {
+    display: none;
+  }
+  .feature_concept_img img {
+    width: 100%;
+  }
+  .feature_concept {
+    display: block !important;
+    color: var(--gray-500);
+    padding: 4rem 1.6rem !important;
+    box-sizing: border-box;
+  }
+  .quick_wrapper {
+    width: 100%;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+  }
+  .quick_text_wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .tab_text {
+    margin: 0;
+    padding: 0 1.6rem;
+  }
   .runway_feature_container {
     padding: 8rem 0;
   }
   .runway_feature_wrap {
     flex-direction: column;
     width: 100%;
+  }
+  .feature_ico_text {
+    margin-top: 1.2rem;
+    font-size: 1.4rem;
+  }
+  .tab_wrapper {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 0 1.6rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+  }
+  .tab_wrapper .tabSwiper {
+    display: block;
+    padding: 2rem 0;
+  }
+  .tab_slide_button {
+    background: transparent;
+    color: var(--gray-300);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+  }
+  .tab_slide_button.active {
+    background: var(--primary);
+    color: #fff;
+  }
+  .tab {
+    gap: 0;
+    display: none;
   }
   .runway_feature_img,
   .stream_wrap .runway_feature_img {
@@ -809,9 +1214,11 @@ body {
   .single_title_wrap {
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 2rem;
   }
   .runway_feature_wrap {
     width: 100%;
+    margin-top: 4rem;
   }
   .runway_feature_left,
   .runway_feature_right {
@@ -823,18 +1230,45 @@ body {
     margin-top: 8rem;
   }
 
-  .thanks_wrap {
+  .quick_banner {
+    padding: 0rem 1.6rem 8rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 16rem;
+  }
+  .quick_banner_wrapper {
+    width: 100%;
+  }
+  .runwaypage_003_flex {
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding: 0;
+    box-sizing: border-box;
     overflow: hidden;
   }
-  .thanks_title {
-    z-index: 100;
+  .runwaypage_003_flex > div {
     font-size: 16vw;
-    font-weight: 900;
-    top: auto;
-    bottom: 10vh;
   }
-  .runway_thanks {
-    width: 100vw;
-    transform: scale(4) translate(10px, 10vh);
+  .quick_banner_card_wrapper {
+    width: 100%;
+    overflow: unset;
+  }
+  .banner_main_title_wrapper {
+    position: relative;
+    top: 5rem;
+    right: 0;
+  }
+  .banner_maintext {
+    font-size: 4rem;
+  }
+  .design_system_text {
+    width: 100%;
+    color: #fff;
+    opacity: 0.6 !important;
+    padding: 0 1.6rem;
+    font-size: 1.5rem;
+    line-height: 130%;
+    box-sizing: border-box;
   }
 }
