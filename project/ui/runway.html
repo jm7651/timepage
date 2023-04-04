@@ -906,6 +906,29 @@
         <button class="runway_summary_close summary_close">닫기</button>
       </div>
     </section>
+    <div class="modal hidden" id="defaultModal">
+      <div class="md_overlay"></div>
+      <div class="md_content">
+        <div class="loadbg">
+          <lottie-player
+            src="https://lottie.host/25c2c9ed-3eb2-4ada-af40-98b42502da39/17zMXZXesC.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            class="loading_lottie"
+          ></lottie-player>
+        </div>
+        <iframe
+          id="defaultIframe"
+          src="https://www.youtube.com/embed/Sc5wPIpJ6uE"
+          frameborder="0"
+          allow="accelerometer;encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen=""
+        ></iframe>
+        <button class="modal_close">X</button>
+      </div>
+    </div>
     <script>
       history.pushState(null, null, location.href);
       window.onpopstate = function () {
@@ -933,5 +956,6 @@
         $(".blackblock").fadeOut(1000);
       });
     </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

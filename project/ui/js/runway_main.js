@@ -7,6 +7,7 @@ const mobileCheck = function () {
     gradientBg.classList.remove("mobile");
   }
 };
+
 window.addEventListener(`load`, mobileCheck);
 window.addEventListener("resize", mobileCheck);
 
@@ -123,3 +124,28 @@ function iframe03() {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+const overlay = document.querySelectorAll(".md_overlay");
+const closeButton = document.querySelector(".modal_close");
+const loadbg = document.querySelector(".loadbg");
+const defaultIframe = document.querySelector("#defaultIframe");
+const modal = document.querySelectorAll(".modal");
+const youtubeButton = document.getElementById("runway_youtube_open");
+console.log(youtubeButton);
+const openYoutubeModal = () => {
+  defaultModal.classList.add("youtube_modal");
+  defaultModal.classList.remove("hidden");
+  document.body.style.overflowY = "hidden";
+};
+const closeModal = () => {
+  document.body.style.overflowY = "unset";
+  for (let i = 0; i < modal.length; i++) {
+    defaultModal.classList.remove("youtube_modal");
+    modal[i].classList.add("hidden");
+  }
+};
+youtubeButton.addEventListener("click", openYoutubeModal);
+closeButton.addEventListener("click", closeModal);
+for (let i = 0; i < overlay.length; i++) {
+  overlay[i].addEventListener("click", closeModal);
+}

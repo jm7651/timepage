@@ -55,10 +55,73 @@
   background: #111;
   color: #fff;
 }
-
+.hidden {
+  display: none !important;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+.md_overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.md_content {
+  width: 60vw;
+  height: 33.75vw;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+.loadbg {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  transition: all 0.3s;
+  opacity: 0;
+}
+.md_content iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.loading_lottie {
+  width: 30vw;
+  height: 30vw;
+}
 @media screen and (max-width: 450px) {
   .modal_window {
     width: 90vw;
     overflow: auto;
+  }
+  .youtube_modal .md_content {
+    position: relative;
+    padding-top: 45%;
+    width: 80%;
+    height: 0;
+    border-radius: 12px;
   }
 }

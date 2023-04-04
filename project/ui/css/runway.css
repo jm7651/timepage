@@ -26,6 +26,7 @@
     background-position: 0% 50%;
   }
 }
+
 html {
   font-size: 10px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
@@ -668,7 +669,7 @@ body {
 .single_title_wrap {
   width: 140rem;
   margin: 0 auto;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 .stream_video {
   width: 90rem;
@@ -798,6 +799,9 @@ body {
   color: var(--gray-300);
   background-color: transparent;
   padding: 0.4rem 2rem;
+}
+.tab_flow_img {
+  margin-top: 4rem;
 }
 .quick_preview_screen {
   position: relative;
