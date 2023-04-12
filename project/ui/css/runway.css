@@ -477,7 +477,7 @@ body {
 }
 .runway_004 .swiper {
   max-width: 120rem;
-  min-height: 80vh;
+  min-height: 70vh;
   color: #ced1d5;
   text-align: left;
   display: flex;
@@ -569,8 +569,8 @@ body {
   background: #1c1b20;
   border-radius: 1.2rem;
   padding: 2rem;
-  width: 60rem;
-  height: 40rem;
+  width: 48rem;
+  height: 32rem;
 }
 .runway_concept_text_wrap {
   display: flex;
