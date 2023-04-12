@@ -32,8 +32,7 @@
     <link rel="stylesheet" href="css/progressbar.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
-  <body class="no-scroll">
-    <div class="blackblock"><div class="loader"></div></div>
+  <body>
     <div class="progrss_header">
       <div class="progress-container">
         <div class="progress-bar runway_progressbar"></div>
@@ -310,7 +309,7 @@
           <div class="feature_concept_img">
             <img src="images/runway/concept_feature_img.svg" alt="" />
           </div>
-          <div
+          <!-- <div
             class="swiper feature_concept swiper-initialized swiper-horizontal swiper-backface-hidden"
           >
             <div
@@ -382,7 +381,7 @@
               aria-live="assertive"
               aria-atomic="true"
             ></span>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -390,7 +389,7 @@
       <div class="quick_text_wrapper">
         <div id="preparation" class="tab_text" style="display: block">
           <h2 id="tabTextWrapTitle001" data-lang="tabTextWrapTitle001">
-            Data source &amp; Dataset
+            Data Preparation
           </h2>
           <p id="tabTextWrapText001" data-lang="tabTextWrapText001">
             몇 번의 클릭만으로 다양한 데이터 소스로부터 원본 데이터 파일을
@@ -403,7 +402,7 @@
 
         <div id="development" class="tab_text" style="display: none">
           <h2 id="tabTextWrapTitle002" data-lang="tabTextWrapTitle002">
-            Pipeline &amp; Model
+            Model Development
           </h2>
           <p id="tabTextWrapText002" data-lang="tabTextWrapText002">
             대화형 통합 ML 개발환경인 Link를 활용하여 빠르게 Runway의 데이터셋에
@@ -416,7 +415,7 @@
 
         <div id="Serving" class="tab_text" style="display: none">
           <h2 id="tabTextWrapTitle003" data-lang="tabTextWrapTitle003">
-            Serving &amp; Monitoring
+            Model Serving
           </h2>
           <p id="tabTextWrapText003" data-lang="tabTextWrapText003">
             사용자의 환경에 맞는 방법을 선택하여 모델 서비스를 구성하고, 모델
@@ -426,90 +425,89 @@
             <img src="images/runway/tab_flow03.svg" alt="" />
           </div>
         </div>
+        <div id="retrain" class="tab_text" style="display: none">
+          <h2 id="tabBtnTitle004" data-lang="tabBtnTitle004">
+            Debug Model and Retrain
+          </h2>
+          <p id="tabTextWrapText004" data-lang="tabTextWrapText004">
+            모델 개발 과정에서 구성한 파이프라인을 활용하여, 추가 작업없이
+            빠르게 모델을 재학습하고 배포까지 수행할 수 있습니다
+          </p>
+          <div class="tab_flow_img">
+            <img src="images/runway/tab_flow04.svg" alt="" />
+          </div>
+        </div>
       </div>
       <div class="tab_wrapper">
-        <div
-          class="swiper tabSwiper swiper-initialized swiper-horizontal swiper-backface-hidden"
-        >
-          <div
-            class="swiper-wrapper"
-            id="swiper-wrapper-2dcb8ff12d9d1921"
-            aria-live="polite"
-            style="
-              transition-duration: 0ms;
-              transform: translate3d(0px, 0px, 0px);
-            "
-          >
-            <div
-              class="swiper-slide swiper-slide-active"
-              role="group"
-              aria-label="1 / 3"
-              style="width: 143.2px"
-            >
+        <div class="swiper tabSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <button
+                id="tabBtnTitle001"
+                data-lang="tabBtnTitle001"
                 class="tab_slide_button active"
                 onclick="tabUi(event, 'preparation'),iframe01()"
               >
-                Data preparation
+                데이터준비
               </button>
             </div>
-            <div
-              class="swiper-slide swiper-slide-next"
-              role="group"
-              aria-label="2 / 3"
-              style="width: 143.2px"
-            >
+            <div class="swiper-slide">
               <button
+                id="tabBtnTitle002"
+                data-lang="tabBtnTitle002"
                 onclick="tabUi(event, 'development'),iframe02() "
                 class="tab_slide_button"
               >
-                Model development
+                모델 개발
               </button>
             </div>
-            <div
-              class="swiper-slide"
-              role="group"
-              aria-label="3 / 3"
-              style="width: 143.2px"
-            >
+            <div class="swiper-slide">
               <button
+                id="tabBtnTitle003"
+                data-lang="tabBtnTitle003"
                 onclick="tabUi(event, 'Serving'),iframe03()"
                 class="tab_slide_button"
               >
-                Model Serving
+                모델 배포
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button
+                id="tabBtnTitle004"
+                data-lang="tabBtnTitle004"
+                onclick="tabUi(event, 'retrain'),iframe03()"
+                class="tab_slide_button button004"
+              >
+                모델 디버그 및 재학습
               </button>
             </div>
           </div>
-          <span
-            class="swiper-notification"
-            aria-live="assertive"
-            aria-atomic="true"
-          ></span>
         </div>
         <div class="tab">
           <button
-            class="tablinks active"
+            class="tablinks"
             onclick="tabUi(event, 'preparation'),iframe01()"
             id="defaultOpen"
           >
-            <p id="tabBtnTitle001" data-lang="tabBtnTitle001">
-              데이터 준비하기
-            </p>
+            <p id="tabBtnTitle001" data-lang="tabBtnTitle001">데이터 준비</p>
           </button>
           <button
             class="tablinks"
             onclick="tabUi(event, 'development'),iframe02() "
           >
-            <p id="tabBtnTitle002" data-lang="tabBtnTitle002">모델 개발하기</p>
+            <p>모델 개발</p>
           </button>
           <button class="tablinks" onclick="tabUi(event, 'Serving'),iframe03()">
-            <p id="tabBtnTitle003" data-lang="tabBtnTitle003">모델 배포하기</p>
+            <p>Model<span class="mo_block">모델 배포</span></p>
+          </button>
+          <button class="tablinks" onclick="tabUi(event, 'retrain'),iframe04()">
+            <p>Model<span class="mo_block">모델 디버그 및 재학습</span></p>
           </button>
         </div>
         <div class="quick_preview_screen">
           <iframe
             id="getFrame"
-            src="https://app.storylane.io/demo/qapzdlq8fxvx"
+            src="https://app.storylane.io/demo/tiu5dgqxdurg"
             frameborder="0"
           ></iframe>
         </div>
@@ -950,12 +948,6 @@
     </script>
     <script src="js/progressBar.js"></script>
     <script src="js/runway_main.js"></script>
-    <script>
-      $(window).on("load", function () {
-        document.body.classList.remove("no-scroll");
-        $(".blackblock").fadeOut(1000);
-      });
-    </script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
