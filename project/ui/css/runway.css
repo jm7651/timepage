@@ -373,7 +373,7 @@ body {
   color: var(--primary);
   font-size: 1.6vw;
   font-weight: 700;
-  margin-top: 2vw;
+  margin-top: 2rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -468,7 +468,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .runway_004 {
-  background: #111;
+  background: #111116;
   padding: 16rem 0;
   min-height: 50vh;
   display: flex;
@@ -1120,7 +1120,7 @@ body {
   }
 
   .swiper-slide img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
   .persona_002,
