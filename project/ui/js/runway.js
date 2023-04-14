@@ -80,6 +80,34 @@ gsap.fromTo(
 );
 ScrollTrigger.matchMedia({
   "(min-width: 800px)": function () {
+    gsap.fromTo(
+      ".easier_side",
+      { x: "-10rem" },
+      {
+        x: "-0",
+        scrollTrigger: {
+          trigger: ".runwaypage_003_flex",
+          start: "-50 80%",
+          end: "+50 30%",
+          scrub: 5,
+          // markers: true,
+        },
+      }
+    );
+    gsap.fromTo(
+      "#ml_lifecycle",
+      { x: "18rem" },
+      {
+        x: "0",
+        scrollTrigger: {
+          trigger: ".runwaypage_003_flex",
+          start: "-50 80%",
+          end: "+50 30%",
+          scrub: 5,
+          // markers: true,
+        },
+      }
+    );
     // const headings = document.querySelectorAll(".heading");
     // const nums = document.querySelectorAll(".scroll-num");
     // const head = document.querySelector(".head");

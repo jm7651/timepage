@@ -1,15 +1,15 @@
-const mobileCheck = function () {
-  const width = window.innerWidth;
+const updateBackgroundLayout = function () {
   const gradientBg = document.querySelector(".gradient_bg");
-  if (width < 1000) {
+  if (window.innerWidth < 1000) {
     gradientBg.classList.add("mobile");
   } else {
     gradientBg.classList.remove("mobile");
   }
 };
 
-window.addEventListener(`load`, mobileCheck);
-window.addEventListener("resize", mobileCheck);
+const mq = window.matchMedia("(max-width: 1000px)");
+mq.addListener(updateBackgroundLayout);
+updateBackgroundLayout();
 
 // const runwayVideo002 = document.querySelector(".runway_002_video");
 // console.log(runwayVideo002);
@@ -95,31 +95,20 @@ function tabUi(evt, tabname) {
   evt.currentTarget.className += " active";
 }
 function iframe01() {
-  if (document.querySelector("body.ko")) {
-    document.getElementById("getFrame").src =
-      "https://app.storylane.io/demo/qapzdlq8fxvx";
-  } else {
-    document.getElementById("getFrame").src =
-      "https://app.storylane.io/demo/28oo9rmjik0w";
-  }
+  document.getElementById("getFrame").src =
+    "https://app.storylane.io/demo/qapzdlq8fxvx";
 }
 function iframe02() {
-  if (document.querySelector("body.ko")) {
-    document.getElementById("getFrame").src =
-      "https://app.storylane.io/demo/z17lzthjencd";
-  } else {
-    document.getElementById("getFrame").src =
-      "https://app.storylane.io/demo/xtmxdjus2eje";
-  }
+  document.getElementById("getFrame").src =
+    "https://app.storylane.io/demo/z17lzthjencd";
 }
 function iframe03() {
-  if (document.querySelector("body.ko")) {
-    document.getElementById("getFrame").src =
-      "https://app.storylane.io/demo/vgeijgj1xwnr";
-  } else {
-    document.getElementById("getFrame").src =
-      "https://app.storylane.io/demo/gqgzpodmmeqb";
-  }
+  document.getElementById("getFrame").src =
+    "https://app.storylane.io/demo/vgeijgj1xwnr";
+}
+function iframe04() {
+  document.getElementById("getFrame").src =
+    "https://app.storylane.io/demo/ycb1ybyfzryz";
 }
 
 // Get the element with id="defaultOpen" and click on it
