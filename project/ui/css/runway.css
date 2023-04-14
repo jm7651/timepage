@@ -477,7 +477,7 @@ body {
 }
 .runway_004 .swiper {
   max-width: 120rem;
-  min-height: 80vh;
+  min-height: 70vh;
   color: #ced1d5;
   text-align: left;
   display: flex;
@@ -605,7 +605,7 @@ body {
   background: #111115;
   border-radius: 1.2rem;
   padding: 2rem;
-  width: 44rem;
+  width: 60rem;
   height: 40rem;
 }
 .runway_concept_text_wrap {
@@ -841,6 +841,9 @@ body {
 }
 .tab_flow_img {
   margin-top: 4rem;
+}
+.tab_flow_img img {
+  width: 100%;
 }
 .quick_preview_screen {
   position: relative;
@@ -1136,6 +1139,7 @@ body {
   }
   .runway_concept_title {
     word-break: keep-all;
+    font-size: 1.6rem;
   }
   .runway_concept_text_wrap {
     width: 100%;
@@ -1156,6 +1160,11 @@ body {
   .runway_concept_up,
   .runway_concept_down {
     flex-direction: column;
+    width: 100%;
+    gap: 1.2rem;
+  }
+  .runway_concept_wrap {
+    gap: 1.2rem;
   }
   .runway_concept_down {
     width: 100%;
@@ -1166,6 +1175,12 @@ body {
     width: 100%;
     height: auto;
     box-sizing: border-box;
+  }
+  .runway_concept_img {
+    width: 50%;
+  }
+  .runway_concept_img img {
+    width: 100%;
   }
   .runway_subject_title {
     font-size: 1.5rem;
@@ -1236,6 +1251,10 @@ body {
   .tab_wrapper .tabSwiper {
     display: block;
     padding: 2rem 0;
+  }
+  .tab_wrapper .tabSwiper .swiper-slide {
+    width: auto !important;
+    padding: 0 4px;
   }
   .tab_slide_button {
     background: transparent;

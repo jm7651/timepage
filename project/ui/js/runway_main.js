@@ -110,6 +110,15 @@ function iframe04() {
   document.getElementById("getFrame").src =
     "https://app.storylane.io/demo/ycb1ybyfzryz";
 }
+function iframe04() {
+  if (document.querySelector("body.ko")) {
+    document.getElementById("getFrame").src =
+      "https://app.storylane.io/demo/ycb1ybyfzryz";
+  } else {
+    document.getElementById("getFrame").src =
+      "https://app.storylane.io/demo/fpxlpixxp9cn";
+  }
+}
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
@@ -120,7 +129,6 @@ const loadbg = document.querySelector(".loadbg");
 const defaultIframe = document.querySelector("#defaultIframe");
 const modal = document.querySelectorAll(".modal");
 const youtubeButton = document.getElementById("runway_youtube_open");
-console.log(youtubeButton);
 const openYoutubeModal = () => {
   defaultModal.classList.add("youtube_modal");
   defaultModal.classList.remove("hidden");
