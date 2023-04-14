@@ -13,7 +13,7 @@ function MySliderBox2__init() {
         slidesPerView: 1.5, //레이아웃 2열
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2.5,
       },
       1024: {
         slidesPerView: 4,
