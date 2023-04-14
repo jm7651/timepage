@@ -469,7 +469,7 @@ body {
 }
 .runway_004 {
   background: #111;
-  padding: 8rem 0;
+  padding: 16rem 0;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -605,8 +605,9 @@ body {
   background: #111115;
   border-radius: 1.2rem;
   padding: 2rem;
-  width: 60rem;
+  width: 44rem;
   height: 40rem;
+  border: 1px solid #454954;
 }
 .runway_concept_text_wrap {
   display: flex;
@@ -842,7 +843,10 @@ body {
 .tab_flow_img {
   margin-top: 4rem;
 }
-.tab_flow_img img {
+.tab_flow004 {
+  width: 100%;
+}
+.tab_flow004 img {
   width: 100%;
 }
 .quick_preview_screen {
@@ -1149,7 +1153,7 @@ body {
     padding: 2rem;
   }
   .concept_title_001 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   .runway_concept_up .runway_concept_left {
     flex-direction: column;
@@ -1161,9 +1165,6 @@ body {
   .runway_concept_down {
     flex-direction: column;
     width: 100%;
-    gap: 1.2rem;
-  }
-  .runway_concept_wrap {
     gap: 1.2rem;
   }
   .runway_concept_down {
