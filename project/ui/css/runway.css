@@ -609,6 +609,7 @@ body {
   height: 40rem;
   border: 1px solid #454954;
 }
+
 .runway_concept_text_wrap {
   display: flex;
   flex-direction: column;
@@ -1178,10 +1179,13 @@ body {
     box-sizing: border-box;
   }
   .runway_concept_img {
-    width: 50%;
+    width: 90%;
   }
   .runway_concept_img img {
     width: 100%;
+  }
+  .runway_concept_down > div {
+    height: 28rem;
   }
   .runway_subject_title {
     font-size: 1.5rem;
@@ -1201,7 +1205,7 @@ body {
     min-width: 100%;
   }
   .section_heading {
-    font-size: 8vw;
+    font-size: 14vw;
     margin-bottom: 2rem;
   }
   .feature_concept_img {
