@@ -96,8 +96,11 @@
             </div>
             <div class="link_001_right">
               <div class="link_main_wrap">
-                <img src="images/link/link_main.svg" loading="lazy" alt="" />
+                <img src="images/link/link_main.png" loading="lazy" alt="" />
               </div>
+            </div>
+            <div class="gradient_bg">
+              <img src="images/link/link_001_bg.jpg" alt="" />
             </div>
           </div>
           <div class="link_marquee">
@@ -211,7 +214,13 @@
               </div>
               <div class="link_002_video_wrap">
                 <div class="link_002_video">
-                  <video autoplay="" loop="" muted="" playsinline="">
+                  <video
+                    autoplay=""
+                    loop=""
+                    muted=""
+                    playsinline=""
+                    class="link_observer"
+                  >
                     <source
                       src="images/link/link_overview.mp4"
                       type="video/mp4"
@@ -467,7 +476,13 @@
               </div>
             </div>
             <div class="link_006_video">
-              <video autoplay="" loop="" muted="" playsinline="">
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                playsinline=""
+                class="link_observer"
+              >
                 <source
                   src="images/link/pipeline_creation.mp4"
                   type="video/mp4"
@@ -556,7 +571,13 @@
             </div>
             <div class="link_cache_wrapper">
               <div class="link_cache_video">
-                <video autoplay="" loop="" muted="" playsinline="">
+                <video
+                  autoplay=""
+                  loop=""
+                  muted=""
+                  playsinline=""
+                  class="link_observer"
+                >
                   <source src="images/link/caching.mp4" type="video/mp4" />
                 </video>
               </div>
@@ -609,7 +630,13 @@
             </div>
             <div class="link_cache_wrapper">
               <div class="link_cache_video">
-                <video autoplay="" loop="" muted="" playsinline="">
+                <video
+                  autoplay=""
+                  loop=""
+                  muted=""
+                  playsinline=""
+                  class="link_observer"
+                >
                   <source src="images/link/hpo-multiple.mp4" type="video/mp4" />
                 </video>
               </div>
@@ -635,7 +662,13 @@
           <div class="link_git_wrap">
             <div class="link_git_left">
               <div class="link_git_video">
-                <video autoplay="" loop="" muted="" playsinline="">
+                <video
+                  autoplay=""
+                  loop=""
+                  muted=""
+                  playsinline=""
+                  class="link_observer"
+                >
                   <source src="images/link/git_diff.mp4" type="video/mp4" />
                 </video>
               </div>
@@ -702,7 +735,13 @@
           </div>
           <div class="link_010_wrap">
             <div class="link_git_video">
-              <video autoplay="" loop="" muted="" playsinline="">
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                playsinline=""
+                class="link_observer"
+              >
                 <source src="images/link/pipeline_color.mp4" type="video/mp4" />
               </video>
               <div class="link_010_text">
@@ -716,7 +755,13 @@
               </div>
             </div>
             <div class="link_git_video">
-              <video autoplay="" loop="" muted="" playsinline="">
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                playsinline=""
+                class="link_observer"
+              >
                 <source
                   src="images/link/pipeline_comment.mp4"
                   type="video/mp4"
@@ -733,7 +778,13 @@
               </div>
             </div>
             <div class="link_git_video">
-              <video autoplay="" loop="" muted="" playsinline="">
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                playsinline=""
+                class="link_observer"
+              >
                 <source src="images/link/summary.mp4" type="video/mp4" />
               </video>
               <div class="link_010_text">
@@ -756,7 +807,13 @@
           </div>
           <div class="link_011_wrap">
             <div class="darkmode_img">
-              <video autoplay="" loop="" muted="" playsinline="">
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                playsinline=""
+                class="link_observer"
+              >
                 <source src="images/link/dark_mode.mp4" type="video/mp4" />
               </video>
             </div>
@@ -869,7 +926,13 @@
         </section>
         <section class="link_014">
           <div class="link_014_video">
-            <video autoplay="" loop="" muted="" playsinline="">
+            <video
+              autoplay=""
+              loop=""
+              muted=""
+              playsinline=""
+              class="link_observer"
+            >
               <source src="images/link/logo_ani.mp4" type="video/mp4" />
             </video>
           </div>
@@ -878,7 +941,7 @@
               >data modeling with Link</span
             >
           </div>
-          <div class="thanks">thank you for watching</div>
+          <div class="thanks">Thank you for watching</div>
         </section>
       </section>
       <div class="blank_div right_blank"></div>
@@ -891,6 +954,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="js/link/link_swiper.js"></script>
+    <script src="js/link/linkObserver.js"></script>
     <script src="js/progressBar.js"></script>
     <script>
       $(window).on("load", function () {
@@ -898,13 +962,6 @@
         $(".blackblock").fadeOut(1000);
       });
     </script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
-    ></script>
-    <script>
-      const observer = lozad();
-      observer.observe();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   </body>
 </html>

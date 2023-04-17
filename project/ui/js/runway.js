@@ -59,7 +59,7 @@ const tl001 = gsap.timeline({
     pin: true,
     scrub: 1,
     start: "top top",
-    end: "+=2000",
+    end: "+=1200",
     toggleActions: "play pause play reset",
   },
 });

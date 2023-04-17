@@ -81,6 +81,13 @@ body {
   justify-content: space-between;
   height: 80vh;
 }
+.gradient_bg {
+  position: relative;
+  width: 100%;
+}
+.gradient_bg img {
+  height: 80vh;
+}
 .link001_desc {
   font-size: 2rem;
   width: 100%;
@@ -118,6 +125,10 @@ body {
     no-repeat;
 }
 .link_main_title_wrap {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,95 +147,31 @@ body {
 .link_main_title_wrap .main_title {
   font-family: "Space Mono", sans-serif;
   font-weight: 400;
-  font-size: 3vw;
-  line-height: 1.2;
+  font-size: 2vw;
+  line-height: 1.3;
 }
 .link_main_title_wrap .main_title span {
   font-weight: 700;
   color: var(--primary);
 }
 .link_001_right {
-  border-left: 1px solid var(--borderColor);
+  position: absolute;
+  top: 40%;
+  right: 8%;
+  transform: translate(0, -50%);
+  z-index: 100;
   width: 50%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 .link_main_wrap {
-  background: #edeef4;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   height: 100%;
-  background-image: linear-gradient(
-      90deg,
-      var(--pattern_1) 0px,
-      var(--pattern_1) 1px,
-      transparent 1px,
-      transparent 99px,
-      transparent 100px
-    ),
-    linear-gradient(
-      var(--pattern_1) 0px,
-      var(--pattern_1) 1px,
-      transparent 1px,
-      transparent 99px,
-      transparent 100px
-    ),
-    linear-gradient(
-      var(--pattern_2) 0px,
-      var(--pattern_2) 1px,
-      transparent 1px,
-      transparent 99px,
-      transparent 100px
-    ),
-    linear-gradient(
-      90deg,
-      var(--pattern_2) 0px,
-      var(--pattern_2) 1px,
-      transparent 1px,
-      transparent 99px,
-      transparent 100px
-    ),
-    linear-gradient(
-      transparent 0px,
-      transparent 5px,
-      var(--pattern_3) 5px,
-      var(--pattern_3) 95px,
-      transparent 95px,
-      transparent 100px
-    ),
-    linear-gradient(
-      90deg,
-      var(--pattern_2) 0px,
-      var(--pattern_2) 1px,
-      transparent 1px,
-      transparent 99px,
-      var(--pattern_2) 99px,
-      var(--pattern_2) 100px
-    ),
-    linear-gradient(
-      90deg,
-      transparent 0px,
-      transparent 5px,
-      var(--pattern_3) 5px,
-      var(--pattern_3) 95px,
-      transparent 95px,
-      transparent 100px
-    ),
-    linear-gradient(
-      transparent 0px,
-      transparent 1px,
-      var(--pattern_3) 1px,
-      var(--pattern_3) 99px,
-      transparent 99px,
-      transparent 100px
-    ),
-    linear-gradient(var(--pattern_1), var(--pattern_1));
-  background-size: 100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px,
-    100px 100%, 100px 100%, 100px 100px, 100px 100px;
 }
 .link_main_wrap img {
   width: 70%;
-  max-width: 48rem;
-  margin-bottom: 4vh;
 }
 .link_001_right_text {
   padding: 0 4rem;
@@ -1041,7 +988,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 6vh;
-    margin-top: 8px;
+    margin-top: 4px;
   }
   .link_header img {
     width: 20%;
@@ -1049,14 +996,18 @@ body {
   .link_001 {
     width: 100%;
     height: auto;
-    margin-top: calc(6vh + 8px);
+    margin-top: calc(6vh + 4px);
   }
   .link_001_right {
     width: 100%;
     border: none;
+    top: 34%;
+    left: 0;
   }
   .link_main_title_wrap {
+    bottom: 15%;
     gap: 0;
+    top: auto;
   }
   .link001_desc {
     font-size: 1.4rem;
@@ -1073,7 +1024,7 @@ body {
     box-sizing: border-box;
   }
   .link_main_title_wrap .main_title {
-    font-size: 12vw;
+    font-size: 6vw;
   }
   .link_001 .link_flex_wrap {
     height: auto;
@@ -1084,11 +1035,17 @@ body {
     height: 50vh;
     box-sizing: border-box;
     border: none;
-    border-top: 1px solid #232323;
   }
   .link_main_wrap img {
-    width: 70%;
+    width: 100%;
     margin: 0;
+  }
+  .gradient_bg {
+    height: 80vh;
+  }
+
+  .gradient_bg img {
+    height: 100%;
   }
   .marquee:before,
   .marquee:after {

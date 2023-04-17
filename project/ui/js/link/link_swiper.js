@@ -1,7 +1,6 @@
 var ww = $(window).width();
 var mySwiper = undefined;
 const protoPc = document.querySelector(".proto_pc");
-console.log(protoPc);
 function initSwiper() {
   if (ww < 600 && mySwiper == undefined) {
     protoPc.innerHTML = "<img src='images/link/proto_2.png' alt='' />";
