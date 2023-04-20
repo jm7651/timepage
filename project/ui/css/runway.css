@@ -6,7 +6,6 @@
   --gray-300: #abafba;
   --gray-500: #737a8c;
   --gray-700: #454954;
-  --vh: 100%;
 }
 .primary_font {
   background: linear-gradient(270deg, #f754d6, #607ae1, #944af2);
@@ -175,7 +174,7 @@ body {
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 2rem;
   min-width: 60rem;
 }
 .runwaypage_main_title_wrapper {
@@ -959,15 +958,15 @@ body {
   }
   .runwaypage_002 {
     width: 100%;
+    height: calc(var(--vh) * 100);
     padding: 8rem 2rem;
-    height: auto;
     box-sizing: border-box;
     flex-direction: column;
     gap: 2rem;
     justify-content: flex-start;
   }
   .runwaypage_002_img {
-    width: 60%;
+    width: 100%;
   }
   .runway_pin_text_wrapper > p {
     font-size: 3.2rem;
@@ -1122,7 +1121,7 @@ body {
   }
   /*  */
   .runwaypage_001 {
-    height: 100vh;
+    height: calc(var(--vh) * 100);
   }
 
   .runway_pin_text_wrapper {
@@ -1145,7 +1144,7 @@ body {
     margin: 0;
     padding: 0 1.6rem;
     width: 100%;
-    gap: 4rem;
+    gap: 7%;
     box-sizing: border-box;
     flex-direction: column-reverse;
     justify-content: center;
