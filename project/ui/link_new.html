@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="css/progressbar.css" />
     <title>Link</title>
   </head>
-  <body class="no-scroll">
-    <div class="blackblock linkblock"><div class="loader"></div></div>
+  <body>
     <div class="progrss_header">
       <div class="progress-container">
         <div class="progress-bar link_progressbar"></div>
@@ -946,7 +945,6 @@
       </section>
       <div class="blank_div right_blank"></div>
     </section>
-
     <script src="js/link/link_marquee.js"></script>
     <script src="../../js/vh.js"></script>
     <script src="js/summary_modal.js"></script>
@@ -956,12 +954,5 @@
     <script src="js/link/link_swiper.js"></script>
     <script src="js/link/linkObserver.js"></script>
     <script src="js/progressBar.js"></script>
-    <script>
-      $(window).on("load", function () {
-        document.body.classList.remove("no-scroll");
-        $(".blackblock").fadeOut(1000);
-      });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
   </body>
 </html>
