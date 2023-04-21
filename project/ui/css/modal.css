@@ -112,9 +112,24 @@
   width: 30vw;
   height: 30vw;
 }
+.summary_modal {
+  font-size: 1.4rem;
+}
+.modal_sub_title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+.blocker,
+.answer {
+  margin-top: 3.2em;
+  color: #a6a6b1;
+  line-height: 1.3;
+}
 @media screen and (max-width: 450px) {
   .modal_window {
     width: 90vw;
+    box-sizing: border-box;
     overflow: auto;
   }
   .youtube_modal .md_content {
