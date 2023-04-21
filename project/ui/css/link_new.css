@@ -1414,4 +1414,10 @@ body {
     min-height: auto;
     height: 100vh;
   }
+  .link_main_wrap img {
+    width: 100%;
+  }
+  .link_001 .summary_button {
+    width: 100%;
+  }
 }

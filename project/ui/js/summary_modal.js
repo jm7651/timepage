@@ -3,7 +3,7 @@ const btnModal = document.querySelector(".summary_button");
 // const modalClose = window.parent.document.querySelector(".modal_close");
 const summaryClose = document.querySelector(".summary_close");
 btnModal.addEventListener("click", (e) => {
-  console.log(modal);
+  console.log("hi");
   summaryModal.style.display = "flex";
   document.body.classList.add("stop-scroll");
   // modalClose.style.display = "none";
