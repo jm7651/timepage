@@ -32,7 +32,23 @@
     <link rel="stylesheet" href="css/progressbar.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
-  <body>
+  <body class="no-scroll">
+    <div class="blackblock indexblock">
+      <script
+        src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+        type="module"
+      ></script>
+      <div class="runway_lottie">
+        <dotlottie-player
+          src="https://lottie.host/25c2c9ed-3eb2-4ada-af40-98b42502da39/17zMXZXesC.json"
+          background="transparent"
+          speed="1"
+          style="width: 600px; height: 600px"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
+    </div>
     <div class="progrss_header">
       <div class="progress-container">
         <div class="progress-bar runway_progressbar"></div>
@@ -50,29 +66,6 @@
     </nav>
     <section class="runwaypage_001" id="section_001">
       <div class="runwaypage_wrapper">
-        <div class="runwaypage_text_wrapper">
-          <div class="runwaypage_main_title_wrapper">
-            <div class="runwaypage_subtext">The MLOps platform to</div>
-            <div class="runwaypage_maintext">
-              <div>Let your</div>
-              <div>AI run</div>
-            </div>
-          </div>
-          <!-- <p
-            class="runwaypage_m_desc"
-            id="runwaypage001_desc"
-            data-lang="runwaypage001_desc"
-          >
-            An all-in-one ML platform that provides an interactive ML
-            development environment based on Jupyter, intuitive model deployment
-            and operation, and lets users focus on what they do best
-          </p> -->
-          <div class="runwaypage_button_group">
-            <button class="get started_button summary_button" id="demoButton">
-              <p>디자인 요약</p>
-            </button>
-          </div>
-        </div>
         <div class="runwaypage_mainimg">
           <video
             class="link_video"
@@ -94,20 +87,33 @@
             />
           </video>
         </div>
-        <div class="scroll-downs">
-          <div class="mousey">
-            <div class="scroller"></div>
+        <div class="runwaypage_text_wrapper">
+          <div class="runwaypage_main_title_wrapper">
+            <!-- <div class="runwaypage_subtext">The MLOps platform to</div> -->
+            <div class="runwaypage_maintext">
+              <div>Let your</div>
+              <div>AI run</div>
+            </div>
           </div>
+          <!-- <p
+            class="runwaypage_m_desc"
+            id="runwaypage001_desc"
+            data-lang="runwaypage001_desc"
+          >
+            An all-in-one ML platform that provides an interactive ML
+            development environment based on Jupyter, intuitive model deployment
+            and operation, and lets users focus on what they do best
+          </p> -->
+          <!-- <div class="runwaypage_button_group">
+            <button class="get started_button summary_button" id="demoButton">
+              <p>디자인 요약</p>
+            </button>
+          </div> -->
         </div>
         <!-- <div class="runwaypage_mainimg">
           <img src="images/runway/runwaypage_001.png" alt="" />
         </div> -->
       </div>
-      <!-- <div class="circle_wrapper">
-        <div class="runway_circle circle001"></div>
-        <div class="runway_circle circle002"></div>
-        <div class="runway_circle circle003"></div>
-      </div> -->
       <div class="gradient_bg">
         <img src="images/runway/gradient_pc_bg.jpg" alt="" />
         <img src="images/runway/gradient_mobile_bg.jpg" alt="" />
@@ -126,11 +132,10 @@
         </video>
       </div>
       <div class="runway_pin_text_wrapper">
-        <p class="pin_001">AI 모델 개발부터 배포까지 가장 합리적인 방식으로</p>
-        <p class="pin_002">
-          가장 합리적인 방식으로 머신러닝 운영환경을 구축합니다
-        </p>
-        <p class="pin_003">Runway와 함께 AI의 가치를 쉽고 빠르게 실현하세요</p>
+        <p class="pin_001">노코드 / 프로코드 개발부터</p>
+        <p class="pin_002">자동화된 운영 환경까지</p>
+        <p class="pin_003">데이터로 AI 가치를 실현하는</p>
+        <p class="pin_004">가장 쉽고 빠른 플랫폼입니다</p>
         <button id="runway_youtube_open" class="pin_006">
           <img src="images/runway/youtube_icon.svg" alt="" />
           <p id="youtubeView" data-lang="youtubeView">
@@ -138,6 +143,14 @@
           </p>
         </button>
       </div>
+    </section>
+    <section class="runway_003_video">
+      <div class="section_heading">
+        All values in a <span class="primary_font">single platform</span>
+      </div>
+      <video class="" autoplay="" loop="" muted="" playsinline="">
+        <source src="images/runway/runwaypage003.mp4" type="video/mp4" />
+      </video>
     </section>
     <!-- <section class="runway_003">
       <div>
@@ -256,7 +269,7 @@
         <div class="runway_concept_down">
           <div class="runway_concept_left">
             <div class="runway_concept_img">
-              <img src="images/runway/concept_003.svg" alt="" />
+              <img src="images/runway/devops-cycle-2.gif" alt="" />
             </div>
             <div class="runway_concept_text_wrap">
               <div class="runway_concept_title">자동 재학습을 지원합니다</div>
@@ -668,7 +681,7 @@
     <section class="runway_feature_container feature_006">
       <div class="runway_feature_title single_title_wrap">
         <div class="runway_feature_number">08</div>
-        <div class="runway_feature_subject">Stream</div>
+        <div class="runway_feature_subject">Deployments</div>
       </div>
       <div class="runway_feature_wrap">
         <div
@@ -857,6 +870,12 @@
       window.onpopstate = function () {
         history.go(1);
       };
+    </script>
+    <script>
+      $(window).on("load", function () {
+        document.body.classList.remove("no-scroll");
+        $(".blackblock").fadeOut(1000);
+      });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
