@@ -1,6 +1,6 @@
 function MySliderBox2__init() {
   let swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1.3, //640~1024 해상도 외 레이아웃 뷰 개수
+    slidesPerView: 1.5, //640~1024 해상도 외 레이아웃 뷰 개수
     spaceBetween: 20,
     pagination: {
       el: ".swiper-pagination",

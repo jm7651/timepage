@@ -8,7 +8,7 @@ const updateBackgroundLayout = function () {
 };
 
 const mq = window.matchMedia("(max-width: 1000px)");
-mq.addListener(updateBackgroundLayout);
+mq.addEventListener(updateBackgroundLayout);
 updateBackgroundLayout();
 
 // const runwayVideo002 = document.querySelector(".runway_002_video");
