@@ -349,17 +349,16 @@ body {
 }
 .runway_pin_text_wrapper {
   margin-top: 4rem;
+  font-size: 2.6vw;
   width: fit-content;
   text-align: center;
-}
-.runway_pin_text_wrapper > p {
-  font-size: 2.6vw;
+  color: var(--gray-700);
   font-weight: 600;
   line-height: 130%;
   letter-spacing: -0.01em;
-  box-sizing: border-box;
   text-align: left;
-  opacity: 0.5;
+}
+.list-item#on {
   color: var(--gray-100);
 }
 .pin_006 {
@@ -469,11 +468,11 @@ body {
 }
 .runway_004 .swiper {
   max-width: 120rem;
-  min-height: 70vh;
   color: #ced1d5;
   text-align: left;
   display: flex;
   align-items: center;
+  margin-top: 8rem;
 }
 .persona_002 {
   margin-top: 8rem;
@@ -1116,14 +1115,11 @@ body {
     width: 100%;
   }
   /*  */
-  .runwaypage_001,
-  .runway_003_video {
-    height: calc(var(--vh) * 100);
-  }
 
   .runway_pin_text_wrapper {
     padding: 0 1.6rem;
     margin: 0;
+    font-size: 2.4rem;
   }
   .runway_pin_text_wrapper > p {
     font-size: 7vw;
@@ -1197,7 +1193,7 @@ body {
   }
   .runway_004 {
     width: 100%;
-    padding: 8rem 1.6rem 0;
+    padding: 16rem 1.6rem 0;
     box-sizing: border-box;
   }
   .runway_004 .swiper {

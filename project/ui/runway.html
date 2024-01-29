@@ -126,18 +126,18 @@
           <source src="images/runway/runwaypage002.mp4" type="video/mp4" />
         </video>
       </div>
-      <div class="runway_pin_text_wrapper">
-        <p class="pin_001">노코드 / 프로코드 개발부터</p>
-        <p class="pin_002">자동화된 운영 환경까지</p>
-        <p class="pin_003">데이터로 AI 가치를 실현하는</p>
-        <p class="pin_004">가장 쉽고 빠른 플랫폼입니다</p>
+      <ul class="runway_pin_text_wrapper">
+        <li class="list-item">노코드 / 프로코드 개발부터</li>
+        <li class="list-item">자동화된 운영 환경까지</li>
+        <li class="list-item">데이터로 AI 가치를 실현하는</li>
+        <li class="list-item">가장 쉽고 빠른 플랫폼입니다</li>
         <button id="runway_youtube_open" class="pin_006">
           <img src="images/runway/youtube_icon.svg" alt="" />
           <p id="youtubeView" data-lang="youtubeView">
             Watch introduction video
           </p>
         </button>
-      </div>
+      </ul>
     </section>
     <section class="runway_003_video">
       <div class="section_heading">
@@ -861,6 +861,40 @@
       </div>
     </div>
     <script>
+      const textWrapperTop = document.querySelector(
+        ".runway_pin_text_wrapper"
+      ).offsetTop;
+      const windowHeight = innerHeight;
+      const textWrapperHeight = document.querySelector(
+        ".runway_pin_text_wrapper"
+      ).offsetHeight;
+      const textWrapperHeightHarf = textWrapperHeight / 2;
+      console.log(windowHeight);
+      console.log(textWrapperTop);
+      console.log(textWrapperHeight);
+      console.log(textWrapperHeightHarf);
+      const listStyleChangeStartY = windowHeight - textWrapperHeight;
+      const listStyleChangeEndY = textWrapperTop + textWrapperHeightHarf;
+      console.log(listStyleChangeStartY);
+      console.log(listStyleChangeEndY);
+      const listItems = document.querySelectorAll(".list-item");
+      const division =
+        (listStyleChangeEndY - listStyleChangeStartY) / listItems.length;
+      window.addEventListener("scroll", () => {
+        if (document.getElementById("on"))
+          document.getElementById("on").removeAttribute("id");
+        if (
+          window.scrollY > listStyleChangeStartY &&
+          window.scrollY < listStyleChangeEndY
+        ) {
+          const targetIndex = Math.round(
+            (window.scrollY - listStyleChangeStartY) / division
+          );
+          if (listItems[targetIndex]) listItems[targetIndex].id = "on";
+        }
+      });
+    </script>
+    <script>
       history.pushState(null, null, location.href);
       window.onpopstate = function () {
         history.go(1);
@@ -872,7 +906,7 @@
         $(".blackblock").fadeOut(1000);
       });
     </script>
-    <script src="js/runway.js"></script>
+    <!-- <script src="js/runway.js"></script> -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/runway_swiper.js"></script>
