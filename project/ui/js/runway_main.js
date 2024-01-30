@@ -1,3 +1,19 @@
+// HTML에서 이미지 태그의 id가 "myImage"인 이미지를 참조합니다.
+var image = document.querySelector(".gradient_bg");
+
+// 모바일 디바이스인지 여부를 확인합니다.
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  // 모바일 환경에서 이미지를 변경합니다.
+  image.classList.add("mobile"); // 새로운 이미지의 경로를 지정합니다.
+} else {
+  // 모바일이 아닌 환경에서 이미지를 변경합니다.
+  image.classList.remove("mobile"); // 기존 이미지의 경로를 지정합니다.
+}
+
 // const updateBackgroundLayout = function () {
 //   const gradientBg = document.querySelector(".gradient_bg");
 //   if (window.innerWidth < 1000) {
@@ -6,6 +22,7 @@
 //     gradientBg.classList.remove("mobile");
 //   }
 // };
+// console.log(window.innerWidth);
 
 // const mq = window.matchMedia("(max-width: 1000px)");
 // mq.addEventListener(updateBackgroundLayout);
@@ -44,10 +61,8 @@ const runwayvideo001player = new IntersectionObserver(
       if (entry.isIntersecting) {
         // 2. 옵저버 객체의 unobserve 메서드로 요소의 감지를 해제합니다!
         entry.target.play();
-        console.log("play");
       } else {
         entry.target.pause();
-        console.log("stop");
       }
     });
   },

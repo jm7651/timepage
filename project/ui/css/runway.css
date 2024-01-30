@@ -1206,6 +1206,7 @@ body {
     gap: 0;
     font-size: 24vw;
     justify-content: left;
+    line-height: 110%;
   }
   .runwaypage_m_desc {
     width: 100%;
