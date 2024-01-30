@@ -1,15 +1,15 @@
-const updateBackgroundLayout = function () {
-  const gradientBg = document.querySelector(".gradient_bg");
-  if (window.innerWidth < 1000) {
-    gradientBg.classList.add("mobile");
-  } else {
-    gradientBg.classList.remove("mobile");
-  }
-};
+// const updateBackgroundLayout = function () {
+//   const gradientBg = document.querySelector(".gradient_bg");
+//   if (window.innerWidth < 1000) {
+//     gradientBg.classList.add("mobile");
+//   } else {
+//     gradientBg.classList.remove("mobile");
+//   }
+// };
 
-const mq = window.matchMedia("(max-width: 1000px)");
-mq.addEventListener(updateBackgroundLayout);
-updateBackgroundLayout();
+// const mq = window.matchMedia("(max-width: 1000px)");
+// mq.addEventListener(updateBackgroundLayout);
+// updateBackgroundLayout();
 
 // const runwayVideo002 = document.querySelector(".runway_002_video");
 // console.log(runwayVideo002);
@@ -34,6 +34,7 @@ updateBackgroundLayout();
 
 const linkVideo = document.querySelector(".link_video");
 const runwayVideo = document.querySelector(".runway_video");
+const runway3Video = document.querySelector(".runway_003_video video");
 const runwayvideo001player = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -43,14 +44,18 @@ const runwayvideo001player = new IntersectionObserver(
       if (entry.isIntersecting) {
         // 2. 옵저버 객체의 unobserve 메서드로 요소의 감지를 해제합니다!
         entry.target.play();
+        console.log("play");
       } else {
         entry.target.pause();
+        console.log("stop");
       }
     });
   },
   { threshold: 0.5 }
 );
+
 runwayvideo001player.observe(linkVideo);
+runwayvideo001player.observe(runway3Video);
 function video_start() {
   linkVideo.play();
   runwayVideo.pause();
