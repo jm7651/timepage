@@ -642,6 +642,7 @@ body {
   width: 140rem;
   margin: 0 auto;
   margin-top: 12rem;
+  gap: 2rem;
 }
 .feature_001 .runway_subject_title {
   color: #fff;
