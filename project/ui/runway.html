@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
+    <link rel="preload" href="image.jpg" as="image" />
     <link rel="stylesheet" href="css/runway.css" />
     <link
       rel="stylesheet"
@@ -26,13 +27,13 @@
     <link rel="stylesheet" href="css/loading.css" />
     <link rel="stylesheet" href="css/progressbar.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </head>
   <body class="no-scroll">
     <div class="blackblock indexblock">
-      <script
-        src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-        type="module"
-      ></script>
       <div class="runway_lottie">
         <dotlottie-player
           src="https://lottie.host/25c2c9ed-3eb2-4ada-af40-98b42502da39/17zMXZXesC.json"
@@ -63,23 +64,25 @@
       <div class="runwaypage_wrapper">
         <div class="runwaypage_mainimg">
           <video
-            class="link_video"
-            muted=""
-            playsinline=""
-            poster="images/runway/link_video_img.jpg"
-          >
-            <source src="images/runway/main-video-link.mp4" type="video/mp4" />
-          </video>
-          <video
             class="runway_video"
             muted=""
             playsinline=""
             poster="images/runway/runway_video_img.jpg"
+            loading="lazy"
           >
             <source
               src="images/runway/main-video-runway.mp4"
               type="video/mp4"
             />
+          </video>
+          <video
+            class="link_video"
+            muted=""
+            playsinline=""
+            poster="images/runway/link_video_img.jpg"
+            loading="lazy"
+          >
+            <source src="images/runway/main-video-link.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="runwaypage_text_wrapper">
@@ -111,7 +114,17 @@
       </div>
       <div class="gradient_bg">
         <img src="images/runway/gradient_pc_bg.jpg" alt="" />
-        <img src="images/runway/gradient_mobile_bg.jpg" alt="" />
+        <!-- <img src="images/runway/gradient_mobile_bg.jpg" alt="" /> -->
+        <video
+          class="gradient_bg_m_video"
+          muted=""
+          playsinline=""
+          loading="lazy"
+          autoplay=""
+          loop=""
+        >
+          <source src="images/runway/gradient_mobile_bg.mp4" type="video/mp4" />
+        </video>
       </div>
     </section>
     <section class="runwaypage_002" id="section_002">
@@ -122,6 +135,7 @@
           loop=""
           muted=""
           playsinline=""
+          loading="lazy"
         >
           <source src="images/runway/runwaypage002.mp4" type="video/mp4" />
         </video>
@@ -132,7 +146,7 @@
         <li class="list-item">Realizing AI value through data</li>
         <li class="list-item">on the easiest and fastest platform</li>
         <button id="runway_youtube_open" class="pin_006">
-          <img src="images/runway/youtube_icon.svg" alt="" />
+          <img src="images/runway/youtube_icon.svg" alt="" loading="lazy" />
           <p id="youtubeView" data-lang="youtubeView">
             Watch introduction video
           </p>
@@ -143,7 +157,14 @@
       <div class="section_heading">
         All values in a <span class="primary_font">single platform</span>
       </div>
-      <video class="" autoplay="" loop="" muted="" playsinline="">
+      <video
+        class=""
+        autoplay=""
+        loop=""
+        muted=""
+        playsinline=""
+        loading="lazy"
+      >
         <source src="images/runway/runwaypage003.mp4" type="video/mp4" />
       </video>
     </section>
@@ -217,22 +238,22 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide persona_001">
             <div class="cueat005_001_img">
-              <img src="images/runway/persona_001.svg" alt="" />
+              <img src="images/runway/persona_001.svg" alt="" loading="lazy" />
             </div>
           </div>
           <div class="swiper-slide persona_002">
             <div class="cueat005_002_img">
-              <img src="images/runway/persona_002.svg" alt="" />
+              <img src="images/runway/persona_002.svg" alt="" loading="lazy" />
             </div>
           </div>
           <div class="swiper-slide persona_003">
             <div class="cueat005_003_img">
-              <img src="images/runway/persona_003.svg" alt="" />
+              <img src="images/runway/persona_003.svg" alt="" loading="lazy" />
             </div>
           </div>
           <div class="swiper-slide persona_004">
             <div class="cueat005_003_img">
-              <img src="images/runway/persona_004.svg" alt="" />
+              <img src="images/runway/persona_004.svg" alt="" loading="lazy" />
             </div>
           </div>
         </div>
@@ -253,6 +274,7 @@
                 class="concept_001"
                 src="images/runway/concept_001.svg"
                 alt=""
+                loading="lazy"
               />
             </div>
             <div class="runway_concept_text_wrap">
@@ -271,6 +293,7 @@
                 class="devops"
                 src="images/runway/devops-cycle-2.gif"
                 alt=""
+                loading="lazy"
               />
             </div>
             <div class="runway_concept_text_wrap">
@@ -281,7 +304,7 @@
           </div>
           <div class="runway_concept_right">
             <div class="runway_concept_img">
-              <img src="images/runway/concept_004.svg" alt="" />
+              <img src="images/runway/concept_004.svg" alt="" loading="lazy" />
             </div>
             <div class="runway_concept_text_wrap">
               <div class="runway_concept_title">
@@ -497,7 +520,7 @@
             being unfamiliar with the experience of existing MLOps products.
           </p>
           <div class="runway_feature_img project_main_img">
-            <img src="images/runway/feature_001.png" alt="" />
+            <img src="images/runway/feature_001.png" alt="" loading="lazy" />
           </div>
         </div>
         <div class="project_right">
@@ -507,7 +530,7 @@
             data-aos-duration="1000"
           >
             <div class="runway_feature_img">
-              <img src="images/runway/feature_002.png" alt="" />
+              <img src="images/runway/feature_002.png" alt="" loading="lazy" />
             </div>
             <p>Empty page</p>
           </div>
@@ -517,7 +540,11 @@
             data-aos-duration="1000"
           >
             <div class="runway_feature_img">
-              <img src="images/runway/feature_002_1.png" alt="" />
+              <img
+                src="images/runway/feature_002_1.png"
+                alt=""
+                loading="lazy"
+              />
             </div>
             <p>
               You can click on a project that you do not belong to and apply for
@@ -809,7 +836,7 @@
           </div>
         </div>
         <div class="quick_banner_card_wrapper">
-          <img src="images/runway/quick_banner.jpg" alt="" />
+          <img src="images/runway/quick_banner.jpg" alt="" loading="lazy" />
           <div class="banner_main_title_wrapper">
             <div class="banner_subtext">The MLOps platform to</div>
             <div class="banner_maintext">
@@ -884,48 +911,6 @@
         <button class="modal_close">X</button>
       </div>
     </div>
-    <script>
-      const textWrapperTop = document.querySelector(
-        ".runway_pin_text_wrapper"
-      ).offsetTop;
-      const windowHeight = innerHeight;
-      const textWrapperHeight = document.querySelector(
-        ".runway_pin_text_wrapper"
-      ).offsetHeight;
-      const textWrapperHeightHarf = textWrapperHeight / 2;
-
-      const listStyleChangeStartY = windowHeight - textWrapperHeight;
-      const listStyleChangeEndY = textWrapperTop + textWrapperHeightHarf;
-
-      const listItems = document.querySelectorAll(".list-item");
-      const division =
-        (listStyleChangeEndY - listStyleChangeStartY) / listItems.length;
-      window.addEventListener("scroll", () => {
-        if (document.getElementById("on"))
-          document.getElementById("on").removeAttribute("id");
-        if (
-          window.scrollY > listStyleChangeStartY &&
-          window.scrollY < listStyleChangeEndY
-        ) {
-          const targetIndex = Math.round(
-            (window.scrollY - listStyleChangeStartY) / division
-          );
-          if (listItems[targetIndex]) listItems[targetIndex].id = "on";
-        }
-      });
-    </script>
-    <script>
-      history.pushState(null, null, location.href);
-      window.onpopstate = function () {
-        history.go(1);
-      };
-    </script>
-    <script>
-      $(window).on("load", function () {
-        document.body.classList.remove("no-scroll");
-        $(".blackblock").fadeOut(1000);
-      });
-    </script>
     <!-- <script src="js/runway.js"></script> -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

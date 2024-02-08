@@ -166,3 +166,62 @@ closeButton.addEventListener("click", closeModal);
 for (let i = 0; i < overlay.length; i++) {
   overlay[i].addEventListener("click", closeModal);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var parallaxText = document.querySelector(".runwaypage_maintext");
+  window.addEventListener("scroll", function () {
+    var scrollPos = window.pageYOffset;
+    if (window.innerWidth > 451) {
+      parallaxText.style.transform = "translate(0, -" + scrollPos / 1.2 + "px)";
+    } else {
+      parallaxText.style.transform = "translate(0, -" + scrollPos / 3.5 + "px)";
+    }
+  });
+});
+const textWrapperTop = document.querySelector(
+  ".runway_pin_text_wrapper"
+).offsetTop;
+const windowHeight = innerHeight;
+const textWrapperHeight = document.querySelector(
+  ".runway_pin_text_wrapper"
+).offsetHeight;
+const textWrapperHeightHarf = textWrapperHeight / 2;
+
+const listStyleChangeStartY = windowHeight - textWrapperHeight;
+const listStyleChangeEndY = textWrapperTop + textWrapperHeightHarf;
+
+const listItems = document.querySelectorAll(".list-item");
+const division =
+  (listStyleChangeEndY - listStyleChangeStartY) / listItems.length;
+window.addEventListener("scroll", () => {
+  if (document.getElementById("on"))
+    document.getElementById("on").removeAttribute("id");
+  if (
+    window.scrollY > listStyleChangeStartY &&
+    window.scrollY < listStyleChangeEndY
+  ) {
+    const targetIndex = Math.round(
+      (window.scrollY - listStyleChangeStartY) / division
+    );
+    if (listItems[targetIndex]) listItems[targetIndex].id = "on";
+  }
+});
+
+//히스토리
+history.pushState(null, null, location.href);
+window.onpopstate = function () {
+  history.go(1);
+};
+
+//로딩
+window.addEventListener("load", function () {
+  document.body.classList.remove("no-scroll");
+  var blackblock = document.querySelector(".blackblock");
+  if (blackblock) {
+    blackblock.style.transition = "opacity 1s";
+    blackblock.style.opacity = "0";
+    setTimeout(function () {
+      blackblock.style.display = "none";
+    }, 1000);
+  }
+});

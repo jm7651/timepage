@@ -983,6 +983,9 @@ body {
   .link_video {
     width: 40vw;
   }
+  .gradient_bg_m_video {
+    width: 100%;
+  }
   .runwaypage_002 {
     width: 100%;
     height: auto;
