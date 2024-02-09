@@ -466,7 +466,7 @@ body {
   justify-content: center;
 }
 .runway_004 .swiper {
-  max-width: 70%;
+  max-width: 80%;
   color: #ced1d5;
   text-align: left;
   display: flex;
@@ -1028,7 +1028,7 @@ body {
     width: 100%;
     max-width: 100%;
     min-height: auto;
-    padding: 4rem 1.6rem;
+    padding: 2rem 0rem;
     box-sizing: border-box;
   }
   .concept_title_001 {
@@ -1155,9 +1155,8 @@ body {
   /*  */
 
   .runway_pin_text_wrapper {
-    padding: 0 1.6rem;
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .runway_pin_text_wrapper > p {
     font-size: 7vw;
@@ -1249,11 +1248,13 @@ body {
   }
   .runway_004 {
     width: 100%;
-    padding: 16rem 1.6rem 0;
+    padding: 16rem 0rem 0;
     box-sizing: border-box;
+    height: 80vh;
   }
   .runway_004 .swiper {
     margin-top: 0;
+    padding-left: 1.6rem;
   }
   .persona_wrap {
     flex-direction: column;
@@ -1277,6 +1278,16 @@ body {
     text-align: left;
     width: 100%;
     margin: 1.2rem auto;
+    box-sizing: border-box;
+  }
+  .runway_004 .runway_subject_text {
+    font-size: 1.4rem;
+    word-break: keep-all;
+    text-align: left;
+    width: 100%;
+    margin: 1.2rem auto;
+    padding: 0 1.6rem;
+    box-sizing: border-box;
   }
   .runway_concept {
     padding: 8rem 1.6rem;

@@ -1,3 +1,5 @@
+AOS.init();
+
 // HTML에서 이미지 태그의 id가 "myImage"인 이미지를 참조합니다.
 var image = document.querySelector(".gradient_bg");
 
