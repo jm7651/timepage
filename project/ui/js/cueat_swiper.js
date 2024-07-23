@@ -78,3 +78,22 @@ function MySliderBox3__init() {
   });
 }
 MySliderBox3__init();
+
+function resizeSection() {
+  var section = document.getElementById("responsiveSection");
+  var initialWidth = window.innerWidth;
+  var initialHeight = window.innerHeight;
+  var aspectRatio = initialHeight / initialWidth;
+
+  function adjustSize() {
+    var newWidth = window.innerWidth;
+    var newHeight = newWidth * aspectRatio;
+    section.style.width = newWidth + "px";
+    section.style.height = newHeight + "px";
+  }
+
+  window.addEventListener("resize", adjustSize);
+  adjustSize();
+}
+
+window.addEventListener("load", resizeSection);
