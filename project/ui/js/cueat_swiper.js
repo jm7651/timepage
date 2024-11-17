@@ -1,3 +1,15 @@
+window.addEventListener("load", function () {
+  document.body.classList.remove("no-scroll");
+
+  var blackBlock = document.querySelector(".blackblock");
+  if (blackBlock) {
+    blackBlock.style.transition = "opacity 1s";
+    blackBlock.style.opacity = 0;
+    setTimeout(function () {
+      blackBlock.style.display = "none";
+    }, 1000);
+  }
+});
 function MySliderBox1__init() {
   let swiper = new Swiper(".my-slider-box-1", {
     slidesPerView: 1, //640~1024 해상도 외 레이아웃 뷰 개수
@@ -80,7 +92,7 @@ function MySliderBox3__init() {
 MySliderBox3__init();
 
 function resizeSection() {
-  var section = document.getElementById("responsiveSection");
+  var sections = document.querySelectorAll(".responsive_section");
   var initialWidth = window.innerWidth;
   var initialHeight = window.innerHeight;
   var aspectRatio = initialHeight / initialWidth;
@@ -88,8 +100,11 @@ function resizeSection() {
   function adjustSize() {
     var newWidth = window.innerWidth;
     var newHeight = newWidth * aspectRatio;
-    section.style.width = newWidth + "px";
-    section.style.height = newHeight + "px";
+
+    sections.forEach(function (section) {
+      section.style.width = newWidth + "px";
+      section.style.height = newHeight + "px";
+    });
   }
 
   window.addEventListener("resize", adjustSize);
