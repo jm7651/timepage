@@ -206,6 +206,7 @@ body {
   line-height: 130%;
   gap: 8px;
   font-weight: 700;
+  mix-blend-mode: exclusion;
 }
 .runwaypage_m_desc {
   font-size: 2rem;
@@ -242,7 +243,6 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  filter: brightness(1.2);
 }
 .runwaypage_mainimg img {
   width: 100%;
@@ -253,7 +253,7 @@ body {
   right: -6vw;
   top: -4vw;
   position: absolute;
-  border-radius: 0.4vw;
+  border-radius: 24px;
   box-shadow: -5px 5px 100px rgba(0, 0, 0, 0.8);
   z-index: 2;
 }
@@ -263,7 +263,7 @@ body {
   top: 2vh;
   width: 35vw;
   margin-top: 4rem;
-  border-radius: 8px;
+  border-radius: 24px;
 }
 @keyframes scroll {
   0% {
@@ -642,7 +642,7 @@ body {
   width: 140rem;
   margin: 0 auto;
   margin-top: 12rem;
-  gap: 2rem;
+  gap: 6rem;
 }
 .feature_001 .runway_subject_title {
   color: #fff;
@@ -666,6 +666,8 @@ body {
   gap: 1.2rem;
   width: 100%;
 }
+.feature_005 .runway_feature_left{width: 50%;}
+
 .project_wrap_img {
   width: 70%;
 }
@@ -681,10 +683,13 @@ body {
   opacity: 0.5;
 }
 .runway_feature_subject {
-  font-size: 4rem;
+  font-size: 2.4rem;
   font-weight: 600;
   line-height: 130%;
   color: #fff;
+}
+.runway_feature_subject span{
+  font-weight:300;
 }
 .runway_feature_img {
   width: 100%;
@@ -698,9 +703,10 @@ body {
 .project_main_desc {
   width: 80rem;
   color: #fff;
-  opacity: 0.6;
+  opacity: 0.7;
   font-size: 1.6rem;
   line-height: 130%;
+  font-weight: 300;
 }
 .runway_feature_wrap p {
   color: #fff;
@@ -748,9 +754,9 @@ body {
 .design_system_text {
   font-size: 2rem;
   font-weight: 500;
-  color: #fff;
+  color: #282C34;
   width: 140rem;
-  opacity: 0.6 !important;
+  opacity: 0.7 !important;
   margin: 0 auto;
 }
 .runway_summary_close {
@@ -797,7 +803,7 @@ body {
   font-weight: 700;
   color: var(--gray-100);
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 20rem;
 }
 .feature_concept_img {
   text-align: center;
@@ -908,7 +914,7 @@ body {
   z-index: 10;
 }
 .runwaypage_003_flex {
-  color: #fff;
+  color: #282C34;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -954,6 +960,9 @@ body {
 .banner_maintext > div:nth-child(1) {
   font-weight: 300;
 }
+.runway_feature_subject.bk_text{color:#222}
+.feature_009 .runway_feature_right{gap:8rem}
+.feature_007 .runway_feature_wrap{margin-top:4rem}
 @media screen and (max-width: 1000px) {
   .runwaypage_wrapper {
     padding-top: 0;
@@ -1166,7 +1175,7 @@ body {
   .runway_project_wrap {
     width: auto;
     flex-direction: column;
-    padding: 0 1.6rem;
+    padding: 0 2.4rem;
   }
   .project_main_desc {
     width: 100%;
@@ -1399,6 +1408,11 @@ body {
     flex-direction: column;
     width: 100%;
   }
+  .feature_005 .runway_feature_left{width: 100%;}
+  .right_arrow{transform: rotate(0deg);
+    display: flex;
+    justify-content: center;
+}
   .feature_ico_text {
     margin-top: 1.2rem;
     font-size: 1.4rem;
@@ -1470,6 +1484,7 @@ body {
   }
   .runway_feature_left,
   .runway_feature_right {
+    gap:4rem;
   }
   .dataset_right,
   .pipeline_right,
@@ -1496,6 +1511,7 @@ body {
   }
   .runwaypage_003_flex > div {
     font-size: 16vw;
+    line-height: 130%;
   }
   .quick_banner_card_wrapper {
     width: 100%;
@@ -1508,10 +1524,11 @@ body {
   }
   .banner_maintext {
     font-size: 4rem;
+    color:#282C34
   }
+  .banner_subtext {color: #282C34;}
   .design_system_text {
     width: 100%;
-    color: #fff;
     opacity: 0.6 !important;
     padding: 0 1.6rem;
     font-size: 1.5rem;
