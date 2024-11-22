@@ -35,7 +35,7 @@
         <div class="progress-bar cueat_progressbar"></div>
       </div>
     </div>
-    <section class="cueat_001">
+    <section class="cueat_001 responsive_section">
       <div class="cueat_container">
         <div class="cueat_logo"></div>
         <div class="cueat_text">
@@ -44,10 +44,12 @@
             <div class="cueat_title_regular">큐레이션 합니다</div>
           </div>
         </div>
-        <div class="cueat_main_img"></div>
+        <div class="cueat_main_img" id="cueatMainImg">
+          <img src="images/cueat003_main.png" alt="" />
+        </div>
       </div>
     </section>
-    <section class="cueat_002">
+    <section class="cueat_002 responsive_section">
       <div class="cueat_container">
         <div class="cueat_text">
           <div class="cueat_page_subject">Background</div>
@@ -64,7 +66,9 @@
             >
           </div>
         </div>
-        <div class="cueat_002_image"></div>
+        <div class="cueat_002_image">
+          <img src="images/cueat_002.jpg" alt="" />
+        </div>
       </div>
     </section>
     <section class="cueat_003">
@@ -225,7 +229,6 @@
         </div>
         <div class="cueat_005_text_wrap">
           <div class="cueat_page_subject">Curation</div>
-          <div class="cueat_005_text_img"></div>
           <div><span>9,312명</span>이 큐잇의 큐레이션을 받았어요</div>
         </div>
       </div>
@@ -456,11 +459,5 @@
     </section>
     <script src="js/cueat_swiper.js" defer></script>
     <script src="js/progressBar.js"></script>
-    <script>
-      $(window).on("load", function () {
-        document.body.classList.remove("no-scroll");
-        $(".blackblock").fadeOut(1000);
-      });
-    </script>
   </body>
 </html>
