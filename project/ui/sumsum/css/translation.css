@@ -1,0 +1,170 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+/* 언어 선택 메뉴 스타일 */
+.language-selector {
+  position: fixed;
+  top: 20px;
+  left: 100px;
+  z-index: 1000;
+}
+
+.lang-btn.lang-toggle {
+  background: rgba(0, 117, 255, 1);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Pretendard", sans-serif;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.lang-btn.lang-toggle:hover {
+  background: rgba(0, 117, 255, 0.5);
+}
+
+.a11y {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.lang-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.lang-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lang-option {
+  width: 100%;
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Pretendard", sans-serif;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.lang-option:hover {
+  background: #0075ff;
+  color: white;
+}
+
+.lang-option.active {
+  color: #0075ff;
+  font-weight: 500;
+}
+
+.lang-option:hover.active {
+  color: white;
+}
+.img-wrapper,
+.bg-wrapper,
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.bg-wrapper {
+  position: absolute; /* relative에서 absolute로 변경 */
+  bottom: 0; /* 원래 위치 유지 */
+  left: 55%; /* 원래 위치 유지 */
+  width: 45%; /* 원래 크기 유지 */
+  height: 0;
+  padding-bottom: 45%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 117, 255, 0.1);
+  border-radius: 50%;
+  border-top-color: #0075ff;
+  animation: spin 1s linear infinite;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.loading .spinner {
+  opacity: 1;
+  visibility: visible;
+}
+
+.loading img,
+.loading video {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+img[data-img-key],
+video[data-video-key] {
+  transition: opacity 0.3s ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@media screen and (max-width: 450px) {
+  .sumsum_004 .img-wrapper {
+    width: 100%;
+    height: 100vh;
+  }
+  .sumsum_004_img {
+    position: absolute;
+    height: 100vh;
+    width: auto;
+    transform: translate(-30%, 0) !important;
+  }
+  .language-selector {
+    left: 72px;
+  }
+}
+.sumsum_010 .bg-wrapper {
+  position: inherit;
+  transform: translate(0);
+  width: 100%;
+  height: auto;
+  left: 0;
+  padding: 0;
+}

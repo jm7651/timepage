@@ -543,6 +543,15 @@ body {
   font-weight: 700;
   border-radius: 4px;
 }
+.personal_label {
+  display: inline-block;
+  background: #ffcccc;
+  padding: 0.4rem 0.8rem;
+  color: #990000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 4px;
+}
 .project__desc > span {
   font-size: 1.4rem;
   font-weight: 500;

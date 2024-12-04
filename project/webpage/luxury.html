@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #000;
+        font-family: "Tektur", sans-serif;
+      }
+      .title {
+        font-size: 4vw;
+        padding: 4rem;
+        color: #fff;
+        text-align: center;
+      }
+      .fashion-grid {
+        display: grid;
+        gap: 24px;
+        padding: 24px;
+        grid-template-columns: repeat(4, 1fr); /* 4개 컬럼으로 고정 */
+        max-width: 1920px;
+        margin: 0 auto;
+      }
+
+      .grid-item {
+        position: relative;
+        width: 100%;
+      }
+
+      .grid-item img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        display: block;
+      }
+
+      /* 태블릿 (1024px 미만) */
+      @media (max-width: 1024px) {
+        .fashion-grid {
+          grid-template-columns: repeat(2, 1fr); /* 2개 컬럼으로 변경 */
+        }
+      }
+
+      /* 모바일 (768px 미만) */
+      @media (max-width: 768px) {
+        .fashion-grid {
+          grid-template-columns: 1fr; /* 1개 컬럼으로 변경 */
+          gap: 16px;
+          padding: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">Twelve gods X High-end</div>
+    <div class="fashion-grid">
+      <div class="grid-item">
+        <img src="luxury/images/luxury001.png" alt="Image 1" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury002.png" alt="Image 2" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury003.png" alt="Image 3" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury004.png" alt="Image 4" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury005.png" alt="Image 5" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury006.png" alt="Image 6" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury007.png" alt="Image 7" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury008.png" alt="Image 8" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury009.png" alt="Image 9" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury010.png" alt="Image 10" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury011.png" alt="Image 11" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury012.png" alt="Image 12" />
+      </div>
+      <div class="grid-item">
+        <img src="luxury/images/luxury001.png" alt="Image 13" />
+      </div>
+      <!-- 나머지 12개의 이미지 -->
+    </div>
+  </body>
+</html>

@@ -310,7 +310,7 @@ body {
   height: 60vh;
   gap: 24rem;
   margin-top: 16rem;
-  padding-bottom: 8vh;
+  margin-bottom: 32vh;
   position: relative;
   z-index: 100;
 }
@@ -331,7 +331,9 @@ body {
 }
 .pain_profile {
 }
-.pain_profile img{width:8rem;}
+.pain_profile img {
+  width: 8rem;
+}
 .pain_point_text_wrap {
   display: flex;
   flex-direction: column;

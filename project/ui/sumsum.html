@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>SUMSUM</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"
+    />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 새로운 meta 태그 추가 -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/jqj6ikt.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="sumsum/css/sumsum.css" />
+    <link rel="stylesheet" href="sumsum/css/translation.css" />
+  </head>
+  <body>
+    <div class="loader-container" id="loaderContainer">
+      <div class="loader"></div>
+    </div>
+    <section class="contents" id="contents">
+      <div class="language-selector">
+        <button class="lang-btn lang-toggle">
+          <span class="current-lang">KOR</span>
+          <span class="a11y">언어변경</span>
+        </button>
+        <div class="lang-dropdown">
+          <ul class="lang-list">
+            <li>
+              <button type="button" class="lang-option" data-lang="ko">
+                KOR
+              </button>
+            </li>
+            <li>
+              <button type="button" class="lang-option" data-lang="en">
+                ENG
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="sumsum_001">
+        <div class="sumsum001_wrap">
+          <div class="sumsum_001_logo_wrap">
+            <div class="sumsum_001_logo"></div>
+          </div>
+          <div class="sumsum_001_text_wrap">
+            <div class="sumsum_001_desc" id="title" data-i18n="main.title">
+              Together,<br />
+              Until your last breath
+            </div>
+          </div>
+          <div class="sumsum_001_bg">
+            <video
+              width="100%"
+              src="sumsum/images/sumsum001_bg.mp4"
+              type="video/mp4"
+              autoplay=""
+              muted=""
+              loop=""
+              playsinline=""
+            >
+              <source src="sumsum/images/sumsum001_bg.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <!-- <div class="scroll-downs"> <div class="mousey"> <div
+                    class="scroller"></div> </div> </div> -->
+        </div>
+      </section>
+      <section class="sumsum_002">
+        <div class="sumsum_002_text_wrapper">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="box_text_wrapper box_right_move"
+          >
+            <div class="box_title" data-i18n="steps.first.title">
+              The first step in planning your life
+            </div>
+            <div class="box_desc" data-i18n="steps.first.desc">
+              We will help you plan your life and stay with you until the rest
+              of the time
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="box_text_wrapper box_left_move"
+          >
+            <div class="box_title" data-i18n="steps.second.title">
+              The second step in planning your life
+            </div>
+            <div class="box_desc" data-i18n="steps.second.desc">
+              We will help you identify your assets, and use them wisely through
+              a clear plan
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="box_text_wrapper box_right_move"
+          >
+            <div class="box_title" data-i18n="steps.third.title">
+              The third step in planning your life
+            </div>
+            <div class="box_desc" data-i18n="steps.third.desc">
+              We will make your dream bucket list and help you achieve your
+              dream
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="box_text_wrapper box_left_move"
+          >
+            <div class="box_title" data-i18n="steps.fourth.title">
+              The foruth step in planning your life
+            </div>
+            <div class="box_desc" data-i18n="steps.fourth.desc">
+              We will help you manage the last stages of your life
+            </div>
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper_box_wrapper">
+                <div class="box_title" data-i18n="steps.first.title">
+                  The first step in planning your life
+                </div>
+                <div class="box_desc" data-i18n="steps.first.desc">
+                  Prepare and organize ahead of time<br />
+                  Make a plan to make the time
+                  <br />
+                  you have left in your life count
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_box_wrapper">
+                <div class="box_title" data-i18n="steps.second.title">
+                  The second step in planning your life
+                </div>
+                <div class="box_desc" data-i18n="steps.second.desc">
+                  identifying your assets and
+                  <br />
+                  making well-planned use of them.
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_box_wrapper">
+                <div class="box_title">
+                  The third step in planning your life
+                </div>
+                <div class="box_desc">
+                  Make a bucket list of things you've always
+                  <br />
+                  wanted to do and go for it
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper_box_wrapper">
+                <div class="box_title">
+                  The foruth step in planning your life
+                </div>
+                <div class="box_desc">I'm in charge of finishing my life</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="inlife">
+          <div class="inlife_desc">
+            <span data-i18n="inlife_desc.desc01"
+              >‘SUMSUM’ helps users accept death and prepare for it</span
+            ><br />
+            <span data-i18n="inlife_desc.desc02"
+              >Through this, we realize the importance of life and help you
+              prepare for the future with a calm mind</span
+            >
+          </div>
+          <div class="inlife_title">In life</div>
+        </div>
+        <div class="sumsum_002_pc_bg" data-bg-key="media.sumsum_002Bg"></div>
+      </section>
+      <section class="sumsum_section sumsum_003">
+        <div class="sumsum_section_wrapper">
+          <div class="sumsum_section_title_wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_subject"
+            >
+              Home
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_subject_title"
+            >
+              <span data-i18n="home.desc01">Management of my life</span><br />
+              <span data-i18n="home.desc02">from start to finish</span><br />
+              <span data-i18n="home.desc03">smartly</span>
+            </div>
+          </div>
+          <div class="sumsum_section_image_wrapper">
+            <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              src="sumsum/images/sumsum_splash.svg"
+              alt=""
+            />
+            <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-img-key="media.img.sumsum003"
+              src="sumsum/images/sumsum_home.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="sumsum_section sumsum_004"
+      >
+        <div class="sumsum_004_title" data-i18n="planning">
+          Planning for the future is essential
+        </div>
+        <img
+          class="sumsum_004_img"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-img-key="media.img.sumsum004"
+          src="sumsum/images/sumsum004_kr.png"
+          alt=""
+        />
+        <!-- <img src="sumsum/images004_main.jpg" alt="" /> -->
+      </section>
+      <section class="sumsum_section sumsum_005">
+        <div class="sumsum_section_wrapper">
+          <div class="sumsum_section_image_wrapper">
+            <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-img-key="media.img.sumsum005_01"
+              src="sumsum/images/endingnote_001.svg"
+              alt=""
+            />
+            <img
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-img-key="media.img.sumsum005_02"
+              src="sumsum/images/endingnote_002.svg"
+              alt=""
+            />
+          </div>
+          <div class="sumsum_section_title_wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_subject"
+            >
+              Ending note
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_subject_desc sumsum_500_desc"
+              data-i18n="endingnote.desc"
+            >
+              An ending note refers to the moment a person's life ends and often
+              refers to the message or thought they want to convey for the last
+              time in his or her life. It can often include a will that the
+              person wants to leave, an emotion he or she wants to convey in his
+              or her heart, or a deep thought about the meaning of life.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="sumsum_section_wrapper sumsum_006">
+          <div class="sumsum_section_title_wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_subject_title"
+            >
+              <span data-i18n="sumsum006.mainTitle01"
+                >Simple and comfortable</span
+              ><br />
+              <span data-i18n="sumsum006.mainTitle02">no fees for life,</span
+              ><br />
+              <span data-i18n="sumsum006.mainTitle03"
+                >Have you tried ‘SUMSUM’?</span
+              >
+            </div>
+          </div>
+          <div class="sumsum_small_section_wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_small_feater_wrapper"
+            >
+              <div class="sumsum_feature_text_wrappper">
+                <div
+                  class="sumsum_subject sumsum_006_subject"
+                  data-i18n="sumsum006.lifeTime.subject"
+                >
+                  Free lifetime wealth management
+                </div>
+                <div
+                  class="sumsum_subject_title sumsum_006_subject_title"
+                  data-i18n="sumsum006.lifeTime.title"
+                >
+                  We will protect your assets
+                </div>
+                <div
+                  class="sumsum_subject_desc sumsum_006_subject_desc"
+                  data-i18n="sumsum006.lifeTime.desc"
+                >
+                  'SumSum AI' will only manage safe assets and protect your
+                  assets.
+                </div>
+              </div>
+              <div class="sumsum_feature_image_wrapper">
+                <img src="sumsum/images/feature_001.svg" alt="" />
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_small_feater_wrapper"
+            >
+              <div class="sumsum_feature_text_wrappper">
+                <div
+                  class="sumsum_subject sumsum_006_subject"
+                  data-i18n="sumsum006.insurance.subject"
+                >
+                  Look up your insurance account
+                </div>
+                <div
+                  class="sumsum_subject_title sumsum_006_subject_title"
+                  data-i18n="sumsum006.insurance.title"
+                >
+                  We will protect your future
+                </div>
+                <div
+                  class="sumsum_subject_desc sumsum_006_subject_desc"
+                  data-i18n="sumsum006.insurance.desc"
+                >
+                  You can have many risks in your life. 'SUMSUM AI' will
+                  recommend you the most appropriate insurance
+                </div>
+              </div>
+              <div class="sumsum_feature_image_wrapper">
+                <video
+                  class="breath_video"
+                  width="100%"
+                  src="sumsum/images/feature_002.mp4"
+                  type="video/mp4"
+                  autoplay=""
+                  muted=""
+                  loop=""
+                  playsinline=""
+                >
+                  <source
+                    src="sumsum/images/feature_002.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_small_feater_wrapper"
+            >
+              <div class="sumsum_feature_text_wrappper">
+                <div
+                  class="sumsum_subject sumsum_006_subject"
+                  data-i18n="sumsum006.digitalAsset.subject"
+                >
+                  Digital asset management
+                </div>
+                <div
+                  class="sumsum_subject_title sumsum_006_subject_title"
+                  data-i18n="sumsum006.digitalAsset.title"
+                >
+                  We will take care of your digital assets
+                </div>
+                <div
+                  class="sumsum_subject_desc sumsum_006_subject_desc"
+                  data-i18n="sumsum006.digitalAsset.desc"
+                >
+                  We will manage all of your digital assets and share them with
+                  your remaining family and friends.
+                </div>
+              </div>
+              <div class="sumsum_feature_image_wrapper sumsum_feature_003">
+                <img
+                  data-img-key="media.img.sumsum006_feature003"
+                  src="sumsum/images/feature_003.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="sumsum_section sumsum_007"
+      >
+        <div class="sumsum_section_wrapper">
+          <div class="sumsum_section_title_wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_subject"
+            >
+              Well
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_subject_title"
+            >
+              <span data-i18n="sumsum007.title01">Beautiful well-dying</span
+              ><br />
+              <span data-i18n="sumsum007.title02">get ready</span>
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="sumsum_section_image_wrapper"
+          >
+            <img
+              data-img-key="media.img.welldying_01"
+              src="sumsum/images/well-dying_001.png"
+              alt=""
+            />
+            <img
+              data-img-key="media.img.welldying_02"
+              src="sumsum/images/well-dying_002.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="sumsum_008_p">
+        <div class="sumsum_section_wrapper sumsum_008">
+          <div class="sumsum_section_title_wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_subject"
+            >
+              Community
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_subject_title"
+              data-i18n="sumsum008.title"
+            >
+              Build empathy for death and provide emotional support
+            </div>
+          </div>
+          <div class="sumsum_small_section_wrapper">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_small_feater_wrapper"
+            >
+              <div class="sumsum_feature_image_wrapper">
+                <img src="sumsum/images/feature_004.svg" alt="" />
+              </div>
+              <div class="sumsum_feature_text_wrappper">
+                <div
+                  class="sumsum_subject_title sumsum_006_subject_title"
+                  data-i18n="sumsum008.feature01.title"
+                >
+                  AI services for bereavement
+                </div>
+                <div
+                  class="sumsum_subject_desc sumsum_006_subject_desc"
+                  data-i18n="sumsum008.feature01.desc"
+                >
+                  Counseling and information services to support the grieving
+                  process
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_small_feater_wrapper"
+            >
+              <div class="sumsum_feature_image_wrapper">
+                <img src="sumsum/images/feature_005.svg" alt="" />
+              </div>
+              <div class="sumsum_feature_text_wrappper">
+                <div
+                  class="sumsum_subject_title sumsum_006_subject_title"
+                  data-i18n="sumsum008.feature02.title"
+                >
+                  Consulting services
+                </div>
+                <div
+                  class="sumsum_subject_desc sumsum_006_subject_desc"
+                  data-i18n="sumsum008.feature02.desc"
+                >
+                  One-on-one consultations with professional counselors to help
+                  individuals prepare for death
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_small_feater_wrapper"
+            >
+              <div class="sumsum_feature_image_wrapper">
+                <img src="sumsum/images/feature_006.svg" alt="" />
+              </div>
+              <div class="sumsum_feature_text_wrappper">
+                <div
+                  class="sumsum_subject_title sumsum_006_subject_title"
+                  data-i18n="sumsum008.feature03.title"
+                >
+                  Support for funeral arrangements
+                </div>
+                <div
+                  class="sumsum_subject_desc sumsum_006_subject_desc"
+                  data-i18n="sumsum008.feature03.desc"
+                >
+                  Handle all of your funeral arrangements and legacy needs
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sumsum_small_feater_wrapper"
+            >
+              <div class="sumsum_feature_image_wrapper">
+                <img src="sumsum/images/feature_007.svg" alt="" />
+              </div>
+              <div class="sumsum_feature_text_wrappper">
+                <div
+                  class="sumsum_subject_title sumsum_006_subject_title"
+                  data-i18n="sumsum008.feature04.title"
+                >
+                  Tips for well dying
+                </div>
+                <div
+                  class="sumsum_subject_desc sumsum_006_subject_desc"
+                  data-i18n="sumsum008.feature04.desc"
+                >
+                  Feeling overwhelmed about preparing and planning for death?
+                  Take a look at these tips.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sumsum_009">
+        <div class="sumsum_009_container">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="sumsum_subject"
+          >
+            Mission
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            class="sumsum_009_frame"
+          >
+            <img
+              class="sumsum_009_img"
+              data-img-key="media.img.sumsumMission1"
+              src="sumsum/images/mission_001.png"
+              alt=""
+            />
+            <div
+              class="sumsum_subject_title sumsum_006_subject_title"
+              data-i18n="sumsum009.title01"
+            >
+              'SUMSUM' is an AI life-planning company. Our mission is to enable
+              artificial general intelligence to plan the lives of all human
+              beings.
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            class="sumsum_009_frame"
+          >
+            <img
+              class="sumsum_009_img"
+              src="sumsum/images/mission_002.png"
+              alt=""
+            />
+            <div
+              class="sumsum_subject_title sumsum_006_subject_title"
+              data-i18n="sumsum009.title02"
+            >
+              Meaningful life
+            </div>
+            <div
+              class="sumsum_subject_desc sumsum_900_desc"
+              data-i18n="sumsum009.desc02"
+            >
+              SUMSUM' will make your life meaningful.
+            </div>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            class="sumsum_009_frame"
+          >
+            <img
+              class="sumsum_009_img"
+              src="sumsum/images/mission_003.png"
+              data-img-key="media.img.sumsumMission3"
+              alt=""
+            />
+            <div
+              class="sumsum_subject_title sumsum_006_subject_title"
+              data-i18n="sumsum009.title03"
+            >
+              Calm mind
+            </div>
+            <div
+              class="sumsum_subject_desc sumsum_900_desc"
+              data-i18n="sumsum009.desc03"
+            >
+              'SUMSUM' will bring you peace of mind We are with you until the
+              end of your life. We cheer you on.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sumsum_010">
+        <div class="sumsum_010_main" data-bg-key="media.sumsum_011Bg"></div>
+        <!-- <div class="sumsum_010_text_wrapper"> <div data-aos="fade-up"
+                data-aos-duration="1000"> Take a deep breath </div> <button data-aos="fade-up"
+                data-aos-duration="1000">Join SUMSUM</button> </div> -->
+      </section>
+      <footer class="sumsum_011">
+        <div class="sumsum_011_wrapper">
+          <div class="sumsum_footer_logo">
+            <img src="images/footer_logo.svg" alt="" />
+          </div>
+          <div class="footer_sns">
+            <img src="sumsum/images/footer_global.svg" alt="" />
+            <img src="sumsum/images/facebook.svg" alt="" />
+            <img src="sumsum/images/x.svg" alt="" />
+            <img src="sumsum/images/twitter.svg" alt="" />
+            <img src="sumsum/images/github.svg" alt="" />
+            <img src="images/susum/youtube.svg" alt="" />
+          </div>
+          <div class="footer_text_wrapper">
+            <div class="policy">
+              <div class="footer_text">Privacy policy</div>
+              <div class="footer_text">Cookie policy</div>
+            </div>
+            <div class="footer_text">© 2024 SUMSUM, Inc.</div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loader = document.getElementById("loaderContainer");
+        const contents = document.getElementById("contents");
+
+        // 모든 리소스가 로드되면
+        window.addEventListener("load", function () {
+          // 로더 페이드 아웃
+          setTimeout(function () {
+            loader.classList.add("fade-out");
+
+            // 컨텐츠 표시 및 페이드 인
+            contents.style.display = "block";
+            setTimeout(() => {
+              contents.style.opacity = "1";
+            }, 50);
+
+            // 로더 완전히 제거
+            setTimeout(function () {
+              loader.style.display = "none";
+            }, 500);
+          }, 1000); // 로딩 시간 조정 가능
+        });
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <!-- translations.js를 먼저 로드 -->
+    <script src="sumsum/js/translations.js"></script>
+    <!-- 그 다음 language-switcher.js 로드 -->
+    <script src="sumsum/js/language-switcher.js"></script>
+    <!-- 나머지 스크립트들 -->
+    <script src="sumsum/js/vh.js"></script>
+    <script src="sumsum/js/gsap.js"></script>
+  </body>
+</html>

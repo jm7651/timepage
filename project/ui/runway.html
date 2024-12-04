@@ -17,7 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
     <link rel="preload" href="image.jpg" as="image" />
-    <link rel="stylesheet" href="css/runway.css" />
+    <link rel="stylesheet" href="runway/css/runway.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -54,9 +54,9 @@
       <div id="navbar">
         <div class="navbar__logo">
           <a href="/">
-            <img src="images/runway/runway_logo.svg" alt="logo img"
+            <img src="runway/runway/images_logo.svg" alt="logo img"
           /></a>
-          <!-- <img src="images/runway/runway_logo.svg" alt="logo img" /> -->
+          <!-- <img src="runway/images/runway_logo.svg" alt="logo img" /> -->
         </div>
       </div>
     </nav>
@@ -67,22 +67,19 @@
             class="runway_video"
             muted=""
             playsinline=""
-            poster="images/runway/runway_video_img.jpg"
+            poster="runway/images/runway_video_img.jpg"
             loading="lazy"
           >
-            <source
-              src="images/runway/main_runway.mp4"
-              type="video/mp4"
-            />
+            <source src="runway/images/main_runway.mp4" type="video/mp4" />
           </video>
           <video
             class="link_video"
             muted=""
             playsinline=""
-            poster="images/runway/link_video_img.jpg"
+            poster="runway/images/link_video_img.jpg"
             loading="lazy"
           >
-            <source src="images/runway/main-video-link.mp4" type="video/mp4" />
+            <source src="runway/images/main-video-link.mp4" type="video/mp4" />
           </video>
         </div>
         <div class="runwaypage_text_wrapper">
@@ -109,12 +106,21 @@
           </div> -->
         </div>
         <!-- <div class="runwaypage_mainimg">
-          <img src="images/runway/runwaypage_001.png" alt="" />
+          <img src="runway/images/runwaypage_001.png" alt="" />
         </div> -->
       </div>
       <div class="gradient_bg">
-        <img src="images/runway/gradient_pc_bg.jpg" alt="" />
-        <!-- <img src="images/runway/gradient_mobile_bg.jpg" alt="" /> -->
+        <video
+          class="gradient_bg_video"
+          muted=""
+          playsinline=""
+          loading="lazy"
+          autoplay=""
+          loop=""
+        >
+          <source src="runway/images/gradient_pc.mp4" type="video/mp4" />
+        </video>
+        <!-- <img src="runway/images/gradient_mobile_bg.jpg" alt="" /> -->
         <video
           class="gradient_bg_m_video"
           muted=""
@@ -123,7 +129,7 @@
           autoplay=""
           loop=""
         >
-          <source src="images/runway/gradient_mobile_bg.mp4" type="video/mp4" />
+          <source src="runway/images/gradient_mobile_bg.mp4" type="video/mp4" />
         </video>
       </div>
     </section>
@@ -137,7 +143,7 @@
           playsinline=""
           loading="lazy"
         >
-          <source src="images/runway/runwaypage002.mp4" type="video/mp4" />
+          <source src="runway/images/runwaypage002.mp4" type="video/mp4" />
         </video>
       </div>
       <ul class="runway_pin_text_wrapper">
@@ -146,7 +152,7 @@
         <li class="list-item">데이터를 통한 AI 가치 실현</li>
         <li class="list-item">가장 쉽고 빠른 플랫폼</li>
         <button id="runway_youtube_open" class="pin_006">
-          <img src="images/runway/youtube_icon.svg" alt="" loading="lazy" />
+          <img src="runway/images/youtube_icon.svg" alt="" loading="lazy" />
           <p id="youtubeView" data-lang="youtubeView">
             Watch introduction video
           </p>
@@ -165,7 +171,7 @@
         playsinline=""
         loading="lazy"
       >
-        <source src="images/runway/runwaypage003.mp4" type="video/mp4" />
+        <source src="runway/images/runwaypage003.mp4" type="video/mp4" />
       </video>
     </section>
     <!-- <section class="runway_003">
@@ -213,7 +219,7 @@
             </div>
           </div>
           <div class="runway_003_main_img">
-            <img src="images/runway/runway_003_circle.svg" alt="" />
+            <img src="runway/images/runway_003_circle.svg" alt="" />
           </div>
         </div>
       </div>
@@ -225,34 +231,35 @@
         <div>ML lifecycle</div>
       </div>
       <video autoplay="" loop="" muted="" playsinline="">
-        <source src="images/runway/makina_workflow.mp4" type="video/mp4" />
+        <source src="runway/images/makina_workflow.mp4" type="video/mp4" />
       </video>
     </section> -->
     <section class="runway_004">
       <div class="runway_subject_title">Persona</div>
       <div class="runway_subject_text">
-        Mlops는 여러 사람들이 사용하는 플랫폼입니다. 각 직종을 맡고 있는 페르소나를 설정했습니다.
+        Mlops는 여러 사람들이 사용하는 플랫폼입니다. 각 직종을 맡고 있는
+        페르소나를 설정했습니다.
       </div>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide persona_001">
             <div class="cueat005_001_img">
-              <img src="images/runway/persona01.png" alt="" loading="lazy" />
+              <img src="runway/images/persona01.png" alt="" loading="lazy" />
             </div>
           </div>
           <div class="swiper-slide persona_002">
             <div class="cueat005_002_img">
-              <img src="images/runway/persona02.png" alt="" loading="lazy" />
+              <img src="runway/images/persona02.png" alt="" loading="lazy" />
             </div>
           </div>
           <div class="swiper-slide persona_003">
             <div class="cueat005_003_img">
-              <img src="images/runway/persona03.png" alt="" loading="lazy" />
+              <img src="runway/images/persona03.png" alt="" loading="lazy" />
             </div>
           </div>
           <div class="swiper-slide persona_004">
             <div class="cueat005_003_img">
-              <img src="images/runway/persona04.png" alt="" loading="lazy" />
+              <img src="runway/images/persona04.png" alt="" loading="lazy" />
             </div>
           </div>
         </div>
@@ -270,16 +277,14 @@
             <div class="runway_concept_img">
               <img
                 class="concept_001"
-                src="images/runway/concept_001.svg"
+                src="runway/images/concept_001.svg"
                 alt=""
                 loading="lazy"
               />
             </div>
             <div class="runway_concept_text_wrap">
               <div class="runway_concept_title concept_title_001">
-                <div>
-                  런웨이는 매우 자유로운 모델 개발 환경을 제공합니다
-                </div>
+                <div>런웨이는 매우 자유로운 모델 개발 환경을 제공합니다</div>
               </div>
             </div>
           </div>
@@ -289,20 +294,18 @@
             <div class="runway_concept_img">
               <img
                 class="devops"
-                src="images/runway/devops-cycle-2.gif"
+                src="runway/images/devops-cycle-2.gif"
                 alt=""
                 loading="lazy"
               />
             </div>
             <div class="runway_concept_text_wrap">
-              <div class="runway_concept_title">
-                자동 재학습을 지원합니다
-              </div>
+              <div class="runway_concept_title">자동 재학습을 지원합니다</div>
             </div>
           </div>
           <div class="runway_concept_right">
             <div class="runway_concept_img">
-              <img src="images/runway/concept_004.svg" alt="" loading="lazy" />
+              <img src="runway/images/concept_004.svg" alt="" loading="lazy" />
             </div>
             <div class="runway_concept_text_wrap">
               <div class="runway_concept_title">
@@ -344,7 +347,7 @@
             various data sources with just a few clicks.
           </p>
           <div class="tab_flow_img">
-            <img src="images/runway/tab_flow01.svg" alt="" />
+            <img src="runway/images/tab_flow01.svg" alt="" />
           </div>
         </div>
 
@@ -358,7 +361,7 @@
             modeling data.
           </p>
           <div class="tab_flow_img">
-            <img src="images/runway/tab_flow02.svg" alt="" />
+            <img src="runway/images/tab_flow02.svg" alt="" />
           </div>
         </div>
 
@@ -372,7 +375,7 @@
             service can be monitored using an intuitive UI.
           </p>
           <div class="tab_flow_img">
-            <img src="images/runway/tab_flow03.svg" alt="" />
+            <img src="runway/images/tab_flow03.svg" alt="" />
           </div>
         </div>
         <div id="retrain" class="tab_text" style="display: none">
@@ -383,7 +386,7 @@
             additional work
           </p>
           <div class="tab_flow_img tab_flow004">
-            <img src="images/runway/tab_flow04.svg" alt="" />
+            <img src="runway/images/tab_flow04.svg" alt="" />
           </div>
         </div>
       </div>
@@ -489,7 +492,7 @@
     </section> -->
     <section class="runway_002">
       <div class="runway_logo2">
-        <img src="images/runway/runway_logo.svg" alt="" />
+        <img src="runway/images/runway_logo.svg" alt="" />
       </div>
     </section>
     <section class="runway_feature_container feature_001">
@@ -503,17 +506,21 @@
           data-aos-duration="1000"
         >
           <div class="runway_feature_title">
-            <div class="runway_feature_subject">Runway workspace의 UX 향상<br>
-              <span>폴더형 구조와 테이블 레이아웃 도입</span></div>
+            <div class="runway_feature_subject">
+              Runway workspace의 UX 향상<br />
+              <span>폴더형 구조와 테이블 레이아웃 도입</span>
+            </div>
           </div>
           <p class="project_main_desc">
-            Runway 플랫폼에서 Workspace는 리소스와 운영을 구분하기 위한 논리적 단위입니다. 
-            사용자는 Workspace를 통해 플랫폼의 주요 기능에 접근할 수 있으며, 홈과 같은 역할을 합니다. 
-            저는 사용자 경험을 개선하기 위해 폴더 형식의 구조를 도입하여 최근 5개의 프로젝트에 빠르게 접근할 수 있도록 디자인했습니다. 
-            또한, 테이블 레이아웃을 통해 모든 프로젝트를 쉽게 관리하고 확인할 수 있도록 설계했습니다.
+            Runway 플랫폼에서 Workspace는 리소스와 운영을 구분하기 위한 논리적
+            단위입니다. 사용자는 Workspace를 통해 플랫폼의 주요 기능에 접근할 수
+            있으며, 홈과 같은 역할을 합니다. 저는 사용자 경험을 개선하기 위해
+            폴더 형식의 구조를 도입하여 최근 5개의 프로젝트에 빠르게 접근할 수
+            있도록 디자인했습니다. 또한, 테이블 레이아웃을 통해 모든 프로젝트를
+            쉽게 관리하고 확인할 수 있도록 설계했습니다.
           </p>
           <div class="runway_feature_img project_main_img">
-            <img src="images/runway/feature_001.png" alt="" loading="lazy" />
+            <img src="runway/images/feature_001.png" alt="" loading="lazy" />
           </div>
         </div>
         <div class="project_right">
@@ -523,7 +530,7 @@
             data-aos-duration="1000"
           >
             <div class="runway_feature_img">
-              <img src="images/runway/feature_002.png" alt="" loading="lazy" />
+              <img src="runway/images/feature_002.png" alt="" loading="lazy" />
             </div>
             <p>Empty page</p>
           </div>
@@ -534,13 +541,14 @@
           >
             <div class="runway_feature_img">
               <img
-                src="images/runway/feature_002_1.png"
+                src="runway/images/feature_002_1.png"
                 alt=""
                 loading="lazy"
               />
             </div>
             <p>
-              소속되지 않을경우 dialog를 통해 신청할 수 있음 ->신청시 Project owner에게 이메일을 통한 신청
+              소속되지 않을경우 dialog를 통해 신청할 수 있음 ->신청시 Project
+              owner에게 이메일을 통한 신청
             </p>
           </div>
         </div>
@@ -554,14 +562,14 @@
           data-aos-duration="1000"
         >
           <div class="runway_feature_title">
-            <div class="runway_feature_subject">자원 모니터링 효율화를 위한<br>
-              <span>실시간 할당률 디자인 개선</span></div>
+            <div class="runway_feature_subject">
+              자원 모니터링 효율화를 위한<br />
+              <span>실시간 할당률 디자인 개선</span>
+            </div>
           </div>
           <div class="runway_feature_img">
-            <img src="images/runway/feature_003.png" alt="" />
+            <img src="runway/images/feature_003.png" alt="" />
           </div>
- 
-
         </div>
         <div
           class="runway_feature_right user_wrap"
@@ -572,11 +580,12 @@
             <div class="runway_feature_subject">User</div>
           </div>
           <div class="runway_feature_img">
-            <img src="images/runway/feature_004.png" alt="" />
+            <img src="runway/images/feature_004.png" alt="" />
           </div>
           <p>
-            User는 Runway workspace에 등록된 사용자 정보를 확인하고 관리할 수 있는 기능입니다.
-            Runway는 user seats(유료 사용자)와 viewer(무료 사용자) 다양한 사용자가 동시에 접근하여 업무를 수행할 수 있도록 
+            User는 Runway workspace에 등록된 사용자 정보를 확인하고 관리할 수
+            있는 기능입니다. Runway는 user seats(유료 사용자)와 viewer(무료
+            사용자) 다양한 사용자가 동시에 접근하여 업무를 수행할 수 있도록
             권한에 따라 다른 UI를 제공합니다
           </p>
         </div>
@@ -593,10 +602,10 @@
             <div class="runway_feature_subject">Data source</div>
           </div>
           <div class="runway_feature_img">
-            <img src="images/runway/feature_005_001.png" alt="" />
+            <img src="runway/images/feature_005_001.png" alt="" />
           </div>
           <div class="runway_feature_img">
-            <img src="images/runway/feature_005_002.png" alt="" />
+            <img src="runway/images/feature_005_002.png" alt="" />
           </div>
           <p>
             Project Owner 사용자는 소유한 Project에서 사용할 신규 Data source를
@@ -611,7 +620,7 @@
           <div class="runway_feature_subtitle">Database side-modal</div>
           <div class="runway_feature_video">
             <div class="runway_feature_img">
-              <img src="images/runway/feature_005_003.png" alt="" />
+              <img src="runway/images/feature_005_003.png" alt="" />
             </div>
           </div>
           <p>
@@ -621,15 +630,17 @@
             >
           </p>
           <div class="runway_feature_img">
-            <img src="images/runway/source_type.svg" alt="" />
+            <img src="runway/images/source_type.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
     <section class="runway_feature_container feature_004">
       <div class="runway_feature_title single_title_wrap">
-        <div class="runway_feature_subject">정확한 데이터 관리를 위한<br>
-          <span>서브네비게이션과 미리보기 기능 설계</span></div>
+        <div class="runway_feature_subject">
+          정확한 데이터 관리를 위한<br />
+          <span>서브네비게이션과 미리보기 기능 설계</span>
+        </div>
       </div>
       <div class="runway_feature_wrap">
         <div
@@ -646,7 +657,7 @@
             으로 생성해야 합니다.
           </p>
           <div class="runway_feature_img">
-            <img src="images/runway/feature_006_001.png" alt="" />
+            <img src="runway/images/feature_006_001.png" alt="" />
           </div>
         </div>
         <div
@@ -655,20 +666,22 @@
           data-aos-duration="1000"
         >
           <div class="runway_feature_img">
-            <img src="images/runway/feature_006_002.png" alt="" />
+            <img src="runway/images/feature_006_002.png" alt="" />
           </div>
           <div class="runway_feature_subtitle">Dataset</div>
           <p>
-            서브네비게이션 도입으로 데이터셋 버전 관리를 체계화하고, 
-            미리보기 기능을 추가하여 데이터 검증과 활용의 효율성을 높였습니다
+            서브네비게이션 도입으로 데이터셋 버전 관리를 체계화하고, 미리보기
+            기능을 추가하여 데이터 검증과 활용의 효율성을 높였습니다
           </p>
         </div>
       </div>
     </section>
     <section class="runway_feature_container feature_005">
       <div class="runway_feature_title single_title_wrap">
-        <div class="runway_feature_subject">작업 흐름 최적화를 위한 <br>
-          <span>수직형 파이프라인 구조 설계</span></div>
+        <div class="runway_feature_subject">
+          작업 흐름 최적화를 위한 <br />
+          <span>수직형 파이프라인 구조 설계</span>
+        </div>
       </div>
       <div class="runway_feature_wrap">
         <div
@@ -678,35 +691,39 @@
         >
           <div class="runway_feature_subtitle">문제</div>
           <p>
-            기존의 가로형 파이프라인 구조는 논리적 흐름 파악이 어렵고, 
-            코드와 파라미터 확인을 위한 화면 전환이 잦아 작업 효율성이 떨어졌습니다
+            기존의 가로형 파이프라인 구조는 논리적 흐름 파악이 어렵고, 코드와
+            파라미터 확인을 위한 화면 전환이 잦아 작업 효율성이 떨어졌습니다
           </p>
           <div class="runway_feature_img">
-            <img src="images/runway/featuer_007_001.png" alt="" />
+            <img src="runway/images/featuer_007_001.png" alt="" />
           </div>
         </div>
-        <div class="right_arrow" ><img src="images/runway/rightarrow.svg" alt=""></div>
+        <div class="right_arrow">
+          <img src="runway/images/rightarrow.svg" alt="" />
+        </div>
         <div
           class="runway_feature_right pipeline_right"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           <div class="runway_feature_img">
-            <img src="images/runway/featuer_007_002.png" alt="" />
+            <img src="runway/images/featuer_007_002.png" alt="" />
           </div>
           <div class="runway_feature_subtitle">해결</div>
           <p>
-            파이프라인을 수직 구조로 재설계하고, 
-            코드와 파라미터를 단일 페이지에서 관리할 수 있도록 
-            구성하여 작업의 직관성과 효율성을 향상시켰습니다
+            파이프라인을 수직 구조로 재설계하고, 코드와 파라미터를 단일
+            페이지에서 관리할 수 있도록 구성하여 작업의 직관성과 효율성을
+            향상시켰습니다
           </p>
         </div>
       </div>
     </section>
     <section class="runway_feature_container feature_006">
       <div class="runway_feature_title single_title_wrap">
-        <div class="runway_feature_subject">탭 기반 UI 설계로 <br>
-          <span>향상된 배포 과정 관리 UX</span></div>
+        <div class="runway_feature_subject">
+          탭 기반 UI 설계로 <br />
+          <span>향상된 배포 과정 관리 UX</span>
+        </div>
       </div>
       <div class="runway_feature_wrap">
         <div
@@ -714,12 +731,10 @@
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-        <div class="runway_feature_img">
-          <img src="images/runway/feature_008_001.png" alt="" />
-        </div>
-          <p>
-            사용자는 배포 과정을 더 직관적으로 관리할 수 있게 .
-          </p>
+          <div class="runway_feature_img">
+            <img src="runway/images/feature_008_001.png" alt="" />
+          </div>
+          <p>사용자는 배포 과정을 더 직관적으로 관리할 수 있게 .</p>
         </div>
         <div
           class="runway_feature_right stream_wrap"
@@ -727,18 +742,17 @@
           data-aos-duration="1000"
         >
           <div class="runway_feature_img">
-            <img src="images/runway/feature_008_002.png" alt="" />
+            <img src="runway/images/feature_008_002.png" alt="" />
           </div>
           <div class="runway_feature_img">
-            <img src="images/runway/feature_008_003.png" alt="" />
+            <img src="runway/images/feature_008_003.png" alt="" />
           </div>
         </div>
       </div>
     </section>
     <section class="runway_feature_container feature_007">
       <div class="runway_feature_title single_title_wrap">
-        <div class="runway_feature_subject">Dark mode <br>
-        </div>
+        <div class="runway_feature_subject">Dark mode <br /></div>
       </div>
       <div class="runway_feature_wrap">
         <div
@@ -746,17 +760,17 @@
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-        <div class="runway_feature_img">
-          <img src="images/runway/darkmode_001.png" alt="" />
-        </div>
+          <div class="runway_feature_img">
+            <img src="runway/images/darkmode_001.png" alt="" />
+          </div>
         </div>
         <div
           class="runway_feature_right stream_wrap"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-      <div class="runway_feature_img">
-            <img src="images/runway/darkmode_002.png" alt="" />
+          <div class="runway_feature_img">
+            <img src="runway/images/darkmode_002.png" alt="" />
           </div>
         </div>
       </div>
@@ -769,7 +783,7 @@
       >
         <div class="runway_feature_subject bk_text">Design system</div>
         <div class="runway_figma">
-          <img src="images/runway/figma.svg" alt="" />
+          <img src="runway/images/figma.svg" alt="" />
         </div>
       </div>
       <div
@@ -787,7 +801,7 @@
           data-aos-duration="1000"
         >
           <div class="runway_feature_img">
-            <img src="images/runway/system_001.svg" alt="" />
+            <img src="runway/images/system_001.svg" alt="" />
           </div>
         </div>
         <div
@@ -796,7 +810,7 @@
           data-aos-duration="1000"
         >
           <div class="runway_feature_img">
-            <img src="images/runway/system_002.png" alt="" />
+            <img src="runway/images/system_002.png" alt="" />
           </div>
         </div>
       </div>
@@ -811,10 +825,9 @@
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-        <div class="runway_feature_img">
-          <img src="images/runway/featuer_009_001.png" alt="" />
-        </div>
-
+          <div class="runway_feature_img">
+            <img src="runway/images/featuer_009_001.png" alt="" />
+          </div>
         </div>
         <div
           class="runway_feature_right stream_wrap"
@@ -822,10 +835,10 @@
           data-aos-duration="1000"
         >
           <div class="runway_feature_img">
-            <img src="images/runway/featuer_009_002.png" alt="" />
+            <img src="runway/images/featuer_009_002.png" alt="" />
           </div>
           <div class="runway_feature_img">
-            <img src="images/runway/featuer_009_003.png" alt="" />
+            <img src="runway/images/featuer_009_003.png" alt="" />
           </div>
         </div>
       </div>
@@ -836,7 +849,7 @@
           <div class="easier_side">Thanks for</div>
           <!-- <img
             id="makinarocks_logo"
-            src="images/runway/makinarocks_logo.svg"
+            src="runway/images/makinarocks_logo.svg"
             alt=""
           /> -->
           <div id="ml_lifecycle">
@@ -844,7 +857,7 @@
           </div>
         </div>
         <div class="quick_banner_card_wrapper">
-          <img src="images/runway/quick_banner.jpg" alt="" loading="lazy" />
+          <img src="runway/images/quick_banner.jpg" alt="" loading="lazy" />
           <div class="banner_main_title_wrapper">
             <div class="banner_subtext">The MLOps platform to</div>
             <div class="banner_maintext">
@@ -922,14 +935,14 @@
     <!-- <script src="js/runway.js"></script> -->
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="js/runway_swiper.js"></script>
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Initialize Swiper -->
     <script src="js/summary_modal.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/progressBar.js"></script>
-    <script src="js/runway_main.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="runway/js/runway_main.js"></script>
+    <script src="runway/js/runway_swiper.js"></script>
+    <script src="runway/js/runway_bg.js"></script>
     <script>
       let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -944,23 +957,27 @@
       });
     </script>
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-  const targetElement = document.querySelector('.feature_007');
-  const textElement = document.querySelector('.feature_007 .runway_feature_subject');
-  
-  if (!targetElement) {
-    console.error('Target element .feature_007 not found');
-    return;
-  }
+      document.addEventListener("DOMContentLoaded", () => {
+        const targetElement = document.querySelector(".feature_007");
+        const textElement = document.querySelector(
+          ".feature_007 .runway_feature_subject"
+        );
 
-  if (!textElement) {
-    console.error('Target text element .feature_007 .runway_feature_subject not found');
-    return;
-  }
+        if (!targetElement) {
+          console.error("Target element .feature_007 not found");
+          return;
+        }
 
-  // 부드러운 색상 전환을 위한 CSS 스타일 추가
-  const style = document.createElement('style');
-  style.textContent = `
+        if (!textElement) {
+          console.error(
+            "Target text element .feature_007 .runway_feature_subject not found"
+          );
+          return;
+        }
+
+        // 부드러운 색상 전환을 위한 CSS 스타일 추가
+        const style = document.createElement("style");
+        style.textContent = `
     body {
       background-color: #000;
       transition: background-color 0.5s ease-in-out;
@@ -970,25 +987,25 @@
       transition: color 0.5s ease-in-out;
     }
   `;
-  document.head.appendChild(style);
+        document.head.appendChild(style);
 
-  window.addEventListener('scroll', () => {
-    // 요소의 위치와 뷰포트 정보 계산
-    const rect = targetElement.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    
-    // 요소가 화면 중간을 지나갔거나 중간에 있을 때 흰색으로 유지
-    const shouldBeWhite = rect.top <= windowHeight / 2;
-    
-    if (shouldBeWhite) {
-      document.body.style.backgroundColor = '#EAEAEA';
-      textElement.style.color = '#000';
-    } else {
-      document.body.style.backgroundColor = '#000';
-      textElement.style.color = '#EAEAEA';
-    }
-  });
-});
+        window.addEventListener("scroll", () => {
+          // 요소의 위치와 뷰포트 정보 계산
+          const rect = targetElement.getBoundingClientRect();
+          const windowHeight = window.innerHeight;
+
+          // 요소가 화면 중간을 지나갔거나 중간에 있을 때 흰색으로 유지
+          const shouldBeWhite = rect.top <= windowHeight / 2;
+
+          if (shouldBeWhite) {
+            document.body.style.backgroundColor = "#EAEAEA";
+            textElement.style.color = "#000";
+          } else {
+            document.body.style.backgroundColor = "#000";
+            textElement.style.color = "#EAEAEA";
+          }
+        });
+      });
     </script>
   </body>
 </html>
