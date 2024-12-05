@@ -4,7 +4,7 @@
 .language-selector {
   position: fixed;
   top: 20px;
-  left: 100px;
+  left: 6vw;
   z-index: 1000;
 }
 
