@@ -7,9 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+  />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link
       href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../ui/css/loading.css" />
     <style>
       body {
         background: #000;
@@ -59,7 +65,12 @@
       }
     </style>
   </head>
-  <body>
+  <body class="no-scroll">
+    <div class="loading-container">
+      <div class="blackblock">
+        <div class="loader"></div>
+      </div>
+    </div>
     <div class="title">Twelve gods X High-end</div>
     <div class="fashion-grid">
       <div class="grid-item">
@@ -98,10 +109,29 @@
       <div class="grid-item">
         <img src="luxury/images/luxury012.png" alt="Image 12" />
       </div>
-      <div class="grid-item">
-        <img src="luxury/images/luxury001.png" alt="Image 13" />
-      </div>
       <!-- 나머지 12개의 이미지 -->
     </div>
+    <script>
+      $(document).ready(function() {
+        // 모든 이미지가 로드되었는지 확인
+        let loadedImages = 0;
+        const totalImages = $('img').length;
+
+        $('img').on('load', function() {
+          loadedImages++;
+          if(loadedImages === totalImages) {
+            // 모든 이미지 로드 완료
+            document.body.classList.remove("no-scroll");
+            $(".blackblock").fadeOut(1000);
+          }
+        });
+
+        // 일정 시간 후 강제로 로딩 화면 제거 (선택사항)
+        setTimeout(function() {
+          document.body.classList.remove("no-scroll");
+          $(".blackblock").fadeOut(1000);
+        }, 5000); // 5초 후 실행
+      });
+    </script>
   </body>
 </html>
