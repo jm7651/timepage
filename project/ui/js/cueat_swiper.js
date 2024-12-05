@@ -91,13 +91,20 @@ function MySliderBox3__init() {
 }
 MySliderBox3__init();
 
+// 이 부분을 제거하거나 아래와 같이 수정
 function resizeSection() {
+  // 모바일에서는 실행하지 않음
+  if (window.innerWidth <= 450) return;
+
   var sections = document.querySelectorAll(".responsive_section");
   var initialWidth = window.innerWidth;
   var initialHeight = window.innerHeight;
   var aspectRatio = initialHeight / initialWidth;
 
   function adjustSize() {
+    // 모바일에서는 실행하지 않음
+    if (window.innerWidth <= 450) return;
+
     var newWidth = window.innerWidth;
     var newHeight = newWidth * aspectRatio;
 
@@ -110,5 +117,16 @@ function resizeSection() {
   window.addEventListener("resize", adjustSize);
   adjustSize();
 }
+//모바일 브라우저의 실제 뷰포트 높이 계산
+function setViewportHeight() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
 
-window.addEventListener("load", resizeSection);
+// 초기 실행
+setViewportHeight();
+
+// 리사이즈 이벤트에서 실행
+window.addEventListener("resize", () => {
+  setViewportHeight();
+});
