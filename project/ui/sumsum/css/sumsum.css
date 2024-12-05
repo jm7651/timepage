@@ -343,7 +343,7 @@ section {
   width: 100%; /* 기본 너비 */
   height: 0;
   padding-bottom: 100%; /* 이미지의 비율을 유지하기 위한 패딩 */
-  background: url(../images/sumsum/kr/sumsum002_main.png) center bottom /
+  background: url(../images/kr/sumsum002_main.png) center bottom /
     contain no-repeat;
   object-fit: contain;
   z-index: 99;
