@@ -820,11 +820,16 @@ body {
     font-size: 10px;
     overflow-x: hidden;
   }
+
   .cueat_page_subject {
     font-size: 1.4rem;
     width: 100%;
     text-align: center;
     color: var(--primary_orange);
+  }
+  .cueat_main_img img{
+    width: 100%;
+    min-width: 100%;
   }
   .cueat_001,
   .cueat_002,
@@ -841,6 +846,7 @@ body {
     height: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
+    margin:0;
   }
   .cueat_001 .cueat_text {
     font-size: 10vw;
@@ -850,7 +856,7 @@ body {
   }
   .cueat_main_img {
     width: 100vw;
-    top: calc(var(--vh, 1vh) * 40);
+    top: calc(var(--vh, 1vh) * 55);
   }
   .cueat_page_title {
     font-size: 2.4rem;
