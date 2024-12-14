@@ -123,6 +123,9 @@ body {
   .main001 {
     width: 100%;
   }
+  .lumiere_video {
+    width: 320px;
+  }
   .yelloment_001 {
     padding: 6rem 1.6rem;
     box-sizing: border-box;
