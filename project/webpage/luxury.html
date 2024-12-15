@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
-  />
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap"
       rel="stylesheet"
@@ -74,52 +74,52 @@
     <div class="title">Twelve gods X High-end</div>
     <div class="fashion-grid">
       <div class="grid-item">
-        <img src="luxury/images/luxury001.png" alt="Image 1" />
+        <img src="luxury/images/luxury001.webp" alt="Image 1" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury002.png" alt="Image 2" />
+        <img src="luxury/images/luxury002.webp" alt="Image 2" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury003.png" alt="Image 3" />
+        <img src="luxury/images/luxury003.webp" alt="Image 3" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury004.png" alt="Image 4" />
+        <img src="luxury/images/luxury004.webp" alt="Image 4" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury005.png" alt="Image 5" />
+        <img src="luxury/images/luxury005.webp" alt="Image 5" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury006.png" alt="Image 6" />
+        <img src="luxury/images/luxury006.webp" alt="Image 6" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury007.png" alt="Image 7" />
+        <img src="luxury/images/luxury007.webp" alt="Image 7" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury008.png" alt="Image 8" />
+        <img src="luxury/images/luxury008.webp" alt="Image 8" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury009.png" alt="Image 9" />
+        <img src="luxury/images/luxury009.webp" alt="Image 9" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury010.png" alt="Image 10" />
+        <img src="luxury/images/luxury010.webp" alt="Image 10" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury011.png" alt="Image 11" />
+        <img src="luxury/images/luxury011.webp" alt="Image 11" />
       </div>
       <div class="grid-item">
-        <img src="luxury/images/luxury012.png" alt="Image 12" />
+        <img src="luxury/images/luxury012.webp" alt="Image 12" />
       </div>
       <!-- 나머지 12개의 이미지 -->
     </div>
     <script>
-      $(document).ready(function() {
+      $(document).ready(function () {
         // 모든 이미지가 로드되었는지 확인
         let loadedImages = 0;
-        const totalImages = $('img').length;
+        const totalImages = $("img").length;
 
-        $('img').on('load', function() {
+        $("img").on("load", function () {
           loadedImages++;
-          if(loadedImages === totalImages) {
+          if (loadedImages === totalImages) {
             // 모든 이미지 로드 완료
             document.body.classList.remove("no-scroll");
             $(".blackblock").fadeOut(1000);
@@ -127,7 +127,7 @@
         });
 
         // 일정 시간 후 강제로 로딩 화면 제거 (선택사항)
-        setTimeout(function() {
+        setTimeout(function () {
           document.body.classList.remove("no-scroll");
           $(".blackblock").fadeOut(1000);
         }, 5000); // 5초 후 실행
